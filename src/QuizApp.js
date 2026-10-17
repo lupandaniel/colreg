@@ -499,6 +499,30 @@ function QuizApp() {
   if (phase === 'menu') {
     return (
       <div className="exam-menu">
+        <div className="exam-card practice-card">
+          <h3>Antrenament</h3>
+          <p className="exam-subtitle">Fără cronometru · din toată banca ({fullQuestions.length})</p>
+          <label className="practice-select-label" htmlFor="practice-section">
+            Secțiune
+          </label>
+          <select
+            id="practice-section"
+            className="practice-select"
+            value={practiceSection}
+            onChange={(event) => setPracticeSection(event.target.value)}
+          >
+            <option value="all">Toate secțiunile</option>
+            {examConfig.sections.map((section) => (
+              <option key={section.id} value={section.id}>
+                {section.label} ({sectionCounts[section.id] || 0})
+              </option>
+            ))}
+          </select>
+          <button type="button" className="btn continue-btn" onClick={startPractice}>
+            Începe antrenamentul
+          </button>
+        </div>
+
         <div className="exam-card">
           <h2>{examConfig.modelName}</h2>
           <p className="exam-subtitle">Categorie personal: {examConfig.personnelCategory}</p>
@@ -543,30 +567,6 @@ function QuizApp() {
 
           <button type="button" className="btn exam-start-btn" onClick={startExam}>
             Începe examenul ({examConfig.totalQuestions} întrebări)
-          </button>
-        </div>
-
-        <div className="exam-card practice-card">
-          <h3>Antrenament</h3>
-          <p className="exam-subtitle">Fără cronometru · din toată banca ({fullQuestions.length})</p>
-          <label className="practice-select-label" htmlFor="practice-section">
-            Secțiune
-          </label>
-          <select
-            id="practice-section"
-            className="practice-select"
-            value={practiceSection}
-            onChange={(event) => setPracticeSection(event.target.value)}
-          >
-            <option value="all">Toate secțiunile</option>
-            {examConfig.sections.map((section) => (
-              <option key={section.id} value={section.id}>
-                {section.label} ({sectionCounts[section.id] || 0})
-              </option>
-            ))}
-          </select>
-          <button type="button" className="btn continue-btn" onClick={startPractice}>
-            Începe antrenamentul
           </button>
         </div>
       </div>
