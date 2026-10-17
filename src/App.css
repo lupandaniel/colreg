@@ -665,3 +665,67 @@
   font-size: 14px;
   background: #fff;
 }
+
+.class-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.class-toggle button {
+  background: #f7fbfc;
+  border: 1px solid #c5d4da;
+  border-radius: 8px;
+  color: #1b3a44;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 14px;
+}
+
+.class-toggle button:hover {
+  border-color: #1565c0;
+}
+
+.class-toggle button.active {
+  background: #1565c0;
+  border-color: #1565c0;
+  color: #fff;
+}
+
+.exam-start-btn:disabled {
+  background: #9bb3bd;
+  cursor: not-allowed;
+}
+
+.exam-start-btn:disabled:hover {
+  background: #9bb3bd;
+}
+
+.barem-table td,
+.barem-table th {
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.barem-table tbody tr.barem-row-available {
+  cursor: pointer;
+}
+
+.barem-table tbody tr.barem-row-available:hover {
+  background: #eef5fb;
+}
+
+.barem-table tbody tr.barem-row-selected {
+  background: #e3f2fd;
+}
+
+.barem-table tbody tr.barem-row-soon td {
+  color: #8a9aa0;
+}
+
+.barem-note {
+  color: #5a6b70;
+  font-weight: 400;
+  font-size: 12px;
+}
