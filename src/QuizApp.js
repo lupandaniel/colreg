@@ -8,6 +8,7 @@ import { questions as clasaCQuiz } from './questionsClasaC';
 import { questions as clasaDQuiz } from './questionsClasaD';
 
 const STORAGE_KEY = 'caa-progress-v2';
+const PREFS_KEY = 'caa-prefs-v1';
 const LICENSE_CLASSES = ['A', 'B', 'C', 'D'];
 
 const COLREG_SECTIONS = [
@@ -267,6 +268,43 @@ function formatTime(totalSeconds) {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
+function defaultSubjectForClass(licenseClass) {
+  const subjects = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(licenseClass));
+  return subjects.find((subject) => subject.available)?.id || subjects[0]?.id || 'colreg';
+}
+
+function loadPrefs() {
+  try {
+    const raw = localStorage.getItem(PREFS_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object') return null;
+    const licenseClass = LICENSE_CLASSES.includes(parsed.licenseClass)
+      ? parsed.licenseClass
+      : 'A';
+    const subjects = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(licenseClass));
+    const examSubjectId = subjects.some((subject) => subject.id === parsed.examSubjectId)
+      ? parsed.examSubjectId
+      : defaultSubjectForClass(licenseClass);
+    return {
+      licenseClass,
+      examSubjectId,
+      practiceSection:
+        typeof parsed.practiceSection === 'string' ? parsed.practiceSection : 'all',
+    };
+  } catch {
+    return null;
+  }
+}
+
+function savePrefs(prefs) {
+  try {
+    localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
+  } catch {
+    /* ignore */
+  }
+}
+
 function loadProgress() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -306,10 +344,13 @@ function computeRunQuestions(fullQuestions, activeKeys, answered) {
 }
 
 function QuizApp() {
+  const initialPrefs = useMemo(() => loadPrefs(), []);
   const [phase, setPhase] = useState('menu'); // menu | running | result
-  const [licenseClass, setLicenseClass] = useState('A');
+  const [licenseClass, setLicenseClass] = useState(initialPrefs?.licenseClass || 'A');
   const [mode, setMode] = useState('exam'); // exam | practice
-  const [examSubjectId, setExamSubjectId] = useState('colreg');
+  const [examSubjectId, setExamSubjectId] = useState(
+    () => initialPrefs?.examSubjectId || defaultSubjectForClass(initialPrefs?.licenseClass || 'A'),
+  );
   const [activeSubjectId, setActiveSubjectId] = useState(null);
   const [activeKeys, setActiveKeys] = useState([]);
   const [answered, setAnswered] = useState({});
@@ -318,7 +359,7 @@ function QuizApp() {
   const [resultFilter, setResultFilter] = useState('answered');
   const [endsAt, setEndsAt] = useState(null);
   const [secondsLeft, setSecondsLeft] = useState(null);
-  const [practiceSection, setPracticeSection] = useState('all');
+  const [practiceSection, setPracticeSection] = useState(initialPrefs?.practiceSection || 'all');
 
   const fullQuestions = useMemo(
     () => normalizeQuestions(QUESTIONS_BY_CLASS[licenseClass] || QUESTIONS_AB),
@@ -377,7 +418,9 @@ function QuizApp() {
     setLicenseClass(saved.licenseClass);
     setMode(saved.mode);
     setActiveSubjectId(saved.subjectId);
-    setExamSubjectId(saved.subjectId || EXAM_SUBJECTS.find((s) => s.classes.includes(saved.licenseClass))?.id);
+    setExamSubjectId(
+      saved.subjectId || defaultSubjectForClass(saved.licenseClass),
+    );
     setPracticeSection(saved.practiceSection || 'all');
     setActiveKeys(saved.activeKeys);
     setAnswered(saved.answered);
@@ -391,6 +434,10 @@ function QuizApp() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- resume once on mount
   }, []);
+
+  useEffect(() => {
+    savePrefs({ licenseClass, examSubjectId, practiceSection });
+  }, [licenseClass, examSubjectId, practiceSection]);
 
   useEffect(() => {
     if (phase !== 'running' && phase !== 'result') return;
