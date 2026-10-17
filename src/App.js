@@ -1,67 +1,56 @@
 import { useState } from 'react';
 import './App.css';
 import QuizApp from './QuizApp';
-import Flashcards from './Flashcards';
 import { questions as rawQuiz } from './questions';
-import { flashcardsData } from './flashcardsData';
 
-const CATEGORIES = [
-  {
-    id: 'quiz',
-    title: 'Chestionar grilă',
-    description: 'Întrebări cu variante de răspuns, cu feedback și scor.',
-    meta: `${rawQuiz.questions.length} întrebări`,
-    accent: '#9de1f6',
-  },
-  {
-    id: 'flashcards',
-    title: 'Subiecte proba orală',
-    description: 'Flashcard-uri: subiectul pe față, răspunsul pe verso.',
-    meta: `${flashcardsData.cards.length} subiecte`,
-    accent: '#bfe6c4',
-  },
-];
+const exam = rawQuiz.examConfig;
 
 function App() {
-  const [category, setCategory] = useState(null);
+  const [started, setStarted] = useState(false);
 
-  if (!category) {
+  if (!started) {
     return (
       <div className="home">
         <header className="home-header">
-          <h1>Lucrător calificat în culturi de câmp și legumicultură</h1>
-          <p>Alege modul de învățare</p>
+          <p className="home-eyebrow">{exam?.modelName || 'COLREG CAA'}</p>
+          <h1>Examen COLREG – {exam?.personnelCategory || 'CLASA A,B'}</h1>
+          <p>
+            {exam?.totalQuestions || 30} întrebări · {exam?.timeMinutes || 30} min · trecere{' '}
+            {exam?.passPercent || 80}%
+          </p>
         </header>
         <div className="category-grid">
-          {CATEGORIES.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              className="category-card"
-              style={{ '--accent': item.accent }}
-              onClick={() => setCategory(item.id)}
-            >
-              <span className="category-title">{item.title}</span>
-              <span className="category-desc">{item.description}</span>
-              <span className="category-meta">{item.meta}</span>
-            </button>
-          ))}
+          <button
+            type="button"
+            className="category-card"
+            style={{ '--accent': '#9de1f6' }}
+            onClick={() => setStarted(true)}
+          >
+            <span className="category-title">Chestionar grilă</span>
+            <span className="category-desc">
+              Examen pe secțiuni (Generalități, Lumini și semne, Reguli de guvernare, Semnale
+              sonore) sau antrenament din banca de {rawQuiz.questions.length} întrebări.
+            </span>
+            <span className="category-meta">
+              Bancă: {rawQuiz.questions.length} · Model {exam?.modelName}
+            </span>
+          </button>
         </div>
       </div>
     );
   }
 
-  const activeTitle = CATEGORIES.find((item) => item.id === category)?.title;
-
   return (
     <div className="category-view">
       <div className="category-topbar">
-        <button type="button" className="back-btn" onClick={() => setCategory(null)}>
+        <button type="button" className="back-btn" onClick={() => setStarted(false)}>
           ← Meniu
         </button>
-        <span className="category-view-title">{activeTitle}</span>
+        <span className="category-view-title">
+          {exam?.modelName} · {exam?.personnelCategory}
+        </span>
       </div>
-      {category === 'quiz' ? <QuizApp /> : <Flashcards />}
+      <QuizApp />
     </div>
   );
 }

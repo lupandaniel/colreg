@@ -1,2934 +1,422 @@
 export const questions = {
-    "quizTitle": "Chestionar verificare pe parcurs",
-    "quizSynopsis": "Lucrător calificat în culturi de câmp şi legumicultură",
+    "quizTitle": "COLREG CAA – CLASA A,B",
+    "quizSynopsis": "Model COLREG CAA · 30 min · prag trecere 80%",
     "progressBarColor": "#9de1f6",
-    "nrOfQuestions": "182",
+    "nrOfQuestions": "367",
+    "examConfig": {
+            "personnelCategory": "CLASA A,B",
+            "timeMinutes": 30,
+            "passPercent": 80,
+            "modelName": "COLREG CAA",
+            "sections": [
+                    {
+                            "id": "CAA-EN-Generalitati",
+                            "label": "CAA-EN-Generalitati",
+                            "count": 8,
+                            "difficulty": 1
+                    },
+                    {
+                            "id": "CAA-EN-Lumini si semne",
+                            "label": "CAA-EN-Lumini si semne",
+                            "count": 8,
+                            "difficulty": 1
+                    },
+                    {
+                            "id": "CAA-EN-Reguli de guvernare",
+                            "label": "CAA-EN-Reguli de guvernare",
+                            "count": 8,
+                            "difficulty": 1
+                    },
+                    {
+                            "id": "CAA-EN-Semnale sonore",
+                            "label": "CAA-EN-Semnale sonore",
+                            "count": 6,
+                            "difficulty": 1
+                    }
+            ],
+            "totalQuestions": 30
+    },
     "appLocale": {
-        "landingHeaderText": "<questionLength> Intrebari",
-        "question": "Intrebare",
-        "startQuizBtn": "Incepe",
-        "resultFilterAll": "Toate",
-        "resultFilterCorrect": "Correct",
-        "resultFilterIncorrect": "Incorect",
-        "prevQuestionBtn": "Inapoi",
-        "nextQuestionBtn": "Inainte",
-        "multipleSelectionTagText": "Selectie multipla",
-        "resultPageHeaderText": "Ai terminat. Ai <correctIndexLength> raspunsuri corecte din <questionLength> total.",
-        "pickNumberOfSelection": "Alege <numberOfSelection>",
-        "marksOfQuestion": "(<marks> puncte)"
+            "landingHeaderText": "<questionLength> Intrebari",
+            "question": "Intrebare",
+            "startQuizBtn": "Incepe",
+            "resultFilterAll": "Toate",
+            "resultFilterCorrect": "Correct",
+            "resultFilterIncorrect": "Incorect",
+            "prevQuestionBtn": "Inapoi",
+            "nextQuestionBtn": "Inainte",
+            "multipleSelectionTagText": "Selectie multipla",
+            "resultPageHeaderText": "Ai terminat. Ai <correctIndexLength> raspunsuri corecte din <questionLength> total.",
+            "pickNumberOfSelection": "Alege <numberOfSelection>",
+            "marksOfQuestion": "(<marks> puncte)"
     },
     "questions": [
-        {
-            "question": "1. Specii de grâu ce se foloseste pentru panificatie:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) grâul comun",
-                "b) grâul semitare",
-                "c) grâul durum"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "2. Ce tip de semănători se folosesc pentru semănatul plantelor prăşitoare?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Semănători de precizie",
-                "b) Semănători în rânduri",
-                "c) Semănători prin împrăştiere"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "3. Plante bune premergatoare pentru porumb:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) floarea soarelui, porumbul, sfecla de zahar, plante furajere",
-                "b) cereale paioase, leguminoase anuale si perene, inul, cartofii",
-                "c) porumbul, ricinul, cerealele, inul"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "4. Ce se întelege prin combaterea integrată a bolilor şi dăunătorilor plantelor cultivate:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Folosirea mijloacelor agrotehnice şi chimice",
-                "b) Folosirea mijloacelor agrotehnice, fizico-mecanice, biologice şi chimice",
-                "c) Folosirea mijloacelor fizico-mecanice şi chimice"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "5. Este necesară efectuarea instructajului muncitorilor privind protecţia muncii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) da, pentru evitarea accidentelor de muncă şi folosirea corectă a utilajelor",
-                "b) nu",
-                "c) doar dacă vrea muncitoru"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "6. Arătura cu scormonitorul are rolul de a:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sparge harponul de 5 – 10 cm format în timp",
-                "b) de a întoarce mai bine brazda",
-                "c) de a executa o uniformitate mai bună a arăturii"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "7. Când se pot aplica îngrăşăminte chimice la culturile de câmp:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de semănat, odată cu semănatul şi în timpul vegetaţiei",
-                "b) înainte de semănat",
-                "c) în timpul vegetaţiei"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "8. Prin ce metode se înfiinţează culturile care se înmulţesc prin diferite părţi vegetative specifice (tuberculi, bulbi, etc.):",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) manual",
-                "b) mecanizat",
-                "c) ambele metode"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "9. Fertilizarea organica a porumbului se face cu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) gunoi de grajd",
-                "b) azotat de amoniu",
-                "c) superfosfat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "10. Recoltarea şi depozitarea cerealelor pentru sămânţă se face la umiditatea de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 18 – 20 %",
-                "b) 20 – 22 %",
-                "c) sub 15 %"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "11. Care sunt sursele de poluare chimică a solului în agricultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îngrăşămintele chimice",
-                "b) pesticidele",
-                "c) ambele"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "12. Care sunt materialele de plantat:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) seminte, arpagic, bulbi, tuberculi, rasad",
-                "b) bulbi",
-                "c) stoloni"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "13. Care sunt principalii factori de vegetaţie necesari creşterii şi dezvoltării plantelor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura, lumina şi elementele nutritive",
-                "b) apa şi aerul",
-                "c) toţi factorii menţionaţi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "14. Reglarea turaţiei la toba combinei la recoltat paioase se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la începutul campaniei",
-                "b) seara",
-                "c) de câte ori este nevoie"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "15. Care sunt metodele utilizate pentru combaterea buruienilor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) preventive",
-                "b) curative",
-                "c) ambele"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "16. Care din următoarele tipuri de sol au fertilitatea cea mai ridicată:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) bălane",
-                "b) cernoziomul",
-                "c) brun roşcate"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "17. Momentul aplicării erbicidelor este:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de însămânţarea sau plantarea",
-                "b) după pământ sau plantat şi în vegetaţie (după răsărit)",
-                "c) toate aceste momente în funcţie de felul erbicidului, cultură, vârsta buruienilor prezente etc."
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "18. Stimularea germinării seminţelor de legume prin diferite procedee se face cu scopul:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) încolţirea în condiţii mai puţin favorabile de temperatură şi umiditate",
-                "b) scoaterea seminţelor din starea de repaus şi grăbirea încolţirii lor",
-                "c) sporirea facultăţii germinative"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "19. Poluarea mediului ambiant, după natura poluanţilor poate fi:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) poluare fizică şi chimică",
-                "b) poluare biologică şi „estetică\" (degradarea peisajelor)",
-                "c) toate aceste categorii de poluare"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "20. Care dintre următoarele măsuri de combatere a bolilor şi dăunătorilor este considerată măsură agrotehnică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) stropirea cu insectofungicide",
-                "b) cultivarea de soiuri rezistente la boli şi dăunători",
-                "c) tratamente termice la sămânţă"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "21. Care este metoda cea mai ieftină de reducere a umidităţii producţiei de seminţe:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) termică – cu ajutorul instalaţiei termice",
-                "b) solarizarea naturală a produselor",
-                "c) asigurarea luminozităţii în magazie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "22. Pentru combaterea bolilor şi dăunătorilor plantelor cultivate se aplică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tratamente preventive",
-                "b) tratamente curative",
-                "c) tratamente preventive şi curative"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "23. Ce contine ingrasamintele N P K 20:20:20:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azot, fosfor, potasiu",
-                "b) azot",
-                "c) fosfor"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "24. Care este metoda de irigare cea mai avantajoasă (economică) în cultura plantelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin picurare",
-                "b) prin aspersiune",
-                "c) prin scurgere la suprafaţă (brazde)"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "25. Cum se realizează recoltarea la majoritatea legumelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) printr-o singură trecere",
-                "b) prin mai multe treceri, eşalonat (selectiv) la maturitatea de consum",
-                "c) prin 1-2 treceri"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "26. În ce constă sortarea manuală a produselor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îndepărtarea impurităţilor",
-                "b) separarea produselor corespunzătoare de cele necorespunzătoare (mici, crăpate, vătămate cu defecte, etc.)",
-                "c) alegerea după mărime şi greutate"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "27. Masurile preventive in combaterea bolilor si daunatorilor sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) fertilizarea echilibrata",
-                "b) cultivarea soiurilor rezistente, respectarea rotatiei, distrugerea samulastrei, asigurarea densitatii",
-                "c) combaterea prin tratamente în vegetatie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "28. Ambalarea legumelor obţinute în gospodăria proprie în vederea valorificării se realizează în:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) lădiţe (lăzi) de diferite tipuri, coşuri, saci, săculeţi din material plastic",
-                "b) lăzi de lemn",
-                "c) paleţi"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "29. Care este adâncimea de semănat a porumbului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 4-6 cm",
-                "b) 5-8 cm",
-                "c) 8-10 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "30. Cum se realizează călirea răsadurilor de legume:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin reducerea treptată a temperaturii şi umidităţii cu 10-15 zile înainte de plantare",
-                "b) prin sistarea fertilizării şi intensificarea aerisirii",
-                "c) prin toate aceste măsuri"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "31. Pregătirea magaziilor pentru depozitarea produselor se face prin:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) izolare termică a magaziilor",
-                "b) văruit şi dezinfectat magaziile",
-                "c) asigurarea luminozităţii în magazii"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "32. Principalele elemente nutritive (macroelemente) de care au nevoie plantele de cultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azot, fosfor, potasiu",
-                "b) carbon, hidrogen, oxigen",
-                "c) calciu, magneziu, sulf"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "33. Specii de grâu ce se foloseste pentru panificatie:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) grâul comun",
-                "b) grâul semitare",
-                "c) grâul durum"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "34. Soiurile de grâu care se cultiva in vestul tarii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Ariesan, Turda 81, Fundulea 4",
-                "b) Dropia, Gabriela, Flamura",
-                "c) Lovrin 34, Lovrin 41, Alex, Dropia"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "35. Plante bune premergatoare pentru floarea soarelui:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cânepa, tutun, soia, fasole, rapita",
-                "b) lucerna, sfecla, sorg, iarba de sudan",
-                "c) cereale paioase, mazare, porumb neerbicidat cu triazine"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "36. Gândacul de Colorado are la cartof:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 1 generatie",
-                "b) 2 generatii",
-                "c) mai multe generatii"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "37. Ce tip de semănători se folosesc pentru semănatul plantelor prăşitoare?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Semănători de precizie",
-                "b) Semănători în rânduri",
-                "c) Semănători prin împrăştiere"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "38. Plante bune premergatoare pentru porumb:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) floarea soarelui, porumbul, sfecla de zahar, plante furajere",
-                "b) cereale paioase, leguminoase anuale si perene, inul, cartofii",
-                "c) porumbul, ricinul, cerealele, inul"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "39. Înfrătirea la cereale este influenţata de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) epoca de semanat, adâncimea si desimea la semanat",
-                "b) utilajul folosit la semanat",
-                "c) sămânţă tratată"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "40. Reglarea turaţiei la toba combinei la recoltat paioase se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la începutul campaniei",
-                "b) seara",
-                "c) de câte ori este nevoie"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "41. Porumbul se însămânţează la adâncimea de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 3-6 cm",
-                "b) 6-10 cm",
-                "c) 10-15 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "42. Epoca optima de semanat la orz este:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 10-25 septembrie",
-                "b) 25 septembrie - 5 octombrie",
-                "c) 5 – 15 octombrie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "43. Maşinile pentru administrat îngrăşăminte minerale (chimice) solide sunt alcătuite din:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Cadru, rezervor, pompă centrifugă, marcatoare de urmă",
-                "b) Cadru, buncăr, exhaustor, dozator",
-                "c) Cadru, buncăr, dozatoare, aparate de distribuţie"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "44. Cum se poate defini procesul de lucru efectuat cu un agregat de arat?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Desprinderea, răsturnarea şi deplasarea laterală a unui strat de sol",
-                "b) Deschiderea unei rigole si deplasarea laterală a solului",
-                "c) Desprinderea unui strat superficial de sol concomitent cu răvăşirea acestuia"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "45. Cum se numeşte organul de lucru al plugurilor?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Cuţit disc",
-                "b) Trupiţă",
-                "c) Sapă rotativă"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "46. Ce se întelege prin combaterea integrată a bolilor şi dăunătorilor plantelor cultivate:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Folosirea mijloacelor agrotehnice şi chimice",
-                "b) Folosirea mijloacelor agrotehnice, fizico-mecanice, biologice şi chimice",
-                "c) Folosirea mijloacelor fizico-mecanice şi chimice"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "47. Este necesară efectuarea instructajului muncitorilor privind protecţia muncii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) da, pentru evitarea accidentelor de muncă şi folosirea corectă a utilajelor",
-                "b) nu",
-                "c) doar dacă vrea muncitorul"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "48. Arătura cu scormonitorul are rolul de a:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sparge harponul de 5 – 10 cm format în timp",
-                "b) de a întoarce mai bine brazda",
-                "c) de a executa o uniformitate mai bună a arăturii"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "49. Care sunt principalii factori de vegetaţie necesari creşterii şi dezvoltării plantelor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura, lumina şi elementele nutritive",
-                "b) apa şi aerul",
-                "c) toţi factorii menţionaţi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "50. Precizaţi care dintre următoarele îngrăşăminte este natural:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ureea",
-                "b) mraniţa",
-                "c) borax"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "51. Când se pot aplica îngrăşăminte chimice la culturile de câmp:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de semănat, odată cu semănatul şi în timpul vegetaţiei",
-                "b) înainte de semănat",
-                "c) în timpul vegetaţiei"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "52. Prin ce metode se înfiinţează culturile care se înmulţesc prin diferite părţi vegetative specifice (tuberculi, bulbi, etc.):",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) manual",
-                "b) mecanizat",
-                "c) ambele metode"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "53. Atacul de plosnitele cerealelor influienteaza calitatea boabelor de grâu prin:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) diminuarea calitatii glutenului",
-                "b) cresterea greutatii hectolitrice",
-                "c) cresterea umiditatii"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "54. Care sunt principalele metode de aplicare a îngrăşămintelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin împrăştiere şi în benzi",
-                "b) odată cu apa de irigare şi prin stropirea culturilor cu soluţii diluate de îngrăşăminte chimice",
-                "c) prin toate aceste metode"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "55. Fertilizarea organica a porumbului se face cu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) gunoi de grajd",
-                "b) azotat de amoniu",
-                "c) superfosfat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "56. Recoltarea şi depozitarea cerealelor pentru sămânţă se face la umiditatea de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 18 – 20 %",
-                "b) 20 – 22 %",
-                "c) sub 15 %"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "57. Care sunt sursele de poluare chimică a solului în agricultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îngrăşămintele chimice",
-                "b) pesticidele",
-                "c) ambele"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "58. Care sunt adăposturile folosite în legumicultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) folie întinsă şi adăposturi înalte (solarii)",
-                "b) folie întinsă (fără susţinere), adăposturi joase (tunele joase) şi adăposturi înalte (solarii)",
-                "c) adăposturi înalte (solarii) şi adăposturi joase (tunele joase)"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "59. Care sunt uneltele utilizate la plantarea manuală pe suprafeţe mici:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) săpăliga, sapa, lingura de plantat sau plantatorul",
-                "b) lingura de plantat sau săpăliga",
-                "c) plantatorul, sapa"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "60. Care sunt materialele de plantat:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) seminte, arpagic, bulbi, tuberculi, rasad",
-                "b) bulbi",
-                "c) stoloni"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "61. Care sunt principalele elemente meteorologice:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura aerului, temperatura solului, umiditatea aerului, umiditatea solului",
-                "b) temperatura aerului",
-                "c) umiditatea"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "62. Care sunt insusirile solului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) textura, structura",
-                "b) textura",
-                "c) structura"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "63. Care sunt principalii factori de vegetaţie necesari creşterii şi dezvoltării plantelor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura, lumina şi elementele nutritive",
-                "b) apa şi aerul",
-                "c) toţi factorii menţionaţi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "64. Plante bune premergatoare pentru porumb:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) floarea soarelui, porumbul, sfecla de zahar, plante furajere",
-                "b) cereale paioase, leguminoase anuale si perene, inul, cartofii",
-                "c) porumbul, ricinul, cerealele, inul"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "65. Înfrătirea la cereale este influenţata de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) epoca de semanat, adâncimea si desimea la semanat",
-                "b) utilajul folosit la semanat",
-                "c) sămânţă tratată"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "66. Reglarea turaţiei la toba combinei la recoltat paioase se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la începutul campaniei",
-                "b) seara",
-                "c) de câte ori este nevoie"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "67. Porumbul se însămânţează la adâncimea de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 3-6 cm",
-                "b) 6-10 cm",
-                "c) 10-15 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "68. Care este rolul echipamentului de lucru al tractoarelor?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cuplarea şi acţionarea (în unele cazuri) a maşinilor agricole cu care tractorul lucrează în agregat",
-                "b) efectuarea de lucrări prin acţionarea roţilor motoare",
-                "c) angrenarea unui arbore motor în timpul lucrului"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "69. Prin ce metode se înfiinţează culturile care se înmulţesc prin tuberculi, bulbi:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) manual",
-                "b) mecanizat",
-                "c) ambele metode"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "70. Care sunt metodele utilizate pentru combaterea buruienilor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) preventive",
-                "b) curative",
-                "c) ambele"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "71. Care din următoarele tipuri de sol au fertilitatea cea mai ridicată:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) bălane",
-                "b) cernoziomul",
-                "c) brun roşcate"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "72. Momentul aplicării erbicidelor este:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de însămânţarea sau plantarea",
-                "b) după pământ sau plantat şi în vegetaţie (după răsărit)",
-                "c) toate aceste momente în funcţie de felul erbicidului, cultură, vârsta buruienilor prezente etc."
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "73. Atacul de plosnitele cerealelor influienteaza calitatea boabelor de grâu prin:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) diminuarea calitatii glutenului",
-                "b) cresterea greutatii hectolitrice",
-                "c) cresterea umiditatii"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "74. Fertilizarea organica a porumbului se face cu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) gunoi de grajd",
-                "b) azotat de amoniu",
-                "c) superfosfat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "75. Care sunt metodele de semănat în răsadniţe şi sere înmulţitor în vederea obţinerii răsadurilor de legume:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin împrăştiere",
-                "b) în rânduri",
-                "c) prin împrăştiere sau în rânduri"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "76. Stimularea germinării seminţelor de legume prin diferite procedee se face cu scopul:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) încolţirea în condiţii mai puţin favorabile de temperatură şi umiditate",
-                "b) scoaterea seminţelor din starea de repaus şi grăbirea încolţirii lor",
-                "c) sporirea facultăţii germinative"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "77. Înfiinţarea culturilor legumicole în câmp se face prin:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) semănat direct în camp",
-                "b) răsad",
-                "c) plantarea materialului săditor (tuberculi, bulbi), răsad, semănat direct în câmp"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "78. Poluarea mediului ambiant, după natura poluanţilor poate fi:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) poluare fizică şi chimică",
-                "b) poluare biologică şi „estetică\" (degradarea peisajelor)",
-                "c) toate aceste categorii de poluare"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "79. Care dintre următoarele măsuri de combatere a bolilor şi dăunătorilor este considerată măsură agrotehnică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) stropirea cu insectofungicide",
-                "b) cultivarea de soiuri rezistente la boli şi dăunători",
-                "c) tratamente termice la sămânţă"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "80. Ce se înţelege prin combaterea integrantă a bolilor şi dăunătorilor plantelor cultivate:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) folosirea mijloacelor agrotehnice şi chimice",
-                "b) folosirea mijloacelor agrotehnice, fizico-mecanice, biologice şi chimice",
-                "c) folosirea mijloacelor fizico-mecanice şi chimice"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "81. Care este metoda cea mai ieftină de reducere a umidităţii producţiei de seminţe:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) termică – cu ajutorul instalaţiei termice",
-                "b) solarizarea naturală a produselor",
-                "c) asigurarea luminozităţii în magazie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "82. Pentru combaterea bolilor şi dăunătorilor plantelor cultivate se aplică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tratamente preventive",
-                "b) tratamente curative",
-                "c) tratamente preventive şi curative"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "83. Ce contine ingrasamintele N P K 20:20:20:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azot, fosfor, potasiu",
-                "b) azot",
-                "c) fosfor"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "84. Care este metoda de irigare cea mai avantajoasă (economică) în cultura plantelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin picurare",
-                "b) prin aspersiune",
-                "c) prin scurgere la suprafaţă (brazde)"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "85. Care sunt principalele elemente meteorologice:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura aerului, temperatura solului, umiditatea aerului, umiditatea solului",
-                "b) temperatura aerului",
-                "c) umiditatea"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "86. Care sunt indicii de calitate a seminţelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) puritate, masa a 1000 de boabe",
-                "b) puritate, germinaţie, masa hectolitrică, masa a 1000 de boabe",
-                "c) germinaţie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "87. Este necesară efectuarea instructajului muncitorilor privind protecţia muncii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) da, pentru evitarea accidentelor de muncă şi folosirea corectă a utilajelor",
-                "b) nu",
-                "c) doar dacă vrea muncitorul"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "88. Cum se realizează recoltarea la majoritatea legumelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) printr-o singură trecere",
-                "b) prin mai multe treceri, eşalonat (selectiv) la maturitatea de consum",
-                "c) prin 1-2 treceri"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "89. Care legume se recoltează manual pe suprafeţe mici prin dizlocare cu furci sau cazmale:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ardei, vinete, varză",
-                "b) ridichi de lună, ceapă verde, gulii",
-                "c) morcov, pătrunjel, păstârnac"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "90. Aplicarea tratamentelor pentru combaterea bolilor şi dăunătorilor se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) preventiv",
-                "b) curativ",
-                "c) preventiv şi curative"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "91. În ce constă sortarea manuală a produselor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îndepărtarea impurităţilor",
-                "b) separarea produselor corespunzătoare de cele necorespunzătoare (mici, crăpate, vătămate cu defecte, etc.)",
-                "c) alegerea după mărime şi greutate"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "92. Care sunt maşinile şi instalaţiile de condiţionare a produselor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) maşini şi instalaţii simple cu site sau dispozitive de calibrat",
-                "b) instalaţii de curăţat şi calibrat",
-                "c) maşini de separare a corpurilor străine"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "93. Plante bune premergatoare pentru porumb:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) floarea soarelui, porumbul, sfecla de zahar, plante furajere",
-                "b) cereale paioase, leguminoase anuale si perene, inul, cartofii",
-                "c) porumbul, ricinul, cerealele, inul"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "94. Cum se realizează recoltarea la majoritatea legumelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) printr-o singură trecere",
-                "b) prin mai multe treceri, eşalonat (selectiv) la maturitatea de consum",
-                "c) prin 1-2 treceri"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "95. Fertilizarea organica a porumbului se face cu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) gunoi de grajd",
-                "b) azotat de amoniu",
-                "c) superfosfat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "96. Înfrătirea la cereale este influenţata de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) epoca de semanat, adâncimea si desimea la semanat",
-                "b) utilajul folosit la semanat",
-                "c) sămânţă tratată"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "97. Pentru combaterea bolilor şi dăunătorilor plantelor cultivate se aplică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tratamente preventive",
-                "b) tratamente curative",
-                "c) tratamente preventive şi curative"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "98. Rolul principalelor elemente în nutritia grâului sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azotul, fosforul, potasiul",
-                "b) fosforul",
-                "c) potasiul"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "99. Ingrasamintele cu fosfor si potasiu se aplica:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) numai sub aratura de baza",
-                "b) în timpul vegetatiei",
-                "c) la semanat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "100. Masurile preventive in combaterea bolilor si daunatorilor sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) fertilizarea echilibrata",
-                "b) cultivarea soiurilor rezistente, respectarea rotatiei, distrugerea samulastrei, asigurarea densitatii",
-                "c) combaterea prin tratamente în vegetatie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "101. Semanatul porumbului se realizeaza:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) când la ora 7, la 10 cm adâncime temperatura este 8 grade în crestere",
-                "b) calendaristic 1- 20 februarie dupa zona",
-                "c) în ambele cazuri"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "102. Hibrizii de porumb semanati in zona de vest:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Lovrin 400, NSSC 420, Andreea, Florencia",
-                "b) Fundulea 420, Doina",
-                "c) Rapsodia, Turda 200"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "103. Care este metoda de irigare cea mai avantajoasă (economică) în cultura plantelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin picurare",
-                "b) prin aspersiune",
-                "c) prin scurgere la suprafaţă (brazde)"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "104. Fertilizarea suplimentară (fazială) se execută:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la sol prin încorporare sau odată cu apa de irigaţie",
-                "b) pe plante prin stropiri (foliar)",
-                "c) prin ambele căi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "105. Ce diferenta este între o sera şi un solar?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sera este încălzită iar solarul nu este încălzit",
-                "b) sera are scheletul metalic, iar la solar scheletul este din lemn",
-                "c) difernţe de înălţime"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "106. Ambalarea legumelor obţinute în gospodăria proprie în vederea valorificării se realizează în:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) lădiţe (lăzi) de diferite tipuri, coşuri, saci, săculeţi din material plastic",
-                "b) lăzi de lemn",
-                "c) paleţi"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "107. Care sunt cele mai bune premergătoare pentru grâul de toamnă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) leguminoase pentru boabe, rapiţă",
-                "b) porumb, sfeclă de zahăr",
-                "c) floarea soarelui, cartofi de toamnă"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "108. Combaterea chimică împotriva complexului de boli foliare şi a dăunătorilor la cultura grâului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) este necesară, deoarece reprezintă o verigă importantă care asigură cantitatea şi calitatea producţiei",
-                "b) nu are o influenţă prea mare asupra producţiei",
-                "c) nu este obligatorie"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "109. Care sunt principalele boli ale culturii de floarea soarelui:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) mana şi putregaiul cenuşiu",
-                "b) mana, putregaiul alb, putregaiul cenuşiu, pătarea brună şi frângerea tulpinilor",
-                "c) putregaiul alb, putregaiul cenuşiu, frângerea tulpinilor"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "110. Care sunt metodele de plantat:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) manuala",
-                "b) manuală, mecanizată, semimecanizată",
-                "c) mecanizată"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "111. Care sunt principalele elemente meteorologice:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura aerului, temperatura solului, umiditatea aerului, umiditatea solului",
-                "b) temperatura aerului",
-                "c) umiditatea"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "112. Care sunt materialele de plantat:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) seminte, bulbi, tuberculi, răsad",
-                "b) bulbi",
-                "c) stoloni"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "113. Poluarea mediului ambiant, după natura poluanţilor poate fi:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) poluare fizică şi chimică",
-                "b) poluare biologică şi „estetică\" (degradarea peisajelor)",
-                "c) toate aceste categorii de poluare"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "114. Fasolea pentru boabe este sensibilă la:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) umiditate în exces",
-                "b) umiditate scăzută, temperaturi ridicate, secetă atmosferică",
-                "c) în ambele situaţii, în perioada înfloritului şi formarea păstăilor"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "115. Care este adâncimea de semănat a porumbului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 4-6 cm",
-                "b) 5-8 cm",
-                "c) 8-10 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "116. Cum se realizează călirea răsadurilor de legume:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin reducerea treptată a temperaturii şi umidităţii cu 10-15 zile înainte de plantare",
-                "b) prin sistarea fertilizării şi intensificarea aerisirii",
-                "c) prin toate aceste măsuri"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "117. Principalul dăunător al fasolei este:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) viermele sârmă",
-                "b) gărgăriţa fasolei",
-                "c) musca minieră"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "118. Cum se păstrează porumbul după recoltare:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sub formă de ştiuleţi",
-                "b) sub formă de boabe",
-                "c) ambele forme, în funcţie de metoda de recoltare"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "119. Pregătirea magaziilor pentru depozitarea produselor se face prin:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) izolare termică a magaziilor",
-                "b) văruit şi dezinfectat magaziile",
-                "c) asigurarea luminozităţii în magazii"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "120. Rolul sortării produselor agricole este de a:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îndepărta resturile vegetale, uniformiza produsul, combaterea bolilor",
-                "b) de a se pastra un timp mai îndelungat",
-                "c) îi cresc calităţile produsului"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "121. Pentru evaluarea producţiei de cereale păioase se iau în calcul elementele:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) numărul de plante pe metru pătrat şi numărul mediu de spice pe o plantă",
-                "b) numărul mediu de boabe în spic şi masa 1000 boabe (MMB)",
-                "c) toate"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "122. Care sunt principalii factori de vegetaţie necesari creşterii şi dezvoltării plantelor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura, lumina şi elementele nutritive",
-                "b) apa şi aerul",
-                "c) toţi factorii menţionaţi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "123. Semanatul porumbului se realizeaza:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) când la ora 7 la 10 cm adâncime temperatura este 8 grade în crestere",
-                "b) calendaristic 1-20 februarie dupa zona",
-                "c) în ambele cazuri"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "124. Care sunt metodele de irigare practicate în legumicultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Irigarea prin brazde, prin aspersiune şi prin picurare",
-                "b) Irigarea prin brazde şi prin picurare",
-                "c) Irigarea prin aspersiune"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "125. Principalele elemente nutritive (macroelemente) de care au nevoie plantele de cultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azot, fosfor, potasiu",
-                "b) mangan, sulf, calciu",
-                "c) molibden, magneziu, calciu"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "126. Care dintre următoarele tipuri de sol au fertilitatea cea mai ridicată:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) bălane",
-                "b) cernoziomul",
-                "c) brun-roşcat"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "127. Speci de grâu ce se foloseste pentru panificatie:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) grâul comun",
-                "b) grâul semitare",
-                "c) grâul durum"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "128. Îngrăşămintele ce se aplică plantelor de cultură sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îngrăşăminte organice",
-                "b) chimice şi organice",
-                "c) chimice (minerale)"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "129. Plante bune premergatoare pentru floarea soarelui:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cânepa, tutun, soia, fasole, rapita",
-                "b) lucerna, sfecla, sorg, iarba de sudan",
-                "c) cereale paioase, mazare, porumb neerbicidat cu triazine"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "130. Combaterea gargaritei la fasole se face la:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) semanat",
-                "b) maturitatea deplina",
-                "c) inceputul înfloritului"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "131. Precizaţi care dintre următoarele îngrăşăminte este natural:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ureea",
-                "b) mraniţa",
-                "c) borax"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "132. Când se pot aplica îngrăşăminte chimice la culturile de câmp:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de semănat, odată cu semănatul şi în timpul vegetaţiei",
-                "b) înainte de semănat",
-                "c) în timpul vegetaţiei"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "133. Care sunt metodele de semănat la culturile de câmp:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) în rânduri dese şi în rânduri distanţate",
-                "b) în rânduri dese, în rânduri distanţate în benzi în rigole, pe biloane, etc.",
-                "c) în rânduri rare şi în benzi"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "134. Care sunt uneltele utilizate la plantarea manuală pe suprafeţe mici:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) săpăliga, sapa, lingura de plantat sau plantatorul",
-                "b) lingura de plantat sau săpăliga",
-                "c) plantatorul, sapa"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "135. În vederea însilozării porumbului, care este faza optimă de recoltare a acestuia?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) înainte de legare",
-                "b) când ştiuletele ajunge la maturitate",
-                "c) când ştiuleţii sînt în faza de lapte – ceară"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "136. Care dintre următoarele măsuri de combatere a bolilor şi dăunătorilor este considerată măsură agrotehnică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) stropirea cu insectofungicide",
-                "b) cultivarea de soiuri rezistente la boli şi dăunători",
-                "c) tratamente termice la sămânţă"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "137. Sortarea manuală a produselor se face la:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cereale păioase",
-                "b) cartof, legume, fructe",
-                "c) plante furajere"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "138. Ambalarea produselor agricole se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cu scop comercial",
-                "b) pentru protecţie împotriva dăunătorilor",
-                "c) pentru depozitare mai îndelungată"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "139. Lucrările solului cu combinatorul au rolul:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) de a conserva apa în sol",
-                "b) de a nu conserva apa în sol",
-                "c) de a distruge buruienile"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "140. Arătura cu scormonitorul are rolul de a:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sparge harponul de 5-10 cm format în timp",
-                "b) de a întoarce mai bine brazda",
-                "c) de a executa o uniformitate mai bună a arăturii"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "141. Pentru combaterea bolilor şi dăunătorilor plantelor cultivate se aplică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tratamente preventive",
-                "b) tratamente curative",
-                "c) tratamente preventive şi curative"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "142. Cum se realizează recoltarea la majoritatea legumelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) printr-o singură trecere",
-                "b) prin mai multe treceri, eşalonat (selectiv) la maturitatea de consum",
-                "c) prin 1-2 treceri"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "143. Utilizarea pesticidelor în ecosistemele agricole, conform principiului protecţiei integrate a culturilor, presupune:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) folosirea numai dacă este necesar a celor potrivite şi sub un control riguros",
-                "b) renunţarea la pesticide",
-                "c) interzicerea utilizării pesticidelor"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "144. În ce constă sortarea manuală a produselor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) îndepărtarea impurităţilor",
-                "b) separarea produselor corespunzătoare de cele necorespunzătoare (mici, crăpate, vătămate cu defecte, etc.)",
-                "c) alegerea după mărime şi greutate"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "145. Care este adâncimea de semănat a porumbului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 4-6 cm",
-                "b) 5-8 cm",
-                "c) 8-10 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "146. Fertilizarea organica a porumbului se face cu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) gunoi de grajd",
-                "b) azotat de amoniu",
-                "c) superfosfat"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "147. Reglarea turaţiei la toba combinei la recoltat paioase se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la începutul campaniei",
-                "b) seara",
-                "c) de câte ori este nevoie"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "148. Înfrătirea la cereale este influenţata de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) epoca de semanat, adâncimea si desimea la semanat",
-                "b) utilajul folosit la semanat",
-                "c) sămânţă tratată"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "149. Porumbul se însămânţează la adâncimea de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 3-6 cm",
-                "b) 6-10 cm",
-                "c) 10-15 cm"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "150. Epoca optima de semanat la orz este:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 10-25 septembrie",
-                "b) 25 septembrie - 5 octombrie",
-                "c) 5 – 15 octombrie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "151. Ce reprezintă culturile succesive de legume:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) sistemul de cultură cu două culturi pe aceeaşi suprafaţă de teren, în timpul unui an",
-                "b) sistemul de cultură a speciilor legumicole după plante furajere şi cereale care eliberează terenul devreme",
-                "c) sistemul de cultură care permite ca, pe aceeaşi suprafaţă de teren, în timpul unui an, să se cultive două sau trei specii de legume, una după alta"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "152. La terminarea lucrării de semănat, semănătoarea se lasă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) cuplată de tractor",
-                "b) se decuplează semănătoarea de tractor",
-                "c) indiferent"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "153. Un produs „bio\" este un produs pentru care:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu s-au folosit pesticide",
-                "b) s-au folosit pesticide",
-                "c) s-a folosit o cantitate mai mică de pesticide"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "154. Semănatul în vederea obţinerii răsadurilor de legume se poate face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) în strat de amestec nutritiv şi în lădiţe",
-                "b) în ghivece de diferite tipuri şi în palete alveolare",
-                "c) în toate aceste moduri"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "155. După provenienţa lor în ecosistemele agricole productive, resursele pot fi:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) naturale şi convenţionale",
-                "b) naturale",
-                "c) convenţionale"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "156. Care sunt măsurile care se iau pentru călirea răsadurilor de legume:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) expunerea progresivă la temperaturi apropiate din viitorul loc de cultură şi întreruperea fertilizărilor",
-                "b) reducerea treptată a udărilor şi intensificarea aerisirilor",
-                "c) toate aceste măsuri"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "157. Venitul unei ferme este reprezentat de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Valoarea producţiei principale + valoarea producţiei secundare",
-                "b) Valoarea producţiei principale + subvenţii",
-                "c) Valoarea producţiei principale + valoarea producţiei secundare + subvenţii"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "158. Dirijarea factorilor de mediu la culturile legumicole în solarii se referă la:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) dirijarea temperaturii şi umidităţii",
-                "b) dirijarea temperaturii din aer şi sol, dirijarea luminii şi umidităţii relative a aerului",
-                "c) dirijarea temperaturii şi compoziţiei aerului"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "159. Care sunt principalele boli la cultura de floarea soarelui:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) Mana şi putregaiul cenuşiu",
-                "b) Mana, putregaiul alb, putregaiul cenuşiu, pătarea brună şi frângerea tulpinilor",
-                "c) Mana şi frângerea tulpinilor"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "160. Aplicarea tratamentelor pentru combaterea bolilor şi dăunătorilor se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) preventiv",
-                "b) curativ",
-                "c) preventiv şi curativ"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "161. Din punct de vedere agrotehnic, mazărea şi fasolea se apreciază ca fiind:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) foarte bune premergătoare pentru majoritatea speciilor legumicole",
-                "b) bune premergătoare",
-                "c) nu se recomandă ca plante premergătoare"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "162. Fungicidele folosite la combaterea agenţilor patogeni (boli) se aplică:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) preventiv (înainte sau în timpul pătrunderii în ţesutul plantei)",
-                "b) curativ (după apariţia simptomelor atacului)",
-                "c) atât preventiv cât şi curativ, prin alternanţa produselor"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "163. Care sunt adăposturile folosite în legumicultură:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) folie întinsă şi adăposturi înalte (solari si sere)",
-                "b) folie întinsă (fără susţinere), adăposturi joase (tunele joase) şi adăposturi înalte (solaria si sere)",
-                "c) adăposturi înalte (solaria si sere) şi adăposturi joase (tunele joase)"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "164. Care sunt uneltele specifice producerii răsadurilor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ciur, targa, termometru",
-                "b) bătător, marcatoare, presă pentru cuburi nutritive, lădiţe etc.",
-                "c) plantator, stropitoare, coşuri"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "165. Care sunt principalele metode de aplicare a ingrăşămintelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) prin împrăştiere şi în benzi",
-                "b) odată cu apa de irigare şi prin stropirea culturilor cu soluţii diluate de îngrăşăminte chimice",
-                "c) Prin toate aceste metode"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "166. Instalarea răsadniţei pentru producerea răsadurilor constă în succesiunea principalelor operaţiuni astfel:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) aşezarea gunoiului de grajd în straturi şi călcarea, încălzirea cu apă fierbinte, introducerea amestecului nutritiv, aşezarea tocurilor şi acoperirea cu folie",
-                "b) preîncălzirea gunoiului de grajd, aşezarea în straturi succesive şi călcarea uniformă, aşezarea tocurilor şi ferestrelor (ramelor), aşezarea stratului de amestec nutritiv",
-                "c) răsfirarea şi călcarea gunoiului de grajd, aşezarea tocurilor, aşezarea amestecurilor, acoperirea cu folie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "167. Care este lucrarea de combatere a buruienilor din cultura de grâu:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) erbicidarea",
-                "b) prăşitul",
-                "c) irigarea"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "168. Ce lucrare execută tăvălugul:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) seamănă",
-                "b) tăvălugeşte",
-                "c) arat"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "169. Care sunt indicii de calitate a seminţelor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) puritate, masa a 1000 de boabe",
-                "b) puritate, germinaţie, masa hectolitrică, masa a 1000 de boabe",
-                "c) germinaţie"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "170. Ce conţin îngrăşămintele N P K 15:15:15:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) azot, fosfor, potasiu",
-                "b) azot",
-                "c) fosfor"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "171. Care sunt principalele elemente meteorologice:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura aerului, temperatura solului, umiditatea aerului, umiditatea solului",
-                "b) temperatura solului",
-                "c) umiditatea"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "172. Pentru cultura legumelor, cele mai indicate sunt următoarele tipuri de sol:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nisipoase",
-                "b) argiloase",
-                "c) nisipolutoase, lutonisipoase"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "173. Care sunt însuşirile solului:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) textura, structura",
-                "b) textura",
-                "c) structura"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "174. Care sunt distanţele de plantare la ardei gras în câmp:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 50 cm între rânduri şi 25-30 cm între plante pe rând",
-                "b) 70 cm între rânduri şi 15-20 cm între plante pe rând",
-                "c) 60 cm între rânduri şi 30-35 cm între plante pe rând"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "175. Care sunt principalele lucrări de îngrijire a culturilor:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) combaterea buruienilor, combaterea bolilor, combaterea dăunătorilor, irigarea, fertilizarea suplimentară",
-                "b) combaterea buruienilor",
-                "c) combaterea dăunătorilor"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "176. Momentul recoltării la majoritatea legumelor este la:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) maturitatea fiziologică",
-                "b) maturitatea de consum",
-                "c) înainte de maturitatea fiziologică"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "177. Care sunt metodele de plantat:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) manuală",
-                "b) manuală, mecanizată, semimecanizată",
-                "c) semimecanizată"
-            ],
-            "correctAnswer": [
-                2
-            ]
-        },
-        {
-            "question": "178. Semănatul porumbului se realizează:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) când la ora 7, la o adâncime de 10 cm în sol temperatura este de 8 grade în creştere",
-                "b) calendaristic 1-20 februarie după zonă",
-                "c) ambele cazuri"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "179. Susţinerea plantelor de tomate cultivate în solarii se face:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) pe spalier şi şnur de sfoară",
-                "b) pe araci (tutori) individuali",
-                "c) prin ambele procedee"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "180. Care sunt principalii factori de vegetaţie necesari creşterii şi dezvoltării plantelor agricole:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) temperatura, lumina şi elementele nutritive",
-                "b) apa şi aerul",
-                "c) toţi factorii menţionaţi"
-            ],
-            "correctAnswer": [
-                3
-            ]
-        },
-        {
-            "question": "181. Ce erbicide se pot aplica pentru combaterea buruienilor din culturi în timpul vegetaţiei:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) erbicide de contact şi sistemice",
-                "b) erbicide de contact",
-                "c) erbicide sistemice"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        },
-        {
-            "question": "182. La locul de muncă, muncitorul trebuie sa aibă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) salopetă, cizme de cauciuc, mănuşi de protecţie",
-                "b) salopetă",
-                "c) pantofi"
-            ],
-            "correctAnswer": [
-                1
-            ]
-        }
+        {"question": "1. What vessels do COLREG rules 1983 apply to ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) To all vessels navigating in international waters.", "b) To all vessels navigating in roadsteads, straits and open seas.", "c) To all vessels upon the high seas and in all waters connected therewith."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "2. What does the word \"vessel\" mean, according to the COLREG rules ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any watercraft capable of floating on water without propelling machinery.", "b) Any watercraft including non-displacement craft and seaplanes used or capable of being used as a means of transportation on water.", "c) Any floating object fitted with propelling machinery."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "3. What does the word \"seaplane\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any aircraft designed to carry out hydrotechnical and/or hydrometeorological work.", "b) Any aircraft designed to manoeuvre on the water.", "c) Any aircraft being on the water for various reasons."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "4. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in replenishment or transferring persons, provisions or carge while underway.", "b) A vessel lying to, on stormy weather.", "c) A vessel with damages to the steering gear."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "5. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in towing, having the towing line less than 50 M in lenght.", "b) A pushing tug boat, underway, at night.", "c) A vessel engaged in towing operation such as severely restricts the towing vessel and her tow in their ability to deviate from their course."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "6. To what vessel is the term \"vessel restricted in her ability to manoeuvre\" limited to ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The term \"vessel restricted in her ability to manoeuvre\" will not be limited to the vessels quoted in the rules.", "b) It is limited to te vessels quoted in the rules.", "c) It is limited to the damaged vessels which are unable to keep out of the way of another vessel."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "7. What does the term \"vessel constrained by her draught\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel which because of her draught and the existance of navigation obstructions in unable to deviate from her course.", "b) A deep draught vesselbeing towed.", "c) A power-driven vessel which because of her draght in relation to the avilable depth of water is severely restricted in her ability to deviate from her course."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "8. What does the term \"restricted visibility\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any condition in which visibility is reduced under 1,5 m.", "b) The condition in which the visibility is restricted by fog, rain or snow.", "c) Any condition in which visibility is restricted by fog, mist, falling snow, heavy rainstorms, sandstorms or any other similar causes."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "9. Which are the factors taken into accouunt in determinating the \"safe speed\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel's length, nautical qualities of the vessel, the engine's power and the visibility.", "b) The crew's training, the navigation conditions and visibility.", "c) The visibility, the traffic density, the manoeuvrability of the vessel at night, the presence of background light, the state of wind and sea, the vessel's draught."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "10. How shall an action to avoid collision be taken ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In ample time, with a succession of small alterations of course in order not to deviate from the vessel's course.", "b) Positively, in ample time and with due regard to the observance of good seamanship.", "c) Positively, with speed alterations to avoid risk of collision."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "11. What distance between vessels shall the avoiding action ensure ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A distance of not less than 6 cables shall be ensured.", "b) It shall be such as to result in passing at a safe distance.", "c) It shall be such as to ensure that the vessel passes at more than 2 miles distance."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "12. Till when shall the effectiveness of an avoiding action be checked ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Untill the vessels shall be abeam one to each other.", "b) Untill the other vessel will be at an angle of more than 45 degrees by starboard / portside.", "c) Untill the other vessel is finally past and clear."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "13. Which is the best manoeuvre to allow more time to asset the situation, when a collision must be avoided ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Slackening her speed or taking all way off by stopping or reversing her means of propulsion.", "b) Stopping the vessel.", "c) Slackening the speed to steerage way."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "14. How shall vessels engaged in fishing conduct in a traffic separation scheme ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) They shall conduct as any other vessel and shall comply with the COLREG rules.", "b) They shall navigate in any direction for fishing purposes.", "c) They shall not impede the passage of any vessel following a traffic lane."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "15. How shall a vessel overtaking any other conduct ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel overtaking any other will have priority.", "b) The overtaken vessel shall manoeuvre such as to allow the overtaking vessel to overtake.", "c) Any vessel overtaking any other shall keep out of the way of the vessel being overtaken."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "16. When shall a vessel be deemed to be overtaking any other ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When coming up with another vessel from a direction more than 22.5 degrees aft her beam so that at night she would be able to see only the sternlight of that vessel.", "b) When she will be able to see the sternlight and the sidelights of the overtaken vessel.", "c) When she will be able to see the stern-masthead light and the sidelights."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "17. How shall a vessel manoeuvre in doubt as to whether she is overtaking another ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She shall consider herself a privileged vessel and shall maintain her course and speed.", "b) She shall assume that this is the case and act accordingly.", "c) She shall give the regular signals and after being enlightened, act according to the circumstances."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "18. What manoeuvre shall be made when 2 power-driven vessels are crossing so as to involve risk of collision ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel which sees the other on port side shall keep out of the way of the other.", "b) The vessel which sees the other on starboard side shall reduce speed or even stop to let the other pass by.", "c) The vessel which has the other on her own starboard side shall keep out of the way and, if the circumstances of the case admit, avoid crossing ahead of the other vessel."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "19. When shall a stand-on vessel take action to avoid collision by her manoeuvre alone ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When the vessels are navigating through the straits.", "b) When entering or leaving a traffic separation scheme.", "c) When, from any cause, the vessel finds herself so close that collision cannot be avoided by the action of the give-way vessel alone, she shall take such action as will best aid to avoid collision."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "20. Which vessel's way shall a sailing vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Fish-freezing vessels with high speed.", "b) Oil-tankers.", "c) Vessels restricted in their ability to manoeuvre."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "21. Which vessel's way shall, so far as possible a vessel engaged in fishing, when underway, keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Power-driven vessels at high speed.", "b) Air-cushion vessels underway.", "c) Vessels restricted in their ability to manoeuvre."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "22. Which vessel's way shall a vessel constrained by her draught keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels restricted in their ability to manoeuvre.", "b) Power-driven vessels underway, with low speed.", "c) Specialized vessels."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "23. Which vessel's way shall a vessel constrained by her draught keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sailing vessels.", "b) Vessels not under command.", "c) Oil-tankers and tankers carrying liquefied gases."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "24. How shall a power-driven vessel navigate in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At a safe speed and her engines ready for immediate manoeuvre.", "b) At slow speed but the telegraph on \"stand-by\" in order to be able to manoeuvre in ample time.", "c) At economic speed, but with a proper look-out."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "25. When shall the rules concerning \"lights and shapes\" complied with ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When underway, by day and by night.", "b) In all weathers.", "c) When she is moored, by day and by night."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "26. What does the word \"sternlight\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A white light placed at the stern of a vessel.", "b) A white light placed as nearly as practicable at the stern showing an unbroken light over an arc of the horizon of 135 degrees and soixed as to show the liht 67.5 degrees right aft on from each side of the vessel.", "c) A white light placed at the stern showing an unbroken light over an arc of the horizon 360 degrees."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "27. What does the term \"flashing light\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A light flashing at regular intervals at a frequency of 60 flashes per minute.", "b) A light flashing at regular intervals at a frequency of 120 flashes or more per minute.", "c) A light flashing quick flashes at regular intervals."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "28. What ranges shall the mastlights be visible at for vessels of 50m or more in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 miles maximum.", "b) Between 3 and 5 nautical miles.", "c) 6 nautical miles."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "29. What range shall the mastlights be visible at, for vessels between 20 and 50m in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 nautical miles.", "b) Between 3 - 5 nautical miles.", "c) 2 nautical miles."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "30. What range shall the sidelights be visible at for vessels less than 12 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 nautical miles.", "b) 0.5 nautical miles.", "c) 1 nautical mile."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "31. What range shall the towing light be visible at, for vessels of 50 metres or more in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 3.5 nautical miles."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "32. What lights shall a power-driven vessel underway, less than 50 metres in length, exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A masthead light, sidelights, a sternlight.", "b) A masthead light and sidelight.", "c) Sidelights and a sternlight."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "33. What lights shall a power-driven vessel underway, of less than 7 metres in length and whose maximum speed does not exceed 7 knots, exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round white light and also, if practicable, sidelights.", "b) Sidelights.", "c) A white light which could be exhibited if practicable."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "34. What range shall an all-round white light of an inconspicuous, partly submerged vessel or object being towed be visible ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 1 nautical mile."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "35. What lights shall a power-driven vessel of less than 50 metres in length exhibit when towing and the length of the tow is less than 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 masthead lights in a vertical line, sidelights and a towing light.", "b) 2 masthead lights in a vertical line, sidelights, a sternlight and a towing light.", "c) Sidelights, a sternlight and a towing light."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "36. Where shall the shape of the power-driven vessel underway be placed, when the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At the fore masthead.", "b) Where it can best be seen.", "c) At the after head."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "37. What shape shall a power-driven vessel being towed exhibit, when the lenght of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A cone with the apex downward.", "b) A diamond.", "c) Two black cones with apexes together."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "38. What lights shall an inconspicuous, partly submerged vessel or object being towed exhibit, when her length exceeds 100 metres and her breadth exceeds 25 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 all-round white lights at the forward end, after end, at or near the extremities of her breadth and a light between the forward end and the after end so that the distance between the lights shall not exceed 100 metres.", "b) 3 all-round white lights.", "c) 4 all-round white lights at the forward end, after end and at the extremities of her breadth."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "39. What shall a vessel or object being towed do when, from any sufficient cause it is impracticable to exhibit the lights prescribed by the rules ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) All possible measures shall be taken to light the vessel or object being towed or at least to indicate the presence of such vessel or object.", "b) It shall exhibit no light.", "c) It shall exhibit only the sidelights."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "40. What lights shall a sailing vessel underway exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights.", "b) Masthead lights and sidelights.", "c) Sidelights and a sternlight."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "41. What lights shall a vessel under oars exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A blue light to be shown at any time.", "b) A red light.", "c) If she does not exhibit the lights of a sailing vessel, she shall be ready to show an electric torch or lighted lantern showing a white light."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "42. What lights shall a vessel engaged in trawling exhibit, when making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights, a sternlight and an all-round green light at the masthead.", "b) Sidelights, 2 lights in a vertical line, the upper being white and the lower green, a masthead light placed abaft of and higher than the green light.", "c) Sidelights, a sternlight, 2 lights in a vertical line, the upper being green and the lower white, a masthead placed abaft of and higher than the green light."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "43. What shapes shall a fishing vessel other than trawling exhibit, when there is outlying gear extending more than 150 metres horizontally ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A black diamond.", "b) 2 cones with their apexes together.", "c) 2 cones with their apexes together and a cone apex upwards in the direction of the gear."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "44. What additional lights shall a trawler engaged in fishing exhibit, when hauling her nets and fishing in close proximity to other vessels engaged in fishing ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 red lights in a vertical line.", "b) An all-round red light.", "c) One white light over one red light in a vertical line."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "45. What additional lights shall a trawler engaged in fishing exhibit, when fishing in close proximity to other vessel engaged in fishing and when the nets have come fast upon an obstruction ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 red lights in a vertical line.", "b) An all-round red light.", "c) A green light over a red light in a vertical line."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "46. What additional lights shall a trawler exhibit, when engaged in pair trawling in close proximity to other vessel engaged in fishing ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round white light at the masthead.", "b) A searchlight directed forward and in the direction of the other vessel of the pair.", "c) 2 all-round red lights."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "47. What shapes shall a vessel not under command exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 balls or similar shapes in a vertical line.", "b) A black diamond.", "c) A ball or a similar shape."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "48. What lights shall a vessel restricted in her ability to manoeuvre exhibit, when at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The red, white, red lights in a vertical line.", "b) The red, white, red lights in a vertical line, an anchor light in the fore part and an anchor light at the stern.", "c) The anchor light in the fore part and the anchor light at the stern."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "49. What shapes shall a vessel engaged in dredging or underwater operations exhibit, when restricted in her ability to manoeuvre ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 balls in a vertical line indicating the side on which an obstruction exists, 2 diamonds in a vertical line indicating the side on which another vessel may pass.", "b) 2 balls in a vertical line indicating the side on which an obstruction exists, 2 diamonds in a vertical line indicating the side on which another vessel may pass and the shapes of a vessel restricted in her ability to manoeuvre.", "c) The shapes of a vessel not under command."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "50. What shall a vessel engaged in diving operations exhibit, whenever her size makes it impracticable to exhibit all lights and shapes prescribed for vessels engaged in during operations ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 all-round lights in a vertical line, the highest and lowest being red and the middle light white.", "b) 3 all-round lights in a vertical line, the highest and lowest being red and the middle light white, a rigid replica of the International Code flag \" A \" not less than 1 metre in height, to ensure her all-round visibility.", "c) A rigid replica of the International Code flag \" A \", not less than 1 metre in height."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "51. What lights shall a vessel engaged in mineclearance operations exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a vessel not under command.", "b) The lights of a vessel not under command and 3 all-round red lights.", "c) The lights prescribed for power-driven vessels underway and 3 all-round green lights."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "52. How shall the green lights of vessels engaged in mineclearance operations be exhibited ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One of these lights shall be exhibited near the foremast head and one at each end of the fore yard.", "b) In a vertical line.", "c) One at the foremast head, the other two at the stern masthead."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "53. What shape shall a vessel constrained by her draught exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 balls in a vertical line.", "b) 2 balls in a vertical line with a diamond between them.", "c) A black cylinder."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "54. What lights shall a vessel engaged on pilotage duty exhibit, when she is at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a vessel at anchor and 2 all-round lights in a vertical line, the upper being white, the lower red.", "b) The lights of a vessel at anchor.", "c) The lights of a vessel at anchor and a white alternating light at the masthead."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "55. What lights shall a vessel aground exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a vessel at anchor and 2 all-round red lights in a vertical line.", "b) 2 all-round red lights in a vertical line.", "c) 3 all-round red lights in a vertical line and the lights of a vessel at anchor."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "56. When shall vessels of less than 7 metres in length not be required to exhibit the lights of a vessel at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When at anchor, but not in a narrow channel, fairway or anchorage, or where other vessels normally navigate.", "b) When at anchor in a basin.", "c) When at anchor in the roadstead."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "57. When shall vessels of less than 7 metres in length not be required to exibit the shapes of a vessel at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When at anchor in a basin.", "b) When at anchor but not in a narrow channel, fairway or anchorage, or where other vessel normally navigate.", "c) When at anchor in the roadstead."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "58. What vessels aground shall not be required to exhibit the lights and shapes of a vessel aground ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels of less than 7 metres in length.", "b) Vessels of less than 15 metres in length.", "c) Vessels of less than 12 metres in length."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "59. What equipment for sound signals shall a vessel of 12-100 metres in length be provid with ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One whistle at midship.", "b) A bell in the fore part or at the stern of the vessel.", "c) A whistle and a bell."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "60. When shall the sound signals for manoeuvring be given ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In any circumstances.", "b) When vessels are in sight of one another.", "c) In restricted vibility."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "61. What significance shall the light signal \"2 flashes\" have, if associated with the sound signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) I am altering my course to starboard.", "b) I am manoeuvring with difficulty to port.", "c) I am altering my course to port."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "62. At what interval shall successive light signals be given ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At not less that 10 seconds.", "b) After at least one minute.", "c) Whenever it is necessary."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "63. What characteristics shall the light supplementing the sound signals have ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round red light.", "b) An all-round white light.", "c) Green to starboard, red to port and white for astern propulsion."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "64. When in sight of one another in a narrow channel or fairway, what signal shall the vessel intending to overtake another on starboard side, give ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 prolonged blasts followed by one short blast.", "b) One short blast.", "c) One prolonged blast followed by one short blast."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "65. What signal shall a vessel give, when nearing a bend or an area of a channel or fairway where other vessels may be obscured by an intervening obstruction ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One short blast \"I am altering my course to starboard\".", "b) One prolonged blast.", "c) Successive short blasts to attract attention."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "66. When shall sound signals be given, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In or near an area of restricted visibility.", "b) In an area of restricted visibility.", "c) Only on foggy weather."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "67. What sound signals shall a sailing vessel give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast by hooter at intervals of one minute.", "b) 4 short blasts at intervals of 2 minutes.", "c) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "68. What sound signals shall a vessel restricted in her ability to manoeuvre give, when carrying out her work, at anchor, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Rapid blasts on the bell for 5 seconds preceded and followed by one prolonged blast at intervals of 2 minutes.", "b) Rapid blasts on the bell for 5 seconds to one minute.", "c) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "69. What sound signals shall a vessel give when engaged in towing or pushing another, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes.", "b) 4 short blasts preceded and followed by one prolonged blast at intervals of 2 minutes.", "c) One prolonged blast and 5 short stay blasts at intervals of one minute."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "70. What sound signals shall a vessel towed give, if manned, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast and 2 short blasts at intervals of 2 minutes.", "b) One prolonged blast and 3 short blasts at intervals of not more than 2 minutes.", "c) 2 prolonged blasts followed by 2 short blasts at intervals of 2 minutes."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "71. What sound signals shall a pushing vessel and a vessel being pushed ahead give, in conditions of restricted visibility, when twey are rigidly connected in a composite unit underway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast at intervals of not more than 2 minutes.", "b) One prolonged blast followed by 2 short blasts at intervals of 2 minutes.", "c) One prolonged blast and 4 short warning blasts at intervals of one minute."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "72. What sound signals shall a vessel aground give in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The signals given by a vessel at anchor and, in addition, immediately before and after the rapid ringing of the bell she shall give 3 separate and distinct strokes on the bell. In addition, she may sound an appropriate whistle signal.", "b) Signals on the whistle to attract attention and rapid ringing of the bell at intervals of 2 minutes.", "c) One short blast, one prolonged and one short blast on the whistle and ringing the bell rapidly at intervals of one minute."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "73. What sonud signals shall a pilot vessel at anchor give, when engaged on pilotage duty in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Rapid strokes on the gong for 5 seconds at intervals of not more than one minute.", "b) One prolonged blast followed by 4 short blasts at intervals of one minute.", "c) The signals of a vessel at anchor and in addition 4 short identity blasts."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "74. Which is the alarm signal in radiotelegraphy ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 long dashes for 10 seconds, separated by an interval of 2 seconds.", "b) 12 long dashes for 14 seconds, separated by an interval of one second.", "c) 3 long dashes for 4 seconds, separated by an interval of one second."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "75. You are in charge of a 250-meter freight vessel constrained by her draft proceeding down a narrow channel. There is a vessel engaged in fishing on your starboard bow half a mile away. According to Rule 9, which statement is TRUE?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) You are not to impede the fishing vessel.", "b) If you are in doubt as to the fishing vessel`s intentions you may sound at least five short and rapid blasts on the whistle.", "c) You are to slow to bare steerageway until clear of the fishing vessel."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "76. Which statement is true concerning a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She must be a power-driven vessel.", "b) She is not under command.", "c) She may be a vessel being towed."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "77. Which statement is TRUE, according to the Rules?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel not under command shall keep out of the way of a vessel restricted in her ability to maneuver.", "b) A vessel not under command shall avoid impeding the safe passage of a vessel constrained by her draft.", "c) A vessel engaged in fishing while underway shall, so far as possible, keep out of the way of a vessel restricted in her ability to maneuver."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "78. Which statement is TRUE, according to the Rules?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in fishing while underway shall, so far as possible, keep out of the way of a vessel restricted in her ability to maneuver.", "b) A vessel not under command shall keep out of the way of a vessel restricted in her ability to maneuver.", "c) A vessel engaged in fishing shall keep out of the way of a sailing vessel."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "79. Which statement in TRUE, according to the Rules?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel constrained by her draft shall keep out of the way of a vessel engaged in fishing.", "b) A vessel engaged in fishing while underway shall, so far as possible, keep out of the way of a vessel restricted in her ability to maneuver.", "c) A vessel not under command shall avoid impeding the safe passage of a vessel constrained by her draft."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "80. Which statement is TRUE, according to the Rules?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in fishing while underway shall, so far as possible, keep out of the way of a vessel restricted in her ability to maneuver.", "b) A vessel not under command shall keep out of the way of a vessel restricted in her ability to maneuver.", "c) A fishing vessel while underway has the right-of-way over a vessel constrained by her draft."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "81. A signal of intent must be sounded in international waters by _____________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) a vessel meeting another head-on.", "b) a vessel overtaking another in a narrow channel.", "c) a vessel crossing the course of another."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "82. Which vessel shall avoid impeding the safe passage of a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel not under command.", "b) A sailing vessel.", "c) A vessel restricted in her ability to maneuver."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "83. Of the vessel listed, which must keep out of the way of all the others?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel constrained by her draft.", "b) A vessel restricted in her ability to maneuver.", "c) A vessel pushing a barge."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "84. Your vessel is crossing a narrow channel. A vessel to port is within the channel and crossing your course. She is showing a black cylinder. You should _______________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) hold your course and speed.", "b) not impede the other vessel.", "c) exchange passing signals."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "85. Your vessel is constrained by her draft and operating in a narrow channel. Another vessel is crossing your course from starboard to port. You are in doubt as to her intentions. According to Rule 9 you _________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) should sound one short blast to indicate that you are holding course and speed.", "b) must sound one prolonged blast.", "c) may sound the danger signal."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "86. Which vessel is NOT restricted in her ability to maneuver?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel servicing an aid to navigation.", "b) A vessel constrained by her draft.", "c) A towing vessel with tow, unable to deviate from its course."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "87. Which statement is TRUE concerning a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She is hampered because of her work.", "b) She is unable to maneuver due to some exceptional circumstance.", "c) She must be a power-driven vessel."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "88. Which statement applies to a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The term only applies to vessels in narrow channels.", "b) She is severely restricted in her ability to change her course because of her draft in relation to the available depth and width of navigable water.", "c) She is designated as a vessel restricted in her ability to maneuver."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "89. Lighting requirements in inland waters are different from those for international waters for _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) barges being towed by pushing ahead.", "b) vessels restricted in their ability to maneuver.", "c) vessel towing astern."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "90. Vessel\" \"A\" is overtaking vessel\" \"B\"on open waters and will pass without changing course. Vessel \"A\" should_____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) sound two prolonged blasts followed by two short blasts.", "b) sound the danger signal.", "c) not sound any whistle signal."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "91. You are underway in a norrow channel, and you are being overtaken by a vessel astern. After the overtaking vessel sounds the proper signal indicating his intention to pass your vessel on your starboard side, you signal your agreement b", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) two prolonged followed by two short blasts.", "b) one prolonged, one short, one prolonged, and one short blast.", "c) one short blast."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "92. You intend to overtake a vessel in a narrow channel, and you intend to pass along the vessel`s port side. How should you signal your intention?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Two short blasts followed by two prolonged blast.", "b) Two prolonged followed by two short blasts.", "c) Two prolonged blasts only."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "93. Which vessel is NOT regarded as being\" \"restricted in her ability to maneuver?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel servicing an aid to navigation.", "b) A vessel engaged in dredging.", "c) A vessel constrained by her draft."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "94. Which vessel shall avoid impeding the safe passage of a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel not under command.", "b) A fishing vessel.", "c) A vessel restricted in her ability to maneuver."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "95. You are underway in fog and hear a fog signal consisting of one prolonged and two short blasts, It could be any of the following EXCEPT a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) enganged in mineclearance.", "b) enganged in fishing.", "c) being towed."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "96. You are operating a vessel in a narrow channel.Your vessel must stay within the channel to be navigated safely. Another vessel is crossing your course from starboard to port,and you are in doubt as to his intentions. According to Rule 9,", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) may sound the danger signal.", "b) must sound one prolonged and short blasts.", "c) should sound one short blast to indicate that you are holding course and speed."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "97. Which vessel is to keep out of the way of the others?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel constrained by her draft.", "b) A vessel engaged in underwater operations.", "c) A vessel engaged in trawling."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "98. Which statement applies to a vessel\"\"constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She is severely restricted in her ability to change her course because of her draft in relation to the available depth of water.", "b) The term applies only to vessels in marked channels.", "c) \"She is designated as a \"vessel restricted in her ability to maneuver\"."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "99. Which vessel would NOT sound a fog signal of one prolonged and two short blasts?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel not under command.", "b) A vessel constrained by her draft.", "c) A vessel being towed."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "100. Of the vessels listed, which mustkeep out of the way of all the others?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel constrained by her draft.", "b) A vessel restricted in her ability to maneuver.", "c) A vessel on pilotage duty."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "101. A vessel not under command sounds the same fog signal as a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) engaged in towing.", "b) constrained by her draft.", "c) All of the above."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "102. In a crossing situation on international waters, a short blast by the give-way vessel indicates that the vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) is holding course and speed.", "b) is turning to starboard.", "c) intends to pass port to port."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "103. Two prolonged blasts followed by one short blast on the whistle is a signal which could be sounded by a _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) fishing vessel.", "b) vessel anchored.", "c) vessel overtaking another in a narrow channel."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "104. You are in sight of another vessel in a crossing situation, and the other vessel sounds one short blast. You are going to hold course and speed. You should _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) answer with one short blast.", "b) answer with two short blasts.", "c) sound no whistle signal."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "105. The light which may be used with a vessel`s whistle is to be _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) used when the whistle is broken.", "b) used prior to sounding the whistle.", "c) a white light."], "correctAnswer": [3], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "106. A fishing vessel is approaching a vessel not under command. Which statement is TRUE?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) the fishing vessel must keep clear of the vessel not under command.", "b) If the vessel not under command is a power-driven vessel, she must keep clear of the fishing vessel.", "c) They must exchange whistle signals."], "correctAnswer": [1], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "107. You are approaching another vessel and will pass starboard to starboard without danger if no course changes are made. You should _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) hold course and sound a two blast whistle signal.", "b) hold course and sound no whistle signal.", "c) change course to the right and sound one blast."], "correctAnswer": [2], "section": "CAA-EN-Generalitati", "difficulty": 1},
+        {"question": "108. How do COLREG rules interfere with the lights and signals for ships of war, vessels proceeding in convoy and fishing vessels engaged in fishing as a fleet ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The Government of any state may issue special rules with respect to the number of station lights or signal lights but these shall, so far as possible, be such that they cannot be mistaken for the lights or signals authorized under COLREG rules.", "b) The Government of any state may authorize any lights or signals.", "c) COLREG rules shall be complied with as closely as possible."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "109. When is it permitted to make a departure from the COLREG rules ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In national waters, roasteads and in all waters connected therewith navigable by seagoing vessels.", "b) When there is a danger of navigation, risk of collision as well as in all special circumstances.", "c) It is not permitted to make any departure from the COLREG rules."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "110. What does the term \"sailing vesel\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any vessel using wind power as means of propulsion.", "b) Any power-driven vessel using sails,too.", "c) Any vessel under sail provided that propelling machinery, if fitted, is not being used."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "111. What does the term \"vessel restricted in her ability to manoeuvre\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel which from the nature of her work is restricted in her ability to manoeuvre as required by the rules and is therefore unable to keep out of the way of another vessel.", "b) A vessel with minor damages to the gear and/or the engine, being remedied.", "c) A vessel unable to deviate from her course due to some navigation obstructions."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "112. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel with damaged steering gear.", "b) A vessel engaged in laying, picking up or servicing a navigation mark.", "c) A deep draught vessel navigating in the straits."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "113. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in laying or picking up a submarine cable or pipeline.", "b) A sailing vessel having the wind dead ahead.", "c) A vessel having damages to the propeller system."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "114. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in taking / dropping the pilot.", "b) A vessel with the engines stopped.", "c) A vessel engaged in mine clearance operations."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "115. What does the term \"vessel's length\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessel's length between perpendiculars.", "b) Vessel's length overall.", "c) Vessel's length measured between the draught line forward and the draught line aft."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "116. When are 2 vessels deemed to be in sight of one another ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When they are watching each other, visually.", "b) When only one can be observed visually from the other.", "c) When the vessels are not beyond radar range."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "117. When shall a vessel proceed at \"safe speed\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Under conditions of restricted visibility.", "b) At all times.", "c) In straits, channels and difficult conditions."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "118. What means shall a vessel use to determine if risk of collision exists ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Every vessel shall use all available means appropriate to the prevailing circumstances aand conditions to determine if risk of collision exists.", "b) Every vessel shall use all visual means to determine if risk of collision exists.", "c) Every vessel shall use the radar to determine if risk of collision exists."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "119. How shall radar equipment be used if fitted aboard ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The radar equipment shall be used when the visibility is restricted, using adequate range scales.", "b) The radar equipment shall be used to avoid risk of collision.", "c) Proper use shall be made of radar equipment, including long-range scanning to obtain early warning of risk of collision and radar plotting or equivalent systematic observation of detected objects."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "120. When shall it be deemed that a risk of collision exists ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When the vessels are navigating on opposite courses.", "b) When the compass bearing of an approaching vessel does not appreciably change.", "c) When the approaching speed between the two vessels is very high."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "121. If alteration of course alone is sufficient to avoid collision, how shall it be done ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The manoeuvre shall be made in good time, be substantial and it does not result another close-quarts situation.", "b) Large alterations of course shall be made, sufficient to avoid collision.", "c) An alternation of course, sufficient to avoid any risk of collision."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "122. How shall a vessel navigate within a traffic separation scheme ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall navigate as close as possible to the traffic separation schemes.", "b) The vessel shall navigate in the traffic lane in the indicated direction.", "c) The vessel shall navigate in the appropriate traffic lane in the general direction of traffic flow for that lane and, so far as practicable, keep clear of a traffic separation line or separation zone."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "123. When shall a vessel enter a separation zone or cross a separation line ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When the hydrometeorological conditions make it difficult to navigate in the general direction of traffic flow.", "b) In cases of emergency, to avoid immediate danger or to engage in fishing within a separation zone.", "c) The separation zone shall not be crossed in any circumstances."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "124. How shall a vessel navigate in areas near the terminations of traffic separation schemes?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall navigate in the general direction of traffic flow.", "b) The intentions of altering course will be communicated by sound and visual signals.", "c) The vessel shall do so with particular caution."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "125. Are the vessels restricted in their ability to manoeuvre when engaged in an operation for the laying, servicing or picking up of a submarine cable exempted from complying with provisions of the rule regarding navigation in traffic separation schemes ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) They are not exempted from complying with this rule.", "b) They are exempted from complying with this rule to the extend necessary to carry out the operation.", "c) They are exempted from complying with this rule if they are giving warning signals."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "126. When shall the vessel be deemed to have reciprocal courses ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When the vessel sees the other ahead and by night she could see the masthead lights of the other in a line and/or both sidelights and, by day, she observes the corresponding aspect of the other vessel.", "b) When by night she could see the masthead lights nearly in a line and one of the sidelights and by day the masts can be seen under a small angle.", "c) When the masthead lights and the sternlight can be seen."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "127. How shall 2 sailing vessels manoeuvre, when they are approaching one another so as to involve risk of collision and both have the wind on the same side", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel which sees the other on port side shall keep out of the way of the other.", "b) The vessel which is to windward shall keep out of the way of the vessel which is to leeward.", "c) The vessel which sees the other on starboard side shall keep out of the way of the other."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "128. Which is the action by stand-on vessel ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall keep her course and speed.", "b) The vessel shall alter her course only in order to avoid a dangerous situation.", "c) The vessel shall reduce speed or even stop not to engender dangerous situations."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "129. Which vessel's way shall a power-driven vessel keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Pilot vessels underway, engaged in pilotage operations.", "b) Vessels restricted in their ability to manoeuvre.", "c) Specialized vessels carrying containers and RO/RO vessels."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "130. Which vessel's way shall a power-driven vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Fish-carriers, underway.", "b) Research vessels, underway.", "c) Vessels engaged in fishing."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "131. Which vessel's way shall a power-driven vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sailing vessels.", "b) Sailing vessels navigating only by use of engines.", "c) Sailing vessels, having a black cone apex downwards."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "132. Which vessel's way shall, so far as possible, a vessel engaged in fishing, when underway, keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Fish-carriers underway to the anchorage.", "b) Vessels not under command.", "c) Pilot-vessels underay."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "133. What safety precautions shall a seaplane on the water take ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She shall keep well clear of all vessels and avoid impeding their navigation.", "b) She shall give a warning signal in order to be avoided.", "c) She shall consider herself as any other privileged vessel and follow her course and speed."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "134. At what speed shall a vessel navigate in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At slow speed and look-out forward.", "b) At economic speed but with radar working and a proper look-out in order to avoid risk of collision.", "c) At a safe speed adapted to the prevailing circumstances and conditions of restricted visibility."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "135. When shall the lights prescribed by these rules be also exhibited ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) From sunrise to sunset, restricted visibility and in all other circumstances when it is deemed necessary.", "b) When visibility is under 3 Nm.", "c) In straits, in restricted visibility."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "136. When shall the rules concerning shapes be complied with ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) By twilight.", "b) By day.", "c) By day or by night when they are lit."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "137. What does the term ' masthead light' mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any white light placed on the mast of a vessel at a height prescribed by the register standards.", "b) Any white all round light.", "c) Any white light placed over the fore and aft centreline of the vessel showing an unbroken light over an arc of the horizon of 225 degrees and so fixed as to show the light from right ahead to 22.5 degrees abaft the beam on either side of the vessel."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "138. What does the term \"all round light\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A light showing an unbroken light over an arc of the horizon of 360 degrees.", "b) An unbroken light visible from ahead and either side of the vessel.", "c) A light showing an unbroken light visible over an arc of the horizon of 180 degrees."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "139. What range shall the mastlight be visible at, for vessels less than 12m in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 1 nautical mile."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "140. What range shall the sidelights be visible at, for vessels of 12 metres or more in length, but less than 50 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 1.5 nautical miles."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "141. What range shall the sternlight be visible at, for vessels between 12 and 50 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 1 nautical mile."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "142. What range shall the towing light be visible at, for vessels less than 12 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 1 nautical mile.", "b) 3 nautical miles.", "c) 2 nautical miles."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "143. What range shall the white, red, green or yellow all round light be visible at, for vessels of 50 metres or more in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 4 nautical miles.", "c) 5 nautical miles."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "144. What range shall the white, red, green or yellow all round light be visible at, for vessels of l2-50 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 1 nautical mile."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "145. What lights shall an air-cushion vessel exhibit, when operating in non-displacement mode ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The same lights as a power-driven vessel underway.", "b) An all-round flashing yellow light.", "c) The same lights as a power-driven vessel underway and an additional all-round flashing yellow light."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "146. What lights shall a power-driven vessel of more than 50 metres in length exhibit, when towing and the length of the tow is less than 50 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Instead of the masthead lights forward and aft, 2 masthead lights in a vertical line, sidelights, a stern light and a towing light.", "b) Sidelights, a sternlight and a towing light.", "c) 2 masthead lights in a vertical line, sidelights and a towing light."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "147. What shape shall a power-driven vessel underway exhibit, when the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A diamond.", "b) A cone with the apex downwards.", "c) 2 cones with apexes together."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "148. What lights shall a power-driven vessel exhibit when pushing ahead or towing alongside, this not being the case of a composite unit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 masthead lights forward in a vertical line, sidelights, a sternlight.", "b) 3 masthead lights in a vertical line, sidelights and a towing light.", "c) Sidelights and a towing light."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "149. What lights shall a vessel being pushed ahead exhibit, this not being the case of a composite unit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She shall exhibit the sidelights at the forward end.", "b) The masthead light and sidelights.", "c) The masthead light and a sternlight."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "150. What lights shall a vessel being towed alongside exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The masthead lights and a sternlight.", "b) A sternlight and sidelights at the forward end.", "c) Sidelights at the forward end."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "151. What lights shall an inconspicuous, partly submerged vessel or object less than 25 metres in breadth exhibit, when being towed ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round white light at the forward end.", "b) An all-round white light at the after end.", "c) An all-round white light at the forward end and one at the after end."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "152. What shapes shall an inconspicuous, partly submerged object or vessel exhibit by day, when being towed and the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A cone apex upwards at the forward end and an additional one at the after end.", "b) 2 black cones, apexes together.", "c) A diamond at or near the aftermost extremity and an additional one where it can best be seen and located as far forward as practicable."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "153. Where shall a sailing vessel underway carry the lantern, when her length is less than 20 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Anywhere and to be exhibited only if necessary.", "b) At the top of the mast where it can best be seen.", "c) At the jack stick."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "154. What lights shall a sailing vessel underway exhibit, when her length is less than 7 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She shall have ready at hand an electric torch or lighted lantern showing a white light which shall be exhibited in sufficient time to prevent collision.", "b) Sidelights.", "c) A white light at the masthead."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "155. When shall a vessel engaged in fishing exhibit the prescribed lights and shapes ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In any circumstance.", "b) While underway and at anchor.", "c) When underway."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "156. What lights shall a fishing vessel other than trawling exhibit, when making way through the water?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights, 2 all-round lights in a vertical line, the upper being white and the lower red.", "b) 2 all-round lights in a vertical line, the upper being red and the lower white and a sternlight.", "c) Sidelights, a sternlight, 2 all-round lights in a vertical line, the upper being red and the lower white."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "157. What lights shall a vessel engaged in fishing, other than trawling exhibit, when there is outlying gear extending more than 150 metres horizontally and is making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights, a sternlight, 2 all-round lights in a vertical line, the upper being red and the lower white, an all-round white light in the direction of the gear.", "b) Sidelights, a sternlight, an all-round white light in the direction of the gear.", "c) Sidelights, a sterlinght, two lights in a vertical line, the upper white and the lower red."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "158. What additional lights shall a trawler engaged in fishing exhibit when shooting her nets and fishing in close proximity to other vessel engaged in fishing ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round red light.", "b) 2 all-round white lights in a vertical line.", "c) An all-round green light."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "159. What lights shall a vessel not under command exhibit, when making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Two red lights in a vertical line, sidelights and a sternlight.", "b) A red light, sidelights and a sternlight.", "c) 2 red lights and a sternlight."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "160. Where shall the red lights of the vessels not under command be placed ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At the foremasthead.", "b) At the aftermasthead.", "c) Where they can best be seen."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "161. What lights shall a vessel restricted in her ability to manoeuvre exhibit, when making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights, a sternlight and 3 lights in a vertical line, the highest and the lowest one being red and the middle one white.", "b) 3 lights in a vertical line, the highest and the lowest being red and the middle one white.", "c) Sidelights, a sternlight, a masthead light and 3 lights in a vertical line, the lowest and the highest being red and the middle one white."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "162. What shapes shall a vessel restricted in her ability to manoeuvre exhibit, when at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One ball in the fore part and 3 shapes in a vertical line, where they can best be seen, the highest and the lowest of these shapes being balls and the middle one a diamond.", "b) One ball in the fore part.", "c) 3 shapes in a vertical line, the highest and the lowest being balls and the middle one a diamond."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "163. What lights shall a power-driven vessel exhibit, when engaged in towing operations and restricted in her ability to deviate from her course ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights prescribed for power-driven vessels underway, engaged in towing operations.", "b) The lights of a vessel restricted in her ability to manoeuvre engaged in towing operations.", "c) The lights prescribed for vessels not under command."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "164. What shapes shall a power-driven vessel exhibit, when engaged in towing operations and restricted in her ability to deviate from her course ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The shapes prescribed for a power-driven vessel engaged in towing operations.", "b) The shapes prescribed for a vessel not under command.", "c) The shapes of a vessel restricted in her ability to manoeuvre and the shapes prescribed for vessels engaged in towing operatins."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "165. What shapes shall a vessel engaged in dredging or underwater operations exhibit, when restricted in her ability to manoeuvre and at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Instead of the shapes of a vessel at anchor, the shapes of a vessel restricted in her ability to manoeuvre engaged in dredging operations.", "b) A diamond indicating the side on which an obstruction exists and the shapes of vessels at anchor.", "c) The shapes of a power-driven vessel at anchor."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "166. How shall the balls of vessels engaged in mineclearance operations be exhibited ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In a vertical line.", "b) One at the foremasthead and 2 at the sternmasthead.", "c) One at the foremasthead and one at each end of the fore yard."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "167. What lights shall a vessel constrained by her draught exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights prescribed for power-driven vessels underway and an additional red light.", "b) The lights prescribed for power-driven vessels underway and 3 additional all-round red lights in a vertical line.", "c) The lights of a vessel restricted in her ability to manoeuvre."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "168. What lights shall a vessel engaged on pilotage duty exhibit, when underway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights and 2 all-round lights in a vertical line, the upper being white and the lower red.", "b) Sidelights, a sternlight, 2 all-round lights in a vertical line, the upper being white and the lower red.", "c) Sidelights, a sternlight and an all-round red quick-flashing light."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "169. What lights shall a vessel at anchor exhibit, when her length exceeds 50 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round white light at the fore masthead.", "b) An all-round white light in the fore part.", "c) An all-round white light in the fore part and another all-round white light at or near the stern, but at a lower level than the light in the fore part."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "170. What shapes shall a vessel at anchor exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One ball in the fore part.", "b) One diamond in the fore part.", "c) One black cone in the fore part."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "171. What lights shall a vessel at anchor exhibit, when less than 50 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a vessel at anchor.", "b) Instead of the lights of a vessel at anchor, an all-round white light where it can best be seen.", "c) A light in the fore part."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "172. Where shall the shapes and lights of the vessels aground be exhibited ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In the fore part.", "b) At the sternmast head.", "c) Where they can best be seen."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "173. What does the word \"whistle\" mean, aboard ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An electronic device capable of producing short and prolonged blasts.", "b) Any sound signalling appliance capable of producing the blasts prescribed by the rules.", "c) A mechanical device producing only fog signals."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "174. What does the term \"prolonged\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A blast of from 4 to 6 seconds' duration.", "b) A blast of more than 6 seconds' duration, produced by a power-driven vessel, underway.", "c) A blast of from 2 to 3 seconds' duration, produced by a vessel."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "175. May the bell or the gong, or both be replaced by other equipment having the same sound characteristics ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Yes, but only the gong at the stern.", "b) They cannot be replaced.", "c) Both of them may be replaced, provided that manual sounding shall always be possible."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "176. Which is the sound signal to indicate the manoeuvre \"I am altering my course to port\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prollonged blast followed by 2 short blast.", "b) 2 short blasts.", "c) 2 prolonged blasts followed by 2 short blasts."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "177. Which is the sound signal to indicate the manoeuvre \"I am operating astern propulsion\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast followed by 3 short blasts.", "b) 3 short blasts preceded and followed by one prolonged blast.", "c) 3 short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "178. What may the sound signals given on the whistle be supplemented by, to indicate the manoeuvre being carried out ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) By ligth signals.", "b) By any other signals.", "c) By one or two black balls at the masthead."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "179. What is the duration of one flash, when using the manoeuvring light signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) About one second.", "b) 2 to 3 seconds.", "c) As long as possible so as to be observed."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "180. What signals shall a vessel give, when indicating her agreement to be overtaken ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast and 5 short blasts.", "b) One prolonged, one short, one prolonged and one short blast ( International Code, letter \"C\" ).", "c) One short blast for starboard and 2 short blasts for port."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "181. What light signals may suppliment the sound signals given by a vessel which fails to understand the intentions of another or is in doubt whether sufficient action is being taken by the other to avoid collision ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Successive light signals.", "b) A light signal of at least 5 short and rapid flashes.", "c) One long light signal and other short light signals."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "182. If whistles are fitted on the vessel at a distance apart of more than 100 metres, which of them shall be used for giving manoeuvring and warning signals ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One of them.", "b) Both of them.", "c) Only the whistle forward for warning and only the whistle aft for manoeuvring."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "183. What sound signal shall a vessel underway but stopped and making no way through the water give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged warning blast at intervals of one minute.", "b) At intervals of not more than 2 minutes 2 prolonged blasts in succession with an interval of about 2 seconds between them.", "c) 5 short warning blasts at intervals of one minute."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "184. What sound signal shall a vessel not under command give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes.", "b) One prolonged blast and 5 short blasts at intervals of 2 minutes.", "c) 5 short warning blasts at intervals not more than one minute."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "185. What sound signal shall a vessel restricted in her ability to manoeuvre give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One long blast followed by 3 short blasts at intervals of 2 minutes.", "b) 3 short blasts preceded and followed by one prolonged blast at intervals of 2 minutes.", "c) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "186. What sound signals shall a fishing vessel at anchor give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Ringing the bell rapidly for 5 seconds at intervals of one minute.", "b) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes.", "c) Ringing the bell rapidly for 5 seconds and one prolonged blast on the whistle at intervals of not more than 2 minutes."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "187. What sound signals shall a vessel at anchor give, if her lenght is less than 100 metres, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Rapid blasts on the bell for about 5 seconds, at intervals of not more than one minute.", "b) 3 short blasts on the whistle and rapid blasts on the bell in the fore part at intervals of 2 minutes.", "c) One short blast, one prolonged and one short blast at intervals of one minute."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "188. What additional sound signal shall a vessel at anchor give, in conditions of restricted visibility to give warning of her position and of the possibility of collision to an approaching vessel ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Signal on the whistle : one short blast followed by one prolonged blast and then one short blast.", "b) Signal on the whistle : 5 short warning blasts.", "c) Signal on the whistle and/or by fog horn : one prolonged blast followed by rapid short blasts."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "189. What sound signals shall a pilot vessel give in conditions of restricted visibility, when underway and engaged on pilotage duty ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast at intervals of not more than 2 minutes and in addition an identity signal consisting of 4 short blasts.", "b) One prolonged blast at intervals of one minute.", "c) 4 short blasts on the whistle at intervals of one minute."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "190. On open water, a power-driven vessel coming up dead astern of another vessel and altering her course to starboard so as to pass on the starboard side of the vessel ahead would sound_______________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) two short blasts.", "b) one short blast.", "c) two prolonged blasts followed by one short blast."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "191. In a narrow channel, a vessel trying to overtake another on the other vessel`s port side, would sound a whistle signal of_____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one short blast.", "b) two short blasts.", "c) two prolonged blasts followed by two short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "192. What whistle signal, if any, would be sounded when two vessels are meeting, but will pass clear starboard to starboard?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One short blast.", "b) Two short blasts.", "c) No signal is required."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "193. A power-driven vessel leaving a quay or wharf must sound what signal?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Three short blasts.", "b) A long blast.", "c) No signal is required."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "194. When two vessels are in sight of one another, all of the following signals may be given EXCEPT _________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) a light signal of at least five short and rapid flashed.", "b) four short whistle blasts.", "c) one prolonged, one short, one prolonged and one short whistle blasts."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "195. In a narrow channel, a signal of intent which must be answered by the other vessel, is sounded by a vessel _______________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) meeting another head-on.", "b) crossing the course of another.", "c) overtaking another."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "196. You are underway on the high seas in restricted visibility. You hear a fog signal of one prolonged and two short blasts. It could be any of the following EXCEPT a vessel ______.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) minesweeping.", "b) engaged in fishing.", "c) being towed."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "197. In a narrow channel, an overtaking vessel which intends to pass on the other vessel`s port side would sound ___________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one prolonged followed by two short blasts.", "b) one short blast.", "c) two prolonged followed by two short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "198. When moving from a berth alongside a quay (wharf), a vessel must sound __________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three short blasts.", "b) a long blast.", "c) No signal is required."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "199. You are approaching another vessel and will pass safely starboard to starboard without changing course. You should _________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) hold course and sound no whistle signal.", "b) hold course and sound a two blast whistle signal.", "c) change course to starboard and sound one blast."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "200. Your vessel is backing out of a slip in a harbor. Visibility is restricted. You should sound __________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one prolonged blast only.", "b) one prolonged blast followed by three short blasts when the last line is taken aboard.", "c) one prolonged blast followed by three short blasts when leaving the slip."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "201. A light used to signal passing intentions must be an _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) alternating red and yellow light.", "b) alternating white and yellow light.", "c) all-round white light only."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "202. While underway and in sight of another vessel, you put your engines full speed astern. Which statement concerning whistle signals is TRUE?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) You must sound three short blasts on the whistle.", "b) You must sound one blast if backing to starboard.", "c) You must sound whistle signals only if the vessels are meeting."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "203. Which signal is sounded ONLY by a vessel in sight of another?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One short blast on the whistle.", "b) Four short blasts on the whistle.", "c) One prolonged blast on the whistle."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "204. Vessel\" \"A\" is overtaking vessel\" \"B\" on open waters as shown, and will pass without changing course. Vessel \"A\" _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) need not sound any whistle signals.", "b) should sound two short blasts.", "c) should sound the danger signal."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "205. Two prolonged blasts followed by one short blast on the whistle is a signal which would be sounded by a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) overtaking another in a narrow channel.", "b) anchored.", "c) engaged in mineclearance."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "206. In a narrow channel, an overtaking which intends to PASS on the other vessel`s port side would sound _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one prolonged followed by two short blasts.", "b) one short blast.", "c) two prolonged followed by two short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "207. When two vessels are in sight of one another and NOT in or near an area of restricted visibility, any of the following signals may be given EXCEPT ____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) a light signal of at least five short and rapid flashes.", "b) one prolonged, one short, one prolonged, and one short whistle blast.", "c) four short whistle blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "208. Which signal is sounded ONLY by a vessel in sight of another and NOT in or near an area of restricted visibility?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Four short blasts on the whistle.", "b) One prolonged blast on the whistle.", "c) One short blast on the whistle."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "209. A signal of one prolonged, one short, one prolonged, and one short blast, in that order is given by a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) engaged on pilotage duty.", "b) in distress.", "c) being overtaken in a narrow channel."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "210. On open water two vessels are in an overtaking.The overtaking vessel has just sounded one short blast on the whistle. What is the meaning of this whistle signal?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) \"I request permission to pass you on my port side\".", "b) \"I will maintain course and speed and pass you an your starboard side.\".", "c) \"I am changing course to starboard.\"."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "211. You are in sight of a power-driven vessel that sounds two short blasts of the whistle. This signal means that the vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) is altering course to port.", "b) is altering course to starboard.", "c) intends to leave you on her port side."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "212. Your vessel is backing out of a slip in a harbor and you can see that other vessels are approaching. You should sound _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three short blasts when leaving the slip.", "b) one prolonged blast followed by three short blasts when the last line is taken aboard.", "c) one prolonged blast only."], "correctAnswer": [1], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "213. A whistle signal of one prolonged,one short,one prolonged and one short blast,is sounded by a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) at anchor.", "b) towing a submerged object.", "c) being overtaken in a narrow channel."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "214. Two power-driven vessels are meeting. A two blast whistle signal by either vessel means _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) \"I intend to alter course to port\".", "b) \"I desire to pass starboard to starboard\".", "c) \"I am altering course to port\"."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "215. A sailing vessel is overtaking a power-driven vessel in a narrow channel, so as to pass on the power-driven vessel`s port side. The overtaken vessel will have to more to facilitate passage. The sailing vessel is the _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) stand-on vessel and would sound two short blasts.", "b) give-way vessel and would sound no whistle signal.", "c) give-way vessel and would sound two prolonged blasts followed by two short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "216. Which signal is sounded ONLY when vessels are NOT in sight of each other?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A signal of at least five short and rapid blasts.", "b) Four short blasts on the whistle.", "c) One prolonged, one short, one prolonged, and one short blast on the whistle, in that order."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "217. You are underway in a narrow channel, and you are being overtaken by a vessel astern. After the overtaking vessel sounds the proper signal indicating his intention to pass your vessel on your starboard side, you signal your agreement b", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one short blast.", "b) two prolonged blasts.", "c) one prolonged, one short, one prolonged, and one short blast in that order."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "218. A vessel sounds one short blast. This signal indicates the vessel _____________,", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) intendes to alter course to starboard.", "b) intends to pass starboard to starboard.", "c) is altering course to starboard."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "219. A vessel sounds two short blasts. This signal indicates the vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) intends to alter course to port.", "b) intends to pass starboard to starboard.", "c) is altering course to port."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "220. You intend to overtake a vessel in a narrow channel, and you intend to pass along the vessel`s port side. How should you signal your intention?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) No signal is necessary.", "b) Two prolonged blasts.", "c) two prolonged followed by two short blasts."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "221. Vessel \"A\"is overtaking vessel \"B\" on open waters and will pass without changing course. Vessel \"A\" _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) should sound two short blasts.", "b) should sound the danger signal.", "c) will not sound any whistle signals."], "correctAnswer": [3], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "222. When vessels are in sight of one another, two short blasts from one of the vessels means _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) \"I am altering my course to starboard\".", "b) \"I am altering my course to port\".", "c) \"I intend to change course to starboard\"."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "223. In which case would an overtaking vessel sound a whistle signal of two prolonged followed by one short blast?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When obertaking in restricted visibility.", "b) When overtaking in a narrow channel.", "c) When overtaking on open waters."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "224. Under what circumstances would an overtaking vessel sound a whistle signal of two prolonged followed by one short blast?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When overtaking in restricted visibility.", "b) When overtaking in a narrow channel.", "c) When overtaking on open waters."], "correctAnswer": [2], "section": "CAA-EN-Lumini si semne", "difficulty": 1},
+        {"question": "225. How do COLREG rules interfere with the special rules for roadsteads, harbours, rivers, lakes or inland waterways navigable by seagoing vessels ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Nothing in COLREG rules shall interfere with the operation of special rules, made by an appropriate authority, but such special rules shall conform as closely as possible to COLREG rules.", "b) The appropriate authority is not obliged to take into account COLREG rules.", "c) The COLREG rules shall apply in all circumstances."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "226. When is a vessel, the master or the owner exonerated from the consequences of any neglect or the neglect of any precaution which may be required by the ordinary practice of seaman ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The compliance with COLREG rules exonerates the vessel, master or owner from any responsability.", "b) The closest possible compliance with the rule \"privileged vessel\" exonerates the vessel, master or owner from any responsability.", "c) The rules shall not exonerate the vessel, master or owner from the consequences of any neglect to comply with these rules or of the neglect of any precaution which may be required by the ordinary practice of seaman."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "227. What does the term \"power-driven vessel\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The term \"power-driven vessel\" means any vessel propelled by machinery.", "b) Vessels using a Diesel engine as a means of propulsion.", "c) All vessels capable of navigating on water, except for sailing vessels."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "228. What does the term 'vessel engaged in fishing\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any vessel fishing with trolling lines or other fishing apparatus which do not restrict manoeuvrability.", "b) All vessels built and equipped for fishing.", "c) Any vessel fishing with nets, lines, trawls or other fishing apparatus which restrict manoeuvrability."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "229. What does the term \"vessel not under command\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any vessel having serious damages to the steering gear and/or the main engine.", "b) Any vessel which through some exceptioal circumstance is unable to manoeuvre as required by the rules and is therefore unable to keep out of the way of another vessel.", "c) Any damaged vessel which is unable to manoeuvre and to keep out of the way of another vessel."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "230. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in fishing which is going to recover her gear.", "b) A drifting vessel.", "c) A vessel engaged in dredging, hydrographic surveying and oceanographic operations or underwater operations."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "231. What vessel may be considered as \"vessel restricted in her ability to manoeuvre\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel engaged in an abandon-ship drill.", "b) A vessel engaged in the launching or recovery of aircraft.", "c) A deep draught vessel sailing in narrow channels."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "232. What does the term \"vessel underway\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Any vessel which is not made fast to the shore.", "b) Any vessel at sea having the propeller system working.", "c) Any vessel which not at anchor or made fast to the shore, or aground."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "233. What does the term \"vessel's breadth\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessel's greatest breadth.", "b) Vessel's breadth midship.", "c) The mean breadth of the vessel measured at the bow, stern and midship."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "234. How shall a proper look-out be maintained aboard ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of risk of collision.", "b) Every vessel shall at all times maintain a look-out by sight to avoid any dangerous situation.", "c) When the visibility is restricted, a proper look-out shall be maintained in order to make a full appraisal of any risk of collision."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "235. What is the reason for proceeding at a \"safe speed\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel shall proceed at a safe speed so that she can take proper and effective action to avoid collision and be stopped within a distance appropriate to the prevailing circumstances and conditions.", "b) A vessel shall proceed at a safe speed so that she can in all circumstances avoid any collision.", "c) A vessel shall proceed at a safe speed to avoid a close quarters situation between ships."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "236. Which are the factors taken into accont in determining the \"safe speed\" additionally, by vessels with operational radar ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The minimal passing distance, the use of a proper range scale, the elimination of jamming.", "b) The characteristics, efficiency, constraints imposed by the radar range scale in use, the effect of the sea state, the number, location and movement of vessels.", "c) The same factors as when the radar is not in use."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "237. When shall it be deemed that a risk of collision exists, when an appreciable bearing change is evident ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) When approaching a very large vessel or a tow or when approaching a vessel at close range.", "b) When a vessel approaching from abeam, at high speed.", "c) When approaching a vessel at low speed, from astern."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "238. How shall the alternations of course and/or speed be made to avoid collision ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Small alterations of course and/or speed not to deviate too much from vessel's course.", "b) Large enough alterations of speed and small alterations of course, not to deviate too much from vessel's course.", "c) If the circumstances admit, they shall be large enough to be readily apparent to anoter vessel observing visually or by radar."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "239. How shall vessels not using a traffic separation scheme navigate ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) They shall use the inshore traffic zones.", "b) They shall avoid it by as wide a margin as is practicable.", "c) They shall navigate in the proximity of, but shall not cross the separation line."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "240. Which are the vessels exempted from complying with provisions at the rule regarding navigation in traffic separation schemes ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels restricted in their ability to manoeuvre when engaged in an operation for the maintenance of safety of navigation in the traffic separation scheme is exempted from complying with this rule.", "b) Vessels with damages to the main engine.", "c) Vessels with damages to the steering gear."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "241. How shall 2 power-driven vessels manoeuvre, when navigating on reciprocal or nearly reciprocal courses, so as to involve risk of collision ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Each shall alter courses to port in order to pass at a safe distance.", "b) They shall give the regular signals, alter course to starboard or port, according to the circumstances.", "c) Each shall alter her course to starboard so that each shall pass on the port side of the other."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "242. How shall 2 sailing vessels manoeuvre when they are approaching one another, so as to involve risk of collision and each has the wind on a different side ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel which has the wind on the port side shall keep out of the way of the other.", "b) The vessel which has the wind on the starboard side shall keep out of the way of the other.", "c) The vessel which has the wind from astern shall keep out of the way of the other."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "243. Which is the action by given-way vessel ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall so far as possible take early and substantial action to keep well clear.", "b) The vessel shall take early action with small alterations of course not to deviate too much from her course.", "c) When the vessels are in close proximity, the give-way vessel shall take substantial action by alterations of course and speed to completly avoid the risk."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "244. When shall a stand-on vessel take action to avoid collision by her manoeuvre alone ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall not keep out of the way of another vessel, no matter the circumstances.", "b) As soon as it become apparent to her that the vessel required to keep out of the way is not taking appropriate action in compliance with the rules.", "c) When after taking the bearing, she realized that the risk of collision exists."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "245. Which vessel's way shall a power-driven vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel not under command.", "b) All oil-tankers and tankers carrying liquefied gases.", "c) Power-driven vessels, with high speed."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "246. Which vessel's way shall a sailing vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Power-driven vessels with low speed.", "b) Vessels not under command.", "c) Oil-tankers or tankers carrying liquefied gases."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "247. Which vessel's way shall a sailing vessel underway keep out of ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels engaged in fishing.", "b) Trawlers underway to the fishing grounds.", "c) Fish-carriers, underway."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "248. Which vessels shall, if the circumstances of the case admit, avoid impeding the safe passage of a vessel constrained by her draught ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels restricted in their ability to manoeuvre.", "b) Vessels not under command.", "c) Power-driven vessels underway."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "249. To which vessels do the rules of conduct of vessels in restricted visibility apply to ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels navigating in areas of restricted visibility when only one of them is not in sight of one another.", "b) Vessels not in sight of one another when navigating in or near areas of restricted visibility.", "c) Vessels navigating in or near areas of restricted visibility when they sight only the masthead lights of one another."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "250. When shall the rules concerning lights be complied with ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) By night.", "b) By night and in restricted visibility.", "c) From sunset to sunrise."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "251. What does the word \"sidelight\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A green light on the starboard side and a red light on the port side each showing an unbroken light over an arc of the horizon of 112.5 degrees and so fixed as to show the light from right ahead to 22.5 degrees abaft the beam on its respective side.", "b) The white sidelights from the side-ladders.", "c) The white light from the decks."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "252. What does the term \"towing light\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A white light placed above the sternlight used as a steering guide, while towing.", "b) A yellow light showing an unbroken light over an arc of the horizon of 360 degrees.", "c) A yellow light placed as nearly as practicable at the stern showing an unbroken light over an arc of the horizon of 135 degrees and so fixed as to show the light 67.5 degrees from right aft on each side of the vessel."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "253. What range shall the mastlights be visible at, for vessels between 12 and 20m in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 1 - 2 nautical miles.", "b) 2 nautical miles.", "c) 3 nautical miles."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "254. What range shall the sidelights be visible at for vessels more than 50 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 5 nautical miles.", "c) Between 3 and 5 nautical miles."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "255. What range shall the sternlight be visible at, for vessels of 50 metres or more in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 4 nautical miles.", "c) 2 nautical miles."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "256. What range shall the sternlight be visible at, for vessels less than l2 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 1.5 nautical miles.", "c) 2 nautical miles."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "257. What range shall the towing light be visible at, for vessels of 12-50 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 nautical miles.", "b) 2 nautical miles.", "c) 5 nautical miles."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "258. What range shall the white,red, green or yellow all round light be visible at, for vessels less than 12 metres in length ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 1 nautical mile.", "b) Less than 1 nautical mile.", "c) 2 nautical miles."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "259. What lights shall a power-driven vessel underway, of 50 metres or more in length, exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A masthead light, sidelight and a sternlight.", "b) A masthead light forward, a second masthead light abaft of and higher than the forward one, sidelights and a sternlight.", "c) Sidelights, a sternlight and two white masthead lights."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "260. What lights shall a power-driven vessel of less than 50 metres in length exhibit, when towing and the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 masthead lights in a vertical line and a towing light.", "b) 3 masthead lights in a vertical line, sidelights and a sternlight.", "c) 3 masthead lights in a vertical line, sidelights, a sternlight and a towing light."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "261. What lights shall a power-driven vessel of more than 50 metres in length exhibit, when towing and the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 masthead lights in a vertical line, sidelights and a sternlight.", "b) Instead of the lights forward aft or aft, 3 masthead lights in a vertical line, sidelights, a sternlight, a towing light.", "c) 3 masthead lights in a vertical line, sidelights and a towing light."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "262. What lights shall a pushing vessel and a vessel being pushed ahead exhibit, when they are rigidly connected in a composite unit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a tugboat with the length of the tow less than 200 metres.", "b) Every vessel shall exhibit herwn lights prescribed for the power-driven vessel underway.", "c) The lights of a single power-driven vessel, underway."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "263. What lights shall the objects or vessels being towed exhibit, other than inconspicuous vessels or objects ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Masthead lights and a sternlight.", "b) Sidelights and a sternlight.", "c) Towing lights and a sternlight."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "264. Where shall the shape of a vessel being towed be placed when the length of the tow exceeds 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At the foremast head.", "b) At the aftermast head.", "c) Where it can best be seen."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "265. What lights shall an inconspicuous, partly submerged vessel or object more than 25 metres in breadth, exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 4 all-round white lights at the after end, forward end and on each side at the extremities of her breadth.", "b) An all-round white light at the forward end and another all-round white light at the after end.", "c) Green and red sidelights at the extremities of her breadth."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "266. What shape shall an inconspicuous, partly submerged object or vessel exhibit by day when being towed and the length of the tow is less than 200 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A cone apex downwards at the forward end.", "b) A diamond at or near the after end of the last vessel or object being towed.", "c) 2 black cones, apexes together."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "267. What lights shall a sailing vessel underway exhibit, when her length is less than 20 metres ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights and a sternlight combined in one lantern.", "b) Sidelights.", "c) A white light to be exhibited if necessary."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "268. Which are the additional lights a sailing vessel underway may exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round green light at the top of the mast.", "b) An all-round red light at the top of the mast.", "c) 2 all-round lights in a vertical line, the upper being red and the lower green at the top of the mast."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "269. What shape shall a vessel proceeding under sail exhibit, when also being propelled by machinery ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A conical shape forward, apex downward, where it can best be seen.", "b) A diamond where it can best be seen.", "c) 2 black cones with the apexes together."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "270. What lights shall a vessel engaged in trawling exhibit, when not underway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) An all-round green light and a masthead light placed higher.", "b) 2 all-round lights in a vertical line, the upper being green and the lower white, a masthead light placed abaft of and higher than the all-round light.", "c) 2 all-round lights in a vertical line, the upper being white and the lower green and a sternlight."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "271. What shapes shall a vessel engaged in trawling exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A shape consisting of 2 cones with their apexes together.", "b) A diamod shape.", "c) 2 black balls in a vertical line."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "272. What lights shall a vessel engaged in fishing other than trawling exhibit, when there is outlying gear extending more than 150 metres horizontally and is not making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 all-round lights in a vertical line, the upper being white and the lower red, an all-round red light in the direction of the gear.", "b) 2 lights in a vertical line, the upper being red and the lower white, an all-round white light in the direction of the gear.", "c) An all-round white light in the direction of the gear."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "273. What lights and shapes shall a fishing vessel exhibit, when not engaged in fishing ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights and shapes prescribed for a vessel of her length.", "b) The lights of a vessel engaged in fishing and making way through the water.", "c) The lights of a vessel restricted in her ability to manoeuvre."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "274. What additional lights shall vessels engaged in fishing with purse seine gear exhibit, when engaged in fishing in close proximity to other vessels ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A yellow light flashing alternately white equal light and occultation duration.", "b) An all-round white light.", "c) 2 yellow lights in a vertical line flashing alternately every second and with equal light and occultation. duration."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "275. What lights shall a vessel not under command exhibit, when not making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights and 2 red lights in a vertical line.", "b) 2 all-round red lights in a vertical line.", "c) The red lights and a sternlight."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "276. Where shall the shapes of a vessel not under command be placed ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Forward.", "b) Where they can best be seen.", "c) At the aftmasthead."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "277. What lights shall a vessel restricted in her ability to manoeuvre exhibit, when not making way through the water ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 lights in a vertical line, the highest and the lowest being red and the middle one white.", "b) 3 white lights in a vertical line.", "c) 3 lights in a vertical line, the highest and the lowest being white and the middle one red."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "278. What shapes shall a vessel restricted in her ability to manoeuvre exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 black balls in a vertical line.", "b) A black diamond.", "c) 3 shapes in a vertical line, the highest and the lowest being a ball and the middle one a diamond."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "279. What lights shall a vessel engaged in dredging or underwater operations exhibit, when restricted in her ability to manoeuvre ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 all-round red lights in a vertical line to indicate the side on which the obstruction exists, 2 all-round green lights in a vertical line to indicate the side on which another vessel may pass and the lights of a vessel restricted in her ability to manoe.", "b) The lights of a vessel not under command.", "c) 2 all-round red lights in a vertical line to indicate the side on which an obstruction exists, 2 red lights in a vertical line to indicate the side on which another vessel may pass and the lights of a power-driven vessel underway."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "280. What lights shall a vessel engaged in dredging or underwater operations exhibit, when restricted in her ability to manoeuvre and at anchor ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights of a power-driven vessel at anchor.", "b) A red light indicating the side on which an obstruction exists and the lights for a vessel at anchor.", "c) Instead of the lights of a vessel at anchor, the lights of a vessel restricted in her ability to manoeuvre engaged in dredging operations."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "281. What shapes shall a vessel engaged in mineclearance operations exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The shapes of a vessel not under command.", "b) 3 balls and in case the vessel is at anchor, 3 balls and the shape prescribed for anchored vessels.", "c) The shapes of a power-driven vessel underway and 3 diamonds."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "282. What do the shapes and lights of vessels engaged in mineclearance operations indicate ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) That it is dangerous for another vessel to approach within 1000 metres of the mineclearance vessel.", "b) That it is dangerous for another vessel to approach within 500 metres of the mineclearance vessel.", "c) That another vessel shall navigate with precaution keeping more than 2 nautical miles distance from the vessel."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "283. Where shall the lights or shapes of the vessels constrained by their draught be exhibited ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Where they can best be seen.", "b) At the stern masthead.", "c) At the fore masthead."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "284. What lights shall a vessel engaged on pilotage duty exhibit, when she is not underway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 all-round lights in a vertical line, the upper being red and the lower white.", "b) An all-round white alternating light.", "c) 2 all-round lights in a vertical line, the upper being white and the lower red."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "285. What lights and shapes shall a pilot vessel exhibit when not engaged on pilotage duty ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights and shapes prescribed for a pilot vessel.", "b) The lights or shapes prescribed for a similar vessel of her length.", "c) The lights and shapes for vessels restricted in their ability to manoeuvre."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "286. What is the length of a vessel at anchor which must use the available working or equivalent lights to illuminate her decks ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 75 metres.", "b) 50 metres.", "c) 100 metres and more."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "287. What shapes shall a vessel aground exhibit ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The shapes of a vessel at anchor and 3 balls in a vertical line.", "b) The shapes of a vessel at anchor and 2 balls in a vertical line.", "c) 2 balls in a vertical line."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "288. What ligths and shapes shall a seaplane exhibit, when alighted on the sea ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The lights and shapes prescribed by the rules.", "b) The lights and shapes necessary for identification.", "c) The lights and shapes for vessels of less than 20 metres in length."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "289. What does the term \"short blast\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A blast of from 2 to 3 seconds' duration.", "b) A blast of a short, less than 1 second's duration, produced by a power-driven vessel underway.", "c) A blast of about 1 second's duration."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "290. What equipment for sound signals shall a vessel of 100 metres or more in length be provided with?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A whistle, a bell and a gong at the stern.", "b) A whistle in the fore part and a gong at the stern.", "c) A bell in the fore part and a gong at the stern."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "291. What equipment for sound signals shall a vessel of less than 12 metres in length carry ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Vessels of less than 12 metres in length shall not be obliged to carry sound signalling appliances.", "b) Vessels of less than 12 metres in length shall carry a whistle and a bell in the fore part.", "c) Vessels of less than 12 metres in length shall not be obliged to carry the prescribed sound signalling appliances, but they shall be provided with some other means of making an efficiement sound signal."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "292. Which is the sound signal to indicate the manoeuvre \"I am altering my course to starboard\" ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One short blast.", "b) One prolonged blast followed by one short blast.", "c) 2 prolonged blast followed by one short blast."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "293. What significance shall the light signal\"one flash \" have, if associated with the sound signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) I am altering my course to starboard.", "b) I have stopped my engines.", "c) I am manoeuvring with difficulty to port."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "294. What significance shall light signal \"3 flashes\" have, if associated with the sound signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) I am operating astern propulsion.", "b) I am manoeuvring astern propulsion.", "c) I have my engines stopped."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "295. When in sight of one another in a narrow channel or fairwey, what signal shall the vessel intending to overtake another on port side produce ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 2 short blasts.", "b) 2 prolonged blasts followed by 2 short blasts.", "c) 2 short blasts preceded and followed by one prolonged blast."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "296. What sound signals shall a vessel give when in sight of another and failing to understand the intentions of another, or when in doubt whether sufficient action is being taken by the other to avoid collision ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At least 5 short and rapid blasts on the whistle.", "b) One prolonged blast and 5 short blasts.", "c) 2 prolonged blasts followed by short blasts."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "297. What signal shall a vessel give, when approaching a bend or obstruction that may obscure another vessel and hearing a prolonged blast ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One short blast \"I am altering my course to starboard\".", "b) One prolonged blast followed by one short blast.", "c) One prolonged blast."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "298. When shall sound signals be given, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Only by day in conditions of restricted visibility.", "b) By night on foggy weather.", "c) By day and by night in conditions of restricted visibility."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "299. What sound signal shall a power-driven vessel give, when making way through the water in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 short warning blasts.", "b) One prolonged blast followed by one short blast at an interval of one minute.", "c) One prolonged blast at intervals of not more than 2 minutes."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "300. What sound signals shall vessels constrained by their draught give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes.", "b) One prolonged blast preceded and followed by one short blast at intervals of one minute.", "c) 5 short blasts at intervals of 2 minutes."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "301. What sound signals shall a fishing vessel underway give, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 4 short ( warning ) blasts at intervals of 2 minutes.", "b) One prolonged blast followed by 2 short blasts at intervals of not more than 2 minutes.", "c) One prolonged blast followed by 3 short blasts at intervals of one minute."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "302. What sound signals shall a composite unit, pushing vessel-vessel being pushed ahead give, when stopped and not making way through the water, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One prolonged blast at intervals of 2 minutes.", "b) One prolonged blast preceded and followed by one short blast at intervals of 2 minutes.", "c) 2 prolonged blasts at intervals of not more than 2 minutes."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "303. What sound signals shall a vessel at anchor give, of 100 metres or more in lenght, in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Rapid blasts on the bell in the forepart and one prolonged blast on the whistle at intervals of one minute.", "b) Rapid blasts on the bell in the forepart and immediately the gong shall be sounded in the after part for about 5 secondat intervals of not more than one minute.", "c) 3 distinct strokes on the bell in the forepart and 3 strokes on the gong in the after part at intervals of one minute."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "304. What shall a vessel of less than 12 metres in length do, in conditions of restricted visibility, when she cannot give the signals prescribed by the rules ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) She shall give a sound signal on the whistle consisting of 5 short blasts at intervals of one minute.", "b) She shall make some other efficient sound signal at intervals of not more than 2 minutes.", "c) She shall give rapid strokes on the gong at intervals of not more than one minute."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "305. What sound signals shall a pilot vessel give, when stopped and not making way through the water, engaged on pilotage duty in conditions of restricted visibility ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 4 short blasts on the whistle at intervals of one minute.", "b) The blasts of stopped vessel not making way through the water and in addition 4 short identity blasts.", "c) 2 prolonged blasts at intervals of one minute."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "306. Which is the alarm signal in radiotelephony ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A 2-tone bitonal signal.", "b) A continuous tone signal.", "c) A signal consisting of short continuous tones."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "307. A vessel not under command sounds the same fog signal as a vessel___________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) towing.", "b) constrained by her draft.", "c) All of the above."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "308. If a vessel displays theree all-round red lights in a vertical line at night, during the day she may show________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three balls in a vertical line.", "b) a cylinder.", "c) two diamonds in a vertical line."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "309. At night, a power-driven vessel underway of less than 7 meters in length where its maximum speed does not exceed 7 knots may show, as a minimum, ______________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) sidelights and a sternlight.", "b) the lights required for a vessel more than 7 meters in length.", "c) one all-round white light."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "310. A vessel displaying three red lights in a vertical line is _________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) not under command.", "b) aground.", "c) constrained by her draft."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "311. A towing light is __________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) shown at the bow.", "b) white in color.", "c) shown in addition to the sternlight."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "312. A power-driven vessel pushing ahead or towing alongside displays navigation lights and _________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) two all-round red lights in a vertical line.", "b) two yellow towing lights in a vertical line.", "c) two white masthead lights in a vertical line."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "313. To indicate that a vessel is constrained by her draft, a vessel may display, in a vertical line,_______________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three 360grd. red lights.", "b) two 225grd. red lights.", "c) three 360grd. blue lights."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "314. A single vessel being towed alongside shall exhibit ________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one all-round white light.", "b) sidelights, stern light and a special flashing light.", "c) sidelights and a stern light."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "315. A single vessel being towed alongside shall show ________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one all-round white light.", "b) sidelights and a stern light.", "c) only the outboard sidelight and a stern light."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "316. What lights are required for a single barge being towed alongside?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Sidelights and a stern light.", "b) Sidelights, a special flashing light, and a stern light.", "c) Sidelights and a special flashing light."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "317. A power-driven vessel pushing ahead or towing alongside will show sidelights, a sternlight, and _________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) an all-round red light where it can best be seen.", "b) two yellow masthead lights in a vertical line.", "c) two masthead lights in a vertical line."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "318. What characteristic must a light a light used to indicate passing intentions have?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) It must be an alternating red and yellow light.", "b) It must be an all-round white light.", "c) It must be an all-round yellow light."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "319. What characteristic must a light have if used to signal passing intentions?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) It must be an all-round white light.", "b) It must be an alternating blue and white light.", "c) It must be an all-round white or yellow light."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "320. A light used to signal passing intentions must be an ________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) all-round white or yellow light.", "b) all-round yellow light only.", "c) all-round white light only."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "321. A light used to signal passing intentions must be an ______________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) all-round yellow light only.", "b) all-round white light only.", "c) all-round blue light only."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "322. A vessel displaying three red lights in a vertical line is _________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) restricted in her ability to maneuver.", "b) not under command.", "c) constrained by her draft."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "323. If at night a vessel displays three all-round red lights in a vertical line, during the day she may show ________________", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) two cones,base to base.", "b) three black balls in a vertical line.", "c) a cylinder."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "324. Which dayshape is prescribed for a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A black diamond.", "b) A cylinder.", "c) A black ball."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "325. A vessel constrained by her draft may display________________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three all-round red lights instead of the lights required for a power-driven vessel of her class.", "b) the same lights as a vessel restricted in her ability to maneuver.", "c) three all-round red lights in addition to the lights required for a power-driven vessel of her class."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "326. A towing light is _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) shown below the sternlight.", "b) white in color.", "c) a yellow light having the same characteristics as the stern light."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "327. A towing light _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) flashes at regular intervals of 50-70 flashes per minute.", "b) is yellow in color.", "c) shows an unbroken light over an arc of the horizon of not less than 180 grd nor more than 225 grd."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "328. A 20-meter power-driven vessel pushing ahead or towing alongside will display _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) two towing lights in a vertical line.", "b) a towing light above the sternlight.", "c) two masthead lights in a vertical line."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "329. At night, a power-driven vessel less than 7 meters in length, with a maximum speed which does not exceed 7 knots, MUST show when underway at least _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) one white 360 light.", "b) a white light on the near approach of another vessel.", "c) sidelights and a sternlight."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "330. At night, a power-driven vessel less than 7 meters in length, with a maximum speed which does not exceed 7 knots, may show when underway _____________,", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) sidelights combined in a single latern.", "b) an all-round flashing yellow light.", "c) one all-round white light."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "331. Which statement is TRUE concerning light signals?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The time between flashes shall be about five seconds.", "b) The light signals are to be used when not using sound signals.", "c) The time between successive signals shall be not less than ten seconds."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "332. The light which may be used with a vessel`s whistle must be _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) used when the whistle is broken.", "b) a white light.", "c) used only at night."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "333. In addition to her running lights, an underway vessel constrained by her draft may carry in a vertical line_____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) a red light, a white light, and a red light.", "b) two red lights.", "c) three red lights."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "334. If you sighted three red lights in a vertical line on another vessel at night,it would be a vessel _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) aground.", "b) constrained by her draft.", "c) dredging."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "335. A 20-meter power-driven vessel pushing ahead or towing alongside will display _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) a single white light forward.", "b) two masthead lights in a vertical line.", "c) two towing lights in a vertical line."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "336. A vessel constrained by her draft may display _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) three all-round red lights.", "b) two 225 grd red lights.", "c) three all-round blue lights."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "337. Which vessel may NOT exhibit two red lights in a vertical line?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel constrained by her draft.", "b) A trawler fishing in close proximity to other trawlers.", "c) A vessel aground."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "338. Which statement(s) is (are) TRUE concerning light signals?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The time between flashes shall be about five seconds.", "b) The time between successive signals shall be not less than ten seconds.", "c) The light signal are to be used when not using sound signal."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "339. What dayshape is prescribed for a vessel constrained by her draft?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A black cone, apex upward.", "b) A black cone, apex downward.", "c) A cylinder."], "correctAnswer": [3], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "340. You are on a vessel that cannot comply with the spacing requirement for masthead lights. What is required in this situation?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel must carry only the lights that comply with the rules; the others may be omitted.", "b) The vessel`s lights must comply as closely as possible, as determined by her government.", "c) The vessel must be altered to permit full compliance with the rules."], "correctAnswer": [2], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "341. A partially submerged object towed by a vessel must show during the day one _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) diamond shape when the length of the tow is 200 meters or less.", "b) diamond shape when the length of the tow exceeds 200 meters in length.", "c) black ball."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "342. Yellow lights are NOT shown by _____________.", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) towing vessels pushing ahead.", "b) air cushion vessels in a nondisplacement mode.", "c) purse seiners."], "correctAnswer": [1], "section": "CAA-EN-Reguli de guvernare", "difficulty": 1},
+        {"question": "343. How shall a vessel navigate along a narrow channel or fairway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) In the centre of the channel or fairway.", "b) As near to the outer limit of the channel or fairway which lies on her starboard side as is safe and practicable.", "c) The vessel shall keep as near to the outer limit of the channel or fairway as possible, to provide a proper look-out."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "344. How shall a vessel less than 20 m in length or a sailing vessel proceed along a narrow fairway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) As all the other vessels.", "b) As close to the centre of the fairway as possible.", "c) The vessel shall not impede the passage of a vessel which can safely navigate only within a narrow fairway or channel."], "correctAnswer": [3], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "345. How shall a vessel engaged in fishing conduct in a narrow channel or fairway ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The vessel shall not impede the passage of any other vessel navigating within a narrow channel or fairway.", "b) They shall fishing only in the centre of the narrow channel not to impede the passage in both directions.", "c) As a privileged vessel which must be avoided."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "346. What sound signals may a vessel navigating within a channel use, when in doubt to the intention of a crossing vessel ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) One long blast and two short blasts on the whistle.", "b) 5 short and rapid blasts on the whistle.", "c) One long warning signal."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "347. What safety precautions shall a vessel nearing a bend of a narrow channel or fairway take ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) To sound 5 short blasts.", "b) To sound one short blast and navigate on the right side of the channel.", "c) To sound one long blast and navigate with particular alertness and caution."], "correctAnswer": [3], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "348. What shall the traffic separation schemes rule apply to ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) To traffic separation schemes adopted by the organisation.", "b) To traffic separation schemes adopted by the Government of the respective state.", "c) To traffic separation schemes adopted by the organisation and the Governments."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "349. How shall a vessel join or leave a traffic separation scheme ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At right angles to the general direction of the traffic flow.", "b) Normally join or leave traffic lane at the termination of the lane, but, when joining or leaving from either side shall do so at as small angle to the general direction of traffic flow as possible.", "c) Through the traffic separation zone but with the approuval of the authorities surveying navigation in the traffic separation scheme."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "350. How shall a vessel cross the traffic lanes when is obliged to do so ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At a small angle to the general direction of traffic flow and at small speed.", "b) At as small an angle to the general direction of traffic flow as practicable at full speed.", "c) As nearly as practicable at right angles to the direction of traffic flow."], "correctAnswer": [3], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "351. Shall inshore traffic zones be used for the inshore traffic ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Normally, they shall not be used for through traffic, except for vessels of less than 20m in length and sailing vessels.", "b) They shall be used by all vessels owned by the riverside state.", "c) They shall be used by vessels restricted in their ability to manoeuvre."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "352. Is anchoring permitted in the traffic separation schemes ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A vessel shall so far as practicable avoid anchoring in a traffic separation scheme or in areas near its terminations.", "b) Anchoring is permitted, but the vessels shall make all signals provided in the COLREG rules.", "c) Anchoring is prohibited in all circumstances."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "353. What additional signals shall a pilot vessel give, when engaged on pilotage duty, in conditions of restricted visibility in order to be identified ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 short blasts on the whistle.", "b) 4 short blasts on the whistle.", "c) 3 short blasts on the whistle or siren."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "354. What signals shall a vessel give to attract attention of another ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 5 short blasts on the whistle and 5 rapid strokes on the bell.", "b) Light or sound signals that cannot be mistaken for other signals or to direct the beam of her searchlight in the direction of the danger.", "c) One prolonged blast and 4 short blasts on the whistle."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "355. What does the term \"distress signals\" mean ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The signals given by a vessel in distress.", "b) The signals given by a vessel in distress and in need of assistance.", "c) The signals given by a vessel not under command, in distress."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "356. How shall the distress signals be used ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Distress signals are used separately at short intervals.", "b) Distress signals are used either together or separately at short intervals of about one minute.", "c) Distress signals are used only together in order to be noticed quickly."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "357. At what intervals is the \"gun or other explosive signal\" fired ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) At about one minute.", "b) At about 5 minutes.", "c) At about 15 minutes."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "358. What is the significance of a continuous sounding with any fog-signalling apparatus ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A warning signal given by a vessel in fog.", "b) A distress signal.", "c) A signal given by a vessel not under command or restricted in her ability to manoeuvre."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "359. What signal do the shells or rockets throwing red stars indicate, when fired at short intervals ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A warning signal.", "b) A restriction signal given by a war vessel.", "c) A distress signal."], "correctAnswer": [3], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "360. Which is the distress signal in radiotelegraphy ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) 3 dots, 3 dashes, 3 dots ( S.O.S. ) in the Morse Code.", "b) Repeated dots ( E ) in the Morse Code.", "c) 3 dashes ( O ) in the Morse Code."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "361. Which is the distress signal in radiotelephony ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The word DANGER repeated.", "b) The word MAYDAY repeated.", "c) The words ATTENTION-DANGER repeted 3 times."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "362. Which is the distress signal in the international code of signals ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) \"N.C.\".", "b) \"P.\".", "c) \"O.\"."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "363. Which signal may be considered a distress signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A square flag having above or below it a ball or a similar object.", "b) 3 black balls in a vertical line.", "c) A red flag ( B )."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "364. What signal does \"flames on the vessel from a burning tar or oil barrel\" indicate ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) The warning signal of a vessel having the steering gear out of order.", "b) A distress signal.", "c) The signal to attract attention that the vessel cannot avoid another vessel."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "365. Which signal may be considered as a distress signal ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Shells or hand flares showing a red light.", "b) Shells or hand flares showing a green light.", "c) Shells or hand flares showing a brillant white light."], "correctAnswer": [1], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "366. What signal does \"the smoke signal giving off orange-coloured smoke\" indicate ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) A warning signal for an avoiding manoeuvre.", "b) A distress signal.", "c) A signal to attract attention."], "correctAnswer": [2], "section": "CAA-EN-Semnale sonore", "difficulty": 1},
+        {"question": "367. Which is the distress signal given by arms ?", "questionType": "text", "answerSelectionType": "single", "messageForCorrectAnswer": "Corect", "messageForIncorrectAnswer": "Incorect", "point": 1, "answers": ["a) Slowly and repeatedly moving the arms, making circles above the head.", "b) Raising both arms vertically, above the head.", "c) Slowly and repeatedly raising and lowering arms outstretched to each side."], "correctAnswer": [3], "section": "CAA-EN-Semnale sonore", "difficulty": 1}
     ]
-}
+};

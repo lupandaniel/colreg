@@ -9,6 +9,15 @@
   padding: 32px 20px 48px;
 }
 
+.home-eyebrow {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2a6f82;
+}
+
 .home-header h1 {
   font-size: 22px;
   line-height: 1.3;
@@ -614,4 +623,148 @@
 
 .quiz-result-custom .review-answer.incorrect .review-tag {
   background-color: #d32f2f;
+}
+
+.quiz-result-custom .review-section-tag {
+  margin: -4px 0 8px 28px;
+  font-size: 12px;
+  color: #5a6b70;
+}
+
+.quiz-result-custom .exam-verdict {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.quiz-result-custom .exam-verdict.passed {
+  background: #e6f4ea;
+  color: #1b5e20;
+}
+
+.quiz-result-custom .exam-verdict.failed {
+  background: #fdecea;
+  color: #b71c1c;
+}
+
+.exam-timer {
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-timer.urgent {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.exam-menu {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exam-card {
+  background: #fff;
+  border: 1px solid #e2e8ea;
+  border-radius: 10px;
+  padding: 20px 18px;
+}
+
+.exam-card h2,
+.exam-card h3 {
+  margin: 0 0 4px;
+  color: #1b3a44;
+}
+
+.exam-subtitle {
+  margin: 0 0 14px;
+  color: #5a6b70;
+  font-size: 14px;
+}
+
+.exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.exam-table th,
+.exam-table td {
+  border-bottom: 1px solid #e8eef0;
+  padding: 8px 6px;
+  text-align: left;
+}
+
+.exam-table th {
+  color: #5a6b70;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.exam-total-row td {
+  font-weight: 700;
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+.exam-meta-list {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.exam-start-btn,
+.exam-menu .continue-btn,
+.exam-menu .btn {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 16px;
+}
+
+.exam-start-btn {
+  background-color: #1565c0;
+  color: #fff;
+  width: 100%;
+}
+
+.exam-start-btn:hover {
+  background-color: #0d47a1;
+}
+
+.practice-card .continue-btn {
+  background-color: #2e7d32;
+  color: #fff;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.practice-select-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a6b70;
+  margin-bottom: 6px;
+}
+
+.practice-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c5d4da;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
 }

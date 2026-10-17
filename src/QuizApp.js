@@ -2,21 +2,21 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import Quiz from 'react-quiz-component';
 import { questions as rawQuiz } from './questions';
 
-const STORAGE_KEY = 'quiz-progress-v3';
+const STORAGE_KEY = 'colreg-caa-progress-v1';
 
-// react-quiz-component renders the question text through a markdown parser.
-// A leading "57. " is interpreted as an ordered-list item, and because each
-// question is a single-item list, markdown always renders the marker as "1.",
-// throwing away the real question number. Inserting a zero-width space after
-// the digits breaks that list detection while staying visually identical.
+const examConfig = rawQuiz.examConfig || {
+  personnelCategory: 'CLASA A,B',
+  timeMinutes: 30,
+  passPercent: 80,
+  modelName: 'COLREG CAA',
+  sections: [],
+  totalQuestions: 30,
+};
+
 function preserveQuestionNumber(text) {
   return typeof text === 'string' ? text.replace(/^(\s*\d+)\./, '$1\u200B.') : text;
 }
 
-// react-quiz-component expects `correctAnswer` to be a (1-based) string for
-// single-selection questions. This data set stores it as an array (e.g. [1]),
-// which breaks scoring + instant feedback. Normalize it here without touching
-// the large data file.
 function normalizeQuestions(questionList) {
   return questionList.map((question) => {
     const normalized = { ...question, question: preserveQuestionNumber(question.question) };
@@ -26,6 +26,32 @@ function normalizeQuestions(questionList) {
     }
     return normalized;
   });
+}
+
+function shuffle(list) {
+  const copy = [...list];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function sampleExamQuestions(fullQuestions, config) {
+  const bySection = {};
+  fullQuestions.forEach((question) => {
+    const key = question.section || 'UNKNOWN';
+    if (!bySection[key]) bySection[key] = [];
+    bySection[key].push(question);
+  });
+
+  const picked = [];
+  config.sections.forEach((section) => {
+    const pool = bySection[section.id] || [];
+    const take = Math.min(section.count, pool.length);
+    picked.push(...shuffle(pool).slice(0, take));
+  });
+  return shuffle(picked);
 }
 
 function isAnswerCorrect(question, userAnswer) {
@@ -60,6 +86,13 @@ const entryIsCorrect = (entry) =>
 
 const entryUserAnswer = (entry) => (entry && typeof entry === 'object' ? entry.userAnswer : undefined);
 
+function formatTime(totalSeconds) {
+  const safe = Math.max(0, totalSeconds);
+  const m = Math.floor(safe / 60);
+  const s = safe % 60;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
 function loadProgress() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -67,24 +100,24 @@ function loadProgress() {
     const parsed = JSON.parse(raw);
     if (!parsed || !Array.isArray(parsed.activeKeys)) return null;
     return {
+      mode: parsed.mode || 'exam',
       activeKeys: parsed.activeKeys,
       answered: parsed.answered && typeof parsed.answered === 'object' ? parsed.answered : {},
+      endsAt: typeof parsed.endsAt === 'number' ? parsed.endsAt : null,
     };
   } catch {
     return null;
   }
 }
 
-function saveProgress(activeKeys, answered) {
+function saveProgress(state) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ activeKeys, answered }));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
-    /* storage unavailable / full – ignore */
+    /* ignore */
   }
 }
 
-// Questions still to ask in the current run = active universe minus the ones
-// already answered (in this or a previous, persisted session).
 function computeRunQuestions(fullQuestions, activeKeys, answered) {
   const keySet = new Set(activeKeys);
   return fullQuestions.filter(
@@ -95,30 +128,159 @@ function computeRunQuestions(fullQuestions, activeKeys, answered) {
 function QuizApp() {
   const fullQuestions = useMemo(() => normalizeQuestions(rawQuiz.questions), []);
 
-  const initial = useMemo(() => {
-    const saved = loadProgress();
-    if (saved) {
-      const keySet = new Set(saved.activeKeys);
-      const known = fullQuestions.some((question) => keySet.has(question.question));
-      if (known) {
-        return { activeKeys: saved.activeKeys, answered: saved.answered };
-      }
-    }
-    return { activeKeys: fullQuestions.map((question) => question.question), answered: {} };
-  }, [fullQuestions]);
-
-  const [activeKeys, setActiveKeys] = useState(initial.activeKeys);
-  const [answered, setAnswered] = useState(initial.answered);
-  const [runQuestions, setRunQuestions] = useState(() =>
-    computeRunQuestions(fullQuestions, initial.activeKeys, initial.answered),
-  );
+  const [phase, setPhase] = useState('menu'); // menu | running | result
+  const [mode, setMode] = useState('exam'); // exam | practice
+  const [activeKeys, setActiveKeys] = useState([]);
+  const [answered, setAnswered] = useState({});
+  const [runQuestions, setRunQuestions] = useState([]);
   const [runId, setRunId] = useState(0);
   const [resultFilter, setResultFilter] = useState('answered');
-  const [finished, setFinished] = useState(false);
+  const [endsAt, setEndsAt] = useState(null);
+  const [secondsLeft, setSecondsLeft] = useState(null);
+  const [practiceSection, setPracticeSection] = useState('all');
+
+  // Resume in-progress exam/practice if present
+  useEffect(() => {
+    const saved = loadProgress();
+    if (!saved || !saved.activeKeys.length) return;
+    const keySet = new Set(saved.activeKeys);
+    const known = fullQuestions.some((question) => keySet.has(question.question));
+    if (!known) return;
+
+    const remaining = computeRunQuestions(fullQuestions, saved.activeKeys, saved.answered);
+    const timedOut = saved.endsAt != null && Date.now() >= saved.endsAt;
+    setMode(saved.mode);
+    setActiveKeys(saved.activeKeys);
+    setAnswered(saved.answered);
+    setEndsAt(saved.endsAt);
+    if (timedOut || remaining.length === 0) {
+      setPhase('result');
+      setRunQuestions([]);
+    } else {
+      setRunQuestions(remaining);
+      setPhase('running');
+    }
+  }, [fullQuestions]);
 
   useEffect(() => {
-    saveProgress(activeKeys, answered);
-  }, [activeKeys, answered]);
+    if (phase !== 'running' && phase !== 'result') return;
+    if (!activeKeys.length) return;
+    saveProgress({ mode, activeKeys, answered, endsAt });
+  }, [phase, mode, activeKeys, answered, endsAt]);
+
+  // Countdown timer (exam only)
+  useEffect(() => {
+    if (phase !== 'running' || mode !== 'exam' || endsAt == null) {
+      setSecondsLeft(null);
+      return undefined;
+    }
+
+    const tick = () => {
+      const left = Math.ceil((endsAt - Date.now()) / 1000);
+      setSecondsLeft(left);
+      if (left <= 0) {
+        setPhase('result');
+        setRunQuestions([]);
+      }
+    };
+    tick();
+    const id = setInterval(tick, 250);
+    return () => clearInterval(id);
+  }, [phase, mode, endsAt]);
+
+  const startExam = useCallback(() => {
+    const sampled = sampleExamQuestions(fullQuestions, examConfig);
+    const keys = sampled.map((question) => question.question);
+    const end = Date.now() + examConfig.timeMinutes * 60 * 1000;
+    setMode('exam');
+    setActiveKeys(keys);
+    setAnswered({});
+    setRunQuestions(sampled);
+    setEndsAt(end);
+    setResultFilter('answered');
+    setRunId((id) => id + 1);
+    setPhase('running');
+  }, [fullQuestions]);
+
+  const startPractice = useCallback(() => {
+    const pool =
+      practiceSection === 'all'
+        ? fullQuestions
+        : fullQuestions.filter((question) => question.section === practiceSection);
+    const keys = pool.map((question) => question.question);
+    setMode('practice');
+    setActiveKeys(keys);
+    setAnswered({});
+    setRunQuestions(pool);
+    setEndsAt(null);
+    setResultFilter('answered');
+    setRunId((id) => id + 1);
+    setPhase('running');
+  }, [fullQuestions, practiceSection]);
+
+  const handleQuestionSubmit = useCallback((data) => {
+    const key = data.question.question;
+    const correct = isAnswerCorrect(data.question, data.userAnswer);
+    setAnswered((prev) =>
+      key in prev ? prev : { ...prev, [key]: { correct, userAnswer: data.userAnswer } },
+    );
+  }, []);
+
+  const finishNow = useCallback(() => {
+    setResultFilter('answered');
+    setPhase('result');
+    setRunQuestions([]);
+  }, []);
+
+  const backToMenu = useCallback(() => {
+    setPhase('menu');
+    setActiveKeys([]);
+    setAnswered({});
+    setRunQuestions([]);
+    setEndsAt(null);
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  const restartSameMode = useCallback(() => {
+    if (mode === 'exam') startExam();
+    else startPractice();
+  }, [mode, startExam, startPractice]);
+
+  const restartWithFailed = useCallback(
+    (failedQuestions) => {
+      const keys = failedQuestions.map((question) => question.question);
+      setActiveKeys(keys);
+      setAnswered({});
+      setRunQuestions(failedQuestions);
+      setEndsAt(mode === 'exam' ? Date.now() + examConfig.timeMinutes * 60 * 1000 : null);
+      setResultFilter('answered');
+      setRunId((id) => id + 1);
+      setPhase('running');
+    },
+    [mode],
+  );
+
+  const activeSet = useMemo(() => {
+    const keySet = new Set(activeKeys);
+    return fullQuestions.filter((question) => keySet.has(question.question));
+  }, [activeKeys, fullQuestions]);
+
+  const answeredCount = activeSet.filter((question) => question.question in answered).length;
+  const correctSoFar = activeSet.filter((question) => entryIsCorrect(answered[question.question])).length;
+  const incorrectSoFar = answeredCount - correctSoFar;
+
+  // When every question in the run is answered, show our result screen
+  useEffect(() => {
+    if (phase !== 'running' || !activeKeys.length) return;
+    if (answeredCount > 0 && answeredCount >= activeKeys.length) {
+      setPhase('result');
+      setRunQuestions([]);
+    }
+  }, [phase, activeKeys, answeredCount]);
 
   const quizData = useMemo(
     () => ({
@@ -129,53 +291,13 @@ function QuizApp() {
     [runQuestions],
   );
 
-  const handleQuestionSubmit = useCallback((data) => {
-    const key = data.question.question;
-    const correct = isAnswerCorrect(data.question, data.userAnswer);
-    setAnswered((prev) =>
-      key in prev ? prev : { ...prev, [key]: { correct, userAnswer: data.userAnswer } },
-    );
-  }, []);
-
-  const startRun = useCallback((questions) => {
-    setActiveKeys(questions.map((question) => question.question));
-    setAnswered({});
-    setRunQuestions(questions);
-    setResultFilter('answered');
-    setFinished(false);
-    setRunId((id) => id + 1);
-  }, []);
-
-  const finishNow = useCallback(() => {
-    setResultFilter('answered');
-    setFinished(true);
-  }, []);
-
-  const continueRemaining = useCallback(() => {
-    setRunQuestions((current) => computeRunQuestions(fullQuestions, activeKeys, answered) || current);
-    setFinished(false);
-    setRunId((id) => id + 1);
-  }, [fullQuestions, activeKeys, answered]);
-
-  const restartWithFailed = useCallback(
-    (failedQuestions) => {
-      startRun(failedQuestions);
-    },
-    [startRun],
-  );
-
-  const restartAll = useCallback(() => {
-    startRun(fullQuestions);
-  }, [fullQuestions, startRun]);
-
-  const activeSet = useMemo(() => {
-    const keySet = new Set(activeKeys);
-    return fullQuestions.filter((question) => keySet.has(question.question));
-  }, [activeKeys, fullQuestions]);
-
-  const answeredCount = activeSet.filter((question) => question.question in answered).length;
-  const correctSoFar = activeSet.filter((question) => entryIsCorrect(answered[question.question])).length;
-  const incorrectSoFar = answeredCount - correctSoFar;
+  const sectionCounts = useMemo(() => {
+    const counts = {};
+    examConfig.sections.forEach((section) => {
+      counts[section.id] = fullQuestions.filter((question) => question.section === section.id).length;
+    });
+    return counts;
+  }, [fullQuestions]);
 
   const renderAnswerReview = useCallback(
     (question) => {
@@ -199,11 +321,7 @@ function QuizApp() {
 
             return (
               <div key={index} className={className}>
-                {question.questionType === 'photo' ? (
-                  <img src={answer} alt="răspuns" />
-                ) : (
-                  <span>{answer}</span>
-                )}
+                <span>{answer}</span>
                 {isCorrect && <span className="review-tag">răspuns corect</span>}
                 {!isCorrect && isPicked && <span className="review-tag">răspunsul tău</span>}
               </div>
@@ -229,8 +347,9 @@ function QuizApp() {
     const incorrectQuestions = activeSet.filter((question) => statusOf(question) === 'incorrect');
     const unansweredQuestions = activeSet.filter((question) => statusOf(question) === 'unanswered');
     const correctCount = correctQuestions.length;
+    const percent = total ? Math.round((correctCount / total) * 100) : 0;
+    const passed = mode === 'exam' ? percent >= examConfig.passPercent : correctCount === total;
     const answeredTotal = total - unansweredQuestions.length;
-    const allPerfect = total > 0 && correctCount === total;
 
     const reviewQuestions = activeSet.filter((question) => {
       const status = statusOf(question);
@@ -239,42 +358,70 @@ function QuizApp() {
       return status === resultFilter;
     });
 
-    const badge = { correct: 'badge correct-badge', incorrect: 'badge incorrect-badge', unanswered: 'badge unanswered-badge' };
+    const badge = {
+      correct: 'badge correct-badge',
+      incorrect: 'badge incorrect-badge',
+      unanswered: 'badge unanswered-badge',
+    };
     const badgeIcon = { correct: '✓', incorrect: '✗', unanswered: '–' };
 
     return (
       <div className="quiz-result-custom">
-        <h2>{allPerfect ? 'Felicitări! Ai răspuns corect la toate întrebările.' : 'Rezultatul chestionarului'}</h2>
+        {mode === 'exam' ? (
+          <>
+            <p className={`exam-verdict ${passed ? 'passed' : 'failed'}`}>
+              {passed ? 'ADMIS' : 'RESPINS'}
+            </p>
+            <h2>
+              {passed
+                ? `Ai trecut examenul (≥ ${examConfig.passPercent}%).`
+                : `Nu ai atins pragul de ${examConfig.passPercent}%.`}
+            </h2>
+          </>
+        ) : (
+          <h2>
+            {correctCount === total
+              ? 'Felicitări! Ai răspuns corect la toate întrebările.'
+              : 'Rezultatul antrenamentului'}
+          </h2>
+        )}
+
         <p className="score-line">
-          Scor: <strong>{correctCount}</strong> / {total} ({total ? Math.round((correctCount / total) * 100) : 0}%)
+          Scor: <strong>{correctCount}</strong> / {total} ({percent}%)
+          {mode === 'exam' && (
+            <>
+              {' '}
+              · prag: {examConfig.passPercent}%
+            </>
+          )}
         </p>
         <p className="score-line muted">
-          Răspunse: <strong>{answeredTotal}</strong> · Corecte: <strong className="score-correct">{correctCount}</strong> · Greșite:{' '}
+          Răspunse: <strong>{answeredTotal}</strong> · Corecte:{' '}
+          <strong className="score-correct">{correctCount}</strong> · Greșite:{' '}
           <strong className="score-incorrect">{incorrectQuestions.length}</strong>
           {unansweredQuestions.length > 0 && (
             <>
-              {' '}· Fără răspuns: <strong>{unansweredQuestions.length}</strong>
+              {' '}
+              · Fără răspuns: <strong>{unansweredQuestions.length}</strong>
             </>
           )}
         </p>
 
         <div className="result-actions">
-          {unansweredQuestions.length > 0 && (
-            <button type="button" className="btn continue-btn" onClick={continueRemaining}>
-              Continuă întrebările rămase ({unansweredQuestions.length})
-            </button>
-          )}
-          {incorrectQuestions.length > 0 && (
+          {incorrectQuestions.length > 0 && mode === 'practice' && (
             <button
               type="button"
               className="btn restart-failed-btn"
               onClick={() => restartWithFailed(incorrectQuestions)}
             >
-              Reia doar întrebările greșite ({incorrectQuestions.length})
+              Reia doar greșitele ({incorrectQuestions.length})
             </button>
           )}
-          <button type="button" className="btn restart-all-btn" onClick={restartAll}>
-            Reia tot chestionarul
+          <button type="button" className="btn restart-all-btn" onClick={restartSameMode}>
+            {mode === 'exam' ? 'Examen nou (alt set)' : 'Reia antrenamentul'}
+          </button>
+          <button type="button" className="btn continue-btn" onClick={backToMenu}>
+            Înapoi la meniu
           </button>
         </div>
 
@@ -282,13 +429,25 @@ function QuizApp() {
           <div className="review-header">
             <h3>Răspunsuri</h3>
             <div className="review-filter">
-              <button type="button" className={resultFilter === 'answered' ? 'active' : ''} onClick={() => setResultFilter('answered')}>
+              <button
+                type="button"
+                className={resultFilter === 'answered' ? 'active' : ''}
+                onClick={() => setResultFilter('answered')}
+              >
                 Răspunse ({answeredTotal})
               </button>
-              <button type="button" className={resultFilter === 'correct' ? 'active' : ''} onClick={() => setResultFilter('correct')}>
+              <button
+                type="button"
+                className={resultFilter === 'correct' ? 'active' : ''}
+                onClick={() => setResultFilter('correct')}
+              >
                 Corecte ({correctCount})
               </button>
-              <button type="button" className={resultFilter === 'incorrect' ? 'active' : ''} onClick={() => setResultFilter('incorrect')}>
+              <button
+                type="button"
+                className={resultFilter === 'incorrect' ? 'active' : ''}
+                onClick={() => setResultFilter('incorrect')}
+              >
                 Greșite ({incorrectQuestions.length})
               </button>
               {unansweredQuestions.length > 0 && (
@@ -300,7 +459,11 @@ function QuizApp() {
                   Fără răspuns ({unansweredQuestions.length})
                 </button>
               )}
-              <button type="button" className={resultFilter === 'all' ? 'active' : ''} onClick={() => setResultFilter('all')}>
+              <button
+                type="button"
+                className={resultFilter === 'all' ? 'active' : ''}
+                onClick={() => setResultFilter('all')}
+              >
                 Toate ({total})
               </button>
             </div>
@@ -314,6 +477,7 @@ function QuizApp() {
                   <span className={badge[status]}>{badgeIcon[status]}</span>
                   {question.question}
                 </p>
+                {question.section && <p className="review-section-tag">{question.section}</p>}
                 {renderAnswerReview(question)}
               </div>
             );
@@ -321,26 +485,110 @@ function QuizApp() {
         </div>
       </div>
     );
-  }, [activeSet, statusOf, resultFilter, continueRemaining, restartWithFailed, restartAll, renderAnswerReview]);
+  }, [
+    activeSet,
+    statusOf,
+    resultFilter,
+    mode,
+    restartWithFailed,
+    restartSameMode,
+    backToMenu,
+    renderAnswerReview,
+  ]);
 
-  // Show the result page directly when the user finished early, or when there
-  // is nothing left to ask (e.g. reloading on an already-completed quiz).
-  if (finished || runQuestions.length === 0) {
+  if (phase === 'menu') {
+    return (
+      <div className="exam-menu">
+        <div className="exam-card">
+          <h2>{examConfig.modelName}</h2>
+          <p className="exam-subtitle">Categorie personal: {examConfig.personnelCategory}</p>
+
+          <table className="exam-table">
+            <thead>
+              <tr>
+                <th>Secțiunea</th>
+                <th>Nr. întrebări</th>
+                <th>Dificultate</th>
+                <th>În bancă</th>
+              </tr>
+            </thead>
+            <tbody>
+              {examConfig.sections.map((section) => (
+                <tr key={section.id}>
+                  <td>{section.label}</td>
+                  <td>{section.count}</td>
+                  <td>{section.difficulty}</td>
+                  <td>{sectionCounts[section.id] || 0}</td>
+                </tr>
+              ))}
+              <tr className="exam-total-row">
+                <td>Total</td>
+                <td>{examConfig.totalQuestions}</td>
+                <td colSpan={2} />
+              </tr>
+            </tbody>
+          </table>
+
+          <ul className="exam-meta-list">
+            <li>
+              Timp acordat: <strong>{examConfig.timeMinutes} min</strong>
+            </li>
+            <li>
+              Procentaj de trecere: <strong>{examConfig.passPercent}%</strong>
+            </li>
+            <li>
+              La fiecare examinare se extrag aleatoriu întrebările pe secțiuni.
+            </li>
+          </ul>
+
+          <button type="button" className="btn exam-start-btn" onClick={startExam}>
+            Începe examenul ({examConfig.totalQuestions} întrebări)
+          </button>
+        </div>
+
+        <div className="exam-card practice-card">
+          <h3>Antrenament</h3>
+          <p className="exam-subtitle">Fără cronometru · din toată banca ({fullQuestions.length})</p>
+          <label className="practice-select-label" htmlFor="practice-section">
+            Secțiune
+          </label>
+          <select
+            id="practice-section"
+            className="practice-select"
+            value={practiceSection}
+            onChange={(event) => setPracticeSection(event.target.value)}
+          >
+            <option value="all">Toate secțiunile</option>
+            {examConfig.sections.map((section) => (
+              <option key={section.id} value={section.id}>
+                {section.label} ({sectionCounts[section.id] || 0})
+              </option>
+            ))}
+          </select>
+          <button type="button" className="btn continue-btn" onClick={startPractice}>
+            Începe antrenamentul
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === 'result' || (phase === 'running' && runQuestions.length === 0)) {
     if (activeSet.length > 0) {
       return <div className="react-quiz-container">{renderResultUI()}</div>;
     }
     return null;
   }
 
-  const isResuming = answeredCount > 0;
+  const timerUrgent = secondsLeft != null && secondsLeft <= 60;
 
   return (
     <div className="quiz-app">
       <div className="quiz-progress-banner">
         <div className="banner-stats">
           <span>
-            Progres: <strong>{answeredCount}</strong> / {activeSet.length}
-            {isResuming ? ' · continuă de unde ai rămas' : ''}
+            {mode === 'exam' ? 'Examen' : 'Antrenament'}: <strong>{answeredCount}</strong> /{' '}
+            {activeSet.length}
           </span>
           <span className="live-score">
             Scor: <strong className="score-correct">{correctSoFar}</strong> corecte
@@ -351,6 +599,11 @@ function QuizApp() {
               </>
             )}
           </span>
+          {secondsLeft != null && (
+            <span className={`exam-timer ${timerUrgent ? 'urgent' : ''}`}>
+              Timp: <strong>{formatTime(secondsLeft)}</strong>
+            </span>
+          )}
         </div>
         <div className="banner-actions">
           {answeredCount > 0 && (
@@ -358,8 +611,8 @@ function QuizApp() {
               Finalizează acum
             </button>
           )}
-          <button type="button" className="reset-progress-btn" onClick={restartAll}>
-            Începe din nou
+          <button type="button" className="reset-progress-btn" onClick={backToMenu}>
+            Anulează
           </button>
         </div>
       </div>
