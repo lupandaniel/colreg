@@ -230,7 +230,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Atestat de bord, certificat de tonaj, rol de echipaj, jurnalul de maşini, jurnalul de bord",
-                "b) 10 Orice navă nepropulsată cu echipaj la bord, destinată transportului de mărfuri, cu excepţia navelor maritime, ambarcaţiunilor mici şi ambarcaţiunilor de agrement, trebui conform R.N.D. să aibă la bord următoarele acte : 11 Toate navele fluviale trebuie să aibă mărci care indică linia maximă de încărcare ? 12 Ce se înţelege prin \"instalaţie plutitoare\" în sensul R.N.D. ? 13 De la ce distanţă aproximativă trebui să fie văzută o lumină clară roşie, în condiţii de vizibilitate normală ? 14 Durata unui sunet lung este de : 15 Conducătorii navelor remorcate trebuie să se conformeze ordinelor conducătorului convoiului ? 16 În cazul cînd o navă pierde un obiect sau poate crea un obstacol sau un pericol pentru navigaţie, conducătorul navei este obligat : 17 \"Bordul liber\" este : Atestat de bord certificat de tonaj, registru de scară, jurnalul de bord",
+                "b) Atestat de bord certificat de tonaj, registru de scară, jurnalul de bord",
                 "c) Atestat de bord, certificat de tonaj, rol de echipaj alete documente referitoare la navigaţie, care sunt cerute în virtutea convenţiilor sau acordurilor internaţionale"
             ],
             "correctAnswer": [
@@ -374,7 +374,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Mijlocul de navigaţie utilizat pentru realizarea activităţii de transport şi a altor servicii pe apă",
-                "b) 18 Ce se înţelege prin \"navă\" în sensul R.N.D. ? 19 Ce se înţelege ărin termenul de \"în staţionare\" folosit în R.N.D. ? 20 De la ce dinstanţe aproximative trebui să fie văzută o lumină obişnuită verde, în condiţii de vizibilitate normală ? 21 Cine este conducătorul unui convoi sau a unei formaţii în cuplu care cuprind o singură navă autopropulsată ? 22 Orice ambarcaţiune mică (în sensul R.N.D.) autopropulsată, nedestinată transporturilor de mărfuri cu excepţia ambarcaţiunilor de agrement, trebui, conform R.N.D. să aibă la bord următoarele documente : 23 \"Distanţa de siguranţă\" este : 24 Ce se înţelege prin bac \"în sensul R.N.D.\" ? 25 De la ce distanţe aproximative trebui să fie văzută o lumină clară verde, în condiţii de vizibilitate normală. 26 Intervalul între două sunete consecutive este de : Navele de navigaţie interioară, inclusiv ambarcaţiunile mici şi bacurile, precum şi aparatele plutitoare şi navele maritime",
+                "b) Navele de navigaţie interioară, inclusiv ambarcaţiunile mici şi bacurile, precum şi aparatele plutitoare şi navele maritime",
                 "c) Navele maritime, fluviale, aparatele plutitoare, plute, nave militare etc"
             ],
             "correctAnswer": [
@@ -536,7 +536,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Să se supună dispoziţiilor conducătorului navei, în interesul siguranţei navigaţiei şi ordinii la bord",
-                "b) 27 Care sunt îndatoririle altor persoane care se găsesc la bordul navei : 28 Orice conducător de navă, dacă constată avarierea unei instalaţii de semnalizare (stingerea unei lumini, deplasarea unei geamanduri, distrugerea unui semnal, etc.) este obligat : 29 Ancorele navelor fluviale trebui să poarte mărci de identificare : 30 Ce se înţelege prin \"convoi remorcat\" în sensul R.N.D. ? 31 Ce se înţelege prin \"marş\" în sensul R.N.D. : 32 De la ce distanţe aproximative trebui să fie văzută o lumină obişnuită galbenă în condiţii de vizibilitate normală ? 33 Convoaiele sunt puse sub autoritatea unui conducător ? 34 Navele de pasageri pot transporta un număr de pasageri corespunzător : Să se supună dispoziţiilor conducătorului navei, numai la ambarcarea şi debarcarea lor",
+                "b) Să se supună dispoziţiilor conducătorului navei, numai la ambarcarea şi debarcarea lor",
                 "c) Nu este prevăzut expres în R.N.D"
             ],
             "correctAnswer": [
@@ -680,7 +680,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Numele (numărul); portul de ataş sau locul de înmatriculare urmat de litera sau literele care indică ţara unde se găseşte acest port sau loc de înmatriculare; indicaţia în tone a capacităţii de încărcare şi numele (prescurtarea sa obişnuită) proprietarului sau al organizaţiei căreia aparţine nava",
-                "b) 35 Fiecare navă destinată transporturilor de mărfuri, cu excepţia ambarcaţiunilor mici şi a navelor maritime, trebuie conform Regulamentului de navigaţie pe Dunăre, să poarte pe corp sau pe panouri fixate definitiv, următoarele mărci de identificare : 36 Ce se înţelege prin “navă autopropulsată” în sensul R.N.D ? 37 Ce se înţelege prin termenul de “noapte” în sensul R.N.D. ? 38 De la ce distanţa aproximativă trebuie să fie văzută o lumină obişnuită roşie, în condiţii de vizibilitate normală ? 39 Ce nave trebuie puse sub autoritatea unui conducător sau comandant ? 40 Orice navă autopropulsată, nedestinată transporturilor de mărfuri, cu excepţia navelor maritime, ambarcaţiunilor mici şi ambarcaţiunilor de agrement, trebuie conform R.N.D în sectorul românesc să aibă la bord următoarele documente : 41 Fiecare navă destinată transportului de pasageri, cu excepţia ambarcaţiunilor mici şi a navelor maritime, trebuie conform R.N.D. în sectorul românesc să poarte pe corp sau pe panouri fixate definitiv, următoarele mărci de identificare : 42 Ce este o “formaţie în cuplu” în sensul Regulamentului de Navigaţie pe Dunăre ? Numele (numărul); portul de înmatriculare, numele (prescurtarea sa obişnuită) proprietarul sau organizaţiei căreia aparţine nava",
+                "b) Numele (numărul); portul de înmatriculare, numele (prescurtarea sa obişnuită) proprietarul sau organizaţiei căreia aparţine nava",
                 "c) Numele (numărul) portul de ataş; capacitatea netă în tone; iniţialele întreprinderii sau organizaţiei de care aparţine nava"
             ],
             "correctAnswer": [
@@ -824,7 +824,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 5,9-6,5 km",
-                "b) 43 De la ce distanţă aproximativă trebuie să fie văzută o lumină puternică albă în condiţii de vizibilitate normală ? 44 Ce se înţelege prin lumină intermitentă ? 45 Cine este conducătorul convoiului ce are în faţă două sau mai multe nave autopropulsate ce navigă în cuplu ? 46 Navele pot fi încărcate ? 47 Linia de încărcare maximă este: 48 Ce se înţelege prin aparat plutitor în sensul Regulamentului de Navigaţie pe Dunăre ? 49 De la ce distanţă aproximativă trebuie să fie văzută o lumină albă clară în condiţii de vizibilitate normală ? 50 Durata unui sunet scurt este de : 51 Conducătorul unui aparat plutitor trebuie să fie întotdeauna la bord în timp ce aparatul este în lucru ? 52 Orice ambarcaţiune mică nepropulsată cu echipaj la bord destinată transportului de mărfuri cu excepţia ambarcaţiunii de agrement trebuie, conform R.N.D în sectorul românesc, să aibă la bord următoarele documente : 53 Scări de pescaj poartă navele care au pescajul de cel puţin : 5,8-6,5 km",
+                "b) 5,8-6,5 km",
                 "c) 5,9-6 km"
             ],
             "correctAnswer": [
@@ -1022,7 +1022,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Orice navă cu lungimea corpului mai mică de 20 m, cu excepţia ambarcaţiunior mici care remorchează, împing sau duc cuplat nave, altele decât ambarcaţiuni mici, precum şi a bacurilor şi navelor autorizate să transporte mai mult de 12 pasageri",
-                "b) 54 Ce se înţelege prin “ambarcaţiune mică”, în sensul Regulamentului de Navigaţie pe Dunăre ? 55 De la ce distanţe aproximative trebuie să fie văzută o lumină clară galbenă, în condiţii de vizibilitate normală ? 56 Ce se înţelege prin “serie de sunete foarte scurte “ ? 57 În scopul evitării de a pune în pericol viaţa persoanelor sau de a provoca pagube altor nave, conducătorii pot lua toate măsurile de precauţie, chiar dacă nu sunt prevăzute dispoziţii speciale în Regulamentul de Navigaţie pe Dunăre ? 58 Care dintre situaţiile de mai jos sunt considerate transporturi speciale ? 59 Ce obligaţii aveţi dacă sunteţi conducătorul unei nave şi vă găsiţi în apropierea altei nave avariate, ale cărei persoane sunt în pericol sau nava poate deveni un obstacol pentru navigaţie ? 60 Zona 1 a căii navigabile corespunde unei înălţimi aparente a valurilor de : 61 Zona a 3-a a căii navigabile corespunde unei înălţimi aparente a valurilor de : Nave a căror lungime şi lăţime ale corpului sunt mai mici de 15 m şi respectiv, 3,50m sau al căror deplasament mediu este mai mic de 15 t, cu excepţia bacurilor, navelor care remorchează, împing sau duc cuplat nave, în afara de ambarcaţiuni mici",
+                "b) Nave a căror lungime şi lăţime ale corpului sunt mai mici de 15 m şi respectiv, 3,50m sau al căror deplasament mediu este mai mic de 15 t, cu excepţia bacurilor, navelor care remorchează, împing sau duc cuplat nave, în afara de ambarcaţiuni mici",
                 "c) Nave a căror lungime şi lăţime ale corpului sunt mai mici de 15 m şi respectiv, 3,50 m sau al căror deplasament maxim este mai mic de 10 t, cu excepţia bacurilor, navelor care remorchează, împing sau duc cuplate nave, în afară de ambarcaţiuni mici"
             ],
             "correctAnswer": [
@@ -1166,7 +1166,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 1,2 m",
-                "b) 62 Zona a 2-a a căii navigabile corespunde unei înălţimi aparente a valurilor de : 63 Ce se înţelege prin termenul “barja de împingere” ? 64 Ce se înţelege prin termenul “barjă de navă maritimă” ? 65 Ce se înţelege prin termenul “navă care pescuieşte” ? 66 Ce se înţelege prin termenul “viteză de siguranţă” ? 67 Ce se înţelege prin termenul “vizibilitate redusă” ? 68 Ce se înţelege prin termenul “şenal“ ? 69 Ce se înţelege prin termenul “serie de bătăi de clopot“ ? 70 Ce dimensiuni nu trebuie să depăşească convoaiele împinse, pentru a fi considerate ca nave autopropulsate izolate în marş ? 0,6 m",
+                "b) 0,6 m",
                 "c) 2 m"
             ],
             "correctAnswer": [
@@ -1328,7 +1328,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Este interzis a se folosi lumini sau proiectoare astfel ca ele să poata fi confundate cu luminile sau semnalele menţionate în R.N.D. sau care pot dăuna asupra vizibilităţii acestor lumini sau semnale sau ca ele să producă o orbire care constituie un pericol pentru navigaţie ori pentru circulaţia terestră",
-                "b) 71 Cum pot fi folosite luminile şi proiectoarele ? 72 Un împingător ce navigă singur noaptea va purta semnalizarea : 73 Ce lumini suplimentare poartă navele în marş ce transportă materiale inflamabile ? 74 Care este semnalizarea de noapte în marş a unui convoi remorcat, care foloseşte un remorcher de întărire şi în compunerea sa are una sau mai multe nave, ce transportă material explozibil ? (Navele autopropulsate din capul convoiului sunt în linie de şir) 75 În staţionare, noaptea, navele în afară de ambarcaţiunile mici şi bacurile de trecere, trebuie să poarte: 76 Două lumini albe obişnuite, dispuse la circa 1 m una deasupra celeilalte, vizibile din toate părţile, purtate noaptea de o navă, au semnificaţia unei : 77 Navele care au transportat materiale inflamabile şi nu au fost degazate, în mars ziua, vor purta : Este interzisă cu desăvârşire folosirea lor în R.N.D",
+                "b) Este interzisă cu desăvârşire folosirea lor în R.N.D",
                 "c) Nu se precizează folosirea lor în R.N.D"
             ],
             "correctAnswer": [
@@ -1454,7 +1454,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nu este prevăzut expres în Regulamentul de Navigaţie pe Dunăre",
-                "b) 78 O navă, ziua în marş, care trebuie să fie protejată împotriva valurilor, poate să arboreze două panouri suprapuse, dintre care cel superior este roşu şi cel inferior este alb, dispuse într-un loc de unde să fie vizibile din toate părţile : 79 Convoaiele împinse care au una sau mai multe nave ce transportă materiale explozibile, ziua în staţionare vor purta : 80 Luminile din figura de mai jos sunt purtate noaptea de : 81 Luminile din imaginea de mai jos sunt purtate noaptea de : 82 Ce dimensiuni trebuie să aibă cilindrul, conform R.N.D. ? 83 Care este intensitatea şi arcul de orizont la care poate fi văzută o lumină albă din pupa unei nave ? 84 Ce lumini poartă navele ce navigă cu vele ? Nu",
+                "b) Nu",
                 "c) Da"
             ],
             "correctAnswer": [
@@ -1582,7 +1582,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Semnalizarea de noapte a unui convoi împins plus o lumină albastră obişnuită, dispusă la circa 2,2 m sub lumina albă superioară din prova, vizibilă pe un arc de orizont de 2250 şi o lumină albastră obişnuită vizibilă din toate părţile la împingător",
-                "b) 85 Care este semnalizarea de noapte a unui convoi împins în marş care are una sau mai multe nave ce transportă material inflamabil ? 86 Bacurile de trecere care navigă liber şi izolat, noaptea trebuie să poarte : 87 Bacurile care navigă liber, noaptea, în staţionare la debarcadrul lor, când întrerup activitatea, vor purta: 88 Ce semnalizare poartă un convoi remorcat ziua, în timpul marşului, care foloseşte unul sau mai multe remorchere de întărire în linie de şir ? Semnalizarea de noapte a unui convoi împins plus o lumină albastră puternică dispusă la circa 2,2,m deasupra lumini superioare albe din prova vizibilă pe acelaşi arc de orizont, şi câte o lumină albastră obişnuită, vizibilă din toate părţile la nava sau navele care transportă materiale inflamabile",
+                "b) Semnalizarea de noapte a unui convoi împins plus o lumină albastră puternică dispusă la circa 2,2,m deasupra lumini superioare albe din prova vizibilă pe acelaşi arc de orizont, şi câte o lumină albastră obişnuită, vizibilă din toate părţile la nava sau navele care transportă materiale inflamabile",
                 "c) Semnalizarea de noapte a unui convoi împins plus o lumină roşie obişnuită dispusă la circa 2,2 m deasupra luminii albe superioare din prova, vizibilă pe un arc de orizont de 2250 şi o lumină roşie obişnuită vizibilă din toate părţile la pupa împingătorului"
             ],
             "correctAnswer": [
@@ -1654,7 +1654,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nava autopropulsată din capul convoiului, cât şi navele care transportă materiale explozibile, vor purta un con roşu cu vârful în jos, vizibil din toate părţile",
-                "b) 89 Un convoi remorcat, care are una sau mai multe nave ce transportă materiale explozibile, ziua, în marş trebuie să poarte : 90 Navele care transportă material inflamabil, ziua în staţionare, vor fi semnalizate cu : 91 O navă care trebuie să fie protejată împotriva valurilor, ziua în staţionare, poate purta două panouri suprapuse, dintre care cel superior este roşu şi cel inferior este alb, dispuse astfel încât să fie vizibile din toate părţile ? 92 Luminile din figura de mai jos, reprezintă : 93 Luminile din imaginea de mai jos, sunt purtate de : 94 Luminile din imaginea de mai jos, sunt purtate noaptea, de : 95 Ce lumini trebuie să poarte, noaptea, ambarcaţiunile mici autopropulsate, a căror lungime a corpului nu depăşeşte 20 m, care remorchează sau duc în cuplu ambarcaţiuni mici ? 96 Ce lumini trebuie să poarte navele autopropulsate în, cazul când nava autopropulsată din capul convoiului este precedată de una sau mai multe nave autopropulsate de întărire, navigând în linie de şir ? Nava autopropulsată din capul convoiului va purta semnalizarea de zi, în marş, a unei nave cu remorcă şi în plus un con roşu cu vârful în sus, vizibil din toate părţile. Fiecare navă din convoi, care transportă material explozibil, va purta câte un con roşu cu vârful în jos, vizibil din toate părţile",
+                "b) Nava autopropulsată din capul convoiului va purta semnalizarea de zi, în marş, a unei nave cu remorcă şi în plus un con roşu cu vârful în sus, vizibil din toate părţile. Fiecare navă din convoi, care transportă material explozibil, va purta câte un con roşu cu vârful în jos, vizibil din toate părţile",
                 "c) Nava autopropulsată din capul convoiului va purta semnalizarea de zi, în marş a unei nave cu remorcă şi, în plus, un con roşu cu vârful în jos vizibil din toate părţile. Fiecare navă din convoi, care transportă explozibil, va purta câte un con roşu cu vârful în jos vizibil din toate părţile"
             ],
             "correctAnswer": [
@@ -1801,7 +1801,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) O lumină albă obişnuită, dispusă într-un loc corespunzător şi la o înălţime de la care să fie vizibilă din toate părţile",
-                "b) 97 Ce lumini pot să poarte noaptea, ambarcaţiunile mici autopropulsate, ce nu depăşesc 7 m, în marş ? 98 Care este semnalizarea de noapte suplimentară a navelor nepropulsate în marş, ce transportă material explozibil ? 99 Care este semnalizarea de noapte suplimentară a navelor în marş ce trebuie protejate împotriva valurilor ? 101 Ce distanţă minimă trebuie să se respecte între nave, în staţionare, dacă una din ele transportă materiale explozibile ? 101 Ce semnalizare de zi, în marş, poartă un convoi împins ? 102 Bacurile de trecere, care navigă liber şi a căror lungime depăşeşte 20 m, ziua, în marş, trebuie să poarte : 103 Atunci când un convoi împins se află în staţionare ziua, şi are una sau mai multe nave ce transportă material inflamabil, va fi semnalizat astfel : Două lumini albe obişnuite la catarg",
+                "b) Două lumini albe obişnuite la catarg",
                 "c) Luminile unei nave autopropulsate în marş"
             ],
             "correctAnswer": [
@@ -1927,7 +1927,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) În părţile unde şenalul este liber, două biconuri verzi, dispuse la distanţa de 1 m, unul deasupra celuilalt; în partea în care şenalul nu este liber, un balon roşu instalat la aceeaşi înălţime cu biconul superior din cele două biconuri verzi; întreaga semnalizare trebuie să fie vizibilă din toate părţile",
-                "b) 104 Ce semnalizare de zi vor purta aparatele plutitoare sau navele ce efectuează lucrări în calea navigabilă ? 105 Luminile din figura de mai jos, sunt purtate, pe timp de vizibilitate redusă, de : 106 Indicaţi ce nave şi când poartă luminile din figura de mai jos. 107 Ce lumini trebuie să poarte navele autopropulsate din capul unui convoi remorcat, care navigă una lângă alta, cuplate sau nu ? 108 Care este semnalizarea suplimentară de noapte a unui convoi împins în marş, care are una sau mai multe nave ce transportă materiale explozibile ? 109 Ambarcaţiunea mică legată la mal, noaptea, cu excepţia bărcilor de serviciu ale navelor trebuie să poarte : În partea unde şenalul este liber, un pavilion a cărui jumătate superioară este roşie, iar jumătatea inferioară este albă şi în partea unde şenalul este închis, un pavilion roşu, dispus la aceeaşi înâlţime ca şi pavilionul roşu-alb, purtat pe cealaltă parte. Întreaga semnalizare trebuie să fie vizibilă din toate părţile",
+                "b) În partea unde şenalul este liber, un pavilion a cărui jumătate superioară este roşie, iar jumătatea inferioară este albă şi în partea unde şenalul este închis, un pavilion roşu, dispus la aceeaşi înâlţime ca şi pavilionul roşu-alb, purtat pe cealaltă parte. Întreaga semnalizare trebuie să fie vizibilă din toate părţile",
                 "c) În partea unde şenalul este liber, un pavilion a cărui jumătate superioară este albă, iar jumătatea inferioară este roşie, iar in partea unde şenalul este închis, un pavilion roşu dispus la aceeaşi înălţime ca şi pavilionul roşu-alb purtat de cealaltă parte. Întreaga semnalizare trebuie să fie vizibilă din toate părţile"
             ],
             "correctAnswer": [
@@ -2037,7 +2037,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Ancora respectivă va fi semnalizată printr-o geamandură sau flotor, având două lumini albe obişnuite, vizibile din toate părţile",
-                "b) 110 Ce semnalizare poartă, noaptea, navele a căror ancoră prezintă pericol pentru navigaţie ? 111 Care este semnalizarea de zi suplimentară a navelor în marş, care transportă materiale explozibile ? 112 Navele care transportă materiale inflamabile ziua în staţionare sunt obligate să fie semnalizate : 113 Plasele sau alte unelte de pescuit ale navelor care pescuiesc, ziua întinse în apropierea şenalului şi care pot prezenta o piedică pentru navigaţie, vor fi semnalizate cu : 114 Indicaţi ce navă şi când poartă luminile de mai jos : 115 Luminile din imaginea de mai jos sunt purtate noaptea de : 116 Ce alte panouri şi pavilioane sunt interzise de R.N.D. a se folosi ? Ancora respectivă va fi semnalizată printr-o geamandură sau flotor, având două lumini albe obişnuite, suprapuse la circa 1 m distanţă una de alta şi vizibile din toate părţile",
+                "b) Ancora respectivă va fi semnalizată printr-o geamandură sau flotor, având două lumini albe obişnuite, suprapuse la circa 1 m distanţă una de alta şi vizibile din toate părţile",
                 "c) Lumina de staţionare: care se găseşte cel mai aproape de ancora respectivă, trebuie să fie înlocuită prin două lumini albe obişnuite, suprapuse la circa 1 m distanţă una faţă de alta şi vizibile din toate părţile, iar fiecare din ancorele sale care pot constitui un pericol pentru navigaţie printr-un flotor cu reflector radar care poartă o lumină albă obişnuită vizibilă din toate părţile"
             ],
             "correctAnswer": [
@@ -2165,7 +2165,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Trei lumini albe puternice, dispuse în triunghi echilateral cu unul din vârfuri în sus, la prova navei care se găseşte în capul convoiului lângă axa longitudinală; luminile roşu-verde clare din borduri, dispuse la partea cea mai lată a convoiului, cât mai aproape de împingător : trei lumini albe obişnuite la pupa împingătorului dispuse pe orizontală",
-                "b) 117 Care este semnalizarea de noapte a unui convoi împins în marş care depăşeşte 110 m lungime şi 12 m lăţime ? 118 Ce lumini trebuie să aibă o ambarcaţiune mică cu rame, noaptea în marş ? 119 Convoaiele remorcate în marş, ce transportă materiale explozibile, pe timpul nopţii, trebuie să poarte : 120 Fiind în imposibilitate de manevră cu nava, noaptea, fără a fi eşuată, scufundată sau în staţionare normală, ce semnalizare vizuală suplimentară folosiţi ? Trei lumini albe puternice, dispuse în triunghi echilateral, cu unul din vârfuri în sus, la prova împingătorului, luminile roşu- verde clare din borduri dispuse la partea cea mai lată a convoiului, cât mai aproape de împingător trei lumini albe obişnuite la pupa împingătorului dispuse pe orizontală",
+                "b) Trei lumini albe puternice, dispuse în triunghi echilateral, cu unul din vârfuri în sus, la prova împingătorului, luminile roşu- verde clare din borduri dispuse la partea cea mai lată a convoiului, cât mai aproape de împingător trei lumini albe obişnuite la pupa împingătorului dispuse pe orizontală",
                 "c) Trei lumini albe puternice, dispuse în formă de triunghi cu unul din vărfuri în sus, la prova oricărei nave din convoi, luminile roşu-verde clare din borduri dispuse la partea cea mai lată a convoiului, cât mai aproape de împingător, trei lumini albe obişnuite la pupa împingătorului, dispuse pe orizontală, câte o lumină albă obişnuită, la pupa oricărei nave a cărei lăţime totală este vizibilă din pupa"
             ],
             "correctAnswer": [
@@ -2237,7 +2237,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Două lumini albe obişnuite una deasupra celeilalte cea mai de jos la cel puţin 3 m deasupra liniei de încărcare maximă vizibile din toate părţile",
-                "b) 121 Noaptea în staţionare, navele de pescuit inclusiv ambarcaţiunile de pescuit cu plase la apă ce pot prezenta o piedică pentru navigaţie vor fi semnalizate cu : 122 Ce semnificaţie are semnalul de mai jos ? 123 Bacurile de trecere a căror lungime depăşeşte 20 m, ziua în marş trebuie să poarte : 124 Ce semnalizare de zi vor purta navele în staţionare care transportă material explozibil ? 125 Ziua, navele a căror ancore sunt fundarisite într-un mod în care pot constitui un pericol pentru navigaţie trebuie să-şi semnalizeze fiecare din ancore astfel : 126 Luminile din figura de mai jos, sunt purtate noaptea de : 127 Indicaţi ce nave şi când poartă luminile din figura de mai jos : 128 Ce dimensiuni trebuie să aibă pavilioanele şi panourile pentru a asigura o bună vizibiliate ? 129 Care este intensitatea şi arcul de orizont la care poate fi văzută lumina albă de la catarg ? 130 La ce distanţă sunt dispuse una faţă de alta luminile de pupa ale împingătorului cu convoi ? O lumină albă obişnuită vizibilă din toate părţile dispusă la cel puţin 3 m deasupra liniei de încărcare maximă",
+                "b) O lumină albă obişnuită vizibilă din toate părţile dispusă la cel puţin 3 m deasupra liniei de încărcare maximă",
                 "c) O lumină albă obişnuită vizibilă din toate părţile dispusă la cel puţin 3 m deasupra liniei de încărcare maximă şi plasele sau uneltele de pescuit semnalizate prin lumini albe obişnuite într-un număr suficient pentru a indica poziţia lor"
             ],
             "correctAnswer": [
@@ -2420,7 +2420,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Poartă semnalizarea unui convoi prin împingere, iar remorcherul de întărire poartă semnalizarea unei nave autopropulsate din capul unui convoi remorcat",
-                "b) 131 Care este semnalizarea de noapte în marş a unui convoi împins care foloseşte un remorcher de întărire ? 132 Ce lumini trebuie să poarte navele autopropulsate din capul unui convoi remorcat, care navigă una lângă alta, cuplate sau nu, iar în compunerea convoiului sunt nave care transportă material explozibil ? 133 Care este semnalizarea de noapte a unei nave în staţionare, care transportă material inflamabil ? 134 Când o navă poartă un cilindru galben mărginit sus ca şi jos de câte două benzi negre şi albe, benzile albe fiind la extremităţile cilindrului, dispus vertical la prova şi la o înălţime suficientă, pentru a fi vizibil din toate părţile ? 135 Cum trebuie să fie semnalizat un convoi împins, ziua în marş, care are una sau mai multe nave ce transportă material inflamabil ? 136 Ziua navele care merg pentru a da ajutor unei nave în pericol, sunt obligate să fie semnalizate suplimentar ? Întreg ansamblu poartă semnalizarea unui convoi remorcat",
+                "b) Întreg ansamblu poartă semnalizarea unui convoi remorcat",
                 "c) Întreg ansamblu poartă luminile unui convoi împins"
             ],
             "correctAnswer": [
@@ -2528,7 +2528,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Toate navele vor purta un con roşu cu vârful în jos",
-                "b) 137 Două sau mai multe nave, care transportă material explozibil acostate la cheu sau la mal, una lângă alta, ziua vor fi semnalizate astfel : 138 Imaginea de mai jos reprezintă : 139 Luminile de mai jos sunt purtate noaptea de : 140 Precizaţi dacă cilindrii, baloanele şi conurile prevăzute în R.N.D. : 141 Care este intensitatea şi arcul de orizont la care pot fi văzute luminile roşu/verde din borduri ? 142 La ce distanţă sunt dispuse una faţă de alta, luminile din prova unui convoi împins ? 143 Care este semnalizarea de noapte a unui convoi remorcat în marş care are una sau mai multe nave ce transportă material inflamabil ? Toate navele vor purta câte un con albastru cu vârful în jos",
+                "b) Toate navele vor purta câte un con albastru cu vârful în jos",
                 "c) Numai nava de la larg va purta la catarg un con roşu cu vârful în jos"
             ],
             "correctAnswer": [
@@ -2656,7 +2656,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) O lumină de catarg verde clară vizibilă din toate părţile. Sub lumina verde, pe verticală la cca.1m o lumină albă clară vizibilă din toate părţile dispusă la minim 5 m deasupra liniei de încărcare",
-                "b) 144 Bacurile de trecere care nu navigă liber, noaptea, trebuie să poarte: 145 Care este semnalizarea de noapte a unei nave în staţionare, care transportă material explozibil ? 146 Noaptea, ancorele aparatelor plutitoare, care pot prezenta un pericol pentru navigaţie, sunt semnalizate printr-o : 147 Un convoi remorcat, care are una sau mai multe nave ce transportă material inflamabil ziua în marş trebuie să poarte : 148 Ce semnalizare suplimentară vor purta, ziua, navele care merg pentru a da ajutor unei nave aflate în pericol ? 149 Care este semnalizarea de zi a navelor staţionate, ce trebuie protejate împotriva valurilor ? O lumină de catarg albă clară vizibilă din toate părţile. Sub lumina albă, pe verticală la cca. 1 m, o lumină verde clară vizibilă din toate părţile dispusă la minimum 5 m deasupra liniei de încărcare maximă. O lumină albă clară vizibilă din faţă şi pe cât posibil şi din spate, dispusă la extremitatea bacului situată în sensul marşului",
+                "b) O lumină de catarg albă clară vizibilă din toate părţile. Sub lumina albă, pe verticală la cca. 1 m, o lumină verde clară vizibilă din toate părţile dispusă la minimum 5 m deasupra liniei de încărcare maximă. O lumină albă clară vizibilă din faţă şi pe cât posibil şi din spate, dispusă la extremitatea bacului situată în sensul marşului",
                 "c) O lumină de catarg verde clară vizibilă din toate părţile. Sub lumina verde pe verticală la cca. 1 m o lumină albă clară vizibilă din toate părţile dispusă la maxim 5 m deasupra liniei de încărcare maximă. Luminile roşu/verde clare din borduri şi o lumină albă obişnuită la pupa"
             ],
             "correctAnswer": [
@@ -2765,7 +2765,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-015.jpg",
             "answers": [
                 "a) Luminile unei nave autopropulsate din capul unui convoi în marş noaptea văzute din prova",
-                "b) 150 Imaginea de mai jos reprezintă : 151 Luminile din imaginea de mai jos sunt purtate noaptea de: 152 Luminile din figura de mai jos sunt purtate noaptea de: 153 Care sunt dimensiunile unui balon ? 154 Care este intensitatea şi arcul de orizont la care poate fi văzută lumina galbenă de pupa a unui remorcher cu convoi ? 155 Ce lumini trebuie să poarte navele cu vele în marş şi unde ? 156 Care este semnalizarea de noapte în marş a unui convoi remorcat care foloseşte un remorcher de întărire şi în compunerea sa are una sau mai multe nave care transportă materiale inflamabile (navele autopropulsate din capul convoiului sunt în linie de şir) ? Luminile unei nave autopropulsate izolate în marş noaptea văzute din prova",
+                "b) Luminile unei nave autopropulsate izolate în marş noaptea văzute din prova",
                 "c) Luminile unui convoi împins în marş noaptea văzute din prova"
             ],
             "correctAnswer": [
@@ -2893,7 +2893,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Bacurilor de trecere care navigă liber",
-                "b) 157 Semnalizarea de noapte a bacurilor care navigă liber şi se bucură de prioritate este că a : 158 Care este semnalizarea de noapte suplimentară a navelor în staţionare care trebuie să fie protejate împotriva valurilor ? 159 Un convoi remorcat de două nave autopropulsate care navigă una alături de cealaltă ziua în marş va purta : 160 Cum trebuie să fie semnalizat un convoi împins ziua în marş care are una sau mai multe nave ce transportă material explozibil : 161 Două sau mai multe nave care transportă material inflamabil acostate la cheu sau la mal neamenajat una lângă alta ziua, vor fi semnalizate astfel : 162 Ce indică semnalul alăturat ? 163 Luminile din figura alăturată sunt văzute noaptea la : 164 Luminile din imaginea alăturată, sunt purtate noaptea de: 165 Care sunt dimensiunile unui con ? Bacurilor de trecere care nu navigă liber",
+                "b) Bacurilor de trecere care nu navigă liber",
                 "c) Bacurilor de trecere care navigă liber la care se adaugă o a doua lumină verde clară vizibilă din toate părţile şi dispusă la o distanţă de aproximativ 1 m deasupra luminii verzi"
             ],
             "correctAnswer": [
@@ -3058,7 +3058,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) O lumină albă puternică la catarg, luminile roşu/verde clare în borduri şi o lumină galbenă obişnuită la pupa",
-                "b) 166 Ce semnalizare de noapte trebuie să aibă o navă autopropulsată în marş care remorchează un convoi ? 167 Ce lumini poartă o ambarcaţiune mică autopropulsată care depăşeşte 7 m noaptea în marş ? 168 Care este semnalizarea de noapte în marş a unui convoi împins ce transportă material inflamabil şi foloseşte un remorcher de întărire în capul convoiului ? 169 Ce semnalizare de noapte poartă în marş un ansamblu format dintr-un bac remorcat împins sau dus în cuplu de altă navă autopropulsată ? 170 Instalaţiile plutitoare, noaptea în staţionare, trebuie să poarte : 171 O navă care navigă cu vele folosind în acelaşi timp şi motor, ziua în marş, trebuie să poarte: Două lumini albe puternice la catarg dispuse pe verticală, luminile roşu-verde clare în borduri şi o lumină galbenă obişnuită la pupa",
+                "b) Două lumini albe puternice la catarg dispuse pe verticală, luminile roşu-verde clare în borduri şi o lumină galbenă obişnuită la pupa",
                 "c) Două lumini albe puternice la catarg dispuse pe verticală, luminile roşu-verde clare în borduri şi o lumină albă obişnuită la pupa"
             ],
             "correctAnswer": [
@@ -3166,7 +3166,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nu",
-                "b) 172 Toate bacurile de trecere, ziua în marş vor purta un balon verde la o înălţime de cel puţin 6 m deasupra liniei de încărcare maximă : 173 Tancurile care au transportat materiale inflamabile şi nu au fost degazate, ziua în staţionare vor purta : 174 Navele eşuate şi scufundate, ziua, trebuie să poarte : 175 Luminile din figura de mai jos sunt purtate de : 176 Luminile din figura de mai jos sunt purtate, noaptea de : 177 Semnalizarea prevăzută pentru noapte la nave trebuie să fie purtată, în plus, şi ziua , în condiţii de : 178 Dacă lumina de semnalizare puternică, prevăzută în Regulamentul de Navigaţie pe Dunăre, se defectează, cum trebuie să fie lumina de rezervă ce o înlocuieşte ? 179 Cum şi unde trebuie dispuse luminile de catarg ale unui convoi împins ? Da",
+                "b) Da",
                 "c) Nu este prevăzut în R.N.D."
             ],
             "correctAnswer": [
@@ -3312,7 +3312,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) O lumină albastră obişnuită la pupa, într-un loc potrivit şi la o înălţime astfel încât să fie vizibilă din toate părţile",
-                "b) 180 Ce lumini suplimentare poartă tancurile în marş, care au transportat materiale inflamabile, şi nu au fost degazate ? 181 Ce lumini trebuie să poarte navele autopropulsate din capul unui convoi remorcat, care navigă una lângă alta, cuplate sau nu, iar în compunerea convoiului sunt nave ce transportă material inflamabil ? 182 Instalaţiile plutitoare, noaptea în marş, trebuie să poarte : 183 Ce semnalizare de noapte trebuie să poarte aparatele plutitoare în lucru şi navele care efectuează lucrări în calea navigabilă, precum şi navele eşuate ? 184 Care este semnalizarea de zi suplimentară a navelor în marş, care transportă materiale inflamabile ? 185 Care este semnalizarea de zi suplimentară a navelor în marş, ce trebuie protejate împotriva valurilor ? 186 Navele care transportă materiale inflamabile, ziua în staţionare, sunt obligate să fie semnalizate ? O lumină roşie obişnuită la pupa, într-un loc potrivit şi la o înălţime astfel încât să fie vizibilă din toate părţile",
+                "b) O lumină roşie obişnuită la pupa, într-un loc potrivit şi la o înălţime astfel încât să fie vizibilă din toate părţile",
                 "c) Nu este prevăzut în Regulamentul de Navigaţie pe Dunăre"
             ],
             "correctAnswer": [
@@ -3438,7 +3438,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Un flotor galben",
-                "b) 187 Ziua, navele ale căror ancore fundarisite prezintă un pericol pentru navigaţie, vor semnaliza ancorele prin : 188 Ce reprezintă imaginea de mai jos ? 189 Luminile din figura de mai jos sunt purtate de : 190 Ce semnalizare de noapte trebuie să poarte o navă autopropulsată ce navigă izolat ? 191 Ce dimensiuni trebuie să aibă un bicon ? 192 Navele autorizate să transporte mai mult de 12 pasageri şi a cărei lungime maximă a corpului nu depăşeşte 20 m trebuie să poarte : 193 Navele în marş care efectuează operaţiuni de sondaj sau de măsurare în calea navigabilă vor purta o lumină galbenă clară, intermitentă vizibilă din toate părţile ? 194 Navele care acţionează la spargerea gheţii vor purta suplimentar ziua : 195 Navele care acţionează la spargerea gheţii vor purta suplimentar noaptea : 196 Care este semnalizarea suplimentară a navelor de supraveghere fluvială ziua în marş în exercitarea atribuţiunilor lor : Un pavilion galben",
+                "b) Un pavilion galben",
                 "c) Un flotor galben cu reflector radar"
             ],
             "correctAnswer": [
@@ -3620,7 +3620,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Navigaţie periculoasă",
-                "b) 197 Emiterea de către o navă a unui semnal fonic lung pe vizibilitate bună are semnificaţia de : 198 O navă care iese dintr-un bazin portuar sau dintr-un afluent şi se îndreaptă la tribord emite : 199 Care este culoarea, forma şi care sunt caracteristicile unei geamanduri de bifurcaţie ? 200 Care sunt caracteristicile luminii de coastă (far) de bifurcaţie ? 201 Ce semnificaţie are semnalul de mai jos ? 202 Ce semnificaţie are semnalul de mai jos ? 203 Ce semnificaţie are semnalul de mai jos ? 204 Ce semnificaţie are semnalul de mai jos ? 205 Ce semnificaţie are semnalul de mai jos ? 206 Care dintre cele două semnale de mai jos crează obligaţii conducătorilor de nave ? 207 Care sunt semnalele fonice, emise, în cazul unei depăşiri prin tribord atât de nava care ajunge din urmă cât şi de nava ajunsă care poate oferi drumul cerut ? 208 Atunci când o navă este în pericol şi vrea să ceară ajutor, poate emite semnale sonore ? Atenţie",
+                "b) Atenţie",
                 "c) Semnal premergător intenţiei de a depăşi"
             ],
             "correctAnswer": [
@@ -3842,7 +3842,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Este în imposibilitate de a manevra",
-                "b) 209 Nava care emite patru sunete scurte : 210 O navă izolată, care navigă amonte, cu radar în condiţii de vizibilitate redusă, emite : 211 Şcondrii pentru dreapta au culoarea : 212 Ce indică semnalul alăturat ? 213 Ce semnificaţie are semnalul de mai jos : 214 Ce semnificaţie are semnalul de mai jos ? 215 Ce semnificaţie are semnalul de mai jos ? 216 Care dintre cele două semnale de mai jos reprezintă semnalul de interzicere ? 217 Care sunt semnalele fonice, emise, în cazul în care se cere depăşire prin tribord, de către nava ce ajunge din urmă, iar nava ajunsă nu poate oferi depăşirea prin tribord şi nava care ajunge din urmă este de acord ? 218 Se pot folosi lumini şi semnale ce nu sunt prevăzute în R.N.D ? 219 Sunt interzise semnalele fonice între nave sau între navă şi uscat, altele decât cele prevăzute de Regulamentul de Navigaţie pe Dunăre ? 220 Pentru a întoarce la tribord, o navă trebuie să emită : Dă înapoi",
+                "b) Dă înapoi",
                 "c) Este în pericol iminent de abordaj"
             ],
             "correctAnswer": [
@@ -4063,7 +4063,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) “O serie simplă de sunete de clopot”, repetate cel puţin la fiecare minut",
-                "b) 221 O navă care staţionează pe partea dreaptă a şenalului, în condiţii de vizibilitate redusă, emite : 222 Pe întregul parcurs navigabil al fluviului, şenalul este balizat după sistemul : 223 Ce semnificaţie au semnalele de mai jos ? 224 Priviţi semnalul de mai jos. Ce semnificaţie are ? 225 Ce semnificaţie are semnalul de mai jos ? 226 Care din obligaţiile de mai jos, vă revin când sunteţi de cart la comanda unei nave în marş şi întâlniţi semnalul de mai jos ? 227 Ce semnificaţie are semnalul de mai jos ? 228 Ce semnificaţie are semnalul de mai jos ? 229 Priviţi cele două semnale de mai jos. Care este semnalul de obligaţie ? 230 Care sunt semnalele fonice de întâlnire prin babord, ce sunt emise atât de navele ce navigă amonte, cât şi de navele ce navigă aval ? 231 Atunci când o navă aflată în pericol vrea să ceară ajutor, ea poate să emită : 232 Nava care emite, “serie de sunete foarte scurte” ce semnalizează ? 233 Şcondri pentru stânga au culoarea : “O serie dublă de sunete de clopot” repetată cel puţin la fiecare minut",
+                "b) “O serie dublă de sunete de clopot” repetată cel puţin la fiecare minut",
                 "c) “O serie triplă de sunete de clopot” repetată cel puţin la fiecare minut"
             ],
             "correctAnswer": [
@@ -4305,7 +4305,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-043.jpg",
             "answers": [
                 "a) Traversare de la malul stâng",
-                "b) 234 Ce semnificaţie are semnalul alăturat : 235 Priviţi semnalul de mai jos. Ce semnificaţie are ? 236 Priviţi imaginea de mai jos. Ce semnificaţie are ? 237 Ce semnificaţie are semnalul de mai jos ? 238 Ce semnificaţie are semnalul de mai jos ? 239 Care dinte cele două semnale de mai jos este semnal de indicaţie : 240 Se pot folosi semnale fonice, altele decât cele prevăzute de R.N.D. ? 241 Pentru a întoarce la babord o navă trebuie să emită : 242 O navă care staţionează în poziţie nesigură în condiţii de vizibilitate redusă emite : 243 Care este forma, culoarea şi care sunt caracteristicile unei geamanduri pentru stânga ? 244 Ce semnificaţie au semnalele din desenul alăturat ? 245 Priviţi semnalul alăturat . Ce semnificaţie are ? 246 Ce semnificaţie are semnalul de mai jos ? 247 Care dintre obligaţiile de mai jos, vă revin când sunteţi de cart la comanda unei nave în marş şi întâlniţi semnalul de mai jos ? Traversarea de la malul drept",
+                "b) Traversarea de la malul drept",
                 "c) Jalon de aliniament dreapta"
             ],
             "correctAnswer": [
@@ -4567,7 +4567,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-053.jpg",
             "answers": [
                 "a) Permitere de trecere",
-                "b) 248 Ce semnificaţie generală are semnalul de mai jos ? 249 Ce semnificaţie are semnalul de mai jos ? 250 Care dintre cele două semnale alăturate este semnalul de indicaţie ? 251 Ce obligaţii au navele care aud un semnal fonic emis de o altă navă care doreşte să întoarcă ? 252 Cum semnalizează noaptea navele care sunt în pericol şi cer ajutor ? 253 Emiterea de către o navă a “două sunete scurte” are semnificaţia de : 254 Geamandurile de culoare verde cu lumină verde intermitentă balizează : 255 Lumina de coastă (far) de pe malul stâng, are următoarele caracteristici : 256 Ce indică semnalul alăturat ? 257 Ce semnificaţie are semnalul de mai jos ? 258 Ce semnificaţie are semnalul alăturat ? 259 Ce semnificaţie are semnalul alăturat ? Recomandare de trecere",
+                "b) Recomandare de trecere",
                 "c) Interzicere de trecere"
             ],
             "correctAnswer": [
@@ -4790,7 +4790,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-060.jpg",
             "answers": [
                 "a) Loc de alimentare cu apă potabilă",
-                "b) 260 Ce semnificaţie are semnalul de mai jos ? 261 Care sunt semnalele fonice emise în cursul unei depăşiri prin tribord, atât de nava care ajunge din urmă, cât şi de nava ajunsă, care nu poate oferi drumul cerut, însă poate oferi depăşirea prin babord ? 262 Atunci când o navă este în marş în convoi sau într-o formaţie în cuplu, semnalele fonice prevăzute de R.N.D vor fi emise de : 263 Nava care emite “3 sunete scurte” : 264 Un convoi sau o formaţie în cuplu, în marş amonte, în condiţii de vizibilitate redusă emite : 265 Geamandurile luminoase şi neluminoase, şcondri şi jaloanele pentru dreapta sau pentru stânga, în principiu ce marchează ? 266 Lumina de coastă (far) de pe malul drept şi lumina de coastă (far) de pe malul stâng în principiu indică : 267 Ce semnificaţie are semnalul alăturat ? 268 Ce semnificaţie are semnalul de mai jos ? 269 Ce semnificaţie are semnalul de mai jos ? 270 Navele care sunt în pericol şi cer ajutor, ce semnal vizual arată ziua ? 271 Emiterea de către o navă a unui semnal fonic scurt, are semnificaţia de: Apă potabilă",
+                "b) Apă potabilă",
                 "c) Punct public de alimentare cu apă potabilă"
             ],
             "correctAnswer": [
@@ -5009,7 +5009,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Trei sunete lungi",
-                "b) 272 O navă care iese dintr-un bazin portuar sau dintr-un afluent şi se îndreaptă la babord emite: 273 Ce semnificaţie au geamandurile de culoare roşie cu lumina roşie intermitentă ? 274 Lumina de coastă (far) de pe malul drept are următoarele caracteristici: 275 Ce semnificaţie are semnalul alăturat ? 276 Ce semnificaţie are semnalul alăturat ? 277 Ce semnificaţie are semnalul alăturat  ? 278 Ce semnificaţie are semnalul de mai jos ? 279 Când o navă vrea să se folosească de prioritatea sa de trecere emite următorul semnal fonic : 280 Cinci sunete scurte emise de o navă ajunsă din urmă înseamnă : 281 O navă staţionând în partea stângă a şenalului în condiţii de vizibilitate redusă emite : 282 Ce semnificaţie au geamandurile luminoase şi neluminoase, şcondrii şi jaloanele de joncţiune şi de bifurcaţie ? 283 În principiu semnalele de mai jos indică : 284 Două panouri suprapuse, de forma şi culoarea din figura de mai jos, indică ? Un sunet lung urmat de două sunete scurte",
+                "b) Un sunet lung urmat de două sunete scurte",
                 "c) Trei sunete lungi urmate de două sunete scurte"
             ],
             "correctAnswer": [
@@ -5250,7 +5250,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-070.jpg",
             "answers": [
                 "a) Interzice navigaţia în direcţia indicată de săgeată",
-                "b) 285 Ce semnificaţie are semnalul din imaginea alăturată  ? 286 Ce semnificaţie are semnalul de mai jos ? 287 Ce semnificaţie are semnalul din imaginea alăturată  ? 288 Ce semnificaţie are semnalul din imaginea alăturată ? 289 Care din cele două semnale de mai jos crează obligaţii pentru conducătorii de nave ? 290 Semnalele fonice ale navelor autopropulsate sunt însoţite de semnale luminoase sincronizate cu acestea, având următoarele caracteristici : 291 O navă care iese dintr-un bazin şi vrea să traverseze calea navigabilă : 292 Care este forma, culoarea şi care sunt caracteristicile luminii unei geamanduri pentru dreapta ? 293 Jaloanele de aliniament indică : 294 Ce semnificaţie are semnalul din imaginea alăturată ? 295 Ce semnificaţie are semnalul din imaginea alăturată ? 296 Ce semnificaţie are semnalul din imaginea alăturată ? 297 Ce semnificaţie are semnalul din imaginea ? 298 Ce semnificaţie are semnalul din imaginea alăturată  ? Obligă pe conducătorii de nave de a urma direcţia indicată prin săgeată",
+                "b) Obligă pe conducătorii de nave de a urma direcţia indicată prin săgeată",
                 "c) Indică direcţia unde se găsesc locuri sigure pentru staţionarea navelor"
             ],
             "correctAnswer": [
@@ -5512,7 +5512,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-080.jpg",
             "answers": [
                 "a) Semnalul B 1",
-                "b) 299 Care dintre cele două semnale crează obligaţii pentru conducătorii de nave ? 300 Ce semnificaţie are semnalul din imaginea alăturată ? 301 Ce semnificaţie are semnalul din imaginea alăturată  ? 302 Ce semnificaţie are semnalul de mai jos ? 303 Ce semnificaţie are semnalul din imaginea alăturată ? 304 Ce semnificaţie are semnalul de mai jos ? 305 Ce semnificaţie are semnalul din imaginea alăturată ? 306 Ce semnificaţie are semnalul de mai jos ? 307 Ce semnificaţie are semnalul de mai jos ? 308 Ce semnificaţie are semnalul din imaginea alăturată ? 309 Ce semnificaţie are semnalul din imaginea alăturată ? 310 Care sunt considerate materiale inflamabile în sensul Regulamentului de Navigaţie pe Dunăre ? Semnalul D 3",
+                "b) Semnalul D 3",
                 "c) Ambele semnale"
             ],
             "correctAnswer": [
@@ -5738,7 +5738,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Materiale şi obiecte explozibile atunci când greutatea lor brută totală este mai mică de 5 kg",
-                "b) 311 Care sunt considerate materiale explozibile în sensul Regulamentului de Navigaţie pe Dunăre ? 312 Lichidele, combustibile într-o cantitate ce nu depăşeşte 200 l şi transportate în colete sunt considerate materiale inflamabile ? 313 Amoniacul lichefiat sau dizolvat sub presiune când este transportat în nave cisternă (tancuri) este considerat material exploziv ? 314 Sulfura de carbon în stare lichidă este considerată material inflamabil ? 315 Ce greutate brută totală trebuie să aibă aprinzătoarele, piesele de artificii pentru a fi considerate materiale explozibile ? 316 Ce semnificaţie are semnalul din imaginea alăturată ? 317 Ce semnificaţie are semnalul din imaginea alăturată ? 318 Ce semnificaţie are semnalul din imaginea alăturată ? 319 Ce semnificaţie are semnalul de mai jos ? 320 Ce semnificaţie are semnalul de mai jos ? 321 Ce semnificaţie are semnalul de mai jos ? 322 Ce semnificaţie are semnalul din imaginea alăturată ? Materiale şi obiecte explozibile atunci când greutatea lor brută totală este mai mare de 5 kg",
+                "b) Materiale şi obiecte explozibile atunci când greutatea lor brută totală este mai mare de 5 kg",
                 "c) Tuburi de cartuşe încărcate şi cartuşe pentru arme de foc portative când greutatea lor brută totală este mai mare de 5 kg"
             ],
             "correctAnswer": [
@@ -5962,7 +5962,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-098.jpg",
             "answers": [
                 "a) Obligaţia navelor care navigă pe calea principală să schimbe, în caz de nevoie, drumul sau viteza lor pentru a ceda drumul navelor care ies din port sau din calea afluentă",
-                "b) 323 Ce semnificaţie au semnalele luminoase din imaginea de mai jos ? 324 Navigaţia la trecerea pe sub podul GIURGENI-VADU OII, pentru marşul amonte/aval, se desfăşoară : 325 Navigaţia la trecerea pe sub podul GIURGENI-VADU OII, din amonte spre aval, se desfăşoară : 326 Navigaţia la trecerea pe sub podul GIURGENI-VADU OII, din aval spre amonte, se desfăşoară : 327 Pe timp de ceaţă sau noapte cu vizibilitate redusă, se interzice trecerea, pe sub podul GIURGENI-VADU OII, navelor şi convoaielor care nu au la bord : 328 Se interzice orice trecee pe sub podul GIURGENI-VADU OII în caz de : 329 Lăţimea şenalului, prin deschiderea centrală a podului GIURGENI-VADU OII, este de : 330 Lăţimea şenalului, prin deschiderea de la malul stâng a podului GIURGENI-VADU OII, este de : 331 Convoaiele împinse care navigă în amonte, la trecerea pe sub podul GIURGENI-VADU OII, pot fi formate maxim din cel mult : 332 Convoaiele împinse care navigă în aval, la trecerea pe sub podul GIURGENI-VADU OII, pot fi formate din două dane a câte patru unităţi în dană ? 333 La trecerea pe sub podul GIURGENI-VADU OII, remorcherele trebui să-şi reducă remorca, pentru navigaţia în amonte, la cel mult : Interzicerea navelor care navigă pe calea principală să schimbe drumul sau viteza lor pentru a ceda drumul navelor care ies din port sau din calea afluentă",
+                "b) Interzicerea navelor care navigă pe calea principală să schimbe drumul sau viteza lor pentru a ceda drumul navelor care ies din port sau din calea afluentă",
                 "c) Obligaţia navelor care navigă pe calea afluentă să schimbe drumul în caz de nevoie"
             ],
             "correctAnswer": [
@@ -6160,7 +6160,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 100 m",
-                "b) 334 La trecerea pe sub podul GIURGENI-VADU OII, remorcherele trebui să-şi reducă remorca, pentru navigaţia în aval, la cel mult: 335 La trecerea pe sub podul GIURGENI-VADU OII, legăturile între dane, la convoaiele remorcate, trebui să fie de cel mult : 336 Ce cantitate de marfă/CP nu trebui să depăşească convoaiele împinse la trecerea pe sub podul GIURGENI-VADU OII ? 337 Ce cantitate de marfă / CP nu trebui să depăşească convoaiele remorcate la trecerea pe sub podul GIURGENI-VADU OII ? 338 Navigaţia la trecerea pe sub podurile de la CERNAVODĂ, pentru marşul amonte / aval, se desfăşoară : 339 Navigaţia pe Dunăre în zona podurilor de la CERNAVODĂ se desfăşoară prin : 340 Prioritatea de trecere, pe sub podurile de la CERNAVODĂ, o au navele care : 341 La trecerea pe sub podurile de la CERNAVODĂ, remorcherele trebui să-şi reducă remorca, pentru navigaţia în amonte, la cel mult : 342 La trecerea pe sub podurile de la CERNAVODĂ, remorcherele trebui să-şi reducă remorca, pentru navigaţia în aval, la cel mult : 343 Lăţimea maximă a şenalului prin deschiderile centrale ale podurilor de la CERNAVODĂ este de : 344 Pe timp de ceaţă sau noapte cu vizibilitate redusă se interzice trecerea, pe sub podurile de la CERNAVODĂ, navelor şi convoaielor care nu au la bord : 60 m",
+                "b) 60 m",
                 "c) 30 m"
             ],
             "correctAnswer": [
@@ -6358,7 +6358,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Valuri",
-                "b) 345 Se interzice orice trecere pe sub podurile de la CERNAVODĂ în caz de : 346 Pentru nivelul de apă situat peste cota +150 cm Cernavodă, convoaiele împinse, care trec pe sub porudile de la Cernavodă vor fi formate, în sensul aval, maxim din : 347 Pentru nivelurile situate între cota +150 cm şi ±0,00 cm Cernavodă, convoaiele împinse, care trec pe sub podurile de la CERNAVODĂ, vor fi formate, în sensul aval, maxim din : 348 Pentru nivelurile situate sub cota ±0,00 cm Cernavodă, convoaiele, la trecerea pe sub podurile de la CERNAVODĂ, atât pentru navigaţia în amonte cât şi pentru navigaţia în aval, vor avea în formaţii maxim : 349 Navigaţia pe Braţul Borcea, în zona podurilor de la FETEŞTI, pentru marşul amonte/aval, se desfăşoară : 350 Navigaţia pe Braţul Borcea, în zona podurilor de la FETEŞTI, din amonte spre aval, se desfăşoară : 351 Navigaţia pe Braţul Borcea, în zona podurilor de la Feteşti, din aval spre amonte, se desfăşoară : 352 Pe timp de ceaţă sau noapte cu vizibilitate redusă, se interzice trecerea, pe sub podurile de la FETEŞTI, navelor şi convoaielor care nu au la bord : 353 Se interzice orice trecere pe sub podurile de la FETEŞTI în caz de : 354 Lăţimea şenalului, prin deschiderile de la malul stâng a podurilor de la FETEŞTI, este de : 355 Lăţimea şenalului, prin deschiderile centrale a podurilor de la FETEŞTI, este de : Ploaie",
+                "b) Ploaie",
                 "c) Vânt puternic sau furtună"
             ],
             "correctAnswer": [
@@ -6556,7 +6556,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Două dane a câte trei unităţi în dană",
-                "b) 356 Pentru nivelurile de apă situate peste cota +150 cm Cernavodă, convoaiele care navigă spre amonte pe sub podurile de la FETEŞTI, vor fi formate maxim din : 357 La trecerea pe sub podurile de la FETEŞTI, peste cota +150 cm Cernavodă, convoaiele împinse în marş aval, pot naviga şi în formaţie de o singură dană cu patru unităţi în dană ? 358 La trecerea pe sub podurile de la FETEŞTI, pentru nivelurile de apă la cota +150 cm Cernavodă sau mai mici, convoaiele împinse care navigă în amonte, vor fi formate maxim din : 359 La trecerea pe sub podurile de la FETEŞTI, pentru nivelurile de apă la cota +150 cm Cernavodă sau mai mici, convoaiele împinse care navigă în aval, vor fi formate maxim din : 360 La trecerea pe sub podurile de la FETEŞTI, pentru nivelurile de apă la cota +150 cm Cernavodă sau mai mici, convoaiele împinse în marş aval, pot naviga şi în formaţie de o singură dană cu patru unităţi în dană ? 361 La trecerea pe sub podurile de la FETEŞTI, remorcherele trebui să-şi reducă remorca, pentru navigaţia în amonte, la cel mult : 362 La trecerea pe sub podurile de la FETEŞTI, remorcherele trebui să-şi reducă remorca, petnru navigaţia în aval, la cel mult : 363 La trecerea pe sub pdurile de la FETEŞTI, legăturile dintre dane, la convoaiele remorcate, trebui să fie de cel mult : Două dane a câte patru unităţi în dană",
+                "b) Două dane a câte patru unităţi în dană",
                 "c) Trei dane a câte trei unităţi în dană"
             ],
             "correctAnswer": [
@@ -6700,7 +6700,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 60 m",
-                "b) 364 La trecerea pe sub podurile de la CERNAVODĂ, legăturile dintre dane, la convoaiele remorcate, trebui să fie de cel mult : 365 Lăţimea şenalului navigabil prin deschiderile laterale ale podului GIURGIU-RUSSE este de : 366 Lăţimea şenalului navigabil prin deschiderea centrală la podul GIURGIU-RUSSE este de : 367 Pentru a obţine ridicarea traveei mobile, la podul GIURGIU-RUSSE, se solicită o cerere de trecere în timp : 368 Dacă în curs de o oră de la ridicarea traveei mobile, la podul GIURGIU-RUSSE, nava care a solicitat ridicarea nu a trecut, traveea mobilă poate fi coborâtă în poziţia sa normală ? 369 O navă ce navigă aval cu radarul în funcţiune în condiţii de vizibilitate redusă începe să emită semnalul sonor de trei sunete cu tonalităţi diferite numai când : 370 În caz de întâlnire sau de depăşire navele care urmează drumuri ce exclud orice pericol de abordaj trebuie : 371 Este interzisă întâlnirea în locurile în care şenalul nu prezintă o lăţime suficientă ? 372 Când sunt obligate navele care părăsesc locul lor de ancorare sau de acostare, fără a întoarce sau care traversează calea navigabilă, cu excepţia bacurilor să emită semnalele fonice ? 30 m",
+                "b) 30 m",
                 "c) 15 m"
             ],
             "correctAnswer": [
@@ -6862,7 +6862,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nu este prevăzut în R.N.D.",
-                "b) 373 Ce putere trebui să aibă navele autopropulsate, care propulsează un convoi sau o formaţie în cuplu ? 374 Navele care navigă cu radar şi observă pe ecran nave a căror poziţie sau mişcare pot provoca o situaţie de pericol şi care nu răspund la radiotelefon, trebuie să ia măsuri din timp pentru evitarea abordajului ? 375 Ce semnificaţie are semnalul de mai jos ? 376 Ambarcaţiunile mici, care cedează drumul altor ambarcaţiuni mici, de regulă, trebuie să se abată din timp spre : 377 Noaptea, navele care navigă în amonte şi lasă drum liber la tribord navelor care navigă în aval, trebuie, în timp util : 378 Care este obligativitatea unei nave care navigă în aval, atunci, când constată că o navă care navigă amonte s-a angajat într-o trecere îngustă ? 379 Este admis navelor cu excepţia celor de supraveghere, de a acosta sau de a se agăţa de navele aflate în marş? 380 Este permisă trecerea simultană într-o deschidere de pod ? 381 Navele cu aripi portante sunt obligate să lase spaţiul necesar tuturor celorlalte nave pentru continuarea navigaţiei acestora ? 382 Când nu se emit semnale fonice de către nava ce ajunge din urmă, în cazul unei depăşiri ? Conform celor stabilite de Registru Naval Român",
+                "b) Conform celor stabilite de Registru Naval Român",
                 "c) O putere suficientă pentru a asigura o bună manevrabilitate a convoiului sau a formaţiei"
             ],
             "correctAnswer": [
@@ -7043,7 +7043,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Când navele din zonă nu sunt obligate să-şi modifice brusc drumul sau viteza, datorită rondoului navei care vrea să întoarcă",
-                "b) 383 Când nava care vrea să se întoarcă nu este obligată să emite semnale fonice ? 384 Când nu se aplică interzicerea de a anviga în derivă ? 385 Ce viteză trebuie să adopte navele (convoaiele) care navigă în condiţii de vizibilitate redusă ? 386 Navele care merg în aval, navigând cu radar, pe timp de vizibilitate redusă emit : 387 Ce semnificaţie are semnalul de mai jos ? 388 Cine cedează drumul în cazul întâlnirii dintre ambarcaţiunile mici nepropulsate care nu navigă cu vele şi ambarcaţiunile mici care navigă cu vele ? 389 Până când se arată semnalele pentru întâlnirea prin tribord ? 390 În cazul în care întâlnirea într-o trecere îngustă a devenit inevitabilă, care sunt obligaţiile navelor care navigă amonte şi aval ? 391 În cazul când depăşirea ne este posibilă fără pericol de abordaj nava ajunsă din urmă este obligată să emită : Când întoarcerea se face într-un loc semnalizat pentru recomandarea de întoarcere, chiar dacă sunt şi alte nave în zonă",
+                "b) Când întoarcerea se face într-un loc semnalizat pentru recomandarea de întoarcere, chiar dacă sunt şi alte nave în zonă",
                 "c) În toate cazurile, nava care doreşte să întoarcă este obligată să emită semnale fonice, înainte de începerea întoarcerii"
             ],
             "correctAnswer": [
@@ -7206,7 +7206,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nu",
-                "b) 392 Este admisă navigaţia la aceeaşi înălţime a navelor sau convoaielor ? 393 Este obligatorie utilizarea apărătorilor în ecluze ? 394 Ambarcaţiunile mici care cedează drumul altor ambarcaţiuni mici pot face încrucişarea şi prin babord : 395 Care sunt semnalele fonice emise, atât de navele care navigă în amonte, cât şi de navele care navigă în aval, în cazul întâlnirii prin tribord ? 396 Când este obligatorie emiterea semnalelor fonice în cazul depăşirilor între nave sau convoaie ? 397 Navele care se lasă să coboare cu prova în amonte, cu maşina înainte, sunt considerate : 398 Navele care navigă izolat, fără radar, în condiţii de vizibilitate redusă trebuie : 399 O navă izolată, în marş amonte, în condiţii de vizibilitate redusă emite : 400 Ce semnificaţie are semnalul de mai jos ? 401 Ambarcaţiunile mici care navigă izolat şi convoaiele remorcate sau formaţiile în cuplu compuse numai din ambarcaţiuni mici, sunt obligate : Da, numai cu nave izolate",
+                "b) Da, numai cu nave izolate",
                 "c) Da, numai dacă şenalul are o lăţime absolut suficientă ţinându-se cont de toate împrejurările locale şi mişcările celorlalte nave"
             ],
             "correctAnswer": [
@@ -7387,7 +7387,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Nu este prevăzut expres în R.N.D.",
-                "b) 402 Nava care navigă amonte şi lasă drum liber la babord navelor care navigă în aval, este obligată să emită vreun semnal ? 403 Toate navele trebuie să treacă în timpul cel mai scurt posibil trecerile înguste ? 404 Când sunt obligate navele care doresc să intre sau să iasă în / din bazinele portuare, să emită semnalele fonice prevăzute în R.N.D. în asemenea situaţii ? 405 Este permisă navigaţia bacurilor pe cablu longitudinal ? 406 Ce semnificaţie are semnalul de mai jos ? 407 Cine cedează drumul în cazul întâlnirii dintre două ambarcaţiuni mici ? (Din care una este autopropulsată şi cealaltă nepropulsată) 408 Ziua, navele care navigă în amonte şi lasă drum liber la tribord navelor care navigă în aval trebuie în timp util : 409 Care este obligaţia unei nave care navigă amonte, atunci când constată că o navă care navigă aval este pe punctul de a se angaja într- o trecere îngustă ? 410 Care sunt semnalele fonice emise în cazul când se cere depăşirea prin tribord de către nava care ajunge din urmă, dacă nava ajunsă nu poate oferi depăşirea cerută, însă oferă depăşirea prin partea opusă şi nava care ajunge din urmă este de acord ? Da",
+                "b) Da",
                 "c) Nu"
             ],
             "correctAnswer": [
@@ -7550,7 +7550,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Pe cât posibil să-şi modifice drumul şi viteza lor, astfel încât să ajute ca manevra să se execute în bune condiţii",
-                "b) 411 Ce obligaţiuni au navele care aud semnale fonice emise de o navă ce iese dintr-un bazin portuar sau dintr-un afluent ? 412 La ce distanţă trebuie să se ţină de alte nave un bac ce navigă liber în timpul traversării ? 413 Ce semnalizare suplimentară vor purta navele care au prioritate de trecere ziua în marş ? 414 Ce semnificaţie au semnalele de mai jos ? 415 Amonte pe calea navigabilă este sensul : 416 Ce navă oferă prima drumul în caz de întâlnire ? 417 În cazul când vizibilitatea este redusă navele înainte de a se angaja într-o trecere îngustă trebuie: 418 Care sunt semnalele fonice emise în cazul unei depăşiri prin babord atât de nava care ajunge din urmă, cât şi de nava ajunsă care nu poate oferi drumul cerut, însă poate oferi depăşirea prin partea opusă : 419 Este interzis a se angaja cu o navă în intervalele dintre unităţile unui convoi remorcat ? 420 Ce putere trebuie să aibă împingătorul unui convoi ? 421 Unde este interzis de a se instala plase sau alte unelte de pescuit ? 422 Navele cu aripi portante de orice dimensiuni sunt obligate : Nu au nici o obligaţie",
+                "b) Nu au nici o obligaţie",
                 "c) Nu se prevede expres în Regulamentul de Navigaţie pe Dunăre"
             ],
             "correctAnswer": [
@@ -7767,7 +7767,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Da",
-                "b) 423 În cazul întâlnirii dintre două nave prin babord, în condiţii normale, este obligatorie emiterea de semnale fonice ? 424 Când este permisă depăşirea între nave ? 425 Cum se procedează în cazul depăşirii dintre o navă trasă la edec şi o navă autopropulsată, care nu este trasă la edec ? 426 Când nu se aplică interdicţia de a se lăsa să se târască ancore, parâme sau lanţuri ? 427 Se pot utiliza căngile de fier în ecluze ? 428 Două convoaie prin împingere se întâlnesc într-o zonă unde trebuie emise semnale sonore de întâlnire. În această situaţie primul semnal fonic este emis : 429 Încrucişarea sau depăşirea sunt permise atunci când : 430 În cazul întâlnirii între o navă trasă la edec şi o navă care nu este trasă la edec, aceasta din urmă are obligaţia : 431 Care sunt semnalele fonice emise, în cazul unei depăşiri prin babord, atât de nava care ajunge din urmă, cât şi de nava ajunsă : Nu",
+                "b) Nu",
                 "c) Nu este prevăzut expres în Regulamentul de Navigaţie pe Dunăre"
             ],
             "correctAnswer": [
@@ -7929,7 +7929,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Da",
-                "b) 432 Navele care părăsesc locul lor de ancorare sau de acostare fără a întoarce sau care traversează calea navigabilă, cu excepţia bacurilor, iar în raza de vizibilitate nu sunt alte nave, au obligaţia de a emite vreun semnal fonic ? 433 Au dreptul de a folosi semnalul de zi sau de noapte pentru protejare împotriva valurilor : 434 De când şi până când se emit semnalele sonore de vizibilitate redusă de către navele staţionate în şenal sau în apropierea acestuia în afara porturilor şi a locurilor afectate special pentru staţionare ? 435 Ce semnificaţie are semnalul din imaginea alăturată ? 436 Ce semnificaţie are semnalul de mai jos ? 437 Ce semnificaţie are semnalul din imaginea alăturată ? 438 Ce semnificaţie are semnalul din imaginea alăturată ? 439 Ce semnificaţie are semnalul de mai jos ? 440 Ce semnificaţie are semnalul de mai jos ? Nu",
+                "b) Nu",
                 "c) Nu se prevede expres în Regulamentul de Navigaţie pe Dunăre"
             ],
             "correctAnswer": [
@@ -8098,7 +8098,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-110.jpg",
             "answers": [
                 "a) Autorizaţia de staţionare a navelor fără echipaj cu excepţia navelor care trebuie să poarte ziua conul albastru sau roşu",
-                "b) 441 Ce semnificaţie are semnalul de mai jos ? 442 Ce semnificaţie are semnalul de mai jos ? 443 Ce semnificaţie are semnalul de mai jos ? 444 Ce semnificaţie are semnalul de mai jos ? 445 Ce semnificaţie are semnalul de mai jos ? 446 Ce semnificaţie are semnalul de mai jos ? 447 Ce semnificaţie are semnalul de mai jos ? 448 Ce semnificaţie are semnalul de mai jos ? 449 Ce semnificaţie are semnalul de mai jos ? 450 Ce semnificaţie are semnalul de mai jos ? 451 Ce semnificaţie are semnalul de mai jos ? Zona de staţionare rezervată navelor cu echipaj cu excepţia navelor care trebuie să poarte ziua conul albastru sau roşu",
+                "b) Zona de staţionare rezervată navelor cu echipaj cu excepţia navelor care trebuie să poarte ziua conul albastru sau roşu",
                 "c) Autorizaţia de staţionare a navelor cu echipaj care trebuie să poarte ziua conul albastru"
             ],
             "correctAnswer": [
@@ -8307,7 +8307,7 @@ export const questions = {
             "questionPic": "images/imaginiRND-121.jpg",
             "answers": [
                 "a) Interzicerea ieşirii din bazin, care este situat în direcţia săgeţii",
-                "b) 452 Ce semnificaţie are semnalul de mai jos ? 453 Ce semnificaţie are semnalul de mai jos ? 454 Ce semnificaţie are semnalul de mai jos ? 455 Ce semnificaţie are semnalul de mai jos ? 456 Ce semnificaţie are semnalul de mai jos ? 457 Geamnadura din figura de mai jos marchază : 458 Geamnadura din figura de jos marchează : 459 Ce distanţă minimă trebuie să se respecte între nave, în staţionare, dacă una din ele transportă materiale inflamabile ? 460 Lichidele combustibile miscibile cu apă în orice proporţie sunt considerate ca transport de materiale inflamabile ? 461 Combustibilii care servesc motoarelor principale şi auxiliare ale navei, dacă combustibilul este închis în rezervoare speciale destinate acestui scop, este considerat transport de materiale inflamabile ? Interzicerea prelungită de ieşire din bazin. Navele care doresc să iasă trebui să se informeze",
+                "b) Interzicerea prelungită de ieşire din bazin. Navele care doresc să iasă trebui să se informeze",
                 "c) Interzicerea temporară de ieşire din bazin. Navele care doresc să iasă din bazin trebuie să aştepte în locurile desemnate în acest scop"
             ],
             "correctAnswer": [
@@ -8493,7 +8493,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Pe toată lungimea canalului",
-                "b) 462 Unde este interzisă întâlnirea şi depăşirea navelor pe canalul Sulina ? 463 Care este numărul maxim al şlepurilor admise la remorcă pe canalul Sulina şi care este dispunerea lor la navigaţia în aval ? 464 De unde şi până unde sunt obligate navele maritime, în timpul navigaţiei să aibă la bord un pilot autorizat ? 465 Câte şlepuri sunt admise într-un convoi remorcat, ce iese din canalul Sulina în mare ? 466 Care este distanţa minimă permisă la apropierea unei nave de alta, la trecerea punctelor dificile sau a coturilor pronunţate în canalul Sulina ? 467 Pe sectorul maritim al Dunării de Jos şi la bara Sulina, navele maritime sunt obligate a respecta pescajul maxim în apa dulce de : 468 Care sunt obligaţiile navelor maritime care depăşesc 75 m lungime, la trecerea prin bara Sulina, canalul Sulina şi punctele dificile de pe sectorul maritim al Dunării de Jos ? 469 Piloţii administraţiei sau autorizaţi de aceasta vor exercita pilotajul navelor maritime şi fluvio-maritime în sectorul : 470 Care este distanţa minimă permisă oricărei nave sau mici ambarcaţiuni, la traversarea canalului Sulina, prin prova navelor maritime aflate în marş ? 471 Care este lungimea maximă a remorcii unui convoi care iese din canalul Sulina în mare : În porturi şi prin faţa semnafoarelor",
+                "b) În porturi şi prin faţa semnafoarelor",
                 "c) La coturi şi în locurile unde şenalul nu oferă lăţime suficientă"
             ],
             "correctAnswer": [
@@ -8673,7 +8673,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Navele cu o lungime mai mică de 123 m",
-                "b) 472 Căror nave le este interzisă navigaţia pe canalul Sulina ? 473 La întâlnirea unei nave fluviale cu o navă maritimă pe sectorul maritim al Dunării de Jos, care navă se abate din drum, pentru a lăsa drum liber celeilalte nave ? 474 Regulile speciale de navigaţie pe Dunărea de jos se aplică tuturor navelor maritime şi fluviale ce navigă în sectorul : 475 Ce nave pot fi depăşite la navigaţia în aval pe canalul Sulina cu excepţia locurilor interzise ? 476 Câte şlepuri sunt admise într-un convoi remorcat, ce intră din mare în canalul Sulina ? 477 Care este viteza maximă admisă a bacurilor motor de 20 t pe braţul Tulcea şi canalul Sulina în marş aval ? 478 Ce semnalizare de noapte poartă navele maritime ce navigă pe Dunărea Maritimă ? 479 La apropierea simultană a două nave de sectoarele dificile de trecere ale canalului Sulina şi pe Dunărea de Jos, prioritatea de trecere o are : 480 Care este lungimea maximă a remorcii unui convoi care intră din mare în canalul Sulina : 481 Ce nave pot fi depăşite la navigaţia în amonte pe canalul Sulina cu excepţia locurilor interzise ? 482 Care este lungimea maximă a remorci admisă pe canalul Sulina ? 483 Cine poartă răspunderea privind marşul şi manevrele executate de o navă maritimă, ce navigă pe Dunărea Maritimă ? Navele ce navigă cu vele, cu un tonaj mai mare de 50 t",
+                "b) Navele ce navigă cu vele, cu un tonaj mai mare de 50 t",
                 "c) Navelor cu un pescaj mai mic de 6,50 m"
             ],
             "correctAnswer": [
@@ -8889,7 +8889,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 5 grade",
-                "b) 484 Care este înclinarea maximă admisă, navelor ce navigă în sectorul maritim al Dunării de Jos ? 485 Care sunt dimensiunile maxime ale materialelor plutitoare asamblate remorcate pe canalul Sulina ? 486 Care este viteza maximă admisă navelor de pasageri, tip “MUNTENIA”, pe canalul Sulina, în marş amonte ? 487 Care este numărul maxim admis al şlepurilor remorcate pe canalul Sulina şi care este dispunerea lor la navigaţia în amonte ? 488 Care este viteza maximă admisă a navelor hidrobuz tip Flamingo pe canalul Sulina în marş aval ? 489 Care este viteza maximă admisă pe canalul Sulina a navelor maritime de 5000 tdw în marş aval ? 490 Ce lungime trebuie să depăşească navele maritime la trecerea prin portul Tulcea pentru a primi în mod obligatoriu asistenţă sau remorcaj din partea unui remorcher ? 491 Care este viteza maximă admisă şalupelor tip 65 CP pe canalul Sulina în marş aval ? 492 Care este viteza maximă admisă pe canalul Sulina a navelor maritime de 25000 tdw în marş aval ? 493 Navele remorcher ce navigă aval fără convoi pe canalul Sulina vor merge cu viteza : 494 Care este viteza maximă admisă a navelor de pasageri tip Malnaş pe canalul Sulina în marş aval ? 495 Ce semnificaţie are semnalul alăturat arborat la staţiile semaforice de pe Dunărea Maritimă ? 7 grade",
+                "b) 7 grade",
                 "c) 4 grade"
             ],
             "correctAnswer": [
@@ -9106,7 +9106,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) 8 Nd",
-                "b) 496 Care este viteza maximă admisă navelor maritime până la 1500 tdw pe canalul Sulina în marş aval ? 497 Ce semnificaţie are pavilionul din imaginea alăturată ? 498 Care este viteza maximă admisă a navelor maritime între 12000 şi 25000 tdw pe canalul Sulina în marş aval ? 499 Ce semnificaţie are pavilionul din imaginea alăturată ? 500 Ce semnificaţie are flamura de mai jos arborată la catargul staţiei semaforice Ceatal Ismail ? 501 Ce semnificaţie are un pavilion roşu arborat la catargul din prova unei nave aflate în marş ? 9 Nd",
+                "b) 9 Nd",
                 "c) 10 Nd"
             ],
             "correctAnswer": [

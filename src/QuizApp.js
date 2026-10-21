@@ -1628,7 +1628,7 @@ function QuizApp() {
           <div className="banner-actions">
             {answeredCount > 0 && (
               <button type="button" className="finish-now-btn" onClick={finishNow}>
-                Finalizează acum
+                Finalizează
               </button>
             )}
             <button type="button" className="menu-btn" onClick={pauseToMenu}>
