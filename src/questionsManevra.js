@@ -2,7 +2,7 @@ export const questions = {
     "quizTitle": "Manevra navei. Meteorologie. Hidrologie. – CLASA A,B",
     "quizSynopsis": "Model Manevra / Meteo / Hidrologie · 30 min · minim 21/30 (barem 7)",
     "progressBarColor": "#9de1f6",
-    "nrOfQuestions": "81",
+    "nrOfQuestions": "179",
     "examConfig": {
         "personnelCategory": "CLASA A,B",
         "timeMinutes": 30,
@@ -1489,6 +1489,1770 @@ export const questions = {
             ],
             "correctAnswer": [
                 1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "82. Esuarea involuntara a unei ambarcatiuni se intampla datorita:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cetii foarte dese;",
+                "b) ploilor abundente;",
+                "c) aparitiei bancurilor noi de corali."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "83. Esuarea voluntara se poate datora uneia din urmatoarele actiuni:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) necunoasterea zonei de navigatie;",
+                "b) incercarea de a salva ambarcatiune si echipajul atunci cand ambarcatiune este avariata;",
+                "c) cand ambarcatiune este incarcata prea mult, iar pentru descarcare acest lucru ar fi mai convenabil;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "84. Daca o ambarcatiune este implicata intr-o situatie de urgenta, atunci comandantul va trebui sa raporteze:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) celui mai apropiat port si societatii de asigurare;",
+                "b) pazei de coasta, autoritatii portuare si companiei;",
+                "c) numai companiei;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "85. Avem situatia de urgenta de \"defectiuni sistem de guvernare\". Masurile ce vor fi urmarite de a fi executate la punte sunt:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se informeaza comandantul, se semnalizeaza situatia, motorul principal se opreste, se pregatesc guvernarea de avarie, instalatiile de ancorare si remorcaj, se informeaza autoritatea cea mai apropiata si ambarcatiunile din vecinatate.",
+                "b) se informeaza comandantul, se semnalizeaza situatia, se reduce turatia la motorul principal, se pregatesc guvernarea de avarie, instalatia de ancorare si remorcare, se informeaza autoritatea cea mai apropiata si ambarcatiunile din vecinatate;",
+                "c) se informeaza comandantul, se reduce turatia la motorul principal, se pregatesc guvernarea de avarie, instalatia de ancorare si remorcaj, se informeaza autoritatea cea mai apropiata si ambarcatiunile din vecinatate;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "86. In cazul unei coliziuni pe mare se iau urmatoarele actiuni imediate:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se anunta comandantul, se constata avariile comise, se iau sonde in compartimentele avariate, se remediaza situatia;",
+                "b) se anunta comandantul, se constata avariile la corpul ambarcatiunii si la marfa, se evalueaza pierderile si se iau sonde in compartimentul avariat, echipajul asteapta ordine, se pregateste instalatia de salvare, se au in vedere legatura radio, se semnalizeaza situatia",
+                "c) se anunta comandantul, se constata pierderile suferite, se anunta autoritatea portuara cea mai apropiata;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "87. In port se produce o coliziune, iar una dintre ambarcatiuni este grav avariata. Actiunile imediate ce vor fi luate sunt:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se anunta comandantul ambarcatiunii; se verifica daca sunt persoane ranite, avarii la corpul ambarcatiunii sau marfa; se pregateste echipamentul de salvare: se tine in \"stand-by\" statia radio; se da semnalul corespunzator; se inregistreaza ora si pozitia coliziuni",
+                "b) se anunta comandantul ambarcatiunii si cu informatii de la alte ambarcatiuni din zona; se declara zona de trafic periculos, se iau masuri de remediere a avariei;",
+                "c) se anunta comandantul ambarcatiunii, acesta anunta autoritatea portuara, se actioneaza imediat pentru remedierea avariilor, cere asistenta din partea altor ambarcatiuni;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "88. La trecerea din apa dulce in apa sarata pescajul ambarcatiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se mareste;",
+                "b) se micsoreaza;",
+                "c) ramane constant."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "89. Stabilitatea ambarcatiunii pe valuri de urmarire se reduce in situatia in care:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ambarcatiune se gaseste cu sectiunea maestra pe gol de val;",
+                "b) ambarcatiune are viteza egala cu jumatate din viteza de propagare a valurilor;",
+                "c) ambarcatiune se gaseste cu sectiunea maestra pe creasta de val."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "90. Pe timpul remorcajului, lungimea remorcii trebuie sa fie egala cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Jumatate din lungimea de unda a valului;",
+                "b) Lungimea de unda a valului sau cu un multiplu al acestei marimi;",
+                "c) Lungimea valului;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "91. Ruperea unei parame de remorcaj pe timpul marsului de lunga durata se produce datorita faptului ca:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Nu s-a folosit o parama de remorcaj rezistenta, lunga, grea si suficient de elastica;",
+                "b) S-a folosit o parama de remorcaj vegetala sau sintetica in loc de o parama metalica;",
+                "c) In calculul rezistentei la rupere nu s-a tinut cont de diametrul paramei si de lungimea remorcii;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "92. Manevra de apropiere de ambarcatiune ce urmeaza a fi remorcata in siaj, trebuie sa se faca:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Pe un drum paralel cu ambarcatiune remorcata si la o distanta de 5- 10 m;",
+                "b) Pe acelasi drum cu ambarcatiune remorcata, la 10- 20 m, in prova acesteia;",
+                "c) Pe un drum paralel cu ambarcatiune remorcata la o distanta de 20- 30 m, prin bordul din vant;"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "93. Care sunt procedeele de remorcaj?:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) In siaj, cuplat, mixt si prin impingere;",
+                "b) In siaj la ureche si prin tragere;",
+                "c) In siaj, la ureche, prin impingere, la edec si mixt."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "94. Pe timpul remorcajului schimbarile de drum:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se fac progresiv pentru evitarea ruperii remorcii;",
+                "b) Nu trebuie sa fie mai mari de 5 - 8 puncte la carma;",
+                "c) Se fac astfel incat remorca sa aiba aceeasi tensiune ca si pe drum;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "95. Pe timpul marsului la remorca se vor executa urmatoarele activitati:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Supravegherea permanenta a remorcii si respectarea vitezei de remorcaj;",
+                "b) Calculul rezistentei la rupere, a diametrului si lungimii remorcii;",
+                "c) Calculul rezistentei ambarcatiunii remorcate (RNR) si a tensiunii totale la care este supusa remorca;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "96. Care din regulile urmatoare privind marsul cu ambarcatiune la remorca NU este corecta?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se va evita pe cat posibil remorcajul pe langa coasta, in special cand vantul bate dinspre larg;",
+                "b) Daca remorcherul trebuie sa intoarca, ambarcatiune remorcata trebuie sa orienteze carma in bordul intoarcerii pentru a slabi parama de remorcaj si astfel a inlesni intoarcerea;",
+                "c) Marirea vitezei pe timpul marsului se va realiza din nod in nod;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "97. Care din urmatoarele masuri de siguranta pe timpul remorcajului maritim NU este corecta?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Aprinderea luminilor, ridicarea semnelor si darea semnalelor de remorcaj, conform COLREG;",
+                "b) Nu se va recurge la variatii mari ale vitezei de remorcaj;",
+                "c) Pe timpul remorcajului nu se va mai modifica lungimea paramei de remorcaj."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "98. Care din urmatoarele operatiuni NU constituie masura de siguranta pe timpul remorcajului maritim:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Guvernarea ambarcatiunii remorcate trebuie sa se faca putin in afara siajului;",
+                "b) Legarea remorcii se face numai la instalatiile special destinate acestui scop;",
+                "c) Calculul rezistentei la rupere a remorcii in functie de directia vantului si curentului, de diametrul si lungimea remorcii"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "99. Pe timpul marsului in cadrul remorcajului cuplat, la manevra de intoarcere in bordul remorcherului",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se va stopa masina remorcherului concomitent cu orientarea carmei in bordul intoarcerii, inertia ambarcatiunii ajutand la intoarcerea remorcherului;",
+                "b) Se va stopa masina remorcherului asteptandu-se ca ambarcatiune remorcata sa-si piarda din inertie, apoi se va orienta carma in bordul intoarcerii si se va actiona masina treptat pana la viteza de mars;",
+                "c) Se mareste viteza punandu-se si carma in bordul intoarcerii;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "100. Pe timpul marsului in cadrul remorcajului cuplat, la manevra de intoarcere in bordul ambarcatiunii remorcate",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se va stopa masina remorcherului concomitent cu orientarea carmei in bordul intoarcerii, inertia ambarcatiunii ajutand la intoarcerea remorcherului;",
+                "b) Se va stopa masina remorcherului asteptandu-se ca ambarcatiune remorcata sa-si piarda din inertie, apoi se va orienta carma in bordul intoarcerii si se va actiona masina treptat pana la viteza de mars;",
+                "c) Se mareste viteza punandu-se si carma in bordul intoarcerii;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "101. Manevra de apropiere a ambarcatiunii de omul cazut in apa se executa:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Din inertie, cu masina stopata, astfel ca omul sa fie lasat in vantul ambarcatiunii",
+                "b) Din inertie, cu pupa astfel ca omul sa poata fi recuperat mai usor din apa",
+                "c) Din inertie, cu masina stopata, astfel ca omul sa fie lasat sub vantul ambarcatiunii"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "102. Algoritmul executarii manevrei de om la apa folosind curba lui WILLIAMSON este urmatorul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Dupa ce s-a executat o intoarcere de 60gr cu carma banda in bordul in care a cazut omul, se orienteaza carma banda in bordul opus pentru a se ajunge la drum initial inversat",
+                "b) Se executa o intoarcere de 60gr in oricare din cele doua borduri, dupa care se orienteaza carma banda in bordul opus pentru a se ajunge la drumul initial inversat",
+                "c) Se pune carma banda in bordul in care s-a produs evenimentul si dupa o intoarcere de 250gr fata de drumul initial se aduce carma la zero si se stopeaza masina"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "103. Algoritmul executarii manevrei de om la apa folosind curba lui SCHRANOW este urmatorul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se executa o giratie completa in oricare dintre borduri si omul trebuie sa se gaseasca in punctul de incepere a manevrei",
+                "b) Se pune carma banda in oricare dintre borduri si dupa o intoarcere la drumul de salvare calculat : Ds = Di + 180gr +/- 60gr, se va naviga pe acest drum pentru gasirea omului din apa",
+                "c) Se pune carma banda in oricare dintre borduri, necunoscandu-se momentul cand a cazut omul in apa si dupa o intoarcere de 180gr se va executa cautarea"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "104. In cadrul activitatilor executate pentru recuperarea omului cazut in apa se apasa butonul \"Man over board\" al GPS-ului, in urmatorul scop:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) GPS-ul va indica continuu numai distanta pana la locul accidentului, permitand astfel reglarea vitezei pentru a putea opri ambarcatiune langa omul din apa",
+                "b) GPS-ul va indica continuu numai relevmentul la locul accidentului, permitand astfel cunoasterea in orice moment a drumului ambarcatiunii spre om.",
+                "c) Pentru a ghida permanent deplasarea ambarcatiunii spre locul accidentului, indicand continuu relevmentul si distanta."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "105. Pe timpul manevrei de om la apa pentru instiintarea in RTF a celorlalte ambarcatiuni din zona apropiata despre manevra:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se lanseaza semnalul S.O.S",
+                "b) Se lanseaza apelul si mesajul de primejdie: MAY DAY MAY DAY MAY DAY",
+                "c) Se lanseaza apelul si mesajul de securitate SECURITE SECURITE SECURITE"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "106. Pentru executarea manevrei de om la apa prin giratie simpla se va proceda astfel:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Se pune carma banda in bordul in care a cazut omul si dupa o intoarcere de 250gr fata de drumul initial, se aduce carma la zero si se stopeaza masina",
+                "b) Se pune carma banda in bordul in care a cazut omul si dupa o intoarcere de 360gr fata de drumul initial, se aduce carma la zero si se stopeaza masina",
+                "c) Se pune carma banda in bordul in care a cazut omul si dupa o intoarcere de 180gr fata de drumul initial, se aduce carma la zero si se stopeaza masina"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "107. Pentru executarea manevrei de lansare la apa a ambarcatiunilor de salvare pe vreme rea este necesar ca:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ambarcatiunile din jur sa fie informate de executarea manevrei",
+                "b) Pozitia ambarcatiunii pe timpul lansarii sa fie pe cat posibil cu vantul in bordul opus lansarii",
+                "c) Manevra sa fie inceputa de ofiterul de cart si apoi continuata de comandantul ambarcatiunii"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "108. Specificati care sunt factorii naturali care influenteaza manevra ambarcatiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) vantul, valurile, curentii, adancimea apei, viteza ambarcatiunii;",
+                "b) vantul, valurile, curentii, limitarea mediului inconjurator, gheturi, dimensiunile ambarcatiunii;",
+                "c) vantul, valurile, curentii, adancimea apei, limitarea mediului inconjurator, gheturi."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "109. Specificati care sunt factorii tehnici care influenteaza manevra ambarcatiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) elicea ambarcatiunii, vantul, carma, dimensiunile ambarcatiunii, viteza ambarcatiunii;",
+                "b) carma, elicea, depunerile de gheata, viteza ambarcatiunii, spatiul de manevra;",
+                "c) carma, elicea, viteza ambarcatiunii, dimensiunile ambarcatiunii."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "110. Calitatile nautice ale ambarcatiunii sunt:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) stabilitatea, manevrabilitatea, comportarea ambarcatiunii fata de vant, nescufundabilitatea;",
+                "b) nescufundabilitatea, flotabilitatea, stabilitatea;",
+                "c) stabilitatea, flotabilitatea, manevrabilitatea, nescufundabilitatea."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "111. Calitatile manevriere ale ambarcatiunii sunt:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) manevrabilitatea, comportarea ambarcatiunii fata de vant, oscilatiile ambarcatiunii, viteza, inertia, giratia;",
+                "b) manevrabilitatea, stabilitatea, nescufundabilitatea, inertia, viteza, oscilatiile ambarcatiunii;",
+                "c) manevrabilitatea, viteza, inertia, alura, comportarea fata de vant, oscilatiile ambarcatiunii."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "112. Mentionati varianta corecta - sensul legaturilor ambarcatiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) parama prova-inainte; springul pupa-inapoi; traversa prova-spre prova;",
+                "b) parama de etrava-inainte; parama de etambou-inainte; springul pupa-inainte;",
+                "c) springul prova-inapoi; parama prova-inainte; parama pupa-inapoi."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "113. Mentionati varianta corecta - sensul legaturilor ambarcatiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) parama prova-inapoi; springul pupa-inainte; traversa pupa-travers;",
+                "b) parama de etambou-inapoi; parama de etrava-inainte; springul pupa-inainte;",
+                "c) springul prova-inapoi; parama prova-inainte; parama pupa-inainte."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "114. Efectele legaturilor - parama prova:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune in ax spre prova, apropie prova de cheu, departeaza pupa;",
+                "b) deplaseaza ambarcatiune in ax spre prova, apropie pupa de cheu, departeaza prova;",
+                "c) apropie prova de cheu, departeaza pupa."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "115. Efectele legaturilor - traversa prova:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune spre inainte, apropie prova de cheu, departeaza pupa;",
+                "b) apropie prova de cheu, departeaza pupa;",
+                "c) deplaseaza ambarcatiune spre inapoi, apropie pupa de cheu, departeaza prova."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "116. Efectele legaturilor - springul prova:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune spre inainte, apropie prova de cheu, departeaza pupa;",
+                "b) deplaseaza ambarcatiune spre inapoi, apropie prova de cheu, departeaza pupa;",
+                "c) deplaseaza ambarcatiune spre inapoi, apropie pupa de cheu, departeaza prova."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "117. Efectele legaturilor - parama pupa:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune in ax spre pupa, apropie prova de cheu, departeaza pupa;",
+                "b) deplaseaza ambarcatiune in ax spre prova, apropie pupa de cheu, departeaza prova;",
+                "c) deplaseaza ambarcatiune in ax spre pupa, apropie pupa de cheu, departeaza prova."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "118. Efectele legaturilor - traversa pupa:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) apropie prova de cheu, departeaza pupa;",
+                "b) apropie pupa de cheu, departeaza prova;",
+                "c) deplaseaza ambarcatiune spre inapoi, apropie pupa de cheu, departeaza prova."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "119. Efectele legaturilor - springul pupa:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune spre inainte, apropie prova de cheu, departeaza pupa;",
+                "b) deplaseaza ambarcatiune spre inapoi, apropie prova de cheu, departeaza pupa;",
+                "c) deplaseaza ambarcatiune spre inainte, apropie pupa de cheu, departeaza prova."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "120. Efectele legaturilor - parama de etrava/etambou:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) deplaseaza ambarcatiune spre inainte/inapoi de-a lungul cheului;",
+                "b) deplaseaza ambarcatiune spre inainte/inapoi, apropie prova/pupa de cheu;",
+                "c) deplaseaza ambarcatiune spre inainte/inapoi, departeaza prova/pupa de cheu."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "121. Efectele legaturilor combinate - parama prova si spring prova - faciliteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) acostarea cu bordul, plecarea cu prova inainte pe parama prova;",
+                "b) acostarea cu bordul, plecarea cu pupa inainte pe springul prova;",
+                "c) acostarea cu bordul, plecarea cu prova inainte pe springul prova."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "122. Efectele legaturilor combinate - parama pupa si spring prova - faciliteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) acostarea cu bordul, plecarea cu prova inainte pe springul prova;",
+                "b) acostarea cu bordul, plecarea cu pupa inainte pe parama pupa;",
+                "c) acostarea cu bordul, plecarea cu prova inainte pe springul pupa."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "123. Efectele legaturilor combinate - parama pupa si spring prova - faciliteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) acostarea cu bordul, plecarea cu pupa inainte pe springul prova;",
+                "b) acostarea cu bordul, plecarea cu pupa inainte pe parama pupa;",
+                "c) acostarea cu bordul, plecarea cu prova inainte pe springul pupa."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "124. Efectele legaturilor combinate - parama prova si spring pupa - faciliteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) apropierea ambarcatiunii de cheu cu deplasare spre inainte;",
+                "b) apropierea ambarcatiunii de cheu cu deplasare spre inapoi;",
+                "c) apropierea ambarcatiunii de cheu fara deplasare spre inainte/inapoi."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "125. Efectele legaturilor combinate - parama prova si spring prova - faciliteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) apropierea ambarcatiunii de cheu cu deplasare spre inainte;",
+                "b) apropierea ambarcatiunii de cheu cu deplasare spre inapoi;",
+                "c) apropierea ambarcatiunii de cheu fara deplasare spre inainte/inapoi."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "126. Efectul carmei la mars inainte - ambarcatiune merge inainte, carma in ax:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inainte."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "127. Efectul carmei la mars inainte - ambarcatiune merge inainte, carma dreapta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inainte."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "128. Efectul carmei la mars inainte - ambarcatiune merge inainte, carma stanga:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inainte."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "129. Efectul carmei la mars inapoi - ambarcatiune merge inapoi, carma in ax:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inapoi."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "130. Efectul carmei la mars inapoi - ambarcatiune merge inapoi, carma dreapta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inapoi."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "131. Efectul carmei la mars inapoi - ambarcatiune merge inapoi, carma stanga:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, iar pupa abate spre dreapta;",
+                "b) prova gireaza la dreapta, iar pupa abate spre stanga;",
+                "c) deplasare rectininie inapoi."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "132. Efecte combinate carma-elice - ambarcatiune merge cu viteza inainte, carma zero, masina inainte:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "133. Efecte combinate carma-elice - ambarcatiune merge cu viteza inainte, carma dreapta, masina inainte:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "134. Efecte combinate carma-elice - ambarcatiune merge cu viteza inainte, carma stanga, masina inainte:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "135. Efecte combinate carma-elice - ambarcatiune merge cu viteza inapoi, carma zero, masina inapoi:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "136. Efecte combinate carma-elice - ambarcatiune merge cu viteza inapoi, carma dreapta, masina inapoi:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "137. Efecte combinate carma-elice - ambarcatiune merge cu viteza inapoi, carma stanga, masina inapoi:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova gireaza la stanga, pupa abate la dreapta;",
+                "b) prova gireaza la dreapta, pupa abate la stanga;",
+                "c) elicea nu are efect."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "138. Acostarea reprezinta apropierea unei ambarcatiuni de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cheu, debarcader, mal, geamandura, loc neamenajat, alta ambarcatiune;",
+                "b) cheu, platforma, canal, debarcader, ecluza, loc neamenajat, alta ambarcatiune;",
+                "c) cheu, doc, platforma, debarcader, fluviu, geamandura, alta ambarcatiune."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "139. La acostarea cu babordul la cheu, fara ancora, apropierea se face:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sub un unghi cat mai mic (20-30 grade), pentru o ambarcatiune cu elice pas dreapta;",
+                "b) sub un unghi cat mai mic (10-20 grade), pentru o ambarcatiune cu elice pas dreapta;",
+                "c) sub un unghi cat mai mare, folosind efectul carmei si elicei."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "140. La acostarea cu tribordul la cheu, fara ancora, apropierea se face:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sub un unghi cat mai mic (20-30 grade), pentru o ambarcatiune cu elice pas dreapta;",
+                "b) sub un unghi cat mai mic (10-20 grade), pentru o ambarcatiune cu elice pas dreapta;",
+                "c) sub un unghi cat mai mare, folosind efectul carmei si elicei."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "141. Acostarea cu pupa la cheu, prin intoarcere si fundarisirea ancorei la mars inapoi se face astfel:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) funda ancora, stop masina, darea paramei de etambou, foarte incet inainte, stop masina;",
+                "b) funda ancora, foarte incet inapoi, darea mustatilor pupa, stop masina;",
+                "c) funda ancora, foarte incet inainte, darea paramei de etambou, foarte incet inainte, stop."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "142. Manevra de acostare cu pupa se poate face prin urmatoarele metode:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu sau fara ajutorul ancorei;",
+                "b) cu sau fara ajutorul remorcherului;",
+                "c) cu sau fara legaturi prova."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "143. Manevra de plecare de la cheu este mai rapida in cazul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) unei ambarcatiuni acostate cu bordul la cheu;",
+                "b) unei ambarcatiuni acostate cu pupa la cheu;",
+                "c) unei ambarcatiuni acostate cu prova la cheu."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "144. Manevra de legare/plecare la/de la geamandura consta in urmatoarele operatiuni:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pregatirea ambarcatiunii, prezentarea la geamandura, legarea, plecarea;",
+                "b) prezenta, pregatirea echipajului, legarea, voltarea, plecarea;",
+                "c) pregatirea legaturilor, apropierea de geamandura, legarea, voltarea, plecarea, largarea."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "145. Apropierea de geamandura sau o alta ambarcatiune este mai usoara, daca conditiile permit:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu vantul/curentul din prova;",
+                "b) cu vantul/curentul din pupa;",
+                "c) cu vantul/curentul din travers."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "146. Manevra pe parame (shifting) se executa:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pe distante mici;",
+                "b) pe distante mari, cu remorchere si pilot la bord;",
+                "c) pe distante mici, cu remorchere, dar fara pilot la bord"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "147. Manevra de plecare de la cheu a unei ambarcatiuni acostata cu bordul babord, elice pas dreapta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mola pupa, carma dreapta, masina inainte;",
+                "b) mola pupa, carma stanga, masina inainte;",
+                "c) mola pupa, carma stanga, masina inapoi."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "148. Manevra de plecare de la cheu a unei ambarcatiuni acostata cu bordul tribord, elice pas dreapta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mola pupa, carma dreapta, masina inainte;",
+                "b) mola pupa, carma stanga, masina inainte;",
+                "c) mola pupa, carma stanga, masina inapoi."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "149. Plecarea unei ambarcatiuni cu doua elice acostata cu babordul la cheu, pe timp bun:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mola pupa, masina babord inainte, masina tribord inapoi;",
+                "b) mola pupa, masina babord inapoi, masina tribord stop;",
+                "c) mola pupa, masina babord inapoi, masina tribord inainte."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "150. Plecarea unei ambarcatiuni cu doua elice acostata cu tribordul la cheu, pe timp bun:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mola pupa, masina babord inainte, masina tribord inapoi;",
+                "b) mola pupa, masina tribord inapoi, masina babord stop;",
+                "c) mola pupa, masina babord inapoi, masina tribord inainte."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "151. Calculul locului de ancorare tine cont de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) lungimea ambarcatiunii, natura fundului, existenta reperelor de navigatie, adancimea apei;",
+                "b) adancimea apei, lungimea ambarcatiunii, posibilitatea graparii ancorei, eroarea in punct;",
+                "c) latimea ambarcatiunii, panta fundului, posibilitatea graparii ancorei, adancimea apei."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "152. Procedee de ancorare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu o ancora, cu doua ancore;",
+                "b) cu o ancora, cu doua ancore, cu trei ancore;",
+                "c) cu o ancora, cu doua ancore, cu trei ancore, cu sase ancore."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "153. Ancorarea la mars inainte, pe calm si fara curent:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) carma in bordul opus bordului ancorarii, se parcurge spatiul L/2, dupa care se da funda ancora;",
+                "b) carma in bordul ancorarii, se parcurge spatiul L/2, dupa care se da funda ancora;",
+                "c) carma zero, se parcurge spatiul L/2, dupa care se da funda ancora."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "154. Unghiul format intre lanturi la ancorarea in barba este de maximum:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 30 grade;",
+                "b) 60 grade;",
+                "c) 180 grade."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "155. Ancorarea in barba este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mai sigura decat ancorarea cu o singura ancora;",
+                "b) mai nesigura decat ancorarea cu o singura ancora;",
+                "c) la fel de sigura ca si ancorarea cu o singura ancora."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "156. Ancorare prin afurcare se poate face prin urmatoarele metode:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) la mars inainte si la mars inapoi;",
+                "b) la mars inainte, stop si la mars inapoi;",
+                "c) la stop si la mars inapoi."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "157. La manevra de ancorare prin afurcare se folosesc urmatoarele:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) o ancora si un spring;",
+                "b) doua ancore;",
+                "c) doua ancore si un spring."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "158. Manevra de ambosare reprezinta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mentinerea ambarcatiunii la adapost de vant/valuri/curenti;",
+                "b) mentinerea ambarcatiunii intr-o pozitie voita, indiferent de vant/valuri/curenti;",
+                "c) mentinerea ambarcatiunii in orice pozitie, cu ajutorul unei ancore si un spring."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "159. Ambosarea cu spring se face de regula:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu ambarcatiune la mars inainte;",
+                "b) cu ambarcatiune stopata, cand vantul este sub forta 6-7;",
+                "c) cand ambarcatiune mai are inertie catre inapoi."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "160. La ambosarea prin legarea unui spring la ancora fundarisita, gasa springului se aduce:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de la pupa, pe puntea principala;",
+                "b) de la pupa, prin exteriorul bordajului;",
+                "c) de la pupa, prin bordul opus ancorarii."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "161. Ambosarea ambarcatiunii cu doua ancore (ancora si ancorot) se face:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu o ambarcatiune ancorata;",
+                "b) cu o ambarcatiune ancorata sau cu o ambarcatiune care se deplaseaza;",
+                "c) cu o ambarcatiune in mars."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "162. La manevra de ambosare prin ancorare si legare la geamandura, la ancoraj se vine astfel:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin apropierea la travers de geamandura, trecand pe langa si prin vantul ei;",
+                "b) prin apropiere de geamandura din inertie si cu vant din prova;",
+                "c) prin apropiere de geamandura cu viteza mica si cu vant din travers."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "163. Stationarea ambarcatiunii la ancora presupune respectarea regulilor:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) SOLAS 74;",
+                "b) COLREG 72;",
+                "c) INCOTERMS."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "164. La manevra de ancorare, pozitia lantului se raporteaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) la fiecare minut;",
+                "b) la fiecare cheie de lant;",
+                "c) la fiecare za de lant."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "165. Manevra de remorcaj afecteaza calitatile manevriere ale ambarcatiunii, dupa cum urmeaza:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) manevrabilitatea, inertia si oscilatiile ambarcatiunii;",
+                "b) viteza, inertia si giratia ambarcatiunii;",
+                "c) comportarea ambarcatiunii fata de vant, inertia si viteza."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "166. Remorcherele oceanice au zona de navigatie:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) costiera;",
+                "b) oceanica;",
+                "c) nelimitata."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "167. Diferenta intre tipurile de remorchere o face:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) zona de navigatie, puterea motorului, dependenta fata de portul de baza;",
+                "b) calitatile manevriere, calitatile nautice, dotarea cu echipamente de salvare;",
+                "c) viteza de remorcare, vizibilitatea buna la manevra, lungimea remorcii."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "168. Misiunile remorcherelor sunt, printre altele:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) remorcajul, cautare si salvare pe mare, spargerea ghetii;",
+                "b) stingerea incendiilor, prevenirea si limitarea poluarii cu hidrocarburi;",
+                "c) salvarea pe mare, aprovizionarea ambarcatiunilor, manevra de andocare."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "169. Procedee de remorcaj:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) in siaj, la ureche, in barba, mixt;",
+                "b) in siaj, la ureche, prin impingere, la edec, mixt;",
+                "c) in siaj, la ureche, la edec, mixt."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "170. Pregatirile preliminare ale manevrei de remorcaj presupun:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) alegerea remorcherului, alegerea remorcii, alegerea zonei de remorcaj;",
+                "b) alegerea remorcherului, pregatirea ambarcatiunii remorcate, pregatirea echipajului;",
+                "c) alegerea remorcherului, alegerea remorcii, pregatirea ambarcatiunii remorcate, pregatirea remorcherului."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "171. Alegerea remorcii se face functie de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) material, rezistenta, lungime, grosime;",
+                "b) lungimea convoiului, latimea ambarcatiunii, puterea remorcherului;",
+                "c) rezistenta la inaintare, coeficientul bloc, dimensiunile ambarcatiunii remorcate."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "172. Pistolul de aruncare a bandulei foloseste la:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) apropierea intre ambarcatiune si remorcher;",
+                "b) baterea bandulei intre remorcher si ambarcatiune remorcata.",
+                "c) aruncarea bandulei catre remorcher."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "173. Distanta optima de apropiere a remorcherului la travers de ambarcatiune remorcata este de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 30-50m;",
+                "b) 60-80m;",
+                "c) 20-30m."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "174. Marsul la remorca se face conform regulilor:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) COLREG 72;",
+                "b) SOLAS 60;",
+                "c) MARPOL 73/78."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "175. Schimbarile de drum pe timpul remorcajului trebuie sa se efectueze:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) lent, cu un numar mic de grade;",
+                "b) brusc, spre bordul dorit, cu un numar mic de grade;",
+                "c) lent, o schimbare considerabila de grade."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "176. Intinderea remorcii se va face astfel:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) brusc, pentru a realiza intinderea adecvata necesara remorcajului in siguranta;",
+                "b) lent, progresiv, pentru a evita ruperea remorcii;",
+                "c) numai in momentul cand ambarcatiune se afla la distanta suficienta de remorcher."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "177. Lungimea remorcii la remorcajul portuar fata de remorcajul maritim este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mai mare cu 25-30%;",
+                "b) mai mica, aproximativ 25-30m;",
+                "c) aceeasi."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "178. Remorcajul in siaj cu prova inainte este mai:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) avantajos, deoarece rezistenta ambarcatiunii la inaintare este mai mica;",
+                "b) dezavantajos, deoarece necesita spatii mai largi;",
+                "c) avantajos, deoarece se pot folosi la remorcaj si ambarcatiuni nespecializate."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Manevra meteo hidrologie",
+            "difficulty": 1
+        },
+        {
+            "question": "179. Remorcajul la ureche se foloseste:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pentru ambarcatiuni mari, pe distanta scurte, in conditii meteo favorabile;",
+                "b) pentru ambarcatiuni mici, pe distante scurte, pe mare calma, in zona portuara;",
+                "c) pentru ambarcatiuni mici si mijlocii, in rada porturilor."
+            ],
+            "correctAnswer": [
+                2
             ],
             "section": "Manevra meteo hidrologie",
             "difficulty": 1

@@ -1,20 +1,36 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import Quiz from 'react-quiz-component';
 import { questions as colregQuiz } from './questions';
 import { questions as legislatieQuiz } from './questionsLegislatie';
 import { questions as navigatieQuiz } from './questionsNavigatie';
 import { questions as manevraQuiz } from './questionsManevra';
+import { questions as constructieQuiz } from './questionsConstructie';
+import { questions as rndQuiz } from './questionsRND';
 import { questions as clasaCQuiz } from './questionsClasaC';
 import { questions as clasaDQuiz } from './questionsClasaD';
 
+// The quiz library gives answer buttons random keys, so any parent re-render (e.g. the exam
+// timer ticking every second) recreates them in the DOM and can swallow taps. Memoizing keeps
+// the quiz untouched while only the banner re-renders.
+const MemoQuiz = memo(Quiz);
+
 const STORAGE_KEY = 'caa-progress-v2';
 const PREFS_KEY = 'caa-prefs-v1';
+const HISTORY_KEY = 'caa-history-v1';
+const SESSIONS_KEY = 'caa-sessions-v1';
+const SESSIONS_LIMIT = 30;
+const HISTORY_LIMIT = 300;
 const LICENSE_CLASSES = ['A', 'B', 'C', 'D'];
 
 const COLREG_SECTIONS = [
   { id: 'CAA-EN-Generalitati', label: 'COLREG · Generalități', count: 8, difficulty: 1 },
   { id: 'CAA-EN-Lumini si semne', label: 'COLREG · Lumini și semne', count: 8, difficulty: 1 },
-  { id: 'CAA-EN-Reguli de guvernare', label: 'COLREG · Reguli de guvernare', count: 8, difficulty: 1 },
+  {
+    id: 'CAA-EN-Reguli de guvernare',
+    label: 'COLREG · Reguli de guvernare',
+    count: 8,
+    difficulty: 1,
+  },
   { id: 'CAA-EN-Semnale sonore', label: 'COLREG · Semnale sonore', count: 6, difficulty: 1 },
 ];
 
@@ -23,7 +39,17 @@ const NAVIGATIE_SECTIONS = [
 ];
 
 const MANEVRA_SECTIONS = [
-  { id: 'Manevra meteo hidrologie', label: 'Manevra / Meteo / Hidrologie', count: 30, difficulty: 1 },
+  {
+    id: 'Manevra meteo hidrologie',
+    label: 'Manevra / Meteo / Hidrologie',
+    count: 30,
+    difficulty: 1,
+  },
+];
+
+const CONSTRUCTIE_SECTIONS = [
+  { id: 'Constructia navei', label: 'Construcția navei', count: 24, difficulty: 1 },
+  { id: 'Vitalitate', label: 'Vitalitate', count: 6, difficulty: 1 },
 ];
 
 const LEGISLATIE_SECTIONS = [
@@ -32,11 +58,17 @@ const LEGISLATIE_SECTIONS = [
   { id: 'Infractiuni', label: 'Legislație · Infracțiuni', count: 4, difficulty: 1 },
   { id: 'Ambarcatiune', label: 'Legislație · Ambarcațiune', count: 4, difficulty: 1 },
   { id: 'Personal navigant', label: 'Legislație · Personal navigant', count: 4, difficulty: 1 },
-  { id: 'Siguranta navigatiei', label: 'Legislație · Siguranța navigației', count: 4, difficulty: 1 },
+  {
+    id: 'Siguranta navigatiei',
+    label: 'Legislație · Siguranța navigației',
+    count: 4,
+    difficulty: 1,
+  },
   { id: 'Teritoriu maritim', label: 'Legislație · Teritoriu maritim', count: 3, difficulty: 1 },
   { id: 'Conventii', label: 'Legislație · Convenții', count: 2, difficulty: 1 },
 ];
 
+const RND_SECTIONS = rndQuiz.examConfig.sections;
 const CLASA_C_SECTIONS = clasaCQuiz.examConfig.sections;
 const CLASA_D_SECTIONS = clasaDQuiz.examConfig.sections;
 
@@ -47,8 +79,17 @@ const PRACTICE_SECTIONS_AB = [
   ...LEGISLATIE_SECTIONS,
 ];
 
+const PRACTICE_SECTIONS_A = [
+  ...COLREG_SECTIONS,
+  ...NAVIGATIE_SECTIONS,
+  ...MANEVRA_SECTIONS,
+  ...CONSTRUCTIE_SECTIONS,
+  ...LEGISLATIE_SECTIONS,
+  ...RND_SECTIONS,
+];
+
 const PRACTICE_SECTIONS_BY_CLASS = {
-  A: PRACTICE_SECTIONS_AB,
+  A: PRACTICE_SECTIONS_A,
   B: PRACTICE_SECTIONS_AB,
   C: CLASA_C_SECTIONS,
   D: CLASA_D_SECTIONS,
@@ -101,8 +142,8 @@ const EXAM_SUBJECTS = [
     barem: 7,
     observation: '',
     classes: ['A'],
-    available: false,
-    sections: [],
+    available: true,
+    sections: CONSTRUCTIE_SECTIONS,
   },
   {
     id: 'legislatie',
@@ -125,8 +166,8 @@ const EXAM_SUBJECTS = [
     barem: 8,
     observation: '',
     classes: ['A'],
-    available: false,
-    sections: [],
+    available: true,
+    sections: RND_SECTIONS,
   },
   {
     id: 'clasa-c',
@@ -181,8 +222,17 @@ const QUESTIONS_AB = [
   ...tagQuestions(legislatieQuiz.questions, 'Legislație maritimă'),
 ];
 
+const QUESTIONS_A = [
+  ...tagQuestions(colregQuiz.questions, 'COLREG'),
+  ...tagQuestions(navigatieQuiz.questions, 'Navigație maritimă'),
+  ...tagQuestions(manevraQuiz.questions, 'Manevra / Meteo / Hidrologie'),
+  ...tagQuestions(constructieQuiz.questions, 'Construcția navei / Vitalitate'),
+  ...tagQuestions(legislatieQuiz.questions, 'Legislație maritimă'),
+  ...tagQuestions(rndQuiz.questions, 'Regulament Dunăre'),
+];
+
 const QUESTIONS_BY_CLASS = {
-  A: QUESTIONS_AB,
+  A: QUESTIONS_A,
   B: QUESTIONS_AB,
   C: tagQuestions(clasaCQuiz.questions, 'Clasa C'),
   D: tagQuestions(clasaDQuiz.questions, 'Clasa D'),
@@ -195,6 +245,9 @@ function preserveQuestionNumber(text) {
 function normalizeQuestions(questionList) {
   return questionList.map((question) => {
     const normalized = { ...question, question: preserveQuestionNumber(question.question) };
+    if (normalized.questionPic && !/^(https?:)?\/\//.test(normalized.questionPic)) {
+      normalized.questionPic = `${process.env.PUBLIC_URL || ''}/${normalized.questionPic.replace(/^\//, '')}`;
+    }
     const type = normalized.answerSelectionType || 'single';
     if (type === 'single' && Array.isArray(normalized.correctAnswer)) {
       normalized.correctAnswer = String(normalized.correctAnswer[0]);
@@ -259,7 +312,8 @@ function selectedIndexes(userAnswer) {
 const entryIsCorrect = (entry) =>
   entry != null && (typeof entry === 'object' ? entry.correct === true : entry === true);
 
-const entryUserAnswer = (entry) => (entry && typeof entry === 'object' ? entry.userAnswer : undefined);
+const entryUserAnswer = (entry) =>
+  entry && typeof entry === 'object' ? entry.userAnswer : undefined;
 
 function formatTime(totalSeconds) {
   const safe = Math.max(0, totalSeconds);
@@ -279,9 +333,7 @@ function loadPrefs() {
     if (!raw) return null;
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object') return null;
-    const licenseClass = LICENSE_CLASSES.includes(parsed.licenseClass)
-      ? parsed.licenseClass
-      : 'A';
+    const licenseClass = LICENSE_CLASSES.includes(parsed.licenseClass) ? parsed.licenseClass : 'A';
     const subjects = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(licenseClass));
     const examSubjectId = subjects.some((subject) => subject.id === parsed.examSubjectId)
       ? parsed.examSubjectId
@@ -289,8 +341,7 @@ function loadPrefs() {
     return {
       licenseClass,
       examSubjectId,
-      practiceSection:
-        typeof parsed.practiceSection === 'string' ? parsed.practiceSection : 'all',
+      practiceSection: typeof parsed.practiceSection === 'string' ? parsed.practiceSection : 'all',
     };
   } catch {
     return null;
@@ -311,9 +362,7 @@ function loadProgress() {
     if (!raw) return null;
     const parsed = JSON.parse(raw);
     if (!parsed || !Array.isArray(parsed.activeKeys)) return null;
-    const licenseClass = LICENSE_CLASSES.includes(parsed.licenseClass)
-      ? parsed.licenseClass
-      : 'A';
+    const licenseClass = LICENSE_CLASSES.includes(parsed.licenseClass) ? parsed.licenseClass : 'A';
     return {
       licenseClass,
       subjectId: parsed.subjectId || null,
@@ -322,6 +371,11 @@ function loadProgress() {
       answered: parsed.answered && typeof parsed.answered === 'object' ? parsed.answered : {},
       endsAt: typeof parsed.endsAt === 'number' ? parsed.endsAt : null,
       practiceSection: parsed.practiceSection || 'all',
+      paused: parsed.paused === true,
+      runUid:
+        typeof parsed.runUid === 'string'
+          ? parsed.runUid
+          : `legacy-${parsed.endsAt || 0}-${parsed.activeKeys.length}`,
     };
   } catch {
     return null;
@@ -335,6 +389,108 @@ function saveProgress(state) {
     /* ignore */
   }
 }
+
+function newRunUid() {
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
+function loadHistory() {
+  try {
+    const raw = localStorage.getItem(HISTORY_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((entry) => entry && entry.id) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(history) {
+  try {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+  } catch {
+    /* ignore */
+  }
+}
+
+function loadSessions() {
+  try {
+    const raw = localStorage.getItem(SESSIONS_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(
+      (session) =>
+        session &&
+        typeof session.runUid === 'string' &&
+        Array.isArray(session.activeKeys) &&
+        session.answered &&
+        typeof session.answered === 'object',
+    );
+  } catch {
+    return [];
+  }
+}
+
+function saveSessions(sessions) {
+  try {
+    localStorage.setItem(SESSIONS_KEY, JSON.stringify(sessions));
+  } catch {
+    /* ignore */
+  }
+}
+
+function sessionLabel(session) {
+  if (session.mode === 'exam') {
+    return EXAM_SUBJECTS.find((subject) => subject.id === session.subjectId)?.label || 'Examen';
+  }
+  if (!session.practiceSection || session.practiceSection === 'all') return 'Toate secțiunile';
+  const sections = PRACTICE_SECTIONS_BY_CLASS[session.licenseClass] || PRACTICE_SECTIONS_AB;
+  return sections.find((section) => section.id === session.practiceSection)?.label || 'Antrenament';
+}
+
+function formatDate(ts) {
+  try {
+    return new Date(ts).toLocaleString('ro-RO', {
+      day: '2-digit',
+      month: 'short',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  } catch {
+    return '';
+  }
+}
+
+/** One row per exam discipline of the class (A: 6, B: 4, C/D: 1). */
+function summarizeClass(history, licenseClass) {
+  const examEntries = history.filter(
+    (entry) => entry.licenseClass === licenseClass && entry.mode === 'exam',
+  );
+  const rows = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(licenseClass)).map(
+    (subject) => {
+      const attempts = examEntries.filter((entry) => entry.subjectId === subject.id);
+      const best = attempts.reduce(
+        (top, entry) => (!top || entry.correct > top.correct ? entry : top),
+        null,
+      );
+      const last = attempts[attempts.length - 1] || null;
+      let status = 'none';
+      if (attempts.some((entry) => entry.passed)) status = 'passed';
+      else if (attempts.length) status = 'failed';
+      else if (!subject.available) status = 'soon';
+      return { subject, attempts, best, last, status };
+    },
+  );
+  return { rows, passedCount: rows.filter((row) => row.status === 'passed').length };
+}
+
+const STATUS_LABELS = {
+  passed: 'Admis',
+  failed: 'Respins',
+  none: 'Neîncercat',
+  soon: 'În curând',
+};
 
 function computeRunQuestions(fullQuestions, activeKeys, answered) {
   const keySet = new Set(activeKeys);
@@ -360,6 +516,10 @@ function QuizApp() {
   const [endsAt, setEndsAt] = useState(null);
   const [secondsLeft, setSecondsLeft] = useState(null);
   const [practiceSection, setPracticeSection] = useState(initialPrefs?.practiceSection || 'all');
+  const [runUid, setRunUid] = useState(null);
+  const [savedRuns, setSavedRuns] = useState(loadSessions); // paused runs waiting in the menu
+  const [history, setHistory] = useState(loadHistory);
+  const [historyClass, setHistoryClass] = useState(initialPrefs?.licenseClass || 'A');
 
   const fullQuestions = useMemo(
     () => normalizeQuestions(QUESTIONS_BY_CLASS[licenseClass] || QUESTIONS_AB),
@@ -404,27 +564,28 @@ function QuizApp() {
     [licenseClass, examSubjectId],
   );
 
-  // Resume in-progress run if present
-  useEffect(() => {
-    const saved = loadProgress();
-    if (!saved || !saved.activeKeys.length) return;
+  const resumeSaved = useCallback((saved) => {
     const pool = normalizeQuestions(QUESTIONS_BY_CLASS[saved.licenseClass] || QUESTIONS_AB);
     const keySet = new Set(saved.activeKeys);
-    const known = pool.some((question) => keySet.has(question.question));
-    if (!known) return;
-
+    // The question bank changed and this session no longer matches anything: drop it
+    if (!pool.some((question) => keySet.has(question.question))) {
+      setSavedRuns((prev) => prev.filter((item) => item.runUid !== saved.runUid));
+      return;
+    }
     const remaining = computeRunQuestions(pool, saved.activeKeys, saved.answered);
     const timedOut = saved.endsAt != null && Date.now() >= saved.endsAt;
     setLicenseClass(saved.licenseClass);
     setMode(saved.mode);
     setActiveSubjectId(saved.subjectId);
-    setExamSubjectId(
-      saved.subjectId || defaultSubjectForClass(saved.licenseClass),
-    );
+    setExamSubjectId(saved.subjectId || defaultSubjectForClass(saved.licenseClass));
     setPracticeSection(saved.practiceSection || 'all');
     setActiveKeys(saved.activeKeys);
     setAnswered(saved.answered);
     setEndsAt(saved.endsAt);
+    setRunUid(saved.runUid);
+    setSavedRuns((prev) => prev.filter((item) => item.runUid !== saved.runUid));
+    setResultFilter('answered');
+    setRunId((id) => id + 1);
     if (timedOut || remaining.length === 0) {
       setPhase('result');
       setRunQuestions([]);
@@ -432,8 +593,35 @@ function QuizApp() {
       setRunQuestions(remaining);
       setPhase('running');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- resume once on mount
   }, []);
+
+  // Restore saved progress on load: active runs resume, paused runs wait in the menu
+  useEffect(() => {
+    const saved = loadProgress();
+    if (!saved || !saved.activeKeys.length) return;
+    const pool = normalizeQuestions(QUESTIONS_BY_CLASS[saved.licenseClass] || QUESTIONS_AB);
+    const keySet = new Set(saved.activeKeys);
+    if (!pool.some((question) => keySet.has(question.question))) return;
+
+    if (saved.paused) {
+      // older versions kept a single paused run in the progress slot: move it to the list
+      const { paused, ...session } = saved;
+      setSavedRuns((prev) =>
+        prev.some((item) => item.runUid === session.runUid) ? prev : [session, ...prev],
+      );
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch {
+        /* ignore */
+      }
+    } else {
+      resumeSaved(saved);
+    }
+  }, [resumeSaved]);
+
+  useEffect(() => {
+    saveSessions(savedRuns);
+  }, [savedRuns]);
 
   useEffect(() => {
     savePrefs({ licenseClass, examSubjectId, practiceSection });
@@ -450,8 +638,24 @@ function QuizApp() {
       answered,
       endsAt,
       practiceSection,
+      runUid,
+      paused: false,
     });
-  }, [phase, licenseClass, activeSubjectId, mode, activeKeys, answered, endsAt, practiceSection]);
+  }, [
+    phase,
+    licenseClass,
+    activeSubjectId,
+    mode,
+    activeKeys,
+    answered,
+    endsAt,
+    practiceSection,
+    runUid,
+  ]);
+
+  useEffect(() => {
+    saveHistory(history);
+  }, [history]);
 
   useEffect(() => {
     if (phase !== 'running' || mode !== 'exam' || endsAt == null) {
@@ -479,6 +683,7 @@ function QuizApp() {
     const keys = sampled.map((question) => question.question);
     const end = Date.now() + subject.timeMinutes * 60 * 1000;
     setMode('exam');
+    setRunUid(newRunUid());
     setActiveSubjectId(subject.id);
     setActiveKeys(keys);
     setAnswered({});
@@ -496,6 +701,7 @@ function QuizApp() {
         : fullQuestions.filter((question) => question.section === practiceSection);
     const keys = pool.map((question) => question.question);
     setMode('practice');
+    setRunUid(newRunUid());
     setActiveSubjectId(null);
     setActiveKeys(keys);
     setAnswered({});
@@ -527,6 +733,7 @@ function QuizApp() {
     setRunQuestions([]);
     setEndsAt(null);
     setActiveSubjectId(null);
+    setRunUid(null);
     try {
       localStorage.removeItem(STORAGE_KEY);
     } catch {
@@ -542,6 +749,7 @@ function QuizApp() {
   const restartWithFailed = useCallback(
     (failedQuestions) => {
       const keys = failedQuestions.map((question) => question.question);
+      setRunUid(newRunUid());
       setActiveKeys(keys);
       setAnswered({});
       setRunQuestions(failedQuestions);
@@ -563,7 +771,9 @@ function QuizApp() {
   }, [activeKeys, fullQuestions]);
 
   const answeredCount = activeSet.filter((question) => question.question in answered).length;
-  const correctSoFar = activeSet.filter((question) => entryIsCorrect(answered[question.question])).length;
+  const correctSoFar = activeSet.filter((question) =>
+    entryIsCorrect(answered[question.question]),
+  ).length;
   const incorrectSoFar = answeredCount - correctSoFar;
 
   useEffect(() => {
@@ -573,6 +783,87 @@ function QuizApp() {
       setRunQuestions([]);
     }
   }, [phase, activeKeys, answeredCount]);
+
+  // Save the current run to the sessions list and go back to the menu
+  const pauseToMenu = useCallback(() => {
+    const snapshot = {
+      licenseClass,
+      subjectId: activeSubjectId,
+      mode,
+      activeKeys,
+      answered,
+      endsAt,
+      practiceSection,
+      runUid,
+      savedAt: Date.now(),
+    };
+    setSavedRuns((prev) =>
+      [snapshot, ...prev.filter((item) => item.runUid !== snapshot.runUid)].slice(
+        0,
+        SESSIONS_LIMIT,
+      ),
+    );
+    // the run now lives in the list, so it must not auto-resume on reload
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      /* ignore */
+    }
+    setRunQuestions([]);
+    setPhase('menu');
+  }, [licenseClass, activeSubjectId, mode, activeKeys, answered, endsAt, practiceSection, runUid]);
+
+  const cancelRun = useCallback(() => {
+    if (
+      answeredCount > 0 &&
+      !window.confirm('Anulezi sesiunea? Progresul curent nu va fi salvat.')
+    ) {
+      return;
+    }
+    backToMenu();
+  }, [answeredCount, backToMenu]);
+
+  const discardSavedRun = useCallback((uid) => {
+    if (!window.confirm('Ștergi sesiunea salvată?')) return;
+    setSavedRuns((prev) => prev.filter((item) => item.runUid !== uid));
+  }, []);
+
+  const clearHistory = useCallback(() => {
+    if (!window.confirm('Ștergi tot istoricul rezultatelor?')) return;
+    setHistory([]);
+  }, []);
+
+  // Record every finished run (exam or practice) in the history, once per run
+  useEffect(() => {
+    if (phase !== 'result' || !runUid || !activeSet.length) return;
+    const correct = activeSet.filter((question) =>
+      entryIsCorrect(answered[question.question]),
+    ).length;
+    const total = activeSet.length;
+    const minCorrect = activeSubject?.minCorrect ?? null;
+    const practiceLabel =
+      practiceSection === 'all'
+        ? 'Toate secțiunile'
+        : practiceSections.find((section) => section.id === practiceSection)?.label ||
+          practiceSection;
+    const entry = {
+      id: runUid,
+      ts: Date.now(),
+      mode,
+      licenseClass,
+      subjectId: mode === 'exam' ? activeSubjectId : null,
+      label: mode === 'exam' ? activeSubject?.label || 'Examen' : practiceLabel,
+      correct,
+      total,
+      answeredCount: activeSet.filter((question) => question.question in answered).length,
+      minCorrect,
+      passed: mode === 'exam' ? correct >= (minCorrect ?? total) : correct === total,
+    };
+    setHistory((prev) =>
+      prev.some((item) => item.id === entry.id) ? prev : [...prev, entry].slice(-HISTORY_LIMIT),
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- record once when the run ends
+  }, [phase, runUid]);
 
   const quizData = useMemo(
     () => ({
@@ -589,7 +880,9 @@ function QuizApp() {
   const sectionCounts = useMemo(() => {
     const counts = {};
     practiceSections.forEach((section) => {
-      counts[section.id] = fullQuestions.filter((question) => question.section === section.id).length;
+      counts[section.id] = fullQuestions.filter(
+        (question) => question.section === section.id,
+      ).length;
     });
     return counts;
   }, [fullQuestions, practiceSections]);
@@ -685,26 +978,38 @@ function QuizApp() {
           </h2>
         )}
 
-        <p className="score-line">
-          Scor: <strong>{correctCount}</strong> / {total} ({percent}%)
-          {mode === 'exam' && (
-            <>
-              {' '}
-              · minim: {minCorrect}/{total}
-            </>
-          )}
-        </p>
-        <p className="score-line muted">
-          Răspunse: <strong>{answeredTotal}</strong> · Corecte:{' '}
-          <strong className="score-correct">{correctCount}</strong> · Greșite:{' '}
-          <strong className="score-incorrect">{incorrectQuestions.length}</strong>
-          {unansweredQuestions.length > 0 && (
-            <>
-              {' '}
-              · Fără răspuns: <strong>{unansweredQuestions.length}</strong>
-            </>
-          )}
-        </p>
+        <div className="score-summary">
+          <div
+            className={`score-ring ${passed ? 'good' : 'bad'}`}
+            style={{ '--pct': percent }}
+            role="img"
+            aria-label={`${percent}%`}
+          >
+            <span>{percent}%</span>
+          </div>
+          <div className="score-details">
+            <p className="score-line">
+              Scor: <strong>{correctCount}</strong> / {total}
+              {mode === 'exam' && (
+                <>
+                  {' '}
+                  · minim: {minCorrect}/{total}
+                </>
+              )}
+            </p>
+            <p className="score-line muted">
+              Răspunse: <strong>{answeredTotal}</strong> · Corecte:{' '}
+              <strong className="score-correct">{correctCount}</strong> · Greșite:{' '}
+              <strong className="score-incorrect">{incorrectQuestions.length}</strong>
+              {unansweredQuestions.length > 0 && (
+                <>
+                  {' '}
+                  · Fără răspuns: <strong>{unansweredQuestions.length}</strong>
+                </>
+              )}
+            </p>
+          </div>
+        </div>
 
         <div className="result-actions">
           {incorrectQuestions.length > 0 && mode === 'practice' && (
@@ -776,6 +1081,9 @@ function QuizApp() {
                   <span className={badge[status]}>{badgeIcon[status]}</span>
                   {question.question}
                 </p>
+                {question.questionPic && (
+                  <img className="review-question-pic" src={question.questionPic} alt="" />
+                )}
                 {question.section && (
                   <p className="review-section-tag">
                     {question.discipline ? `${question.discipline} · ` : ''}
@@ -802,10 +1110,28 @@ function QuizApp() {
     renderAnswerReview,
   ]);
 
+  const sortedSessions = [...savedRuns].sort((x, y) => (y.savedAt || 0) - (x.savedAt || 0));
+
+  const shell = (children) => (
+    <div className="app-shell">
+      <header className="app-header">
+        <div className="app-header-icon" aria-hidden="true">
+          ⚓
+        </div>
+        <div>
+          <h1 className="app-header-title">Examen CAA</h1>
+          <p className="app-header-sub">Ambarcațiuni de agrement</p>
+        </div>
+      </header>
+      {children}
+    </div>
+  );
+
   if (phase === 'menu') {
     const examReady = Boolean(selectedExamSubject?.available);
 
-    return (
+    const classSummary = summarizeClass(history, licenseClass);
+    return shell(
       <div className="exam-menu">
         <div className="exam-card">
           <h2>Conducător ambarcațiune de agrement</h2>
@@ -822,6 +1148,23 @@ function QuizApp() {
               </button>
             ))}
           </div>
+          <button
+            type="button"
+            className="btn history-btn"
+            onClick={() => {
+              setHistoryClass(licenseClass);
+              setPhase('history');
+            }}
+          >
+            <span aria-hidden="true">📊</span> Istoric și rezumat examene
+            <span className="history-btn-count">
+              {classSummary.passedCount}/{classSummary.rows.length} promovate
+            </span>
+          </button>
+          <button type="button" className="btn history-btn" onClick={() => setPhase('sessions')}>
+            <span aria-hidden="true">💾</span> Sesiuni salvate
+            <span className="history-btn-count">{sortedSessions.length}</span>
+          </button>
         </div>
 
         <div className="exam-card practice-card">
@@ -862,6 +1205,15 @@ function QuizApp() {
                     </option>
                   ))}
                 </optgroup>
+                {licenseClass === 'A' && (
+                  <optgroup label="Construcția navei / Vitalitate">
+                    {CONSTRUCTIE_SECTIONS.map((section) => (
+                      <option key={section.id} value={section.id}>
+                        {section.label} ({sectionCounts[section.id] || 0})
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
                 <optgroup label="Legislație maritimă">
                   {LEGISLATIE_SECTIONS.map((section) => (
                     <option key={section.id} value={section.id}>
@@ -870,6 +1222,15 @@ function QuizApp() {
                     </option>
                   ))}
                 </optgroup>
+                {licenseClass === 'A' && (
+                  <optgroup label="Regulament Dunăre (RND)">
+                    {RND_SECTIONS.map((section) => (
+                      <option key={section.id} value={section.id}>
+                        {section.label.replace(/^RND · /, '')} ({sectionCounts[section.id] || 0})
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
               </>
             )}
             {isSingleExamClass &&
@@ -889,58 +1250,59 @@ function QuizApp() {
           <p className="exam-subtitle">
             {licenseClass === 'A' &&
               '6 discipline (inclusiv Construcția navei și Regulament Dunăre)'}
-            {licenseClass === 'B' &&
-              '4 discipline (fără Construcția navei și Regulament Dunăre)'}
+            {licenseClass === 'B' && '4 discipline (fără Construcția navei și Regulament Dunăre)'}
             {licenseClass === 'C' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
             {licenseClass === 'D' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
           </p>
 
-          <table className="exam-table barem-table">
-            <thead>
-              <tr>
-                <th>Disciplina</th>
-                <th>Timp</th>
-                <th>Întrebări</th>
-                <th>Minim</th>
-                <th>Barem</th>
-              </tr>
-            </thead>
-            <tbody>
-              {classSubjects.map((subject) => {
-                const selected = selectedExamSubject?.id === subject.id;
-                return (
-                  <tr
-                    key={subject.id}
-                    className={[
-                      selected ? 'barem-row-selected' : '',
-                      subject.available ? 'barem-row-available' : 'barem-row-soon',
-                    ]
-                      .filter(Boolean)
-                      .join(' ')}
-                    onClick={() => {
-                      if (subject.available) setExamSubjectId(subject.id);
-                    }}
-                  >
-                    <td>
-                      {subject.label}
-                      {subject.observation ? (
-                        <span className="barem-note"> · {subject.observation}</span>
-                      ) : null}
-                      {!subject.available ? (
-                        <span className="barem-note"> · în curând</span>
-                      ) : null}
-                    </td>
-                    <td>{subject.timeMinutes} min</td>
-                    <td>{subject.totalQuestions}</td>
-                    <td>
-                      {subject.minCorrect}/{subject.totalQuestions}
-                    </td>
-                    <td>{subject.barem ?? '—'}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <div className="table-scroll">
+            <table className="exam-table barem-table">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>Timp</th>
+                  <th>Întrebări</th>
+                  <th>Minim</th>
+                  <th>Barem</th>
+                </tr>
+              </thead>
+              <tbody>
+                {classSubjects.map((subject) => {
+                  const selected = selectedExamSubject?.id === subject.id;
+                  return (
+                    <tr
+                      key={subject.id}
+                      className={[
+                        selected ? 'barem-row-selected' : '',
+                        subject.available ? 'barem-row-available' : 'barem-row-soon',
+                      ]
+                        .filter(Boolean)
+                        .join(' ')}
+                      onClick={() => {
+                        if (subject.available) setExamSubjectId(subject.id);
+                      }}
+                    >
+                      <td>
+                        {subject.label}
+                        {subject.observation ? (
+                          <span className="barem-note"> · {subject.observation}</span>
+                        ) : null}
+                        {!subject.available ? (
+                          <span className="barem-note"> · în curând</span>
+                        ) : null}
+                      </td>
+                      <td data-label="Timp">{subject.timeMinutes} min</td>
+                      <td data-label="Întrebări">{subject.totalQuestions}</td>
+                      <td data-label="Minim">
+                        {subject.minCorrect}/{subject.totalQuestions}
+                      </td>
+                      <td data-label="Barem">{subject.barem ?? '—'}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
 
           {!isSingleExamClass && (
             <>
@@ -966,33 +1328,35 @@ function QuizApp() {
           )}
 
           {selectedExamSubject?.available && selectedExamSubject.sections.length > 0 && (
-            <table className="exam-table" style={{ marginTop: 14 }}>
-              <thead>
-                <tr>
-                  <th>Secțiunea (extragere)</th>
-                  <th>Nr.</th>
-                  <th>În bancă</th>
-                </tr>
-              </thead>
-              <tbody>
-                {selectedExamSubject.sections.map((section) => (
-                  <tr key={section.id}>
-                    <td>{section.label.replace(/^(COLREG|Legislație) · /, '')}</td>
-                    <td>{section.count}</td>
-                    <td>{sectionCounts[section.id] || 0}</td>
+            <div className="table-scroll sections-table">
+              <table className="exam-table">
+                <thead>
+                  <tr>
+                    <th>Secțiunea (extragere)</th>
+                    <th>Nr.</th>
+                    <th>În bancă</th>
                   </tr>
-                ))}
-                <tr className="exam-total-row">
-                  <td>Total</td>
-                  <td>{selectedExamSubject.totalQuestions}</td>
-                  <td />
-                </tr>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {selectedExamSubject.sections.map((section) => (
+                    <tr key={section.id}>
+                      <td>{section.label.replace(/^(COLREG|Legislație) · /, '')}</td>
+                      <td>{section.count}</td>
+                      <td>{sectionCounts[section.id] || 0}</td>
+                    </tr>
+                  ))}
+                  <tr className="exam-total-row">
+                    <td>Total</td>
+                    <td>{selectedExamSubject.totalQuestions}</td>
+                    <td />
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           )}
 
           {!examReady && (
-            <p className="exam-subtitle" style={{ marginTop: 12 }}>
+            <p className="exam-subtitle practice-note">
               Banca de întrebări pentru această disciplină nu este încă disponibilă.
             </p>
           )}
@@ -1008,57 +1372,276 @@ function QuizApp() {
               : 'Examen indisponibil'}
           </button>
         </div>
-      </div>
+      </div>,
+    );
+  }
+
+  if (phase === 'sessions') {
+    return shell(
+      <div className="exam-menu">
+        <div className="exam-card">
+          <button type="button" className="btn back-btn" onClick={() => setPhase('menu')}>
+            ← Înapoi la meniu
+          </button>
+          <h2>Sesiuni salvate</h2>
+          <p className="exam-subtitle">
+            {sortedSessions.length === 0
+              ? 'Nu ai nicio sesiune salvată. Apasă „← Meniu” în timpul unui test pentru a o salva.'
+              : `${sortedSessions.length} ${
+                  sortedSessions.length === 1 ? 'sesiune' : 'sesiuni'
+                } · continuă de unde ai rămas.`}
+          </p>
+          <ul className="session-list">
+            {sortedSessions.map((session) => {
+              const keys = new Set(session.activeKeys);
+              const answeredInSession = Object.keys(session.answered).filter((key) =>
+                keys.has(key),
+              ).length;
+              const minutesLeft =
+                session.endsAt != null
+                  ? Math.max(0, Math.ceil((session.endsAt - Date.now()) / 60000))
+                  : null;
+              const isExam = session.mode === 'exam';
+              return (
+                <li key={session.runUid} className="session-item">
+                  <div className="session-info">
+                    <span className="session-title">{sessionLabel(session)}</span>
+                    <span className="session-meta">
+                      {isExam ? 'Examen' : 'Antrenament'} · Clasa {session.licenseClass}
+                      {session.savedAt ? ` · ${formatDate(session.savedAt)}` : ''}
+                    </span>
+                    <span className="session-meta">
+                      {answeredInSession} / {session.activeKeys.length} răspunse
+                      {minutesLeft != null &&
+                        (minutesLeft > 0 ? ` · mai ai ~${minutesLeft} min` : ' · timpul a expirat')}
+                    </span>
+                  </div>
+                  <div className="session-actions">
+                    <button
+                      type="button"
+                      className="btn resume-btn"
+                      onClick={() => resumeSaved(session)}
+                    >
+                      {minutesLeft === 0 ? 'Rezultat' : 'Continuă'}
+                    </button>
+                    <button
+                      type="button"
+                      className="btn discard-btn"
+                      onClick={() => discardSavedRun(session.runUid)}
+                    >
+                      Șterge
+                    </button>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>,
+    );
+  }
+
+  if (phase === 'history') {
+    const { rows, passedCount } = summarizeClass(history, historyClass);
+    const classEntries = history.filter((entry) => entry.licenseClass === historyClass);
+    const practiceEntries = classEntries.filter((entry) => entry.mode === 'practice');
+    const practiceAvg = practiceEntries.length
+      ? Math.round(
+          (practiceEntries.reduce((sum, entry) => sum + entry.correct / (entry.total || 1), 0) /
+            practiceEntries.length) *
+            100,
+        )
+      : null;
+    const recent = [...classEntries].reverse().slice(0, 15);
+    const passedPct = rows.length ? Math.round((passedCount / rows.length) * 100) : 0;
+
+    return shell(
+      <div className="exam-menu history-view">
+        <div className="exam-card">
+          <button type="button" className="btn back-btn" onClick={() => setPhase('menu')}>
+            ← Înapoi la meniu
+          </button>
+          <h2>Istoric și rezumat</h2>
+          <p className="exam-subtitle">Rezultatele sunt salvate pe acest dispozitiv.</p>
+          <div className="class-toggle" role="group" aria-label="Clasa de personal">
+            {LICENSE_CLASSES.map((cls) => (
+              <button
+                key={cls}
+                type="button"
+                className={historyClass === cls ? 'active' : ''}
+                onClick={() => setHistoryClass(cls)}
+              >
+                Clasa {cls}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="exam-card">
+          <h3>Examene · Clasa {historyClass}</h3>
+          <p className="exam-subtitle">
+            {passedCount} din {rows.length} discipline promovate
+          </p>
+          <div
+            className="progress-track history-progress"
+            role="progressbar"
+            aria-valuemin={0}
+            aria-valuemax={rows.length}
+            aria-valuenow={passedCount}
+          >
+            <div className="progress-fill" style={{ width: `${passedPct}%` }} />
+          </div>
+          <div className="table-scroll">
+            <table className="exam-table barem-table history-table">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>Status</th>
+                  <th>Încercări</th>
+                  <th>Cel mai bun</th>
+                  <th>Ultimul</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map(({ subject, attempts, best, last, status }) => (
+                  <tr key={subject.id} className={status === 'soon' ? 'barem-row-soon' : ''}>
+                    <td>{subject.label}</td>
+                    <td data-label="Status">
+                      <span className={`status-pill ${status}`}>{STATUS_LABELS[status]}</span>
+                    </td>
+                    <td data-label="Încercări">{attempts.length}</td>
+                    <td data-label="Cel mai bun">{best ? `${best.correct}/${best.total}` : '—'}</td>
+                    <td data-label="Ultimul">
+                      {last ? `${last.correct}/${last.total} · ${formatDate(last.ts)}` : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="exam-card">
+          <h3>Istoric recent</h3>
+          <p className="exam-subtitle">
+            {classEntries.length === 0
+              ? 'Nu există rezultate salvate pentru această clasă.'
+              : `${classEntries.length} sesiuni · ${practiceEntries.length} antrenamente${
+                  practiceAvg != null ? ` (medie ${practiceAvg}%)` : ''
+                }`}
+          </p>
+          {recent.length > 0 && (
+            <ul className="history-list">
+              {recent.map((entry) => (
+                <li key={entry.id} className="history-item">
+                  <div className="history-item-main">
+                    <span className="history-item-title">{entry.label}</span>
+                    <span className="history-item-meta">
+                      {entry.mode === 'exam' ? 'Examen' : 'Antrenament'} · {formatDate(entry.ts)}
+                    </span>
+                  </div>
+                  <div className="history-item-score">
+                    <strong>
+                      {entry.correct}/{entry.total}
+                    </strong>
+                    {entry.mode === 'exam' ? (
+                      <span className={`status-pill ${entry.passed ? 'passed' : 'failed'}`}>
+                        {entry.passed ? 'Admis' : 'Respins'}
+                      </span>
+                    ) : (
+                      <span className="history-item-pct">
+                        {Math.round((entry.correct / (entry.total || 1)) * 100)}%
+                      </span>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+          {history.length > 0 && (
+            <button
+              type="button"
+              className="btn discard-btn clear-history-btn"
+              onClick={clearHistory}
+            >
+              Șterge tot istoricul
+            </button>
+          )}
+        </div>
+      </div>,
     );
   }
 
   if (phase === 'result' || (phase === 'running' && runQuestions.length === 0)) {
     if (activeSet.length > 0) {
-      return <div className="react-quiz-container">{renderResultUI()}</div>;
+      return shell(<div className="react-quiz-container result-container">{renderResultUI()}</div>);
     }
     return null;
   }
 
   const timerUrgent = secondsLeft != null && secondsLeft <= 60;
 
-  return (
+  const progressPct = activeSet.length ? Math.round((answeredCount / activeSet.length) * 100) : 0;
+
+  return shell(
     <div className="quiz-app">
       <div className="quiz-progress-banner">
-        <div className="banner-stats">
-          <span>
-            {mode === 'exam'
-              ? `Examen · Clasa ${licenseClass}${activeSubject ? ` · ${activeSubject.label}` : ''}`
-              : 'Antrenament'}
-            : <strong>{answeredCount}</strong> / {activeSet.length}
-          </span>
-          <span className="live-score">
-            Scor: <strong className="score-correct">{correctSoFar}</strong> corecte
-            {incorrectSoFar > 0 && (
-              <>
-                {' · '}
-                <strong className="score-incorrect">{incorrectSoFar}</strong> greșite
-              </>
+        <div className="banner-top">
+          <div className="banner-title">
+            <span className="banner-mode">
+              {mode === 'exam' ? `Examen · Clasa ${licenseClass}` : 'Antrenament'}
+            </span>
+            {mode === 'exam' && activeSubject && (
+              <span className="banner-subject">{activeSubject.label}</span>
             )}
-          </span>
+          </div>
           {secondsLeft != null && (
             <span className={`exam-timer ${timerUrgent ? 'urgent' : ''}`}>
-              Timp: <strong>{formatTime(secondsLeft)}</strong>
+              ⏱ {formatTime(secondsLeft)}
             </span>
           )}
         </div>
-        <div className="banner-actions">
-          {answeredCount > 0 && (
-            <button type="button" className="finish-now-btn" onClick={finishNow}>
-              Finalizează acum
+        <div
+          className="progress-track"
+          role="progressbar"
+          aria-valuemin={0}
+          aria-valuemax={activeSet.length}
+          aria-valuenow={answeredCount}
+        >
+          <div className="progress-fill" style={{ width: `${progressPct}%` }} />
+        </div>
+        <div className="banner-bottom">
+          <div className="banner-stats">
+            <span>
+              Răspunse: <strong>{answeredCount}</strong> / {activeSet.length}
+            </span>
+            <span className="live-score">
+              <strong className="score-correct">{correctSoFar}</strong> corecte
+              {incorrectSoFar > 0 && (
+                <>
+                  {' · '}
+                  <strong className="score-incorrect">{incorrectSoFar}</strong> greșite
+                </>
+              )}
+            </span>
+          </div>
+          <div className="banner-actions">
+            {answeredCount > 0 && (
+              <button type="button" className="finish-now-btn" onClick={finishNow}>
+                Finalizează acum
+              </button>
+            )}
+            <button type="button" className="menu-btn" onClick={pauseToMenu}>
+              ← Meniu
             </button>
-          )}
-          <button type="button" className="reset-progress-btn" onClick={backToMenu}>
-            Anulează
-          </button>
+            <button type="button" className="reset-progress-btn" onClick={cancelRun}>
+              Anulează
+            </button>
+          </div>
         </div>
       </div>
 
-      <Quiz
+      <MemoQuiz
         key={runId}
         quiz={quizData}
         shuffle={false}
@@ -1068,7 +1651,7 @@ function QuizApp() {
         onQuestionSubmit={handleQuestionSubmit}
         customResultPage={renderResultUI}
       />
-    </div>
+    </div>,
   );
 }
 

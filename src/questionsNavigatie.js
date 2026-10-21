@@ -2,7 +2,7 @@ export const questions = {
     "quizTitle": "Navigație maritimă – CLASA A,B",
     "quizSynopsis": "Model Navigație maritimă · 30 min · minim 21/30 (barem 7)",
     "progressBarColor": "#9de1f6",
-    "nrOfQuestions": "66",
+    "nrOfQuestions": "152",
     "examConfig": {
         "personnelCategory": "CLASA A,B",
         "timeMinutes": 30,
@@ -324,16 +324,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "17. Relevmentul magnetic la un reper costier este",
+            "question": "17. Relevmentul magnetic la un reper costier este:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) Unghiul din planul orizontului adevărat măsurat de la axul prova al navei până la direcţia de vizare la reperul",
-                "b) Unghiul din planul orizontului adevărat măsurat de la direcţia nord adevărat până la linia de vizare la reperul costier",
-                "c) Unghiul din planul orizontului adevărat măsurat de la direcţia nord magnetic până la linia de vizare la reperul costier"
+                "a) unghiul din planul orizontului adevarat masurat de la axul prova al ambarcatiunii pana la directia de vizare la un reper costier;",
+                "b) unghiul din planul orizontului adevarat masurat de la directia nord adevarat pana la linia de vizare la reperul costier;",
+                "c) unghiul din planul orizontului adevarat masurat de la directia nord magnetic pana la axul prova al ambarcatiunii;"
             ],
             "correctAnswer": [
                 3
@@ -522,16 +522,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "28. Harta marină este",
+            "question": "28. Harta marina este:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) o hartă tematică care figurează aspecte detaliate ale întinderilor de apă de pe o anumită suprafaţă a scoarţei",
-                "b) o harta geografică a unei porţiuni din suprafaţa Pământului care conţine mări şi oceane",
-                "c) este o reprezentare în plan, convenţională, micşorată şi generalizată a oceanului planetar"
+                "a) reprezentarea la o anumita scara a unei zone oceanice;",
+                "b) proiectia pe o suprafata sferica a Pamantului;",
+                "c) proiectia Pamantului pe o suprafata oarecare."
             ],
             "correctAnswer": [
                 1
@@ -871,7 +871,7 @@ export const questions = {
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) Un con verde cu varful in sus;",
+                "a) Un con verde ( sau negru prin exceptie) cu varful in sus;",
                 "b) un cilindru verde;",
                 "c) un cilindru rosu."
             ],
@@ -891,7 +891,7 @@ export const questions = {
             "answers": [
                 "a) un con rosu cu varful in sus;",
                 "b) o sfera de culoare rosie;",
-                "c) doua bule suprapuse de culoare neagra."
+                "c) o sfera de culoare neagra."
             ],
             "correctAnswer": [
                 3
@@ -930,7 +930,7 @@ export const questions = {
                 "c) un semn de vest."
             ],
             "correctAnswer": [
-                2
+                1
             ],
             "section": "Navigatie maritima",
             "difficulty": 1
@@ -948,7 +948,7 @@ export const questions = {
                 "c) un semn de est."
             ],
             "correctAnswer": [
-                2
+                3
             ],
             "section": "Navigatie maritima",
             "difficulty": 1
@@ -980,7 +980,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) un semn de ape sigure;",
-                "b) un semn de vest;",
+                "b) un semn de sud;",
                 "c) un semn de pericol izolat."
             ],
             "correctAnswer": [
@@ -1002,7 +1002,7 @@ export const questions = {
                 "c) un semn de vest."
             ],
             "correctAnswer": [
-                2
+                1
             ],
             "section": "Navigatie maritima",
             "difficulty": 1
@@ -1219,6 +1219,1554 @@ export const questions = {
             ],
             "correctAnswer": [
                 3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "67. In navigatia maritima se utilizeaza harta in proiectie:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) stereografica;",
+                "b) conica;",
+                "c) Mercator."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "68. In emisfera nordica, daca ambarcatiunea se deplaseaza spre Nord:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) latitudinea punctului de sosire este mai mare decat latitudinea punctului de plecare;",
+                "c) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "69. In emisfera nordica, daca ambarcatiunea se deplaseaza spre Sud:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de plecare este mai mica decat latitudinea punctului de sosire;",
+                "b) latitudinea punctului de plecare este mai mare decat latitudinea punctului de sosire;",
+                "c) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "70. In emisfera nordica, daca ambarcatiunea se deplaseaza spre Sud:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) latitudinea punctului de sosire este mai mare decat latitudinea punctului de plecare;",
+                "c) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "71. In emisfera sudica, daca ambarcatiunea se deplaseaza spre Nord:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) latitudinea punctului de sosire este mai mare decat latitudinea punctului de plecare;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "72. In emisfera sudica, daca ambarcatiunea se deplaseaza spre Sud:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) latitudinea punctului de sosire este mai mare decat latitudinea punctului de plecare;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "73. In emisfera sudica, daca ambarcatiunea se deplaseaza spre Sud:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de plecare este mai mica decat latitudinea punctului de sosire;",
+                "b) latitudinea punctului de plecare este mai mare decat latitudinea punctului de sosire;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "74. In emisfera estica, daca ambarcatiunea se deplaseaza spre Est:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "75. In emisfera estica, daca ambarcatiunea se deplaseaza spre Est:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de sosire este mai mica decat longitudinea punctului de plecare;",
+                "c) longitudinea punctului de sosire este mai mare decat longitudinea punctului de plecare."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "76. In emisfera estica, daca ambarcatiunea se deplaseaza spre Vest:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "77. In emisfera vestica, daca ambarcatiunea se deplaseaza spre Vest:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de sosire este mai mica decat longitudinea punctului de plecare;",
+                "c) longitudinea punctului de sosire este mai mare decat longitudinea punctului de plecare."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "78. In emisfera vestica, daca ambarcatiunea se deplaseaza spre Est:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de sosire este mai mica decat longitudinea punctului de plecare;",
+                "c) longitudinea punctului de sosire este mai mare decat longitudinea punctului de plecare."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "79. In emisfera vestica, daca ambarcatiunea se deplaseaza spre Est:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) latitudinea punctului de sosire este mai mica decat latitudinea punctului de plecare;",
+                "b) longitudinea punctului de plecare este mai mica decat longitudinea punctului de sosire;",
+                "c) longitudinea punctului de plecare este mai mare decat longitudinea punctului de sosire."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "80. Marcajul cardinal de vest are ca semn de varf",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) doua conuri negre cu varful in sus;",
+                "b) doua conuri negre unite la varf;",
+                "c) doua conuri negre unite la baza;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "81. Deosebirea intre regiunea A si regiunea B de balizaj maritim se refera la:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) marcajul de pericol izolat;",
+                "b) marcaje laterale;",
+                "c) marcajul cardinal."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "82. Marcajul cardinal de Est are ca semn de varf:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) doua conuri negre cu varful in sus;",
+                "b) doua conuri negre unite la varf;",
+                "c) doua conuri negre unite la baza;"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "83. In regiunea A, lumina marcajului lateral de tribord este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) verde;",
+                "b) rosie;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "84. In regiunea A, lumina marcajului lateral de babord este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) verde;",
+                "b) rosie;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "85. Lumina marcajului special este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) verde;",
+                "b) rosie;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "86. Lumina marcajului de pericol izolat este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) alba;",
+                "b) rosie;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "87. Lumina marcajului cardinal de nord este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) alba;",
+                "b) rosie;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "88. Lumina marcajului cardinal de est este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) rosie;",
+                "b) alba;",
+                "c) galbena."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "89. Lumina marcajului cardinal de sud este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) rosie;",
+                "b) galbena;",
+                "c) alba."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "90. Lumina marcajului cardinal de vest este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) rosie;",
+                "b) galbena;",
+                "c) alba."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "91. Lumina marcajului de ape sigure este de culoare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) rosie;",
+                "b) galbena;",
+                "c) alba."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "92. Lumina marcajului cardinal de nord poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sclipiri rapide ( 2+1);",
+                "b) sclipiri rapide;",
+                "c) 12 sclipiri rapide."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "93. Lumina marcajului cardinal de est poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sclipiri rapide ( 2+1);",
+                "b) 3 sclipiri rapide;",
+                "c) 12 sclipiri rapide."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "94. Lumina marcajului cardinal de sud poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sclipiri rapide ( 2+1);",
+                "b) 6 sclipiri rapide;",
+                "c) 6 sclipiri rapide plus o sclipire lunga."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "95. Lumina marcajului cardinal de vest poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) sclipiri rapide ( 2+1);",
+                "b) 9 sclipiri rapide;",
+                "c) 12 sclipiri rapide;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "96. Lumina marcajului de pericol izolat poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) izofaza;",
+                "b) 2 sclipiri rapide;",
+                "c) 3 sclipiri rapide;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "97. Lumina marcajului de ape sigure poate avea ritmul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 2 sclipiri rapide;",
+                "b) 3 sclipiri rapide;",
+                "c) litera A in codul Morse."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "98. Precizia de masurare a drumului giro este de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 1 grad;",
+                "b) 0°.5;",
+                "c) 0°.1."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "99. Precizia de masurare a drumului giro este de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 1 grad;",
+                "b) 0°.5;",
+                "c) 0°.1."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "100. Conducatorul de ambarcatiune vede pe timp de noapte in prova un marcaj care emite sclipiri intermitente de culoare rosie. Acesta este: care se repeta regulat. Aceasta este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) un semn special;",
+                "b) un semn de pericol izolat;",
+                "c) un semn de babord."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "101. Conducatorul de ambarcatiune vede pe timp de noapte in prova un marcaj care emite sclipiri intermitente de culoare verde. Acesta este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) un semn special;",
+                "b) un semn de tribord;",
+                "c) un semn de babord."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "102. Axa de rotatie a Pamantului este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) axa teoretica in jurul careia Pamantul executa miscarea sa naturala de rotatie in sens direct;",
+                "b) axa teoretica ce trece prin centrul Pamantului si punctul ambarcatiunii;",
+                "c) linia ce uneste centrul Pamantului si observatorul astronomic de la Greenwich."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "103. Axa de rotatie a Pamantului este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) axa teoretica ce uneste zenitul observatorului si centrul Pamantului;",
+                "b) axa teoretica ce uneste cei doi poli geografici;",
+                "c) linia ce uneste centrul Pamantului si observatorul astronomic de la Greenwich."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "104. Polii geografici sunt:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cele doua puncte in care axa de rotatie intersecteaza suprafata Pamantului;",
+                "b) doua puncte care depind de centrul Pmantului si punctul ambarcatiunii;",
+                "c) doua puncte care depind de centrul Pamantului si observatorul Greenwich."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "105. Diferenta de latitudine geografica dintre punctul de plecare si cel de sosire este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) arcul de ecuator masurat de la meridianul punctului de plecare pana la meridianul punctului de sosire;",
+                "b) arcul de meridian masurat de la paralelul punctului de plecare pana la paralelul punctului de sosire;",
+                "c) arcul de meridian masurat de la ecuatorul terestru pana la paralelul punctului de sosire."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "106. Diferenta de longitudine geografica dintre punctul de plecare si cel de sosire este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) arcul de ecuator masurat de la meridianul punctului de plecare pana la meridianul punctului de sosire;",
+                "b) arcul de meridian masurat de la paralelul punctului de plecare pana la paralelul punctului de sosire;",
+                "c) arcul de meridian masurat de la ecuatorul terestru pana la paralelul punctului de sosire."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "107. Deplasarea est-vest este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Arcul de paralel masurat de la meridianul punctului de plecare pana la meridianul punctului de sosire;",
+                "b) arcul de ecuator masurat de la meridianul punctului de plecare pana la meridianul punctului de sosire;",
+                "c) arcul de meridian masurat de la ecuatorul terestru pana la paralelul punctului de sosire."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "108. Un cart are:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 12 grade;",
+                "b) 32 grade;",
+                "c) 11 grade, 25."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "109. Un reper costier se vede in relevment adevarat egal cu 090 grade; rezulta ca reperul se vede catre:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Vest;",
+                "b) Est;",
+                "c) Sud."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "110. Lumina unui far apare la orizont intr-un relevment prova circular de 60 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) RpTd=060 grade;",
+                "b) RpBd=060 grade;",
+                "c) RpBd=060 grade;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "111. Lumina unui far apare la orizont intr-un relevment prova circular de 165 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) RpTd=165 grade;",
+                "b) RpBd=165 grade;",
+                "c) RpBd=025 grade;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "112. Lumina unui far apare la orizont intr-un relevment prova circular de 180 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova",
+                "b) pupa;",
+                "c) travers babord."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "113. Lumina unui far apare la orizont intr-un relevment prova circular de 90 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) travers tribord;",
+                "b) travers babord;",
+                "c) pupa."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "114. Lumina unui far apare la orizont intr-un relevment prova circular de 125 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tribord, inapoia traversului;",
+                "b) tribord, inaintea traversului;",
+                "c) babord, inapoia traversului"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "115. Lumina unui far apare la orizont intr-un relevment prova circular de 70 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tribord, inapoia traversului;",
+                "b) tribord, inaintea traversului;",
+                "c) babord, inapoia traversului;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "116. Lumina unui far apare la orizont intr-un relevment prova circular de 230 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tribord, inapoia traversului;",
+                "b) tribord, inaintea traversului;",
+                "c) babord, inapoia traversului;"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "117. Lumina unui far apare la orizont intr-un relevment prova circular de 320 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tribord, inapoia traversului;",
+                "b) babord, inaintea traversului;",
+                "c) babord, inapoia traversului;"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "118. Lumina unui far apare la orizont RpBd=130 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tribord, inaintea traversului;",
+                "b) tribord, inapoia traversului;",
+                "c) babord, inapoia traversului;"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "119. Lumina unui far apare la orizont RpBd=30 grade. Rezulta lumina farului se vede in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) babord, inaintea traversului;",
+                "b) babord, inapoia traversului;",
+                "c) tribord, inapoia traversului;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "120. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Dc= Da+ d+ dc",
+                "b) Dc= Da- d- dc",
+                "c) Dc= Da+ d- dc"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "121. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Da= Dc+ d+ dc",
+                "b) Da= Dc- d- dc",
+                "c) Da= Dc+ d- dc"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "122. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Rc= Ra+ d+ dc",
+                "b) Rc= Ra- d- dc",
+                "c) Rc= Ra+ d- dc"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "123. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Ra= Rc+ d+ dc",
+                "b) Ra= Rc- d- dc",
+                "c) Ra= Rc+ d- dc"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "124. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Dc = Da - Δc;",
+                "b) Dc = Da + Δc;",
+                "c) Dc = Da - Δg."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "125. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Da= Dc - Δ c",
+                "b) Da= Dc + Δ c",
+                "c) Da= Dc - Δ g"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "126. Care dintre relatiile de mai jos este adevarata?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Rc= Ra - Δ c",
+                "b) Ra= Rc + Δ c",
+                "c) Rc= Ra - Δ g"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "127. Drumul compas este Dc=202°.0 iar corectia totala compas este Δc = -2°.5. Care este valoarea drumului adevarat Da?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Da= 204°.5",
+                "b) Da= 200°.5",
+                "c) Da= 199°.5"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "128. Drumul compas este Dc=078°.0 iar corectia totala compas este Δc = -1°.5. Care este valoarea drumului adevarat Da?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Da= 077°.5",
+                "b) Da= 078°.5",
+                "c) Da= 079°.5"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "129. Drumul giro este Dg= 147°.0 iar corectia totala giro este Δg = +3°.5. care este valoarea drumului adevarat Da?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Da = 143 grade .5",
+                "b) Da = 150 grade .5",
+                "c) Da = 144 grade .5"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "130. Ambarcatiunea in drum compas Dc = 100grade si masoara Rc=030 grade la un far. Farul se va vedea in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova tribord;",
+                "b) prova babord;",
+                "c) pupa babord."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "131. Ambarcatiunea in drum compas Dg = 330grade si masoara Rg=030 grade la un far. Farul se va vedea in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova tribord;",
+                "b) prova babord;",
+                "c) pupa babord."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "132. Ambarcatiunea in Da = 330 grade si masoara Rg = 030 grade. ambarcatiunea se va vedea in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova tribord;",
+                "b) prova babord;",
+                "c) pupa babord."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "133. O ambarcatiune se vede in prova. Relevmentul prova la acea ambarcatiunea este egal cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 090 grade;",
+                "b) 000 grade;",
+                "c) 180 grade."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "134. O ambarcatiune se vede in pupa. Relevmentul prova la acea ambarcatiunea este egal cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 090 grade;",
+                "b) 000 grade;",
+                "c) 180 grade."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "135. O ambarcatiune se vede in travers tribord. Relevmentul prova circular la acea ambarcatiunea este egal cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 090 grade;",
+                "b) 000 grade;",
+                "c) 180 grade."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "136. O ambarcatiune se vede in travers babord. Relevmentul prova circular la acea ambarcatiunea este egal cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 270 grade;",
+                "b) 090 grade;",
+                "c) 180 grade."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "137. Ambarcatiunea in Dg=080 grade si masoara Rg = 030 grade. ambarcatiunea se va vedea in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova tribord;",
+                "b) prova babord;",
+                "c) pupa babord."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "138. Ambarcatiunea in Dg=280 grade si masoara Rp Td = 030 grade. ambarcatiunea se va vedea in:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prova tribord;",
+                "b) prova babord;",
+                "c) pupa babord."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "139. Magnetii compensatori ai compasului magnetic au rolul;",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a indica directia nord compas;",
+                "b) de a impiedica magnetizarea postamentului compasului magnetic;",
+                "c) de a crea camp magnetic opus campului magnetic al ambarcatiunii."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "140. Magnetii compensatori de fier moale ai compasului magnetic sunt montati:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) in cutia compasului;",
+                "b) pe postament, langa cutia compasului;",
+                "c) in interiorul postamentului."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "141. Magnetii permanenti transversali ai compasului magnetic sunt montati:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) in cutia compasului;",
+                "b) pe postament, langa cutia compasului;",
+                "c) in interiorul postamentului."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "142. Magnetii permanenti longitudinali ai compasului magnetic sunt montati:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) in interiorul postamentului;",
+                "b) pe postament, langa cutia compasului;",
+                "c) in cutia compasului."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "143. Magnetul permanent vertical (sau corectorul de banda) al compasului magnetic este montat:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pe postament, langa cutia compasului;",
+                "b) in interiorul postamentului;",
+                "c) in cutia compasului."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "144. Sistemul de ace magnetice al compasului magnetic are urmatoarele caracteristici:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) acele magnetice sunt dispuse paralel, in numar par, in cutia compasului;",
+                "b) acele magnetice sunt dispuse paralel, in numar impar, in cutia compasului;",
+                "c) acele magnetice sunt dispuse perpendicular unele fata de altele, in numar par, in cutia compasului;"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "145. Roza magnetica a compasului magnetic se sprijina pe;",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) peretele despartitor al cutiei compasului;",
+                "b) pivot;",
+                "c) acele magnetice."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "146. Cesculita are rolul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a micsora frecarea dintre pivot si roza;",
+                "b) de a asigura plutirea rozei;",
+                "c) de a mentine roza compasului intr-o pozitie rigida."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "147. Lichidul din cutia compasului magnetic are rol:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a impiedica miscarile dezordonate ale rozei;",
+                "b) de a impiedica fenomenele corozive in interiorul cutiei compasului;",
+                "c) de a asigura plutirea rozei cu o flotabilitate usor negativa."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "148. Compozitia lichidului din cutia compasului magnetic este:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) alcool si apa;",
+                "b) alcool, apa distilata si glicerina;",
+                "c) apa distilata, ulei mineral si glicerina."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "149. Cand apar bule de aer in cutia compasului, Conducatorul de ambarcatiune are obligatia:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a completa cu apa distilata;",
+                "b) de a completa cu glicerina;",
+                "c) de a completa cu apa alcool."
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "150. Pe timpul cartului, Conducatorul de ambarcatiune are obligatia:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a compara permanent indicatiile compasului giro si ale repetitorului giro de pe radarul de navigatie ;",
+                "b) de a compara permanent indicatiile compasului magnetic si ale compasului giro;",
+                "c) de a compara permanent indicatiile compasului giro cu cele ale receptorului GPS."
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "151. Sistemul cardanic al cutiei compasului are rolul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) de a fixa rigid cutia compasului pe postament;",
+                "b) de a preintampina rotirea postamentului;",
+                "c) de a mentine in pozitie orizontala cutia compasului."
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "Navigatie maritima",
+            "difficulty": 1
+        },
+        {
+            "question": "152. Pe timpul veghei la ancora, graparea ancorei se poate identifica:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) observand luminile arborate de navele din vecinatate;",
+                "b) masurand periodic relevmente la doua repere fixe(costiere);",
+                "c) ascultand cu atentie pentru a identifica zgomotele specifice."
+            ],
+            "correctAnswer": [
+                2
             ],
             "section": "Navigatie maritima",
             "difficulty": 1
