@@ -2,7 +2,7 @@ export const questions = {
     "quizTitle": "CAA Clasa D",
     "quizSynopsis": "Examen Clasa D · 26 întrebări · 30 min · minim 22 corecte",
     "progressBarColor": "#9de1f6",
-    "nrOfQuestions": "311",
+    "nrOfQuestions": "371",
     "examConfig": {
         "personnelCategory": "CLASA D",
         "timeMinutes": 30,
@@ -20,13 +20,25 @@ export const questions = {
             {
                 "id": "D-Marinarie",
                 "label": "Marinărie",
-                "count": 8,
+                "count": 6,
                 "difficulty": 1
             },
             {
                 "id": "D-Manevra",
                 "label": "Conducerea și manevra ambarcațiunilor cu motor",
-                "count": 8,
+                "count": 6,
+                "difficulty": 1
+            },
+            {
+                "id": "D-PrimAjutor",
+                "label": "Prim ajutor",
+                "count": 2,
+                "difficulty": 1
+            },
+            {
+                "id": "D-Legislatie",
+                "label": "Legislație maritimă",
+                "count": 2,
                 "difficulty": 1
             }
         ],
@@ -426,60 +438,6 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "22. Zona 1 a căii navigabile corespunde unei înălţimi aparente a valurilor de :",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 0,6 m",
-                "b) 1,2 m",
-                "c) 2 m"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-RND",
-            "difficulty": 1
-        },
-        {
-            "question": "23. Zona a 3-a a căii navigabile corespunde unei înălţimi aparente a valurilor de :",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 2 m",
-                "b) 1,2 m",
-                "c) 0,6 m"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-RND",
-            "difficulty": 1
-        },
-        {
-            "question": "24. Zona a 2-a a căii navigabile corespunde unei înălţimi aparente a valurilor de :",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) 1,2 m",
-                "b) 0,6 m",
-                "c) 2 m"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-RND",
-            "difficulty": 1
-        },
-        {
             "question": "25. Ce se înţelege prin termenul “navă care pescuieşte” ?",
             "questionType": "text",
             "answerSelectionType": "single",
@@ -758,8 +716,8 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) De formă sferică vopsită (piturată) în verde-roşu-verde-roşu, lumină de culoare albă intermitentă",
-                "b) De formă sferică vopsită (piturată) în alb-negru-alb-negru, lumină de culoare albă intermitentă",
-                "c) De formă sferică vopsită (piturată) în roşu-negru-roşu-negru, lumină de culoare albă intermitentă"
+                "b) De formă sferică vopsită (piturată) în alb- negru-alb-negru, lumină de culoare albă intermitentă",
+                "c) De formă sferică vopsită (piturată) în roşu- negru-roşu-negru, lumină de culoare albă intermitentă"
             ],
             "correctAnswer": [
                 1
@@ -776,7 +734,7 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) Două panouri triunghiulare albe, unul deasupra celuilalt şi opuse la vârf, cel de deasupra mărginit cu bandă roşie cel de jos cu bandă verde, lumină albă intermitentă",
-                "b) Suport de culoare albă, lumină galbenă fixă, un disc piturat negru-roşu-negru-roşu",
+                "b) Suport de culoare albă, lumină galbenă fixă, un disc piturat negru-roşu-negru- roşu",
                 "c) Suport de culoare albă, lumină albă fixă, un disc piturat roşu-negru-roşu-negru"
             ],
             "correctAnswer": [
@@ -919,7 +877,7 @@ export const questions = {
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) De formă sferică, piturată în negru-roşu-negru-roşu, lumina de culoare albă intermitentă",
+                "a) De formă sferică, piturată în negru-roşu- negru-roşu, lumina de culoare albă intermitentă",
                 "b) De formă conică, piturată în verde, lumina de culoare verde intermitentă",
                 "c) De formă cilindrică, piturată în roşu, lumina de culoare roşie intermitentă"
             ],
@@ -1099,7 +1057,7 @@ export const questions = {
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) De formă sferică, piturată în negru–roşu-negru–roşu, lumina de culoare albă intermitentă",
+                "a) De formă sferică, piturată în negru–roşu- negru–roşu, lumina de culoare albă intermitentă",
                 "b) De formă conică, piturată în negru, lumina de culoare verde intermitentă",
                 "c) De formă cilindrică, piturată în roşu, lumina de culoare roşie intermitentă"
             ],
@@ -1254,7 +1212,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "68. Piesa de rezistenta situata in extremitatea prova , constituind o prelungire a chilei , se numeşte",
+            "question": "68. Piesa de rezistenta situata in extremitatea prova, constituind o prelungire a chilei , se numeşte",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1308,7 +1266,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "71. Barbetele sunt bucati de parâma fixate la prova si pupa bărcii si servesc",
+            "question": "71. Barbetele sunt bucăți de parâmă fixate la prova si pupa bărcii și servesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1326,7 +1284,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "72. Parâma obţinuta din răsucirea a trei suvite se numeşte",
+            "question": "72. Parâma obţinută din răsucirea a trei șuvite se numeşte",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1344,7 +1302,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "73. Aparatoarele gaşelor mici la parâme se numesc",
+            "question": "73. Apărătoarele gaşelor mici la parâme se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1362,7 +1320,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "74. Babalele sunt piese metalice din fonta sau otel , simple sau duble si servesc pentru",
+            "question": "74. Babalele sunt piese metalice din fontă sau oțel , simple sau duble și servesc pentru",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1434,7 +1392,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "78. In cazul unei rame, pana reprezintă",
+            "question": "78. În cazul unei rame, pana reprezintă",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1452,7 +1410,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "79. In general o ancora se compune din următoarele parţi :",
+            "question": "79. În general o ancoră se compune din următoarele părţi :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1470,7 +1428,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "80. Ce înţelegeţi prin graparea ancorei :",
+            "question": "80. Ce înţelegeţi prin graparea ancorei :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1488,7 +1446,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "81. Daca o parama intra in compunerea altei parâme, mai groase , aceasta va purta denumirea de :",
+            "question": "81. Dacă o parâmă intră în compunerea altei parâme, mai groase, aceasta va purta denumirea de :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1524,7 +1482,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "83. Fiecare rând de scânduri sau de table al învelişului ( bordajului ) exterior se numeşte :",
+            "question": "83. Fiecare rând de scânduri sau de table al învelişului (bordajului) exterior se numeşte :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1542,14 +1500,14 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "84. Un observator care sta pe puntea navei cu fata spre prova , are in dreapta",
+            "question": "84. Un observator care stă pe puntea navei cu fața spre prova, are în dreapta",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) bordul babord",
+                "a) bordul tribord",
                 "b) bordul tribord",
                 "c) cuplul maestru"
             ],
@@ -1560,7 +1518,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "85. Cârma se compune din :",
+            "question": "85. Cârma se compune din :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1578,7 +1536,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "86. Ancora cu patru braţe este folosită :",
+            "question": "86. Ancora cu patru braţe este folosită :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1596,7 +1554,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "87. O baba simpla , formata dintr-o singura coloana prevăzuta cu traversa se numeşte :",
+            "question": "87. O baba simplă, formată dintr-o singură coloană prevăzută cu traversă se numeşte :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1614,7 +1572,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "88. Piesele metalice de ghidare a parâmelor eliminând frecarea se numesc",
+            "question": "88. Piesele metalice de ghidare a parâmelor care au rol de a elimina frecarea se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1650,7 +1608,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "90. Piesa fundamentala de rezistenta a oricărei nave, situata in plan diametral , de la prova la pupa, se numeşte",
+            "question": "90. Piesa fundamentală de rezistență a oricărei nave, situată în plan diametral, de la prova la pupa, se numeşte",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1668,7 +1626,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "91. Care este elementul de baza la structura oricărui tip de parâma",
+            "question": "91. Care este elementul de bază la structura oricărui tip de parâmă",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1686,7 +1644,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "92. Piesele metalice mai mici , care servesc la luarea voltelor cu parâme mai subţiri se numesc",
+            "question": "92. Piesele metalice mai mici, care servesc la luarea voltelor cu parâme mai subţiri se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1704,7 +1662,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "93. Dispozitivele de constructie speciala , fixate in bordaj , cu rol de ghidare a paramei se numesc",
+            "question": "93. Dispozitivele de construcție specială, fixate în bordaj, cu rol de ghidare a parâmei se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1776,7 +1734,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "97. In cazul unei ancore , diamantul este",
+            "question": "97. In cazul unei ancore, diamantul este",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1794,7 +1752,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "98. Cum se măsoară calibrul lanţului de ancora",
+            "question": "98. Cum se măsoară calibrul lanţului de ancoră",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1803,7 +1761,7 @@ export const questions = {
             "answers": [
                 "a) grosimea la mijlocul zalei",
                 "b) lăţimea maxima a zalei la interior",
-                "c) lăţimea maxima a zalei la exterior"
+                "c) lungimea maxima a zalei la exterior"
             ],
             "correctAnswer": [
                 1
@@ -1812,7 +1770,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "99. Dispozitivele de construcţie speciala , fixate in punte , cu rol de ghidare a parâmei se numesc",
+            "question": "99. Dispozitivele de construcţie specială, fixate în punte, cu rol de ghidare a parâmei se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1830,34 +1788,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "100. Cablurile fixate de cârma , cu ajutorul cărora se guvernează se numesc",
+            "question": "101. Vartejul este :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) eche",
-                "b) troƫe",
-                "c) pene"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "101. Piesa fundamentala de rezistenta a oricărei nave , situata in plan diametral , de la prova la pupa, se numeşte",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) chila",
-                "b) etrava",
-                "c) etambou"
+                "a) piesa de legatura inte cheia de impreunare a ancorei si cea a lantului de ancora",
+                "b) o za de lat de ancora",
+                "c) o cheie de impreunare"
             ],
             "correctAnswer": [
                 1
@@ -1866,25 +1806,25 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "102. Piesele metalice mai mici , care servesc la luarea voltelor cu parâme mai subţiri se numesc",
+            "question": "102. Orificiul rotund prin care trece axul elicii de propulsie se numeşte",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) tacheti",
-                "b) trancheti",
-                "c) turnicheti"
+                "a) etambou",
+                "b) selatura pupa",
+                "c) etambreul axului elicii"
             ],
             "correctAnswer": [
-                1
+                3
             ],
             "section": "D-Marinarie",
             "difficulty": 1
         },
         {
-            "question": "103. Un observator care sta pe puntea navei cu fata spre prova , are in dreapta",
+            "question": "103. Un observator care stă pe puntea navei cu fața spre prova, are in dreapta",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1902,14 +1842,14 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "104. Elementele de osatura transversale, fixate pe chila la intervale egale , se numesc",
+            "question": "104. Elementele de osatură transversale, fixate pe chilă la intervale egale, se numesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) filă lacrimară",
+                "a) file lacrimare",
                 "b) coaste",
                 "c) traverse"
             ],
@@ -1920,7 +1860,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "105. Locul de îmbinare a filelor se numeşte",
+            "question": "105. Locul de îmbinare a filelor lăcrimare se numeşte",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1938,7 +1878,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "106. Din punct de vedere al materialului folosit la confectionarea paramelor,una din categoriile incluse in aceasta clasificare o reprezinta:",
+            "question": "106. Din punct de vedere al materialului folosit la confecționarea parâmelor, una din categoriile incluse în această clasificare o reprezintă:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -1956,7 +1896,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "107. La paramele vegetale si sintetice circumferinta reprezinta:",
+            "question": "107. La parâmele vegetale și sintetice circumferința reprezintă:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -2118,7 +2058,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "116. Sbirul unei macarale este:",
+            "question": "116. Sbirul este:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -2127,7 +2067,7 @@ export const questions = {
             "answers": [
                 "a) o rola care se invarteste liber in jurul unui ax",
                 "b) o piesa formata din doua placi laterale ovale si doua tocuri",
-                "c) piesa de sustinere a macaralei"
+                "c) inel de parama confectionat prin matisire care serveste la prinderea unui palanc pe o parama sau pe un scondru"
             ],
             "correctAnswer": [
                 3
@@ -2257,24 +2197,6 @@ export const questions = {
             ],
             "correctAnswer": [
                 3
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "124. Paramele metalice se impart in trei categorii astfel:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) parame rigide, parame semirigide, parame flexibile",
-                "b) parame rigide, parame semiflexibile, parame flexibile",
-                "c) parame semirigide, parame semiflexibile, parame flexibile"
-            ],
-            "correctAnswer": [
-                2
             ],
             "section": "D-Marinarie",
             "difficulty": 1
@@ -2522,8 +2444,8 @@ export const questions = {
             "point": 1,
             "answers": [
                 "a) din fire de canepa, in, bumbac, iuta",
-                "b) din fire de sarma de otel zincat cu grosimi de 0,2-0,6mm",
-                "c) din fire de capron,relon,nailon, polipropilena"
+                "b) din fire de sarma de otel zincat cu grosimi",
+                "c) din fire de capron,relon,nailon,"
             ],
             "correctAnswer": [
                 1
@@ -2532,16 +2454,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "139. Paramele rasucite se numesc si:",
+            "question": "139. Furchetii sunt :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) garline",
-                "b) lantane",
-                "c) gase"
+                "a) piese metalice in forma de furca pe care se sprijina ramele ambarcatiunii",
+                "b) montant de copastie",
+                "c) nu sunt necesari pentru ambarcatiuni"
             ],
             "correctAnswer": [
                 1
@@ -2586,24 +2508,6 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "142. Ce sunt paramele de manila?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) parame vegetale confectionate din fire lungi de canepa",
-                "b) parame vegetale confectionate din fibre de bananier",
-                "c) parame vegetale confectionate din frunze de cactus"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
             "question": "143. Ce sunt paramele de sizal?",
             "questionType": "text",
             "answerSelectionType": "single",
@@ -2640,14 +2544,14 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "145. La ce sunt folosite paramele de cocos?",
+            "question": "145. Vesta de salvare asigura:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) la confectionarea manevrelor curente",
+                "a) iesirea la suprafata a persoanei cazute in apa,chiar in stare de inconstienta,si mentine gura acesteia deasupra nivelului apei",
                 "b) la confectionarea baloanelor si paietelor",
                 "c) la confectionarea saulelor la ambarcatiuni sport si de agrement"
             ],
@@ -2838,7 +2742,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "156. Cum se masoara grosime unei parame?",
+            "question": "156. Cum se masoara grosimea unei parame?",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -3207,7 +3111,7 @@ export const questions = {
             "answers": [
                 "a) un complex de mecanisme care, actionate separat sau in comun, produce momentul giratiei (schimbarea directiei de inaintare a navei)",
                 "b) instalatia cu care se realizeaza propulsia navei",
-                "c) instalatia cu care se realizeaza fixarea intr-o pozitie bine determinata a navei."
+                "c) instalatia cu care se realizeaza fixarea intr- o pozitie bine determinata a navei."
             ],
             "correctAnswer": [
                 3
@@ -3243,7 +3147,7 @@ export const questions = {
             "answers": [
                 "a) un complex de mecanisme care, actionate separat sau in comun, produce momentul giratiei (schimbarea diretiei de inaintare a navei)",
                 "b) instalatia cu care se realizeaza propulsia navei",
-                "c) instalatia cu care se realizeaza fixarea intr-o pozitie bine determinata a navei."
+                "c) instalatia cu care se realizeaza fixarea intr- o pozitie bine determinata a navei."
             ],
             "correctAnswer": [
                 1
@@ -3360,7 +3264,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "185. Nodul de gripie este un nod:",
+            "question": "185. Nodul de scota este un nod:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -3372,7 +3276,7 @@ export const questions = {
                 "c) special"
             ],
             "correctAnswer": [
-                3
+                1
             ],
             "section": "D-Marinarie",
             "difficulty": 1
@@ -3396,7 +3300,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "187. Nodul de scaun este un nod:",
+            "question": "187. Nodul de scaun simplu este un nod:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -3486,19 +3390,19 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "192. Nodul picior de caine este un nod:",
+            "question": "192. Nodul trebuie sa aiba urmatoarele proprietati:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) de legatura",
-                "b) de carlig",
-                "c) special"
+                "a) usor de facut,usor de desfacut,rezistent,nu deterioreaza parama",
+                "b) stabil si strans",
+                "c) nu sunt prevazute conditii speciale"
             ],
             "correctAnswer": [
-                3
+                1
             ],
             "section": "D-Marinarie",
             "difficulty": 1
@@ -3648,115 +3552,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "201. Paramele de canepa sunt folosite la confectionarea baloanelor si paietelor?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "202. Paramele de canepa sunt folosite la confectionarea manevrelor curente?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
             "question": "203. Paramele de canepa sunt folosite la confectionarea saulelor la ambarcatiuni sport si de agrement?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "204. Paramele de cocos sunt folosite la confectionarea baloanelor si paietelor?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "205. Paramele de cocos sunt folosite la confectionarea manevrelor curente?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "206. Paramele de manila sunt confectionate din fibrele unui bananier?",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "207. Paramele de manila sunt confectionate din fire de canepa?",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -3792,16 +3588,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "209. Paramele de sizal sunt confectionate din frunzele unui cactus?",
+            "question": "209. Vinciul este :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) nu",
-                "b) da",
-                "c) uneori"
+                "a) instalatie fixa",
+                "b) mecanism de ridicat sau tras, manual sau actionat mecanic,cu ax orizontal utilizat la bord pentru virarea ancorei,manevrelor unei bigi,a curentilor palancurilor gruelor de barca",
+                "c) instalatie mecanica de forta"
             ],
             "correctAnswer": [
                 2
@@ -3810,34 +3606,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "210. Paramele metalice de 6x12 sunt:",
+            "question": "210. Cangea de manevra este utilizata pentru:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "211. Paramele metalice de 6x19 sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
+                "a) acostare si plecare,prinderea unui inel la geamandura sau debarcader",
+                "b) masurarea adancimii apei",
+                "c) masurarea vitezei ambarcatiunii"
             ],
             "correctAnswer": [
                 1
@@ -3846,34 +3624,16 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "212. Paramele metalice de 6x24 sunt:",
+            "question": "213. Cabestanul este :",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "213. Paramele metalice de 6x37 sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
+                "a) instalatie mecanica",
+                "b) dispozitiv de manevra",
+                "c) Mecanism de punte,pentru virarea ancorei sau manevrarea paramelor,actionat manual sau electro- mecanic, cu ax vertical"
             ],
             "correctAnswer": [
                 3
@@ -3882,37 +3642,19 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "214. Paramele metalice de 6x61 sunt:",
+            "question": "214. Gruiul este:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
+                "a) instalatie mecanica",
+                "b) suport ambarcatiune",
+                "c) dispozitiv de ridicare a greutatilor si a bãrcilor având o formã curbatã,o razã relativ micã de actiune comparativ cu bigile si granicele si o capacitate de ridicare scãzutã"
             ],
             "correctAnswer": [
                 3
-            ],
-            "section": "D-Marinarie",
-            "difficulty": 1
-        },
-        {
-            "question": "215. Paramele metalice de 6x7 sunt:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) rigide",
-                "b) semirigide",
-                "c) flexibile"
-            ],
-            "correctAnswer": [
-                1
             ],
             "section": "D-Marinarie",
             "difficulty": 1
@@ -4069,7 +3811,7 @@ export const questions = {
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) deschideri in punte necesare incarcarii-descarcarii marfii in/din magazii.",
+                "a) deschideri in punte necesare incarcarii- descarcarii marfii in/din magazii.",
                 "b) deschideri in punte de dimensiuni mici, destinate accesului oamenilor in compartimentele aflate sub punte.",
                 "c) deschideri in punte, destinate pentru iluminarea si aerisirea compartimentului masini si caldari."
             ],
@@ -4170,7 +3912,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "230. La deplasarea înainte a bărcii, efectul cârmei determină",
+            "question": "266. La deplasarea înainte a bărcii, efectul cârmei determină",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4188,7 +3930,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "231. La marş înainte, pupa este abătută",
+            "question": "267. La marş înainte, pupa este abătută",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4206,7 +3948,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "232. Acostarea ambarcaţiunii la mal neamenajat",
+            "question": "268. Acostarea ambarcaţiunii la mal neamenajat",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4224,7 +3966,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "233. Depăşirile se execută",
+            "question": "269. Depăşirile se execută",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4242,7 +3984,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "234. Remorcarea este o operaţiune la care lungimea parâmei de remorcă",
+            "question": "270. Remorcarea este o operaţiune la care lungimea parâmei de remorcă",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4260,7 +4002,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "235. Înainte de pătrunderea în ecluză",
+            "question": "271. Înainte de pătrunderea în ecluză",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4278,7 +4020,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "236. Din motive de siguranţă şi fluidizare a circulaţiei, pentru accelerarea traversării şi pentru exploatarea în plin a ecluzelor",
+            "question": "272. Din motive de siguranţă şi fluidizare a circulaţiei, pentru accelerarea traversării şi pentru exploatarea în plin a ecluzelor",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4296,7 +4038,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "237. În funcţie de tipul cocii, viteza bărcii este cu atât mai mare cu cât",
+            "question": "273. În funcţie de tipul cocii, viteza bărcii este cu atât mai mare cu cât",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4314,7 +4056,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "238. Înainte de a părăsi locul de acostare",
+            "question": "274. Înainte de a părăsi locul de acostare",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4332,7 +4074,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "239. Alegerea celei mai bune elice şi a înălţimii motorului necesită verificarea câtorva lucruri precum",
+            "question": "275. Alegerea celei mai bune elice şi a înălţimii motorului necesită verificarea câtorva lucruri precum",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4350,7 +4092,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "240. Numărul de ture pe care îl efectuează o elice în mişcarea sa de rotaţie într-un interval de timp de un minut reprezintă",
+            "question": "276. Numărul de ture pe care îl efectuează o elice în mişcarea sa de rotaţie într-un interval de timp de un minut reprezintă",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4368,7 +4110,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "241. Legăturile ambarcaţiunii sunt",
+            "question": "277. Legăturile ambarcaţiunii sunt",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4386,7 +4128,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "242. Locul de ancorare trebuie să îndeplinească o serie de condiţii",
+            "question": "278. Locul de ancorare trebuie să îndeplinească o serie de condiţii",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4404,7 +4146,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "243. În cazul în care nu putem observa în mod clar felul cum acţionează curentul şi vântul în cazul manevrei de ,,Om la apă”",
+            "question": "279. În cazul în care nu putem observa în mod clar felul cum acţionează curentul şi vântul în cazul manevrei de ,,Om la apă”",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4422,7 +4164,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "244. În timpul ecluzării, în camerele ecluzelor",
+            "question": "280. În timpul ecluzării, în camerele ecluzelor",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4440,7 +4182,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "245. Conducerea de motovehicule nautice (skyjet) este supusă următoarelor limite",
+            "question": "281. Conducerea de motovehicule nautice (skyjet) este supusă următoarelor limite",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4458,7 +4200,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "246. Dacă barca dumneavoastră este echipată cu un sistem de cablu împinge-trage, mecanic",
+            "question": "282. Dacă barca dumneavoastră este echipată cu un sistem de cablu împinge- trage, mecanic",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4476,7 +4218,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "247. Manevra de oprire se execută astfel",
+            "question": "283. Manevra de oprire se execută astfel",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -4486,654 +4228,6 @@ export const questions = {
                 "a) in cazul in care nu exista nici un motiv sa faceţi altfel, reduceţi in mod gradat viteza, deoarece reducerea brusca poate face ca valul de pupa sa se lovească de oglinda bărcii si sa se reverse in interior",
                 "b) ambarcaţiunea se opreşte rapid, prin punerea pe zero si cuplarea pe înapoi a motorului",
                 "c) barca se opreşte din mers prin scoaterea cheii din contact"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "248. Dacă înclinaţi motorul în sus la viteze mari",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu se observa nici un efect",
-                "b) forţele turbionare vor acţiona brusc şi pot cauza pierderea controlului ambarcaţiunii",
-                "c) barca se înclină în bordul pasului elicei"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "249. La acostare se folosesc",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) baloane de protecţie polivinilice umplute cu aer",
-                "b) corpul ambarcaţiunii nu se protejează",
-                "c) orice fel de obiecte din metal sau lemn"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "250. Cu cât viteza de deplasare este mai mare",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) presiunea apei asupra penei cârmei va fi mai mare, iar schimbarea direcţiei mai rapidă",
-                "b) presiunea apei asupra penei cârmei va fi mai mică, iar schimbarea direcţiei mai înceată",
-                "c) viteza nu influenţează rapiditatea schimbării direcţiei de navigaţie"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "251. Mărimea şi forma elicei depinde de",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) turaţia dată la axul elicei",
-                "b) puterea motorului, mărimea corpului ambarcaţiunii şi scopul pentru care este destinată barca, tracţiune sau viteză",
-                "c) parametrii motorului"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "252. Guvernarea poate fi îmbunătăţită de:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) reducerea numărului de cârme",
-                "b) mărimea suprafeţei penei cârmei",
-                "c) micşorarea unghiului de rotire a cârmei"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "253. La manevra de acostare, pe lângă calităţile manevriere ale navei, tot timpul se va ţine cont de vânt şi curent urmărindu-se",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) să se evite influenţa lor",
-                "b) ca forţa acestora să fie folosită în ajutorul manevrei şi nu manevra săse împotrivească acestora",
-                "c) nu se ţine cont de vânt şi curent"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "254. Manevra de ”Om la apă“ este o manevră clasică de recuperare care se efectuează",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ţinând cont de efectul vântului şi curentului asupra ambarcaţiunii şi persoanei căzute în apă, astfel încât ambarcaţiunea să nu derive peste omul din apă",
-                "b) nu este nevoie de nici o estimare a efectului curentului si vântului",
-                "c) această manevră o fac numai navele de salvare"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "255. În camerele ecluzei:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu se folosesc baloanele/trancheţi pentru acostare",
-                "b) este obligatorie folosirea trancheţilor pentru acostare",
-                "c) se folosesc trancheţi care trebuie să fie flotabili, dacă nu sunt legaţi strâns-fixaţi de navă"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "256. Conducerea de motovehicule nautice (skyjet-uri) este supusă următoarelor limite",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) se poate naviga atât ziua cât şi noaptea",
-                "b) este permisă numai ziua",
-                "c) nu sunt prevăzute reguli exprese"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "257. Indicatorul înclinării este folosit",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la ridicarea cizmei/motorului pentru controlul elicei",
-                "b) numai de persoanele autorizate",
-                "c) sa orienteze motorul la un unghi predeterminat pentru o performanţă mai bună în navigaţie"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "258. Înainte de a părăsi locul de acostare:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) asiguraţi-vă că operaţiunile de pe algoritmul verificărilor dumneavoastră au fost parcurse",
-                "b) nu se fac nici un fel de verificări",
-                "c) toate verificările sunt făcute de către un service"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "259. Pasul elicei reprezintă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) mărimea diametrului butucului",
-                "b) lungimea palei",
-                "c) spaţiul parcurs de marginea exterioară a elicei in mişcarea de translaţie efectuată de-a lungul axei de rotaţie în timpul unei rotaţii complete"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "260. Locul de ancorare trebuie să îndeplinească o serie de condiţii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) este interzisă ancorarea în afara radelor",
-                "b) să fie un loc ferit de efectele curenţilor, valurilor şi vântului",
-                "c) nu sunt impuse condiţii speciale pentru ancorare"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "261. În categoria ecluzelor intră:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ecluzele şi suprafeţele de apă dinăuntrul şi dinafara sasurilor ecluzelor care servesc legării la cheu, înşiruirii şi aşteptării navelor –avanporturile de ecluză",
-                "b) barajele şi porţile amonte şi aval",
-                "c) numai sasurile ecluzelor"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "262. În timpul ecluzării, în camerele ecluzelor",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ambarcaţiunile mici pot să staţioneze oriunde in interiorul camerei",
-                "b) ambarcaţiunile mici nu au voie să ecluzeze",
-                "c) ambarcaţiunile mici trebuie să păstreze suficientă distanţă faţă de alte nave"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "263. Conducerea de motociclete nautice (skyjet) este supusă următoarelor limite:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) conducătorul şi însoţitorul trebuie să poarte veste de salvare",
-                "b) conducătorul şi însoţitorul nu trebuie să poarte veste de salvare",
-                "c) conducătorul şi însoţitorul nu trebuie să poarte veste de salvare, dacă sunt buni înotători"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "264. Mişcarea transversală a unei nave în jurul unei axe longitudinale reprezintă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tangaj",
-                "b) ruliu",
-                "c) mişcare ascensională"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "265. \"Mărimea’’ forţei ce acţionează asupra timonei este influenţată de",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) puterea motorului, de câtă porţiune din elice este în apă, de tipul şi pasul elicei",
-                "b) numai de puterea motorului",
-                "c) numai de pasul elicei"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "266. Instalaţia de guvernare se compune din",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) timonă şi transmisie",
-                "b) timona sau manipulatorul electric; servomotorul la navele mari; sistemul de transmisie timonă-servomotor-cârmă; cârma propiu-zisă",
-                "c) timona"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "267. Elicea are pas stânga dacă:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) la mersul înainte al ambarcaţiunii elicea se învârte la dreapta",
-                "b) la mersul înapoi al ambarcaţiunii elicea se învârte la dreapta",
-                "c) la mersul înainte al ambarcaţiunii elicea se învârte la stânga"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "268. În cazul acostării cu bordul:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nava se apropie de cheu sub un unghi ascuţit, pentru a atenua impactul provei cu cheul",
-                "b) ambarcaţiunea se apropie de cheu pe o direcţie perpendiculară pe acesta",
-                "c) ambarcaţiunea se apropie de cheu din orice pozitie"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "269. Reuşita ancorării depinde şi de folosirea corectă a lungimii parâmei/lanţului de ancorare şi anume",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu sunt stabilite reguli speciale privind lungimea lanţului/parâmei de ancorare",
-                "b) lungimea parâmei/lanţului de ancorare nu influenţează siguranţa ancorării",
-                "c) lungimea parâmei/lanţului la ancoră trebuie să fie de 3-5 ori adâncimea"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "270. În zona de ecluzare:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) ancorele trebuie să fie ridicate la post şi asigurate",
-                "b) ancorele pot fi folosite în ecluză",
-                "c) nu sunt prevăzute reguli speciale pentru acest caz"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "271. O ambarcaţiune este dificil de controlat în timpul navigaţiei dacă este",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) echipată cu motoare de puteri mai mari decât cea pentru care a fost proiectată (,,overpower’’)",
-                "b) este echipată cu motoare cu putere asemănătoare cu cea pentru care a fost proiectată",
-                "c) nu este importantă puterea motorului"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "272. Dacă barca devine instabilă",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) măriţi viteza pentru a stabiliza deplasarea",
-                "b) reduceţi viteza în mod gradat, nu acceleraţi, opriţi testul de navigaţie în viteza pe apă, apoi verificaţi barca şi echipamentul, iar în cazul în care consideraţi că este nevoie, contactaţi-vă dealer-ul sau un expert pentru a vă ajuta",
-                "c) nu este nevoie de nici o verificare, continuaţi mersul la aceeaşi parametri, deoarece fenomenul de instabilitate dispare după scurt timp"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "273. Pentru alegerea elicei care să corespundă exigenţelor dvs. trebuie să ţineţi cont de următoarele elemente",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) tonajul bărcii",
-                "b) experienţa conducătorului",
-                "c) viteza probabilă a bărcii, care este cea mai bună elice pentru designul şi viteza bărcii dumneavoastră; modul în care doriţi să folosiţi barca; testarea pasului elicei"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "274. Înmulţind rotaţiile pe minut (RPM) cu pasul elicei, se obţine:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) valoarea rezistenţei elicei",
-                "b) spaţiul parcurs de ambarcaţiune într-un minut",
-                "c) numărul de pale de elice"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "275. Locul de ancorare trebuie să îndeplinească o serie de condiţii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu sunt impuse condiţii speciale pentru ancorare",
-                "b) este interzisă ancorarea în afara radelor",
-                "c) să permită plecarea rapidă a navei de la ancoră, în orice condiţii, ziua sau noaptea"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "276. În zona de ecluzare este interzisă depăşirea, navele au voie să treacă pe lângă alte nave care aşteaptă în ecluză:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) atunci când conducătorul sau pasagerii consideră necesar",
-                "b) numai atunci când ambarcaţiunile trebuie să fie ecluzate înainte sau pentru a se poziţiona în spaţiile libere aflate la îndemână",
-                "c) ori de câte ori conducătorul consideră că este o manevră sigură"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "277. Înainte de pătrunderea în ecluză",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) nu trebuie făcute pregătiri speciale la bordul ambarcaţiunilor",
-                "b) la bordul ambarcaţiunilor parâmele trebuie ţinute din scurt si componentele echipamentului trebuie să nu depăşească limitele navei",
-                "c) conducătorul nu are nici o obligaţie"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "278. În timpul ecluzării, în camerele ecluzelor",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) este permis să se lase pasagerii să urce sau să coboare de la bord",
-                "b) este interzis să se lase pasagerii să urce sau să coboare fără permisiunea personalului ecluzei",
-                "c) nu este prevăzută expres această regulă"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "279. Conducerea de skyjet este supusă următoarelor limite",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) pe skyjet trebuie să se aplice numere de înmatriculare vizibile acordate de căpitănie",
-                "b) pe skyjet nu trebuie să se aplice numere de înmatriculare, deoarece nu este loc",
-                "c) nu sunt reguli prevăzute expres"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "280. Conducătorul ambarcațiunii:",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) poate să dea drumul timonei la orice viteză a bărcii",
-                "b) poate să balanseze timona la o viteză mare a bărcii",
-                "c) nu ar trebui să dea drumul timonei la nici un fel de viteză, din cauza forţelor turbionare prezente în sistemul de guvernare, barca ar putea să înceapă să se rotească rapid şi să devină instabilă"
-            ],
-            "correctAnswer": [
-                3
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "281. Un motor înclinat în sus",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) are o abilitate de frânare mai redusă decât unul înclinat în jos şi este nevoie de mai mult spaţiu pentru a opri barca",
-                "b) are o abilitate de a opri mai uşor barca",
-                "c) nu are nici un fel de influenţă"
-            ],
-            "correctAnswer": [
-                1
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "282. Schimbarea direcţiei de deplasare a ambarcaţiunii se realizează prin",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) navigarea în ape cu salinități diferite",
-                "b) punerea cârmei într-un bord sau altul şi este determinată de forţa curentului care apasă asupra penei cârmei, sau orientarea propulsorului în cazul propulsiei în ,,Z’’",
-                "c) ambarcaţiunea schimbă direcţia când este influenţată de curent şi vânt"
-            ],
-            "correctAnswer": [
-                2
-            ],
-            "section": "D-Manevra",
-            "difficulty": 1
-        },
-        {
-            "question": "283. Prin rotaţia elicei se generează efect de",
-            "questionType": "text",
-            "answerSelectionType": "single",
-            "messageForCorrectAnswer": "Corect",
-            "messageForIncorrectAnswer": "Incorect",
-            "point": 1,
-            "answers": [
-                "a) propulsie şi guvernare",
-                "b) propulsie",
-                "c) guvernare"
             ],
             "correctAnswer": [
                 1
@@ -5160,14 +4254,662 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "285. La trecerea prin avanporturi de ecluză şi la intrarea în ecluze, navele trebuie:",
+            "question": "285. La acostare se folosesc",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
             "messageForIncorrectAnswer": "Incorect",
             "point": 1,
             "answers": [
-                "a) să-şi micşoreze viteza, pentru a fi posibilă în orice condiţii o oprire sigură cu ajutorul cablurilor de oţel, parâmelor şi a altor măsuri potrivite, astfel încât să fie exclusă o coliziune cu porţile ecluzei sau cu dispozitivele de protecţie, ca şi cu alte nave care au corpuri flotante",
+                "a) baloane de protecţie polivinilice umplute cu aer",
+                "b) corpul ambarcaţiunii nu se protejează",
+                "c) orice fel de obiecte din metal sau lemn"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "286. Cu cât viteza de deplasare este mai mare",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) presiunea apei asupra penei cârmei va fi mai mare, iar schimbarea direcţiei mai rapidă",
+                "b) presiunea apei asupra penei cârmei va fi mai mică, iar schimbarea direcţiei mai înceată",
+                "c) viteza nu influenţează rapiditatea schimbării direcţiei de navigaţie"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "287. Mărimea şi forma elicei depinde de",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) turaţia dată la axul elicei",
+                "b) puterea motorului, mărimea corpului ambarcaţiunii şi scopul pentru care este destinată barca, tracţiune sau viteză",
+                "c) parametrii motorului"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "288. Guvernarea poate fi îmbunătăţită de:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) reducerea numărului de cârme",
+                "b) mărimea suprafeţei penei cârmei",
+                "c) micşorarea unghiului de rotire a cârmei"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "289. La manevra de acostare, pe lângă calităţile manevriere ale navei, tot timpul se va ţine cont de vânt şi curent urmărindu-se",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) să se evite influenţa lor",
+                "b) ca forţa acestora să fie folosită în ajutorul manevrei şi nu manevra săse împotrivească acestora",
+                "c) nu se ţine cont de vânt şi curent"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "290. Manevra de ”Om la apă“ este o manevră clasică de recuperare care se efectuează",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ţinând cont de efectul vântului şi curentului asupra ambarcaţiunii şi persoanei căzute în apă, astfel încât ambarcaţiunea să nu derive peste omul din apă",
+                "b) nu este nevoie de nici o estimare a efectului curentului si vântului",
+                "c) această manevră o fac numai navele de salvare"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "291. În camerele ecluzei:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu se folosesc baloanele/trancheţi pentru acostare",
+                "b) este obligatorie folosirea trancheţilor pentru acostare",
+                "c) se folosesc trancheţi care trebuie să fie flotabili, dacă nu sunt legaţi strâns-fixaţi de navă"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "292. Conducerea de motovehicule nautice (skyjet-uri) este supusă următoarelor limite",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se poate naviga atât ziua cât şi noaptea",
+                "b) este permisă numai ziua",
+                "c) nu sunt prevăzute reguli exprese"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "293. Indicatorul înclinării este folosit",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) la ridicarea cizmei/motorului pentru controlul elicei",
+                "b) numai de persoanele autorizate",
+                "c) sa orienteze motorul la un unghi predeterminat pentru o performanţă mai bună în navigaţie"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "294. Înainte de a părăsi locul de acostare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) asiguraţi-vă că operaţiunile de pe algoritmul verificărilor dumneavoastră au fost parcurse",
+                "b) nu se fac nici un fel de verificări",
+                "c) toate verificările sunt făcute de către un service"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "295. Pasul elicei reprezintă:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) mărimea diametrului butucului",
+                "b) lungimea palei",
+                "c) spaţiul parcurs de marginea exterioară a elicei in mişcarea de translaţie efectuată de-a lungul axei de rotaţie în timpul unei rotaţii complete"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "296. Locul de ancorare trebuie să îndeplinească o serie de condiţii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) este interzisă ancorarea în afara radelor",
+                "b) să fie un loc ferit de efectele curenţilor, valurilor şi vântului",
+                "c) nu sunt impuse condiţii speciale pentru ancorare"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "297. În categoria ecluzelor intră:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ecluzele şi suprafeţele de apă dinăuntrul şi dinafara sasurilor ecluzelor care servesc legării la cheu, înşiruirii şi aşteptării navelor –avanporturile de ecluză",
+                "b) barajele şi porţile amonte şi aval",
+                "c) numai sasurile ecluzelor"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "298. În timpul ecluzării, în camerele ecluzelor",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ambarcaţiunile mici pot să staţioneze oriunde in interiorul camerei",
+                "b) ambarcaţiunile mici nu au voie să ecluzeze",
+                "c) ambarcaţiunile mici trebuie să păstreze suficientă distanţă faţă de alte nave"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "299. Conducerea de motociclete nautice (skyjet) este supusă următoarelor limite:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) conducătorul şi însoţitorul trebuie să poarte veste de salvare",
+                "b) conducătorul şi însoţitorul nu trebuie să poarte veste de salvare",
+                "c) conducătorul şi însoţitorul nu trebuie să poarte veste de salvare, dacă sunt buni înotători"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "300. Mişcarea transversală a unei nave în jurul unei axe longitudinale reprezintă:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tangaj",
+                "b) ruliu",
+                "c) mişcare ascensională"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "301. \"Mărimea’’ forţei ce acţionează asupra timonei este influenţată de",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) puterea motorului, de câtă porţiune din elice este în apă, de tipul şi pasul elicei",
+                "b) numai de puterea motorului",
+                "c) numai de pasul elicei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "302. Instalaţia de guvernare se compune din",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) timonă şi transmisie",
+                "b) timona sau manipulatorul electric; servomotorul la navele mari; sistemul de transmisie timonă-servomotor-cârmă; cârma propiu-zisă",
+                "c) timona"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "303. Elicea are pas stânga dacă:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) la mersul înainte al ambarcaţiunii elicea se învârte la dreapta",
+                "b) la mersul înapoi al ambarcaţiunii elicea se învârte la dreapta",
+                "c) la mersul înainte al ambarcaţiunii elicea se învârte la stânga"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "304. În cazul acostării cu bordul:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nava se apropie de cheu sub un unghi ascuţit, pentru a atenua impactul provei cu cheul",
+                "b) ambarcaţiunea se apropie de cheu pe o direcţie perpendiculară pe acesta",
+                "c) ambarcaţiunea se apropie de cheu din orice pozitie"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "305. Reuşita ancorării depinde şi de folosirea corectă a lungimii parâmei/lanţului de ancorare şi anume",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu sunt stabilite reguli speciale privind lungimea lanţului/parâmei de ancorare",
+                "b) lungimea parâmei/lanţului de ancorare nu influenţează siguranţa ancorării",
+                "c) lungimea parâmei/lanţului la ancoră trebuie să fie de 3-5 ori adâncimea"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "306. În zona de ecluzare:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) ancorele trebuie să fie ridicate la post şi asigurate",
+                "b) ancorele pot fi folosite în ecluză",
+                "c) nu sunt prevăzute reguli speciale pentru acest caz"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "307. O ambarcaţiune este dificil de controlat în timpul navigaţiei dacă este",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) echipată cu motoare de puteri mai mari decât cea pentru care a fost proiectată (,,overpower’’)",
+                "b) este echipată cu motoare cu putere asemănătoare cu cea pentru care a fost proiectată",
+                "c) nu este importantă puterea motorului"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "308. Dacă barca devine instabilă",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) măriţi viteza pentru a stabiliza deplasarea",
+                "b) reduceţi viteza în mod gradat, nu acceleraţi, opriţi testul de navigaţie în viteza pe apă, apoi verificaţi barca şi echipamentul, iar în cazul în care consideraţi că este nevoie, contactaţi-vă dealer-ul sau un expert pentru a vă ajuta",
+                "c) nu este nevoie de nici o verificare, continuaţi mersul la aceeaşi parametri, deoarece fenomenul de instabilitate dispare după scurt timp"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "309. Pentru alegerea elicei care să corespundă exigenţelor dvs. trebuie să ţineţi cont de următoarele elemente",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) tonajul bărcii",
+                "b) experienţa conducătorului",
+                "c) viteza probabilă a bărcii, care este cea mai bună elice pentru designul şi viteza bărcii dumneavoastră; modul în care doriţi să folosiţi barca; testarea pasului elicei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "310. Înmulţind rotaţiile pe minut (RPM) cu pasul elicei, se obţine:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) valoarea rezistenţei elicei",
+                "b) spaţiul parcurs de ambarcaţiune într-un minut",
+                "c) numărul de pale de elice"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "311. Locul de ancorare trebuie să îndeplinească o serie de condiţii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu sunt impuse condiţii speciale pentru ancorare",
+                "b) este interzisă ancorarea în afara radelor",
+                "c) să permită plecarea rapidă a navei de la ancoră, în orice condiţii, ziua sau noaptea"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "312. În zona de ecluzare este interzisă depăşirea, navele au voie să treacă pe lângă alte nave care aşteaptă în ecluză:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) atunci când conducătorul sau pasagerii consideră necesar",
+                "b) numai atunci când ambarcaţiunile trebuie să fie ecluzate înainte sau pentru a se poziţiona în spaţiile libere aflate la îndemână",
+                "c) ori de câte ori conducătorul consideră că este o manevră sigură"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "313. Înainte de pătrunderea în ecluză",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu trebuie făcute pregătiri speciale la bordul ambarcaţiunilor",
+                "b) la bordul ambarcaţiunilor parâmele trebuie ţinute din scurt si componentele echipamentului trebuie să nu depăşească limitele navei",
+                "c) conducătorul nu are nici o obligaţie"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "314. În timpul ecluzării, în camerele ecluzelor",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) este permis să se lase pasagerii să urce sau să coboare de la bord",
+                "b) este interzis să se lase pasagerii să urce sau să coboare fără permisiunea personalului ecluzei",
+                "c) nu este prevăzută expres această regulă"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "315. Conducerea de skyjet este supusă următoarelor limite",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pe skyjet trebuie să se aplice numere de înmatriculare vizibile acordate de căpitănie",
+                "b) pe skyjet nu trebuie să se aplice numere de înmatriculare, deoarece nu este loc",
+                "c) nu sunt reguli prevăzute expres"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "316. Conducătorul ambarcațiunii:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) poate să dea drumul timonei la orice viteză a bărcii",
+                "b) poate să balanseze timona la o viteză mare a bărcii",
+                "c) nu ar trebui să dea drumul timonei la nici un fel de viteză, din cauza forţelor turbionare prezente în sistemul de guvernare, barca ar putea să înceapă să se rotească rapid şi să devină instabilă"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "317. Un motor înclinat în sus",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) are o abilitate de frânare mai redusă decât unul înclinat în jos şi este nevoie de mai mult spaţiu pentru a opri barca",
+                "b) are o abilitate de a opri mai uşor barca",
+                "c) nu are nici un fel de influenţă"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "318. Schimbarea direcţiei de deplasare a ambarcaţiunii se realizează prin",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) navigarea în ape cu salinități diferite",
+                "b) punerea cârmei într-un bord sau altul şi este determinată de forţa curentului care apasă asupra penei cârmei, sau orientarea propulsorului în cazul propulsiei în ,,Z’’",
+                "c) ambarcaţiunea schimbă direcţia când este influenţată de curent şi vânt"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "319. Prin rotaţia elicei se generează efect de",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) propulsie şi guvernare",
+                "b) propulsie",
+                "c) guvernare"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "320. Dacă înclinaţi motorul în sus la viteze mari",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu se observa nici un efect",
+                "b) forţele turbionare vor acţiona brusc şi pot cauza pierderea controlului ambarcaţiunii",
+                "c) barca se înclină în bordul pasului elicei"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "321. La trecerea prin avanporturi de ecluză şi la intrarea în ecluze, navele trebuie:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) să-şi micşoreze viteza, pentru a fi posibilă în orice condiţii o oprire sigură cu ajutorul cablurilor de oţel, parâmelor şi a altor măsuri potrivite, astfel încât să fie exclusă o coliziune cu porţile ecluzei sau cu dispozitivele de protecţie.",
                 "b) să execute manevra de intrare cu viteza cea mai mare pentru reducerea timpului de staţionare în ecluză",
                 "c) nu sunt impuse reguli speciale"
             ],
@@ -5178,7 +4920,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "286. Ordinea ecluzării este",
+            "question": "322. Ordinea ecluzării este",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5196,7 +4938,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "287. O persoană care nu este pregătită pentru operarea unei bărci de mare viteză",
+            "question": "323. O persoană care nu este pregătită pentru operarea unei bărci de mare viteză",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5214,7 +4956,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "288. Înainte de a părăsi locul de acostare:",
+            "question": "324. Înainte de a părăsi locul de acostare:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5232,7 +4974,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "289. Ce fenomene hidrologice şi meteorologice pot influenţa manevra navei?",
+            "question": "325. Ce fenomene hidrologice şi meteorologice pot influenţa manevra navei?",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5250,7 +4992,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "290. În cazul în care ambarcaţiunea dvs. este utilizată în regim de mare viteză în mod constant, este nevoie:",
+            "question": "326. În cazul în care ambarcaţiunea dvs. este utilizată în regim de mare viteză în mod constant, este nevoie:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5259,7 +5001,7 @@ export const questions = {
             "answers": [
                 "a) să alimentaţi mai des barca cu combustibil",
                 "b) să schimbaţi uleiul mai des",
-                "c) să fie verificate instalaţiile de elevare a motorului, de guvernare şi de cuplare-accelerare, precum şi elicea/elicele, la intervale mai scurte de timp"
+                "c) să fie verificate instalaţiile de elevare a motorului, de guvernare şi de cuplare- accelerare, precum şi elicea/elicele, la intervale mai scurte de timp"
             ],
             "correctAnswer": [
                 3
@@ -5268,7 +5010,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "291. În ce constă manevrabilitatea bărcii?",
+            "question": "327. În ce constă manevrabilitatea bărcii?",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5286,7 +5028,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "292. Elicea are pas dreapta dacă:",
+            "question": "328. Elicea are pas dreapta dacă:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5304,7 +5046,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "293. Manevrele de acostare și plecare:",
+            "question": "329. Manevrele de acostare și plecare:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5322,7 +5064,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "294. Reuşita ancorării depinde și de folosirea corectă a lungimii parâmei/lanţului de ancorare și anume:",
+            "question": "330. Reuşita ancorării depinde și de folosirea corectă a lungimii parâmei/lanţului de ancorare și anume:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5340,7 +5082,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "295. În zona de ecluze navele care sunt dotate cu o instalaţie de emisie– recepţie",
+            "question": "331. În zona de ecluze navele care sunt dotate cu o instalaţie de emisie–recepţie",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5358,7 +5100,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "296. În timpul ecluzării, în camerele ecluzelor:",
+            "question": "332. În timpul ecluzării, în camerele ecluzelor:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5376,7 +5118,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "297. Motorul ataşabil al unei ambarcaţiuni se montează",
+            "question": "333. Motorul ataşabil al unei ambarcaţiuni se montează",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5394,7 +5136,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "298. În cazul în care ambarcaţiunea dvs. este utilizată în regim de mare viteză în mod constant, este nevoie:",
+            "question": "334. În cazul în care ambarcaţiunea dvs. este utilizată în regim de mare viteză în mod constant, este nevoie:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5403,7 +5145,7 @@ export const questions = {
             "answers": [
                 "a) să alimentaţi mai des barca cu combustibil",
                 "b) să schimbaţi uleiul mai des",
-                "c) să fie verificate instalaţiile de elevare a motorului, de guvernare şi de cuplare-accelerare, precum şi elicea/elicele, la intervale mai scurte de timp"
+                "c) să fie verificate instalaţiile de elevare a motorului, de guvernare şi de cuplare- accelerare, precum şi elicea/elicele, la intervale mai scurte de timp"
             ],
             "correctAnswer": [
                 3
@@ -5412,7 +5154,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "299. La deplasarea înapoi a bărcii, efectul cârmei determină",
+            "question": "335. La deplasarea înapoi a bărcii, efectul cârmei determină",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5430,7 +5172,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "300. La marş înapoi, pupa este abătută:",
+            "question": "336. La marş înapoi, pupa este abătută:",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5448,7 +5190,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "301. Acostarea ambarcaţiunii la o navă se face în următoarele condiţii",
+            "question": "337. Acostarea ambarcaţiunii la o navă se face în următoarele condiţii",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5466,7 +5208,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "302. La întâlniri, conducătorul ambarcaţiunii",
+            "question": "338. La întâlniri, conducătorul ambarcaţiunii",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5484,7 +5226,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "303. În camerele ecluzei",
+            "question": "339. În camerele ecluzei",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5502,7 +5244,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "304. Schiul nautic pe căile navigabile interioare este permis",
+            "question": "340. Schiul nautic pe căile navigabile interioare este permis",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5520,7 +5262,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "305. Când motorul este înclinat în jos la capătul cursei",
+            "question": "341. Când motorul este înclinat în jos la capătul cursei",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5538,7 +5280,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "306. Pasul elicei reprezintă",
+            "question": "342. Pasul elicei reprezintă",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5556,7 +5298,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "307. Guvernarea clasică poate fi ajutată prin instalarea în corpul ambarcaţiunii de",
+            "question": "343. Guvernarea clasică poate fi ajutată prin instalarea în corpul ambarcaţiunii de",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5574,7 +5316,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "308. Conducerea de skyjet pe căile navigabile interioare",
+            "question": "344. Conducerea de skyjet pe căile navigabile interioare",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5592,7 +5334,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "309. Dacă barca pe care aţi cumpărat-o nu are placa de capacitate",
+            "question": "345. Dacă barca pe care aţi cumpărat-o nu are placa de capacitate",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5610,7 +5352,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "310. Înainte de a părăsi locul de acostare",
+            "question": "346. Înainte de a părăsi locul de acostare",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5628,7 +5370,7 @@ export const questions = {
             "difficulty": 1
         },
         {
-            "question": "311. Dacă pupa intră adânc în apă, datorită înclinării motorului la viteze mari",
+            "question": "347. Dacă pupa intră adânc în apă, datorită înclinării motorului la viteze mari",
             "questionType": "text",
             "answerSelectionType": "single",
             "messageForCorrectAnswer": "Corect",
@@ -5643,6 +5385,1356 @@ export const questions = {
                 1
             ],
             "section": "D-Manevra",
+            "difficulty": 1
+        },
+        {
+            "question": "1. Care este durata maximă a masajului cardio-respitator?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 30 - 40 min",
+                "b) 10 - 15 min",
+                "c) 60 min"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "2. Care este prima acțiune întreprinsă la acordarea primului ajutor victimelor unei coliziuni?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) spalarea plăgilor",
+                "b) dezinfectarea și pansarea rănilor",
+                "c) degajarea căilor respiratorii și asigurarea funcției respiratorii"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "3. Care este prima măsură pe care o luați în cazul accidentării unei persoane pe apă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) transportul imediat până la prima localitate și anunțarea la 112",
+                "b) transportul la cel mai apropiat spital",
+                "c) acordarea primului ajutor până la sosirea cadrelor de pe ambulanță"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "4. Care este rolul bandajului?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) să prevină murdărirea hainelor",
+                "b) să împiedice hemoragia",
+                "c) să împiedice intrarea corpilor străini în rană"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "5. Care poate fi cauza obturării căilor respiratorii după o coliziune?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) inflamarea mucoasei nazale",
+                "b) poziția necorespunzătoare în care a fost așezată victima",
+                "c) intrarea unor corpi străini în nasul sau gura victimei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "6. Care sunt simptomele unei fracturi a membrelor?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) temperatura ridicată a membrului fraturat",
+                "b) decolorarea zonei fraturate",
+                "c) poziția nefirească a membrului respectiv miscarea nenaturală"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "7. Care tip de hemoragie este cea mai periculoasă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) hemoragia arterială",
+                "b) hemoragia venoasă",
+                "c) hemoragia care determină o pierdere rapidă a sângelui"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "8. Ce criterii trebuie să îndeplinească o atelă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) să fie suficient de lungă pentru a imobiliza articulațiile superioară și inferioară a membrului fracturat și să fie rigidă",
+                "b) să fie rigidă",
+                "c) să fie sterilă"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "9. Ce manevre se fac pentru a acorda primul ajutor în caz de fracturi de membre?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se imobilizează membrul în atele care să fie destul de lungi pentru a cuprinde articulația de deasupra și cea de dedesubtul fracturii",
+                "b) se unesc capetele oaselor care au ieșit prin piele, apoi se bandajează locul",
+                "c) se aplică un garou deasupra fracturii"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "10. Ce măsuri de iau în cazul victimelor cu fracturi de claviculă (umărul victimei este deplasat usor înainte și în jos?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) aduceți umărul în poziție normală",
+                "b) culcați victima pe spate",
+                "c) suspendați brațul într-o eșarfă sau chingă delată de gât"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "11. Ce măsuri de prim ajutor se iau în cazul victimelor care nu mai au puls?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se efectuează doar masaj cardiac",
+                "b) se efectuează doar respirație artificială",
+                "c) se efectuează masaj cardio respirator"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "12. Ce măsuri de prim ajutor se iau în cazul victimelor care prezintă o entorsă a gleznei?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se aplică un bandaj elastic strâns, eventual se aplică și gheață",
+                "b) se imobilizează glezna cu atele",
+                "c) se transportă urgent victima la mal"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "13. Ce măsuri de prim ajutor se iau în cazul victimelor care prezintă plăgi tăiate?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se transportă de urgență victima la spital",
+                "b) se coase plaga",
+                "c) se oprește hemoragia și se transportă victima la spital"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "14. Ce măsuri de prim ajutor se iau în cazul victimelor care și au pierdut cunoștința?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se verifică existența pulsului și a respirației",
+                "b) se administrează medicamente de resuscitare",
+                "c) se imobilizează membrele"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "15. Ce măsuri de prim ajutor se iau în cazul victimelor cu traumatisme ale coloanei vertebrale, daca funcțiile vitale ale acesteia sunt asigurate?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) se transportă imediat victima la spital cu orice mijloc de transport aflat la îndemână",
+                "b) se transportă imediat victima la spital așezată pe o platformă improvizată",
+                "c) dacă nu există un alt pericol, nu se mișcă accidentatul din poziția în care se află până la sosirea serviciilor de urgență"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "16. Ce rol au bandajele?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) imobilizează fracturile",
+                "b) dezinfectează rănile",
+                "c) acoperă rănile, eventual opresc hemoragiile"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "17. Ce trebuie să urmăriți la scoaterea victimelor dintr o ambarcațiune accidentată?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) să nu produceți pagube suplimentare ambarcațiunii accidentate",
+                "b) să nu le agravați leziunile",
+                "c) să conservați urmele accidentului"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "18. Cu ce se pot transporta la spital victimele unui accident naval, după ce au fost scoase la mal?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) Cu orice vehicul, dacă situația victimei permite acest lucru",
+                "b) numai cu ambulanța SMURD",
+                "c) cu o ambulanță însoțită de un medic specialist"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "19. Cum extrageți corpii străini din interiorul plăgilor?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin spalare cu apă",
+                "b) prin extragere cu mâna",
+                "c) renunțăm la asemenea manevră întrucât riscăm să agravăm starea victimei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "20. Cum pot fi recunoscute fracturile la membrele victimelor unei coliziuni?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin elasticitatea exagerată a membrului fracturat",
+                "b) prin culoarea roșie a zonei fracturate",
+                "c) prin mișcarea nenaturală a membrului fracturat"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "21. Cum procedați dacă în timpul masajului cardio-respirator victima își recapătă pulsul?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) continuați compresiile exterioare ale pieptului",
+                "b) încetați compresiile exterioare ale pieptului",
+                "c) continuați cu respirație artificială"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "22. Cum procedați pentru a evita complicațiile în cazul unei fracturi?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) suspendați zona fracturată cu o fașă",
+                "b) imobilizați zona fracturată",
+                "c) sterilizați zona fracturată"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "23. Cum se imobilizează fractura labei piciorului?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu o atelă de la gleznă până la genunchi",
+                "b) prin fixarea piciorului într-o chingă de piele",
+                "c) cu atele sau bandaj, cât mai rigide, de la degete până la genunchi"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "24. Cum se imobilizează membrele superioare care au suferit fracturi?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu o eșarfă",
+                "b) cu o legătură elastică",
+                "c) cu atele, chiar improvizate"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "25. Cum se poate imobiliza o fractură fără atele?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu carton",
+                "b) cu folie de material plastic",
+                "c) cu eșarfe și triunghiuri de pânză"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "26. Cum se recunoaște o fractură deschisă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) zona fracturată nu se poate mișca",
+                "b) zona fracturată este înroșită",
+                "c) pielea este străpunsă în zona fracturii și se vede osul"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "27. Cum trebuie așezat accidentatul care prezintă hemoragie externă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) astfel încât zona să fie mai jos decât nivelul corpului",
+                "b) astfel încât zona să fie mai sus decât nivelul corpului",
+                "c) cu picioarele mai sus decât nivelul capului"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "28. Cum trebuie așezată o persoană rănită care prezintă leziuni ale coloanei vertebrale?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) dacă este posibil, victima nu trebuie mișcată până la sosirea medicului",
+                "b) orizontal, cu fața în jos",
+                "c) orizontal, cu fața în sus"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "29. Cum trebuie resuscitată o victimă a unei coliziuni, care are puls, dar nu respiră?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin aplicarea de palme peste fața victimei",
+                "b) prin masaj cardio-respirator",
+                "c) prin executarea respirației artificiale"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "30. Cum trebuie să fie atela destinată imobilizării unei fracturi?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) flexibilă",
+                "b) cât mai rigidă și suficient de lungă pentru a cuprinde articulațiile superioară și inferioară a membrului fracturat",
+                "c) cât mai scurtă pentru a nu incomoda rănitul"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "31. Cum veți proceda dacă victima căreia i-ați efectuat masaj cardio- respirator își revine?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) așteptați să vedeți cum evoluează starea ei de sănătate",
+                "b) o conduceți la mal",
+                "c) luați măsuri pentru transportarea ei la spital"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "32. Hemoragia nazală a unei victime se poate opri dacă aceasta:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) stă culcată cu mâna stângă ridicată deasupra capului",
+                "b) stă culcată cu capul dat pe spate",
+                "c) își strânge ambele nări cu degetele timp de aproximativ 5-10 minute"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "33. În cazul unei coliziuni din care au rezultat mai multe victime, primul ajutor se acordă mai întâi:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) victimei cu cele mai mari șanse de supraviețuire",
+                "b) victimei care comunică ușor",
+                "c) victimei în starea cea mai gravă"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "34. În ce constă primul ajutor în caz de traumatism al capului?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) aplicarea unor comprese pe frunte și pansarea părților tumefiate",
+                "b) imobilizarea capului cu un dispozitiv improvizat",
+                "c) bandajarea plăgilor, degajarea căilor respiratorii, așezarea victimei pe o suprafață plană"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "35. În ce loc se execută degajarea căilor respiratorii ale victimei unei coliziuni?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) la locul producerii coliziunii, cât mai urgent",
+                "b) la spital, cu instrumente speciale",
+                "c) la sosirea ambulanței, de către personalul specializat"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "36. În ce ordine se va lua măsurile de prim ajutor în funcție de starea victimei?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) oprirea hemoragiei, respirație artificială, masaj cardiac, pansarea rănilor, imobilizarea fracturilor",
+                "b) pansarea rănilor, imobilizarea fracturilor, oprire hemoragie, respirație artificială, masaj cardiac",
+                "c) imobilizarea fracturilor, pansarea rănilor, respirație artificială, masaj cardiac, oprirea hemoragiei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "37. Masajul cardio-respirator trebuie efectuat victimelor:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) care nu respiră",
+                "b) care nu au puls și nu respiră",
+                "c) care au suferit traumatisme craniene"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "38. Transportul victimelor unei coliziuni care prezintă hemoragii se face?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) imediat după oprirea hemoragiei",
+                "b) imediat după pansarea rănilor",
+                "c) imediat după anunțarea coliziunii"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "39. Unde se verifică dacă victima unei coliziuni are puls, dacă aceasta respiră?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) lângă mărul lui Adam, în scobitura dintre trahee și mușchii gâtului",
+                "b) în zona inimii",
+                "c) la încheietura mâinii"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "40. Unde trebuie aplicat garoul de cauciuc în cazul persoanelor rănite care prezintă plăgi însoțite de hemoragii arteriale?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) peste plagă",
+                "b) sub plagă",
+                "c) deasupra plăgii"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "41. Substanțele antiseptice se folosesc pentru:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) calmarea durerilor",
+                "b) dezinfectarea rănilor",
+                "c) oprirea hemoragiei"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "42. Victima care a pierdut mult sânge trebuie să fie așezată:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) cu fața în sus",
+                "b) cu picioarele situate mai sus decât restul corpului",
+                "c) cu fața în jos"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "43. În cazul rănilor cu hemoragie se va avea în vedere la început:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) pansarea rănii",
+                "b) curățarea și pansarea rănii",
+                "c) oprirea hemoragiei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "44. Când gura unui rănit rămâne încleștată respirația artificială se poate face?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin gura închisă a victimei",
+                "b) prin nările victimei",
+                "c) nu se mai face respirație artificială în acest caz"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "45. Cât poate fi menținut un garou pentru a nu afecta țesuturile?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) minimum 2 ore",
+                "b) maximum 4 ore",
+                "c) maximum 2 ore"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "46. Dezinfectarea plăgilor ce necesită a fi pansate se face cu:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) apă oxigenată sau iod",
+                "b) ser fiziologic",
+                "c) apă potabilă"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "47. Cum se opresc hemoragiile la trunchi și cap?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) prin aplicarea unui garou de cauciuc",
+                "b) prin orice mijloace",
+                "c) compreselor sterile și a pansamentelor compresive"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "48. Cum procedați în cazul unei victime cu multiple arsuri pe cap și membre?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) arsurile se spală, se bandajează și apoi victima este transportată la cea mai apropiată unitate medicală",
+                "b) după stingerea flăcărilor persoana este dezbrăcată rapid de hainele arse",
+                "c) trebuie să fie transportată imediat la o unitate medicală"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "49. Biletul care se prinde lângă garoul aplicat unei persoane rănite trebuie să conțină:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) poziția în care a fost găsită victima",
+                "b) ora și minutul aplicării garoului",
+                "c) numele persoanei care l-a aplicat"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "50. Ce trebuie să conțină un pansament aplicat pe plagă?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) o compresă de tifon steril",
+                "b) o compresă de orice tip",
+                "c) o compresă de vată sterilă"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-PrimAjutor",
+            "difficulty": 1
+        },
+        {
+            "question": "1. Care din următoarele fapte constituie infracțiune?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) îmbarcarea de pasageri peste limita admisă",
+                "b) schimbarea poziției, scoaterea din funcțiune, avarierea gravă sau distrugerea unui semnal de navigație",
+                "c) nerespectarea dispozițiilor personalului de la ecluze"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "2. Care dintre următoarele fapte constituie infracțiune?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) necomunicarea unor informații",
+                "b) refuzul de a pune la dispoziția ANR documente și date necesare investigării",
+                "c) împiedicarea îndeplinirii atribuțiilor de serviciu ale personalului navigant"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "3. Care este cauza agravantă a infracțiunii de preluare fără drept a comenzii sau controlului unei nave?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) dacă fost făcută în scopul devierii navei de la itinerarul său",
+                "b) dacă a fost făcută de către un membru al echipajului",
+                "c) dacă a fost făcută de două sau mai multe persoane"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "4. Luarea în stăpânire a unei platforme fixe sau exercitarea controlului asupra acesteia constituie infracțiune?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) da, dacă s a produs prin violență ori amenințare cu violența",
+                "b) da, dacă s a produs în scopul devierii de la itinerarul său",
+                "c) da, dacă s-a perturbat funcționarea acesteia sau s-a pus în pericol siguranța navigației"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "5. Ce reprezintă blocarea șenalului navigabil a unei dane sau a bazinului portuar și neexecutarea ordinului căpitanului portului privind măsurile de deblocare?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) contravenție, dacă este fără urmări",
+                "b) infracțiune",
+                "c) infracțiune, dar numai dacă a avut ca urmare întreruperea navigației ori a activității portuare"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "6. Ultrajul săvârșit împotriva personalului operativ al căpităniei portului, constituie infracțiune?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) da, dacă persoana se află în exercițiul funcțiunii",
+                "b) da, chiar dacă este ca urmare a unor fapte îndeplinite în afara exercițiului funcțiunii",
+                "c) da, dacă are ca urmare punerea în pericol a siguranței navigației"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "7. În ce termen trebuie transcris contractul de construcție al unei nave în registrul de evidență al navelor în construcție?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 15 zile de la începerea construcției",
+                "b) 15 zile înainte de începerea construcției",
+                "c) 15 zile înainte de finalizarea construcției"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "8. Care este termenul în care proprietarul unei nave are obligația de a înmatricula nava?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 15 zile",
+                "b) 30 zile",
+                "c) 60 zile"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "9. Care este termenul limită pentru depunerea la căpitănia portului a actului de naționalitate de către proprietar în cazul suspendării dreptului de arborare a pavilionului român?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) 15 zile de când decizia a rămas definitivă",
+                "b) 30 de zile de la comunicarea deciziei",
+                "c) 15 zile de la comunicarea deciziei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "10. Exploatarea în scopuri comerciale a ambarcațiunii de agrement, cu excepția celor autorizate în acest sens, constituie:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) infracțiune, dacă periclitează siguranța navigației",
+                "b) contravenție la regimul siguranței navigației",
+                "c) infracțiune, dacă se depășește numărul maxim de pasageri"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "11. Folosirea de către proprietar a unui nume, număr de identificare sau port de înmatriculare ce nu a fost aprobat de Autoritatea competentă constituie:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) contravenție",
+                "b) infracțiune la regimul înmatriculări navelor",
+                "c) contravenție, dacă nava a fost depistată pe șenalul navigabil"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "12. Care este sancțiunea pentru nerespectarea ”Avizelor către navigatori”?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 20.000 la 50.000 lei",
+                "b) amendă de la 5.000 la 10.000 lei",
+                "c) amendă de la 10.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "13. Care este sancțiunea pentru navigația în zone nepermise a unei nave?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 20.000 la 50.000 lei",
+                "b) amendă de la 5.000 la 20.000 lei",
+                "c) amendă de la 10.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "14. Care este sancțiunea pentru așezarea de plase ori unelte fixe de pescuit în apele naționale navigabile precum și în rade, portur,i canale sau senale navigabile?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 10.000 la 30.000 lei",
+                "b) amendă de la 5.000 la 10.000 lei",
+                "c) amendă de la 5.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "15. Care este sancțiunea pentru folosirea mijloacelor de semnalizare de la bord în mod nejustificat sau neadecvat regulamentelor de navigație?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 5.000 la 10.000 lei",
+                "b) amendă de la 5.000 la 20.000 lei",
+                "c) amendă de la 10.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "16. Care este sancțiunea pentru poluarea apelor naționale navigabile cu hidrocarburi?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 5.000 la 20.000 lei",
+                "b) amendă de la 1.000 la 8.000 lei",
+                "c) amendă de la 20.000 la 40.000 lei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "17. Care este sancțiunea pentru refuzul prezentării documentului de atestare reprezentanților ANR?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 2.000 la 5.000 lei",
+                "b) amendă de la 1.000 la 5.000 lei",
+                "c) amendă de la 500 la 8.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "18. Care este sancțiunea pentru neanunțarea de către conducătorul unei nave cu privire la evenimentele de navigație ale propriei nave cum ar fi: abordaje, coliziuni, incendii, poluare, scufundare?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 40.000 la 50.000 lei",
+                "b) amendă de la 5.000 la 10.000 lei",
+                "c) amendă de la 5.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "19. Care este sancțiunea pentru nearborarea la la bordul navei a pavilionului național în apele naționale navigabile ale României?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 2.000 la 5.000 lei",
+                "b) amendă de la 1.000 la 5.000 lei",
+                "c) amendă de la 5.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "20. Cum se sancționează refuzul de a se supune cercetărilor întreprinse de ANR sau de a pune la dispoziția ANR documentele și datele necesare investigării:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 1.000 la 5.000 lei",
+                "b) amendă de la 30.000 la 50.000 lei",
+                "c) amendă de la 10.000 la 20.000 lei"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "21. Cum se sancționează refuzul de a se supune controlului ANR",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 1.000 la 5.000 lei",
+                "b) amendă de la 5.000 la 20.000 lei",
+                "c) amendă de la 20.000 la 30.000 lei"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "22. Nepredarea la ANR în termen de 5 zile de la comunicarea deciziei de suspendare sau anulare a documentului de atestare se sancționează:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) amendă de la 100 la 500 lei",
+                "b) amendă de la 100 la 1.000 lei",
+                "c) amendă de la 1.000 la 5.000 lei"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "23. Constatarea contravențiilor și aplicarea sancțiunilor prevăzute de HG 1704/2024 se face de către:",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) personalul împuternicit al ANR",
+                "b) personal ANR în asistență reprezentant poliție transporturi navale",
+                "c) personalul ANR în asistență reprezentant Administrația Portuară"
+            ],
+            "correctAnswer": [
+                1
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "24. Se poate constata contravenția fără oprirea navei?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) da",
+                "b) nu",
+                "c) da, dacă săvârșirea contravenției este probată cu un mijloc tehnic"
+            ],
+            "correctAnswer": [
+                3
+            ],
+            "section": "D-Legislatie",
+            "difficulty": 1
+        },
+        {
+            "question": "25. Se poate constata contravenția în lipsa contravenientului?",
+            "questionType": "text",
+            "answerSelectionType": "single",
+            "messageForCorrectAnswer": "Corect",
+            "messageForIncorrectAnswer": "Incorect",
+            "point": 1,
+            "answers": [
+                "a) nu",
+                "b) da, dacă săvârșirea contravenției este probată cu un mijloc tehnic",
+                "c) da"
+            ],
+            "correctAnswer": [
+                2
+            ],
+            "section": "D-Legislatie",
             "difficulty": 1
         }
     ]
