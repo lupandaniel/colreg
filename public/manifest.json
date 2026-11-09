@@ -1,6 +1,6 @@
 {
-  "short_name": "Quizz App",
-  "name": "Quizz app",
+  "short_name": "CAA",
+  "name": "Examen CAA",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#0b66c3",
   "background_color": "#ffffff"
 }

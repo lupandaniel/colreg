@@ -1,8 +1,13 @@
 import './App.css';
+import AuthGate from './AuthGate';
 import QuizApp from './QuizApp';
 
 function App() {
-  return <QuizApp />;
+  return (
+    <AuthGate>
+      <QuizApp />
+    </AuthGate>
+  );
 }
 
 export default App;

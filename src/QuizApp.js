@@ -1,5 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import Quiz from 'react-quiz-component';
+import { signOut } from 'firebase/auth';
+import { auth } from './firebase';
 import { questions as colregQuiz } from './questions';
 import { questions as legislatieQuiz } from './questionsLegislatie';
 import { questions as navigatieQuiz } from './questionsNavigatie';
@@ -20,22 +22,45 @@ const HISTORY_KEY = 'caa-history-v1';
 const SESSIONS_KEY = 'caa-sessions-v1';
 const SESSIONS_LIMIT = 30;
 const HISTORY_LIMIT = 300;
-const LICENSE_CLASSES = ['A', 'B', 'C', 'D'];
+const DIFF_CLASS = 'C-diff'; // "Clasa C (diferență)", see below
+const DIFF_CLASS_D = 'D-diff'; // "Clasa D (diferență)", see below
+const LICENSE_CLASSES = ['A', 'B', 'C', DIFF_CLASS, 'D', DIFF_CLASS_D];
+const isDiffClass = (cls) => cls === DIFF_CLASS || cls === DIFF_CLASS_D;
 
 const COLREG_SECTIONS = [
-  { id: 'CAA-EN-Generalitati', label: 'COLREG · Generalități', count: 8, difficulty: 1 },
-  { id: 'CAA-EN-Lumini si semne', label: 'COLREG · Lumini și semne', count: 8, difficulty: 1 },
+  {
+    id: 'CAA-EN-Generalitati',
+    label: 'COLREG · Generalități',
+    count: 8,
+    difficulty: 1,
+  },
+  {
+    id: 'CAA-EN-Lumini si semne',
+    label: 'COLREG · Lumini și semne',
+    count: 8,
+    difficulty: 1,
+  },
   {
     id: 'CAA-EN-Reguli de guvernare',
     label: 'COLREG · Reguli de guvernare',
     count: 8,
     difficulty: 1,
   },
-  { id: 'CAA-EN-Semnale sonore', label: 'COLREG · Semnale sonore', count: 6, difficulty: 1 },
+  {
+    id: 'CAA-EN-Semnale sonore',
+    label: 'COLREG · Semnale sonore',
+    count: 6,
+    difficulty: 1,
+  },
 ];
 
 const NAVIGATIE_SECTIONS = [
-  { id: 'Navigatie maritima', label: 'Navigație maritimă', count: 30, difficulty: 1 },
+  {
+    id: 'Navigatie maritima',
+    label: 'Navigație maritimă',
+    count: 30,
+    difficulty: 1,
+  },
 ];
 
 const MANEVRA_SECTIONS = [
@@ -48,29 +73,99 @@ const MANEVRA_SECTIONS = [
 ];
 
 const CONSTRUCTIE_SECTIONS = [
-  { id: 'Constructia navei', label: 'Construcția navei', count: 24, difficulty: 1 },
+  {
+    id: 'Constructia navei',
+    label: 'Construcția navei',
+    count: 24,
+    difficulty: 1,
+  },
   { id: 'Vitalitate', label: 'Vitalitate', count: 6, difficulty: 1 },
 ];
 
 const LEGISLATIE_SECTIONS = [
-  { id: 'Autoritati', label: 'Legislație · Autorități', count: 3, difficulty: 1 },
-  { id: 'Contraventii', label: 'Legislație · Contravenții', count: 6, difficulty: 1 },
-  { id: 'Infractiuni', label: 'Legislație · Infracțiuni', count: 4, difficulty: 1 },
-  { id: 'Ambarcatiune', label: 'Legislație · Ambarcațiune', count: 4, difficulty: 1 },
-  { id: 'Personal navigant', label: 'Legislație · Personal navigant', count: 4, difficulty: 1 },
+  {
+    id: 'Autoritati',
+    label: 'Legislație · Autorități',
+    count: 3,
+    difficulty: 1,
+  },
+  {
+    id: 'Contraventii',
+    label: 'Legislație · Contravenții',
+    count: 6,
+    difficulty: 1,
+  },
+  {
+    id: 'Infractiuni',
+    label: 'Legislație · Infracțiuni',
+    count: 4,
+    difficulty: 1,
+  },
+  {
+    id: 'Ambarcatiune',
+    label: 'Legislație · Ambarcațiune',
+    count: 4,
+    difficulty: 1,
+  },
+  {
+    id: 'Personal navigant',
+    label: 'Legislație · Personal navigant',
+    count: 4,
+    difficulty: 1,
+  },
   {
     id: 'Siguranta navigatiei',
     label: 'Legislație · Siguranța navigației',
     count: 4,
     difficulty: 1,
   },
-  { id: 'Teritoriu maritim', label: 'Legislație · Teritoriu maritim', count: 3, difficulty: 1 },
+  {
+    id: 'Teritoriu maritim',
+    label: 'Legislație · Teritoriu maritim',
+    count: 3,
+    difficulty: 1,
+  },
   { id: 'Conventii', label: 'Legislație · Convenții', count: 2, difficulty: 1 },
 ];
 
 const RND_SECTIONS = rndQuiz.examConfig.sections;
 const CLASA_C_SECTIONS = clasaCQuiz.examConfig.sections;
 const CLASA_D_SECTIONS = clasaDQuiz.examConfig.sections;
+
+/**
+ * "Clasa C (diferență)": what Class C has on top of Class D, i.e. the COLREG and
+ * "Navigație maritimă" chapters (Class D studies the Danube regulation instead). The other
+ * chapters (Marinărie, Manevră, Prim ajutor, Legislație) are the same in both classes.
+ */
+const DIFF_SECTION_IDS = ['C-COLREG', 'C-Navigatie'];
+const DIFF_SECTIONS = CLASA_C_SECTIONS.filter((section) => DIFF_SECTION_IDS.includes(section.id));
+const DIFF_EXAM_SECTIONS = [
+  { id: 'C-COLREG', label: 'COLREG', count: 8, difficulty: 1 },
+  { id: 'C-Navigatie', label: 'Navigație maritimă', count: 2, difficulty: 1 },
+];
+
+/**
+ * "Clasa D (diferență)": what Class D has on top of Class C, i.e. the Danube navigation
+ * regulation (RND). Everything else in Class D is also in Class C.
+ */
+const DIFF_D_SECTION_IDS = ['D-RND'];
+const DIFF_D_SECTIONS = CLASA_D_SECTIONS.filter((section) =>
+  DIFF_D_SECTION_IDS.includes(section.id),
+);
+const DIFF_D_EXAM_SECTIONS = [
+  {
+    id: 'D-RND',
+    label: 'Regulamentul de navigație pe Dunăre',
+    count: 10,
+    difficulty: 1,
+  },
+];
+
+function classLabel(cls) {
+  if (cls === DIFF_CLASS) return 'Clasa C (diferență)';
+  if (cls === DIFF_CLASS_D) return 'Clasa D (diferență)';
+  return `Clasa ${cls}`;
+}
 
 const PRACTICE_SECTIONS_AB = [
   ...COLREG_SECTIONS,
@@ -92,6 +187,8 @@ const PRACTICE_SECTIONS_BY_CLASS = {
   A: PRACTICE_SECTIONS_A,
   B: PRACTICE_SECTIONS_AB,
   C: CLASA_C_SECTIONS,
+  [DIFF_CLASS]: DIFF_SECTIONS,
+  [DIFF_CLASS_D]: DIFF_D_SECTIONS,
   D: CLASA_D_SECTIONS,
 };
 
@@ -182,6 +279,18 @@ const EXAM_SUBJECTS = [
     sections: CLASA_C_SECTIONS,
   },
   {
+    id: 'clasa-c-diff',
+    label: 'Examen Clasa C · diferența față de D',
+    timeMinutes: 12,
+    totalQuestions: 10,
+    minCorrect: 9,
+    barem: null,
+    observation: '10 întrebări din COLREG + Navigație · 85% = 9/10',
+    classes: [DIFF_CLASS],
+    available: true,
+    sections: DIFF_EXAM_SECTIONS,
+  },
+  {
     id: 'clasa-d',
     label: 'Examen Clasa D',
     timeMinutes: 30,
@@ -192,6 +301,18 @@ const EXAM_SUBJECTS = [
     classes: ['D'],
     available: true,
     sections: CLASA_D_SECTIONS,
+  },
+  {
+    id: 'clasa-d-diff',
+    label: 'Examen Clasa D · diferența față de C',
+    timeMinutes: 12,
+    totalQuestions: 10,
+    minCorrect: 9,
+    barem: null,
+    observation: '10 întrebări din Regulamentul de navigație pe Dunăre · 85% = 9/10',
+    classes: [DIFF_CLASS_D],
+    available: true,
+    sections: DIFF_D_EXAM_SECTIONS,
   },
 ];
 
@@ -236,6 +357,14 @@ const QUESTIONS_BY_CLASS = {
   B: QUESTIONS_AB,
   C: tagQuestions(clasaCQuiz.questions, 'Clasa C'),
   D: tagQuestions(clasaDQuiz.questions, 'Clasa D'),
+  [DIFF_CLASS]: tagQuestions(
+    clasaCQuiz.questions.filter((question) => DIFF_SECTION_IDS.includes(question.section)),
+    'Clasa C (diferență)',
+  ),
+  [DIFF_CLASS_D]: tagQuestions(
+    clasaDQuiz.questions.filter((question) => DIFF_D_SECTION_IDS.includes(question.section)),
+    'Clasa D (diferență)',
+  ),
 };
 
 function preserveQuestionNumber(text) {
@@ -244,7 +373,10 @@ function preserveQuestionNumber(text) {
 
 function normalizeQuestions(questionList) {
   return questionList.map((question) => {
-    const normalized = { ...question, question: preserveQuestionNumber(question.question) };
+    const normalized = {
+      ...question,
+      question: preserveQuestionNumber(question.question),
+    };
     if (normalized.questionPic && !/^(https?:)?\/\//.test(normalized.questionPic)) {
       normalized.questionPic = `${process.env.PUBLIC_URL || ''}/${normalized.questionPic.replace(/^\//, '')}`;
     }
@@ -482,7 +614,10 @@ function summarizeClass(history, licenseClass) {
       return { subject, attempts, best, last, status };
     },
   );
-  return { rows, passedCount: rows.filter((row) => row.status === 'passed').length };
+  return {
+    rows,
+    passedCount: rows.filter((row) => row.status === 'passed').length,
+  };
 }
 
 const STATUS_LABELS = {
@@ -531,7 +666,7 @@ function QuizApp() {
     [licenseClass],
   );
 
-  const isSingleExamClass = licenseClass === 'C' || licenseClass === 'D';
+  const isSingleExamClass = ['C', 'D', DIFF_CLASS, DIFF_CLASS_D].includes(licenseClass);
 
   const classSubjects = useMemo(
     () => EXAM_SUBJECTS.filter((subject) => subject.classes.includes(licenseClass)),
@@ -962,7 +1097,7 @@ function QuizApp() {
               {passed ? 'ADMIS' : 'RESPINS'}
             </p>
             <h2>
-              {activeSubject?.label || 'Examen'} · Clasa {licenseClass}
+              {activeSubject?.label || 'Examen'} · {classLabel(licenseClass)}
             </h2>
             <p className="exam-subtitle">
               {passed
@@ -1122,6 +1257,9 @@ function QuizApp() {
           <h1 className="app-header-title">Examen CAA</h1>
           <p className="app-header-sub">Ambarcațiuni de agrement</p>
         </div>
+        <button type="button" className="signout-btn" onClick={() => signOut(auth)}>
+          Ieșire
+        </button>
       </header>
       {children}
     </div>
@@ -1144,7 +1282,14 @@ function QuizApp() {
                 className={licenseClass === cls ? 'active' : ''}
                 onClick={() => setLicenseClassAndReset(cls)}
               >
-                Clasa {cls}
+                {isDiffClass(cls) ? (
+                  <>
+                    Clasa {cls.charAt(0)}
+                    <span className="class-toggle-sub">diferență</span>
+                  </>
+                ) : (
+                  `Clasa ${cls}`
+                )}
               </button>
             ))}
           </div>
@@ -1170,7 +1315,7 @@ function QuizApp() {
         <div className="exam-card practice-card">
           <h3>Antrenament</h3>
           <p className="exam-subtitle">
-            Fără cronometru · banca Clasa {licenseClass} ({fullQuestions.length} întrebări)
+            Fără cronometru · banca {classLabel(licenseClass)} ({fullQuestions.length} întrebări)
           </p>
           <label className="practice-select-label" htmlFor="practice-section">
             Secțiune
@@ -1246,12 +1391,16 @@ function QuizApp() {
         </div>
 
         <div className="exam-card">
-          <h3>Examen · Clasa {licenseClass}</h3>
+          <h3>Examen · {classLabel(licenseClass)}</h3>
           <p className="exam-subtitle">
             {licenseClass === 'A' &&
               '6 discipline (inclusiv Construcția navei și Regulament Dunăre)'}
             {licenseClass === 'B' && '4 discipline (fără Construcția navei și Regulament Dunăre)'}
             {licenseClass === 'C' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
+            {licenseClass === DIFF_CLASS &&
+              'Diferența față de D (COLREG + Navigație) · 10 întrebări · 12 min · minim 9 corecte'}
+            {licenseClass === DIFF_CLASS_D &&
+              'Diferența față de C (Regulamentul de navigație pe Dunăre) · 10 întrebări · 12 min · minim 9 corecte'}
             {licenseClass === 'D' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
           </p>
 
@@ -1304,7 +1453,7 @@ function QuizApp() {
             </table>
           </div>
 
-          {!isSingleExamClass && (
+          {classSubjects.length > 1 && (
             <>
               <label className="practice-select-label" htmlFor="exam-subject">
                 Disciplina de examinat
@@ -1407,7 +1556,7 @@ function QuizApp() {
                   <div className="session-info">
                     <span className="session-title">{sessionLabel(session)}</span>
                     <span className="session-meta">
-                      {isExam ? 'Examen' : 'Antrenament'} · Clasa {session.licenseClass}
+                      {isExam ? 'Examen' : 'Antrenament'} · {classLabel(session.licenseClass)}
                       {session.savedAt ? ` · ${formatDate(session.savedAt)}` : ''}
                     </span>
                     <span className="session-meta">
@@ -1471,14 +1620,21 @@ function QuizApp() {
                 className={historyClass === cls ? 'active' : ''}
                 onClick={() => setHistoryClass(cls)}
               >
-                Clasa {cls}
+                {isDiffClass(cls) ? (
+                  <>
+                    Clasa {cls.charAt(0)}
+                    <span className="class-toggle-sub">diferență</span>
+                  </>
+                ) : (
+                  `Clasa ${cls}`
+                )}
               </button>
             ))}
           </div>
         </div>
 
         <div className="exam-card">
-          <h3>Examene · Clasa {historyClass}</h3>
+          <h3>Examene · {classLabel(historyClass)}</h3>
           <p className="exam-subtitle">
             {passedCount} din {rows.length} discipline promovate
           </p>
@@ -1589,7 +1745,7 @@ function QuizApp() {
         <div className="banner-top">
           <div className="banner-title">
             <span className="banner-mode">
-              {mode === 'exam' ? `Examen · Clasa ${licenseClass}` : 'Antrenament'}
+              {mode === 'exam' ? `Examen · ${classLabel(licenseClass)}` : 'Antrenament'}
             </span>
             {mode === 'exam' && activeSubject && (
               <span className="banner-subject">{activeSubject.label}</span>
