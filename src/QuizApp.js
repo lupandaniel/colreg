@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Quiz from 'react-quiz-component';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
@@ -26,6 +26,41 @@ const DIFF_CLASS = 'C-diff'; // "Clasa C (diferență)", see below
 const DIFF_CLASS_D = 'D-diff'; // "Clasa D (diferență)", see below
 const LICENSE_CLASSES = ['A', 'B', 'C', DIFF_CLASS, 'D', DIFF_CLASS_D];
 const isDiffClass = (cls) => cls === DIFF_CLASS || cls === DIFF_CLASS_D;
+
+// Every license class has its own page (URL)
+const CLASS_ROUTES = {
+  A: '/clasa-a',
+  B: '/clasa-b',
+  C: '/clasa-c',
+  [DIFF_CLASS]: '/clasa-c-diferenta',
+  D: '/clasa-d',
+  [DIFF_CLASS_D]: '/clasa-d-diferenta',
+};
+
+// The main page lists these 3 pages; each page has exactly 2 tabs
+const CLASS_GROUPS = [
+  { id: 'a-b', label: 'Clasa A și Clasa B', classes: ['A', 'B'] },
+  { id: 'c', label: 'Clasa C și Clasa C (diferență)', classes: ['C', DIFF_CLASS] },
+  { id: 'd', label: 'Clasa D și Clasa D (diferență)', classes: ['D', DIFF_CLASS_D] },
+];
+const groupOfClass = (cls) =>
+  CLASS_GROUPS.find((group) => group.classes.includes(cls)) || CLASS_GROUPS[0];
+
+function classFromPath(pathname) {
+  const clean = (pathname || '').replace(/\/+$/, '').toLowerCase();
+  return LICENSE_CLASSES.find((cls) => CLASS_ROUTES[cls] === clean) || null;
+}
+
+/** Point the address bar at the page of `cls` (no-op when already there). */
+function syncRoute(cls, { replace = false } = {}) {
+  const route = cls === null ? '/' : CLASS_ROUTES[cls];
+  if (!route || window.location.pathname === route) return;
+  try {
+    window.history[replace ? 'replaceState' : 'pushState'](null, '', route);
+  } catch {
+    /* ignore */
+  }
+}
 
 const COLREG_SECTIONS = [
   {
@@ -133,16 +168,13 @@ const CLASA_C_SECTIONS = clasaCQuiz.examConfig.sections;
 const CLASA_D_SECTIONS = clasaDQuiz.examConfig.sections;
 
 /**
- * "Clasa C (diferență)": what Class C has on top of Class D, i.e. the COLREG and
- * "Navigație maritimă" chapters (Class D studies the Danube regulation instead). The other
- * chapters (Marinărie, Manevră, Prim ajutor, Legislație) are the same in both classes.
+ * "Clasa C (diferență)": what Class C has on top of Class D, i.e. the COLREG
+ * chapter (Class D studies the Danube regulation instead). The other
+ * chapters (Marinărie, Navigație, Manevră, Prim ajutor, Legislație) are the same in both classes.
  */
-const DIFF_SECTION_IDS = ['C-COLREG', 'C-Navigatie'];
+const DIFF_SECTION_IDS = ['C-COLREG'];
 const DIFF_SECTIONS = CLASA_C_SECTIONS.filter((section) => DIFF_SECTION_IDS.includes(section.id));
-const DIFF_EXAM_SECTIONS = [
-  { id: 'C-COLREG', label: 'COLREG', count: 8, difficulty: 1 },
-  { id: 'C-Navigatie', label: 'Navigație maritimă', count: 2, difficulty: 1 },
-];
+const DIFF_EXAM_SECTIONS = [{ id: 'C-COLREG', label: 'COLREG', count: 10, difficulty: 1 }];
 
 /**
  * "Clasa D (diferență)": what Class D has on top of Class C, i.e. the Danube navigation
@@ -285,7 +317,7 @@ const EXAM_SUBJECTS = [
     totalQuestions: 10,
     minCorrect: 9,
     barem: null,
-    observation: '10 întrebări din COLREG + Navigație · 85% = 9/10',
+    observation: '10 întrebări din COLREG · 85% = 9/10',
     classes: [DIFF_CLASS],
     available: true,
     sections: DIFF_EXAM_SECTIONS,
@@ -635,13 +667,28 @@ function computeRunQuestions(fullQuestions, activeKeys, answered) {
 }
 
 function QuizApp() {
-  const initialPrefs = useMemo(() => loadPrefs(), []);
+  const initialPrefs = useMemo(() => {
+    const prefs = loadPrefs();
+    const routeClass = classFromPath(window.location.pathname);
+    // The page in the URL decides the class; on the main page use the last used one
+    const cls = routeClass || prefs?.licenseClass || 'A';
+    if (cls === prefs?.licenseClass) return prefs;
+    return { licenseClass: cls, examSubjectId: defaultSubjectForClass(cls), practiceSection: 'all' };
+  }, []);
   const [phase, setPhase] = useState('menu'); // menu | running | result
   const [licenseClass, setLicenseClass] = useState(initialPrefs?.licenseClass || 'A');
   const [mode, setMode] = useState('exam'); // exam | practice
   const [examSubjectId, setExamSubjectId] = useState(
     () => initialPrefs?.examSubjectId || defaultSubjectForClass(initialPrefs?.licenseClass || 'A'),
   );
+  // true on the main page (no class page open)
+  const [onHome, setOnHome] = useState(() => !classFromPath(window.location.pathname));
+  const phaseRef = useRef(phase);
+  const licenseClassRef = useRef(licenseClass);
+  const onHomeRef = useRef(onHome);
+  phaseRef.current = phase;
+  licenseClassRef.current = licenseClass;
+  onHomeRef.current = onHome;
   const [activeSubjectId, setActiveSubjectId] = useState(null);
   const [activeKeys, setActiveKeys] = useState([]);
   const [answered, setAnswered] = useState({});
@@ -684,20 +731,63 @@ function QuizApp() {
     return classSubjects.find((subject) => subject.available) || classSubjects[0] || null;
   }, [classSubjects, examSubjectId]);
 
-  const setLicenseClassAndReset = useCallback(
-    (nextClass) => {
-      if (nextClass === licenseClass) return;
-      setLicenseClass(nextClass);
-      setPracticeSection('all');
-      const nextSubjects = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(nextClass));
+  const applyClass = useCallback((nextClass) => {
+    setLicenseClass(nextClass);
+    setPracticeSection('all');
+    const nextSubjects = EXAM_SUBJECTS.filter((subject) => subject.classes.includes(nextClass));
+    setExamSubjectId((current) => {
       const keep =
-        nextSubjects.find((subject) => subject.id === examSubjectId && subject.available) ||
+        nextSubjects.find((subject) => subject.id === current && subject.available) ||
         nextSubjects.find((subject) => subject.available) ||
         nextSubjects[0];
-      setExamSubjectId(keep?.id || nextSubjects[0]?.id || 'colreg');
+      return keep?.id || 'colreg';
+    });
+  }, []);
+
+  /** Switch tab / open the page of a class. */
+  const goToClass = useCallback(
+    (nextClass) => {
+      if (nextClass !== licenseClassRef.current) applyClass(nextClass);
+      setOnHome(false);
+      syncRoute(nextClass);
     },
-    [licenseClass, examSubjectId],
+    [applyClass],
   );
+
+  /** Back to the main page. */
+  const goHome = useCallback(() => {
+    setOnHome(true);
+    syncRoute(null);
+  }, []);
+
+  // Unknown addresses fall back to the main page
+  useEffect(() => {
+    if (onHomeRef.current) syncRoute(null, { replace: true });
+  }, []);
+
+  // Browser back/forward between the main page and class pages
+  useEffect(() => {
+    const onPopState = () => {
+      const routeClass = classFromPath(window.location.pathname);
+      // a running exam/practice belongs to its class: stay on its page until it is finished
+      if (phaseRef.current === 'running' || phaseRef.current === 'result') {
+        syncRoute(licenseClassRef.current, { replace: true });
+        return;
+      }
+      if (!routeClass) {
+        setOnHome(true);
+        return;
+      }
+      setOnHome(false);
+      if (routeClass !== licenseClassRef.current) applyClass(routeClass);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [applyClass]);
+
+  useEffect(() => {
+    document.title = onHome ? 'CAA' : `CAA · ${classLabel(licenseClass)}`;
+  }, [licenseClass, onHome]);
 
   const resumeSaved = useCallback((saved) => {
     const pool = normalizeQuestions(QUESTIONS_BY_CLASS[saved.licenseClass] || QUESTIONS_AB);
@@ -710,6 +800,8 @@ function QuizApp() {
     const remaining = computeRunQuestions(pool, saved.activeKeys, saved.answered);
     const timedOut = saved.endsAt != null && Date.now() >= saved.endsAt;
     setLicenseClass(saved.licenseClass);
+    setOnHome(false);
+    syncRoute(saved.licenseClass, { replace: true });
     setMode(saved.mode);
     setActiveSubjectId(saved.subjectId);
     setExamSubjectId(saved.subjectId || defaultSubjectForClass(saved.licenseClass));
@@ -1265,6 +1357,27 @@ function QuizApp() {
     </div>
   );
 
+  if (phase === 'menu' && onHome) {
+    return shell(
+      <div className="exam-menu">
+        <div className="exam-card">
+          <h2>Conducător ambarcațiune de agrement</h2>
+          <p className="exam-subtitle">Alege pagina clasei</p>
+          {CLASS_GROUPS.map((group) => (
+            <button
+              key={group.id}
+              type="button"
+              className="btn history-btn"
+              onClick={() => goToClass(group.classes[0])}
+            >
+              {group.label}
+            </button>
+          ))}
+        </div>
+      </div>,
+    );
+  }
+
   if (phase === 'menu') {
     const examReady = Boolean(selectedExamSubject?.available);
 
@@ -1272,15 +1385,20 @@ function QuizApp() {
     return shell(
       <div className="exam-menu">
         <div className="exam-card">
+          <button type="button" className="btn back-btn" onClick={goHome}>
+            ← Toate clasele
+          </button>
           <h2>Conducător ambarcațiune de agrement</h2>
-          <p className="exam-subtitle">Alege clasa, apoi antrenament sau examen</p>
+          <p className="exam-subtitle">
+            {classLabel(licenseClass)} · alege antrenament sau examen
+          </p>
           <div className="class-toggle" role="group" aria-label="Clasa de personal">
-            {LICENSE_CLASSES.map((cls) => (
+            {groupOfClass(licenseClass).classes.map((cls) => (
               <button
                 key={cls}
                 type="button"
                 className={licenseClass === cls ? 'active' : ''}
-                onClick={() => setLicenseClassAndReset(cls)}
+                onClick={() => goToClass(cls)}
               >
                 {isDiffClass(cls) ? (
                   <>
@@ -1398,7 +1516,7 @@ function QuizApp() {
             {licenseClass === 'B' && '4 discipline (fără Construcția navei și Regulament Dunăre)'}
             {licenseClass === 'C' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
             {licenseClass === DIFF_CLASS &&
-              'Diferența față de D (COLREG + Navigație) · 10 întrebări · 12 min · minim 9 corecte'}
+              'Diferența față de D (COLREG) · 10 întrebări · 12 min · minim 9 corecte'}
             {licenseClass === DIFF_CLASS_D &&
               'Diferența față de C (Regulamentul de navigație pe Dunăre) · 10 întrebări · 12 min · minim 9 corecte'}
             {licenseClass === 'D' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
