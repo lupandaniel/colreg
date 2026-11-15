@@ -313,11 +313,11 @@ const EXAM_SUBJECTS = [
   {
     id: 'clasa-c-diff',
     label: 'Examen Clasa C · diferența față de D',
-    timeMinutes: 12,
+    timeMinutes: 10,
     totalQuestions: 10,
-    minCorrect: 9,
-    barem: null,
-    observation: '10 întrebări din COLREG · 85% = 9/10',
+    minCorrect: 8,
+    barem: 8,
+    observation: '10 întrebări din COLREG · barem 8/10',
     classes: [DIFF_CLASS],
     available: true,
     sections: DIFF_EXAM_SECTIONS,
@@ -337,11 +337,11 @@ const EXAM_SUBJECTS = [
   {
     id: 'clasa-d-diff',
     label: 'Examen Clasa D · diferența față de C',
-    timeMinutes: 12,
+    timeMinutes: 10,
     totalQuestions: 10,
-    minCorrect: 9,
-    barem: null,
-    observation: '10 întrebări din Regulamentul de navigație pe Dunăre · 85% = 9/10',
+    minCorrect: 8,
+    barem: 8,
+    observation: '10 întrebări din Regulamentul de navigație pe Dunăre · barem 8/10',
     classes: [DIFF_CLASS_D],
     available: true,
     sections: DIFF_D_EXAM_SECTIONS,
@@ -1516,9 +1516,9 @@ function QuizApp() {
             {licenseClass === 'B' && '4 discipline (fără Construcția navei și Regulament Dunăre)'}
             {licenseClass === 'C' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
             {licenseClass === DIFF_CLASS &&
-              'Diferența față de D (COLREG) · 10 întrebări · 12 min · minim 9 corecte'}
+              'Diferența față de D (COLREG) · 10 întrebări · 10 min · minim 8 corecte'}
             {licenseClass === DIFF_CLASS_D &&
-              'Diferența față de C (Regulamentul de navigație pe Dunăre) · 10 întrebări · 12 min · minim 9 corecte'}
+              'Diferența față de C (Regulamentul de navigație pe Dunăre) · 10 întrebări · 10 min · minim 8 corecte'}
             {licenseClass === 'D' && 'Un singur test · 26 întrebări · 30 min · minim 22 corecte'}
           </p>
 
