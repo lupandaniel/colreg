@@ -10,7 +10,7 @@ import { questions as constructieQuiz } from './questionsConstructie';
 import { questions as rndQuiz } from './questionsRND';
 import { questions as clasaCQuiz } from './questionsClasaC';
 import { questions as clasaDQuiz } from './questionsClasaD';
-import LightsCheatsheet, { CHEATSHEET_PATH } from './LightsCheatsheet';
+import { MEMORATOARE, memoratorByPath, memoratorById } from './memorator';
 
 // The quiz library gives answer buttons random keys, so any parent re-render (e.g. the exam
 // timer ticking every second) recreates them in the DOM and can swallow taps. Memoizing keeps
@@ -48,7 +48,6 @@ const groupOfClass = (cls) =>
   CLASS_GROUPS.find((group) => group.classes.includes(cls)) || CLASS_GROUPS[0];
 
 const cleanPath = (pathname) => (pathname || '').replace(/\/+$/, '').toLowerCase();
-const isCheatsheetPath = (pathname) => cleanPath(pathname) === CHEATSHEET_PATH;
 
 function classFromPath(pathname) {
   const clean = cleanPath(pathname);
@@ -683,10 +682,12 @@ function QuizApp() {
     if (cls === prefs?.licenseClass) return prefs;
     return { licenseClass: cls, examSubjectId: defaultSubjectForClass(cls), practiceSection: 'all' };
   }, []);
-  // menu | running | result | cheatsheet | sessions | history
+  // menu | running | result | memorator | sessions | history
   const [phase, setPhase] = useState(() =>
-    isCheatsheetPath(window.location.pathname) ? 'cheatsheet' : 'menu',
+    memoratorByPath(window.location.pathname) ? 'memorator' : 'menu',
   );
+  // which memorator is open (its address is /memorator/<slug>)
+  const [memoratorId, setMemoratorId] = useState(() => memoratorByPath(window.location.pathname)?.id || null);
   const [licenseClass, setLicenseClass] = useState(initialPrefs?.licenseClass || 'A');
   const [mode, setMode] = useState('exam'); // exam | practice
   const [examSubjectId, setExamSubjectId] = useState(
@@ -765,14 +766,17 @@ function QuizApp() {
     [applyClass],
   );
 
-  /** Open the lights cheatsheet: it has its own address and belongs to no class. */
-  const openCheatsheet = useCallback(() => {
-    setPhase('cheatsheet');
-    syncPath(CHEATSHEET_PATH);
+  /** Open a memorator: each has its own address and belongs to no class. */
+  const openMemorator = useCallback((id) => {
+    const entry = memoratorById(id);
+    if (!entry) return;
+    setMemoratorId(id);
+    setPhase('memorator');
+    syncPath(entry.path);
   }, []);
 
-  /** Back from the cheatsheet to the main page. */
-  const closeCheatsheet = useCallback(() => {
+  /** Back from a memorator to the main page. */
+  const closeMemorator = useCallback(() => {
     setPhase('menu');
     setOnHome(true);
     syncRoute(null);
@@ -786,7 +790,7 @@ function QuizApp() {
 
   // Unknown addresses fall back to the main page
   useEffect(() => {
-    if (onHomeRef.current && !isCheatsheetPath(window.location.pathname)) {
+    if (onHomeRef.current && !memoratorByPath(window.location.pathname)) {
       syncRoute(null, { replace: true });
     }
   }, []);
@@ -800,10 +804,12 @@ function QuizApp() {
         syncRoute(licenseClassRef.current, { replace: true });
         return;
       }
-      // browser back/forward into or out of the cheatsheet page
-      if (isCheatsheetPath(window.location.pathname)) {
-        setPhase('cheatsheet');
-      } else if (phaseRef.current === 'cheatsheet') {
+      // browser back/forward into or out of a memorator page
+      const routeMemorator = memoratorByPath(window.location.pathname);
+      if (routeMemorator) {
+        setMemoratorId(routeMemorator.id);
+        setPhase('memorator');
+      } else if (phaseRef.current === 'memorator') {
         setPhase('menu');
       }
       if (!routeClass) {
@@ -818,10 +824,11 @@ function QuizApp() {
   }, [applyClass]);
 
   useEffect(() => {
-    if (phase === 'cheatsheet') document.title = 'CAA · Memorator lumini și distanțe';
+    const openEntry = phase === 'memorator' ? memoratorById(memoratorId) : null;
+    if (openEntry) document.title = openEntry.docTitle;
     else if (onHome) document.title = 'CAA';
     else document.title = `CAA · ${classLabel(licenseClass)}`;
-  }, [licenseClass, onHome, phase]);
+  }, [licenseClass, onHome, phase, memoratorId]);
 
   const resumeSaved = useCallback((saved) => {
     const pool = normalizeQuestions(QUESTIONS_BY_CLASS[saved.licenseClass] || QUESTIONS_AB);
@@ -1395,15 +1402,6 @@ function QuizApp() {
     return shell(
       <div className="exam-menu">
         <div className="exam-card">
-          <h3>Memoratoare</h3>
-          <p className="exam-subtitle">Materiale de recapitulare rapidă</p>
-          <button type="button" className="btn history-btn" onClick={openCheatsheet}>
-            <span aria-hidden="true">💡</span> Lumini și distanțe
-            <span className="history-btn-count">COLREG</span>
-          </button>
-        </div>
-
-        <div className="exam-card">
           <h2>Conducător ambarcațiune de agrement</h2>
           <p className="exam-subtitle">Alege pagina clasei</p>
           {CLASS_GROUPS.map((group) => (
@@ -1414,6 +1412,22 @@ function QuizApp() {
               onClick={() => goToClass(group.classes[0])}
             >
               {group.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="exam-card">
+          <h3>Memoratoare</h3>
+          <p className="exam-subtitle">Materiale de recapitulare rapidă</p>
+          {MEMORATOARE.map((entry) => (
+            <button
+              key={entry.id}
+              type="button"
+              className="btn history-btn"
+              onClick={() => openMemorator(entry.id)}
+            >
+              <span aria-hidden="true">{entry.icon}</span> {entry.title}
+              <span className="history-btn-count">{entry.badge}</span>
             </button>
           ))}
         </div>
@@ -1686,13 +1700,13 @@ function QuizApp() {
     );
   }
 
-  if (phase === 'cheatsheet') {
+  if (phase === 'memorator' && memoratorById(memoratorId)) {
     return shell(
       <div className="exam-menu">
-        <button type="button" className="btn back-btn" onClick={closeCheatsheet}>
+        <button type="button" className="btn back-btn" onClick={closeMemorator}>
           ← Înapoi la meniu
         </button>
-        <LightsCheatsheet />
+        {memoratorById(memoratorId).render()}
       </div>,
     );
   }

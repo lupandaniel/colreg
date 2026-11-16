@@ -1,4 +1,4 @@
-/* COLREG lights cheatsheet (Clasa A/B) */
+/* Memoratoare: shared styles (symbols, tables, cards) */
 .lc {
   display: flex;
   flex-direction: column;
@@ -343,4 +343,173 @@
   .lc-vessel-body {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- extra symbols ---------- */
+.lc-B {
+  background: #111;
+}
+
+.lc-cylR {
+  background: #e11d1d;
+  border-radius: 2px;
+  height: 18px;
+  width: 12px;
+}
+
+.lc-coneUpG {
+  border-bottom: 15px solid #14a44d;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.lc-ballR {
+  background: #e11d1d;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.lc-bands {
+  border: 1.5px solid #222;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 26px;
+}
+
+.lc-band {
+  display: block;
+  height: 9px;
+}
+
+.lc-band-B {
+  background: #111;
+}
+
+.lc-band-Y {
+  background: #f5c400;
+}
+
+.lc-band-R {
+  background: #e11d1d;
+}
+
+.lc-band-G {
+  background: #14a44d;
+}
+
+.lc-band-W {
+  background: #fff;
+}
+
+/* ---------- generic memorator page ---------- */
+.mm-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mm-blocks .table-scroll {
+  margin-bottom: 0;
+}
+
+.mm-table th,
+.mm-table td {
+  font-size: 13.5px;
+  vertical-align: top;
+}
+
+.mm-table th {
+  white-space: nowrap;
+}
+
+.mm-bold-first td:first-child {
+  font-weight: 700;
+}
+
+.mm-group-row td {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.mm-cell-mixed {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mm-list {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.mm-list li {
+  margin: 3px 0;
+}
+
+.mm-pairs {
+  margin: 0;
+}
+
+.mm-pair {
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  gap: 2px 12px;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 8px 0;
+}
+
+.mm-pair:last-child {
+  border-bottom: none;
+}
+
+.mm-pair dt {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mm-pair dd {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.mm-warn {
+  background: var(--warning-soft);
+  border-left: 4px solid var(--warning);
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  padding: 10px 12px;
+}
+
+.mm-warn > strong {
+  color: var(--warning);
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 560px) {
+  .mm-pair {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  }
+}
+
+.mm-block-title {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin: 4px 0 6px;
+  text-transform: uppercase;
 }
