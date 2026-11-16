@@ -1,5 +1,6 @@
 import LightsCheatsheet from './LightsCheatsheet';
 import MemoratorPage from './MemoratorPage';
+import prioritati from './data/prioritati';
 import reguliGuvernare from './data/reguliGuvernare';
 import semnaleSonore from './data/semnaleSonore';
 import balizajIala from './data/balizajIala';
@@ -16,6 +17,7 @@ const page = (data) => () => <MemoratorPage data={data} />;
 /** Every memorator: its own address (`/memorator/<slug>`), a button on the main page, a renderer. */
 export const MEMORATOARE = [
   { id: 'lumini', slug: 'lumini-si-distante', icon: '💡', title: 'Lumini și distanțe', badge: 'COLREG', render: () => <LightsCheatsheet /> },
+  { id: 'prioritati', slug: 'prioritati', icon: '🚦', title: 'Priorități', badge: 'COLREG', render: page(prioritati) },
   { id: 'reguli', slug: 'reguli-de-guvernare', icon: '🧭', title: 'Reguli de guvernare', badge: 'COLREG', render: page(reguliGuvernare) },
   { id: 'sonore', slug: 'semnale-sonore', icon: '🔔', title: 'Semnale sonore', badge: 'COLREG', render: page(semnaleSonore) },
   { id: 'iala', slug: 'balizaj-iala', icon: '🛟', title: 'Balizaj IALA', badge: 'IALA', render: page(balizajIala) },
