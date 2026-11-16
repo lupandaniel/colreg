@@ -10,6 +10,7 @@ import { questions as constructieQuiz } from './questionsConstructie';
 import { questions as rndQuiz } from './questionsRND';
 import { questions as clasaCQuiz } from './questionsClasaC';
 import { questions as clasaDQuiz } from './questionsClasaD';
+import LightsCheatsheet, { CHEATSHEET_PATH } from './LightsCheatsheet';
 
 // The quiz library gives answer buttons random keys, so any parent re-render (e.g. the exam
 // timer ticking every second) recreates them in the DOM and can swallow taps. Memoizing keeps
@@ -46,20 +47,27 @@ const CLASS_GROUPS = [
 const groupOfClass = (cls) =>
   CLASS_GROUPS.find((group) => group.classes.includes(cls)) || CLASS_GROUPS[0];
 
+const cleanPath = (pathname) => (pathname || '').replace(/\/+$/, '').toLowerCase();
+const isCheatsheetPath = (pathname) => cleanPath(pathname) === CHEATSHEET_PATH;
+
 function classFromPath(pathname) {
-  const clean = (pathname || '').replace(/\/+$/, '').toLowerCase();
+  const clean = cleanPath(pathname);
   return LICENSE_CLASSES.find((cls) => CLASS_ROUTES[cls] === clean) || null;
 }
 
-/** Point the address bar at the page of `cls` (no-op when already there). */
-function syncRoute(cls, { replace = false } = {}) {
-  const route = cls === null ? '/' : CLASS_ROUTES[cls];
+/** Point the address bar at `route` (no-op when already there). */
+function syncPath(route, { replace = false } = {}) {
   if (!route || window.location.pathname === route) return;
   try {
     window.history[replace ? 'replaceState' : 'pushState'](null, '', route);
   } catch {
     /* ignore */
   }
+}
+
+/** Point the address bar at the page of `cls`, or at the main page for `null`. */
+function syncRoute(cls, options) {
+  syncPath(cls === null ? '/' : CLASS_ROUTES[cls], options);
 }
 
 const COLREG_SECTIONS = [
@@ -675,7 +683,10 @@ function QuizApp() {
     if (cls === prefs?.licenseClass) return prefs;
     return { licenseClass: cls, examSubjectId: defaultSubjectForClass(cls), practiceSection: 'all' };
   }, []);
-  const [phase, setPhase] = useState('menu'); // menu | running | result
+  // menu | running | result | cheatsheet | sessions | history
+  const [phase, setPhase] = useState(() =>
+    isCheatsheetPath(window.location.pathname) ? 'cheatsheet' : 'menu',
+  );
   const [licenseClass, setLicenseClass] = useState(initialPrefs?.licenseClass || 'A');
   const [mode, setMode] = useState('exam'); // exam | practice
   const [examSubjectId, setExamSubjectId] = useState(
@@ -754,6 +765,19 @@ function QuizApp() {
     [applyClass],
   );
 
+  /** Open the lights cheatsheet: it has its own address and belongs to no class. */
+  const openCheatsheet = useCallback(() => {
+    setPhase('cheatsheet');
+    syncPath(CHEATSHEET_PATH);
+  }, []);
+
+  /** Back from the cheatsheet to the main page. */
+  const closeCheatsheet = useCallback(() => {
+    setPhase('menu');
+    setOnHome(true);
+    syncRoute(null);
+  }, []);
+
   /** Back to the main page. */
   const goHome = useCallback(() => {
     setOnHome(true);
@@ -762,7 +786,9 @@ function QuizApp() {
 
   // Unknown addresses fall back to the main page
   useEffect(() => {
-    if (onHomeRef.current) syncRoute(null, { replace: true });
+    if (onHomeRef.current && !isCheatsheetPath(window.location.pathname)) {
+      syncRoute(null, { replace: true });
+    }
   }, []);
 
   // Browser back/forward between the main page and class pages
@@ -773,6 +799,12 @@ function QuizApp() {
       if (phaseRef.current === 'running' || phaseRef.current === 'result') {
         syncRoute(licenseClassRef.current, { replace: true });
         return;
+      }
+      // browser back/forward into or out of the cheatsheet page
+      if (isCheatsheetPath(window.location.pathname)) {
+        setPhase('cheatsheet');
+      } else if (phaseRef.current === 'cheatsheet') {
+        setPhase('menu');
       }
       if (!routeClass) {
         setOnHome(true);
@@ -786,8 +818,10 @@ function QuizApp() {
   }, [applyClass]);
 
   useEffect(() => {
-    document.title = onHome ? 'CAA' : `CAA · ${classLabel(licenseClass)}`;
-  }, [licenseClass, onHome]);
+    if (phase === 'cheatsheet') document.title = 'CAA · Memorator lumini și distanțe';
+    else if (onHome) document.title = 'CAA';
+    else document.title = `CAA · ${classLabel(licenseClass)}`;
+  }, [licenseClass, onHome, phase]);
 
   const resumeSaved = useCallback((saved) => {
     const pool = normalizeQuestions(QUESTIONS_BY_CLASS[saved.licenseClass] || QUESTIONS_AB);
@@ -1361,6 +1395,15 @@ function QuizApp() {
     return shell(
       <div className="exam-menu">
         <div className="exam-card">
+          <h3>Memoratoare</h3>
+          <p className="exam-subtitle">Materiale de recapitulare rapidă</p>
+          <button type="button" className="btn history-btn" onClick={openCheatsheet}>
+            <span aria-hidden="true">💡</span> Lumini și distanțe
+            <span className="history-btn-count">COLREG</span>
+          </button>
+        </div>
+
+        <div className="exam-card">
           <h2>Conducător ambarcațiune de agrement</h2>
           <p className="exam-subtitle">Alege pagina clasei</p>
           {CLASS_GROUPS.map((group) => (
@@ -1639,6 +1682,17 @@ function QuizApp() {
               : 'Examen indisponibil'}
           </button>
         </div>
+      </div>,
+    );
+  }
+
+  if (phase === 'cheatsheet') {
+    return shell(
+      <div className="exam-menu">
+        <button type="button" className="btn back-btn" onClick={closeCheatsheet}>
+          ← Înapoi la meniu
+        </button>
+        <LightsCheatsheet />
       </div>,
     );
   }

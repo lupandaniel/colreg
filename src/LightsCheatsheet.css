@@ -1,0 +1,346 @@
+/* COLREG lights cheatsheet (Clasa A/B) */
+.lc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lc h3 {
+  margin-top: 0;
+}
+
+.lc-c {
+  text-align: center !important;
+}
+
+.lc-sub {
+  color: var(--text-muted);
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.lc-sub-inline {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.lc-hl {
+  background: var(--warning-soft);
+  border-radius: 4px;
+  color: var(--warning);
+  font-weight: 800;
+  padding: 0 4px;
+}
+
+/* ---------- ranges ---------- */
+.lc-ranges td {
+  vertical-align: middle;
+}
+
+.lc-range-val {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.lc-tip {
+  background: var(--primary-soft);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px 12px;
+}
+
+/* ---------- arcs ---------- */
+.lc-arcs,
+.lc-list,
+.lc-distances,
+.lc-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lc-arcs li {
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.lc-arcs li:last-child {
+  border-bottom: none;
+}
+
+.lc-arcs li > .lc-symbols {
+  flex: none;
+  justify-content: center;
+  width: 36px;
+}
+
+.lc-arc-deg {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.lc-list li {
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.45;
+  padding: 8px 0;
+}
+
+.lc-list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- legend ---------- */
+.lc-legend {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  gap: 8px 14px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+}
+
+.lc-legend li {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+}
+
+/* ---------- vessels ---------- */
+.lc-group-title {
+  background: var(--primary-soft);
+  border-radius: var(--radius-sm);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin: 16px 0 8px;
+  padding: 7px 10px;
+}
+
+.lc-vessel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  padding: 10px 12px;
+}
+
+.lc-vessel header {
+  margin-bottom: 8px;
+}
+
+.lc-vessel-body {
+  display: grid;
+  gap: 8px 16px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+}
+
+.lc-vessel-col {
+  min-width: 0;
+}
+
+.lc-label {
+  color: var(--text-faint);
+  display: block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.lc-none {
+  color: var(--text-faint);
+}
+
+.lc-note {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 8px 0 0;
+}
+
+.lc-note strong {
+  color: var(--text);
+}
+
+/* ---------- distances ---------- */
+.lc-distances li {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.lc-distances li:last-child {
+  border-bottom: none;
+}
+
+.lc-dist-val {
+  color: var(--primary);
+  flex: none;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  width: 72px;
+}
+
+.lc-dist-text {
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+/* ---------- light and shape symbols ---------- */
+.lc-symbols {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lc-stack {
+  align-items: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 3px 4px;
+}
+
+.lc-dot {
+  border: 1.5px solid #222;
+  border-radius: 50%;
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
+.lc-W {
+  background: #fff;
+}
+
+.lc-R {
+  background: #e11d1d;
+}
+
+.lc-G {
+  background: #14a44d;
+}
+
+.lc-Y {
+  background: #f5c400;
+}
+
+.lc-flash {
+  box-shadow: 0 0 0 3px rgba(245, 196, 0, 0.45);
+}
+
+.lc-chip {
+  align-items: center;
+  background: #fff;
+  border: 1.5px solid #222;
+  border-radius: 5px;
+  color: #111;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 800;
+  height: 20px;
+  justify-content: center;
+  min-width: 24px;
+  padding: 0 5px;
+}
+
+.lc-chip-B {
+  background: linear-gradient(90deg, #e11d1d 50%, #14a44d 50%);
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
+.lc-chip-T {
+  background: #f5c400;
+}
+
+.lc-chip-txt {
+  background: var(--primary-soft);
+  border: 1px dashed var(--primary);
+  color: var(--text);
+  font-size: 11.5px;
+  font-weight: 600;
+  height: auto;
+  min-height: 20px;
+  padding: 2px 6px;
+  text-align: center;
+}
+
+.lc-plus {
+  color: var(--text-faint);
+  font-weight: 800;
+}
+
+.lc-shape {
+  display: block;
+}
+
+.lc-ball {
+  background: #111;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.lc-dia {
+  background: #111;
+  height: 11px;
+  margin: 2px;
+  transform: rotate(45deg);
+  width: 11px;
+}
+
+.lc-cyl {
+  background: #111;
+  border-radius: 2px;
+  height: 18px;
+  width: 12px;
+}
+
+.lc-coneUp,
+.lc-coneDn {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  height: 0;
+  width: 0;
+}
+
+.lc-coneUp {
+  border-bottom: 15px solid #111;
+}
+
+.lc-coneDn {
+  border-top: 15px solid #111;
+}
+
+.lc-flagA {
+  background: linear-gradient(90deg, #fff 50%, #1d4ed8 50%);
+  border: 1.5px solid #222;
+  display: inline-block;
+  height: 14px;
+  width: 20px;
+}
+
+@media (max-width: 479px) {
+  .lc-vessel-body {
+    grid-template-columns: 1fr;
+  }
+}
